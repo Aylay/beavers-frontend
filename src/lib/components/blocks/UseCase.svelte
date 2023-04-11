@@ -6,6 +6,7 @@
 
 	export let useCase: any = {};
 
+	const strapiURL = import.meta.env.VITE_STRAPI_URL;
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
