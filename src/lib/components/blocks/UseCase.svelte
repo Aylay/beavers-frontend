@@ -30,7 +30,7 @@
 			class="absolute inset-0 z-0 h-full w-full before:absolute before:inset-0 before:z-10 before:h-full before:w-full before:bg-jaguar before:bg-opacity-40 before:content-['']"
 		>
 			<img
-				src={useCase.img1.src}
+				src={strapiURL + useCase.img1.src}
 				alt={useCase.img1.alt ? useCase.img1.alt : useCase.title}
 				class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
 			/>
