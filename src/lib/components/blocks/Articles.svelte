@@ -1,9 +1,8 @@
 <script lang="ts">
-
 	import Line from './utilities/Line.svelte';
 	import Title from './utilities/Title.svelte';
 	import Cta from './utilities/CTA.svelte';
-	import Article from './Article.svelte';
+	import Article from './common/Article.svelte';
 
 	const articles = [
 		{

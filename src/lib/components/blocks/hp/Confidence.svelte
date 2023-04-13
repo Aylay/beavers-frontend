@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Line from './utilities/Line.svelte';
-	import Title from './utilities/Title.svelte';
+	import Line from '../utilities/Line.svelte';
+	import Title from '../utilities/Title.svelte';
 	import ConfidenceLogo from './ConfidenceLogo.svelte';
 
 	const logos = [
@@ -41,7 +41,7 @@
 			présents à tous ces clients.
 		</p>
 	</div>
-	<div class="mt-24 flex items-center justify-between">
+	<div class="mt-24 flex items-center justify-between gap-20">
 		{#each logos as logo, i}
 			<ConfidenceLogo src={logo.src} alt={logo.alt} {i} />
 		{/each}

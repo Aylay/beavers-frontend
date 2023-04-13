@@ -5,7 +5,7 @@
 	import Line from './utilities/Line.svelte';
 	import Title from './utilities/Title.svelte';
 	import Cta from './utilities/CTA.svelte';
-	import UseCase from './UseCase.svelte';
+	import UseCase from './common/UseCase.svelte';
 
 	let isInView: boolean;
 	const options: Options = {

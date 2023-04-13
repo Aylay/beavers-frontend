@@ -2,7 +2,7 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
-	import Blank from '../svg/Blank.svelte';
+	import Blank from '../../svg/Blank.svelte';
 
 	export let useCase: any = {};
 
@@ -16,8 +16,6 @@
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
 	};
-
-	console.log(useCase);
 </script>
 
 <Hoverable let:hovering={active}>
