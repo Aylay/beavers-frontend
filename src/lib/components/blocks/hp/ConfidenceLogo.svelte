@@ -19,11 +19,6 @@
 
 <div use:inview={options} on:inview_change={handleChange} class="max-h-[10rem] max-w-[20rem]">
 	{#if isInView}
-		<img
-			{src}
-			{alt}
-			class={isInView ? 'animate-fade' : ''}
-			style={isInView ? 'animation-delay: ' + delay + 'ms;' : ''}
-		/>
+		<img {src} {alt} class={isInView ? 'animate-fade' : ''} style="animation-delay: {delay}ms;" />
 	{/if}
 </div>

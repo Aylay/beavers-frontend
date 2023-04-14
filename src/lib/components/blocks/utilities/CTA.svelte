@@ -22,6 +22,7 @@
 		<a
 			class="text-6 font-bold {classes} rounded-[3rem] border-2 px-10 py-4 transition-colors"
 			{href}
+			title={label}
 		>
 			{label}
 		</a>

@@ -26,7 +26,7 @@
 		href={article.slug}
 		title={article.title}
 		class="flex w-full flex-col {isInView ? 'animate-fade' : 'opacity-0'}"
-		style={isInView ? 'animation-delay: ' + delay + 'ms;' : ''}
+		style="animation-delay: {delay}ms;"
 		use:inview={options}
 		on:inview_change={handleChange}
 	>

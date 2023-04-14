@@ -51,7 +51,8 @@ module.exports = {
 		extend: {
 			animation: {
 				line: 'line 1s ease-in-out',
-				title: 'title 2s linear 1s 1 forwards'
+				title: 'title 2s linear 1s 1 forwards',
+				bounceRight: 'bounceRight 1s infinite'
 			},
 			keyframes: {
 				line: {
@@ -65,6 +66,13 @@ module.exports = {
 						opacity: 0,
 						left: '-20%'
 					}
+				},
+				bounceRight: {
+					'0%, 100%': {
+						'animation-timing-function': 'cubic-bezier(0.8,0,1,1)',
+						transform: 'translateX(-25%)'
+					},
+					'50%': { 'animation-timing-function': 'cubic-bezier(0,0,0.2,1)', transform: 'none' }
 				}
 			}
 		}
