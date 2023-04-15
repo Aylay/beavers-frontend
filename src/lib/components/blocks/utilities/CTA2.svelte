@@ -13,9 +13,9 @@
 <Hoverable let:hovering={active}>
 	<a
 		{href}
-		class="inline-block {isInView && !active ? 'animate-fade' : ''}"
+		class="inline-block {isInView ? 'animate-fade' : ''}"
 		title={label}
-		style={isInView && !active ? 'animation-delay: ' + delay + 'ms;' : ''}
+		style={isInView ? 'animation-delay: ' + delay + 'ms;' : ''}
 	>
 		<div class="flex items-center gap-8">
 			<span class="text-5">{label}</span>
