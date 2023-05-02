@@ -95,8 +95,8 @@
 					<Img
 						src={whyImg}
 						alt="Why Beavers ?"
-						class="w-full"
-						loading="eager"
+						class="w-full"						loading="eager"
+
 					/>
 					<div
 						class="absolute bottom-16 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"

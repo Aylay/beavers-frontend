@@ -56,8 +56,8 @@
 					<Img
 						src={manifesto1}
 						alt="Manifesto"
-						class="w-full"
-						loading="eager"
+						class="w-full"						loading="eager"
+
 					/>
 					<div
 						class="absolute top-16 left-24 flex h-[11rem] w-[11.75rem] items-center justify-center"
