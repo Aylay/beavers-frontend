@@ -90,11 +90,13 @@
 	</div>
 	<div class="relative flex flex-1 justify-center">
 		<div>
+			{#if isInView}
 				<div class="relative w-full max-w-[45rem]">
 					<Img
 						src={whyImg}
 						alt="Why Beavers ?"
 						class="w-full"
+						loading="eager"
 					/>
 					<div
 						class="absolute bottom-16 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"
@@ -127,6 +129,7 @@
 						</div>
 					{/each}
 				</div>
+			{/if}
 		</div>
 	</div>
 </div>

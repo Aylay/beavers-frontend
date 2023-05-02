@@ -88,11 +88,13 @@
 		</div>
 	</div>
 	<div class="relative flex flex-1 items-center justify-center">
-			<div class="relative w-full max-w-[45rem]">
+		{#if isInView}
+		<div class="relative w-full max-w-[45rem]">
 				<Img
 					src={prodImg}
 					alt="Production Digitale"
 					class="w-full"
+					loading="eager"
 				/>
 				{#each pluss as plus, i}
 					<div
@@ -103,5 +105,6 @@
 					</div>
 				{/each}
 			</div>
+			{/if}
 	</div>
 </div>

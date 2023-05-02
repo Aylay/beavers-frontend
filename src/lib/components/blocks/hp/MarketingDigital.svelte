@@ -114,11 +114,13 @@
 		</div>
 	</div>
 	<div class="relative flex flex-1 flex-col gap-28 lg:order-1">
+		{#if isInView}
 			<div class="relative mx-auto w-full max-w-[45rem]">
 				<Img
 					src={marktImg}
 					alt="Marketing Digital"
 					class="w-full"
+					loading="eager"
 				/>
 				<div
 					class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
@@ -135,6 +137,7 @@
 					<Wave />
 				</div>
 			</div>
+		{/if}
 		<div>
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex justify-between">
