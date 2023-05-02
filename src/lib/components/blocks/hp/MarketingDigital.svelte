@@ -40,7 +40,7 @@
 		}
 	];
 
-	const solutions: Array<{ src: string; alt: string}> = [
+	const solutions: Array<{ src: string; alt: string }> = [
 		{
 			src: '/img/hp/meta-ads.svg',
 			alt: 'Meta ads'
@@ -73,7 +73,7 @@
 			src: '/img/hp/meta-ads.svg',
 			alt: 'Meta ads'
 		}
-	]
+	];
 </script>
 
 <div
@@ -97,7 +97,11 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Selon votre problématique, nous connectons les leviers pour un mix media performant. Chez Beavers, la pertinence d'un levier n'est pas mesure uniquement à sa performance propre mais à son impact dans un plan média global et son influence dans le processus de décisions. Nous pilotons l'intégralité de vos leviers média pour maitriser les synergies et le custumer journey.
+				Selon votre problématique, nous connectons les leviers pour un mix media performant. Chez
+				Beavers, la pertinence d'un levier n'est pas mesure uniquement à sa performance propre mais
+				à son impact dans un plan média global et son influence dans le processus de décisions. Nous
+				pilotons l'intégralité de vos leviers média pour maitriser les synergies et le custumer
+				journey.
 			</p>
 		</div>
 		<div class="mt-48 grid grid-cols-2 gap-8">
@@ -108,29 +112,38 @@
 	</div>
 	<div class="relative flex flex-1 flex-col gap-28 lg:order-1">
 		{#if isInView}
-			<div class="relative w-full max-w-[45rem] mx-auto">
+			<div class="relative mx-auto w-full max-w-[45rem]">
 				<img
 					src="/img/hp/marketing-digital.png"
 					alt="Marketing Digital"
 					class="w-full {isInView ? 'animate-fade' : ''}"
 				/>
 				<div
-					class="absolute top-20 -left-20 h-auto w-[7.5rem] animate-delay-500 {isInView ? 'animate-shake' : 'opacity-0'}"
+					class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
+						? 'animate-shake'
+						: 'opacity-0'}"
 				>
 					<Wave color="#00FFDA" />
 				</div>
 				<div
-					class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView ? 'animate-shake' : 'opacity-0'}"
+					class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
+						? 'animate-shake'
+						: 'opacity-0'}"
 				>
 					<Wave />
 				</div>
 			</div>
 		{/if}
 		<div>
-			<h3 class="text-seance text-5 mb-8">Nos solutions</h3>
+			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex justify-between">
 				{#each solutions as solution, i}
-					<img src={solution.src} alt={solution.alt} class="max-w-[4rem] max-h-[4rem] {isInView ? 'animate-fade' : 'opacity-0'}" style="animation-delay: {500 + 200 * i}ms;">
+					<img
+						src={solution.src}
+						alt={solution.alt}
+						class="max-h-[4rem] max-w-[4rem] {isInView ? 'animate-fade' : 'opacity-0'}"
+						style="animation-delay: {500 + 200 * i}ms;"
+					/>
 				{/each}
 			</div>
 		</div>

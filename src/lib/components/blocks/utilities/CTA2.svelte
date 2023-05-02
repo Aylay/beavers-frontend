@@ -4,8 +4,8 @@
 
 	export let label = '';
 	export let href = '';
-	export let isInView: boolean = false;
-	export let i: number = 0;
+	export let isInView = false;
+	export let i = 0;
 
 	const delay = (i + 1) * 200;
 </script>
