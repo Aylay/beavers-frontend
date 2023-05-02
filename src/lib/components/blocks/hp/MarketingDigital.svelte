@@ -118,7 +118,7 @@
 				<Img
 					src={marktImg}
 					alt="Marketing Digital"
-					class="w-full {isInView ? 'animate-fade' : 'opacity-0'}"
+					class="w-full"
 				/>
 				<div
 					class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView

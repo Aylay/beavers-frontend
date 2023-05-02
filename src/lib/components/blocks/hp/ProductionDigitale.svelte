@@ -92,7 +92,7 @@
 				<Img
 					src={prodImg}
 					alt="Production Digitale"
-					class="w-full {isInView ? 'animate-fade' : 'opacity-0'}"
+					class="w-full"
 				/>
 				{#each pluss as plus, i}
 					<div
