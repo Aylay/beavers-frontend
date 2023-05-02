@@ -51,13 +51,11 @@
 	</div>
 	<div class="relative flex flex-1 justify-center">
 		<div>
-		{#if isInView}
 				<div class="relative w-full max-w-[45rem]">
 					<Img
 						src={manifesto1}
 						alt="Manifesto"
-						class="w-full"						loading="eager"
-
+						class="w-full"
 					/>
 					<div
 						class="absolute top-16 left-24 flex h-[11rem] w-[11.75rem] items-center justify-center"
@@ -84,7 +82,6 @@
 							style="animation-delay: {800 + 200 * i}ms;" />
 					{/each}
 				</div>
-				{/if}
 		</div>
 	</div>
 </div>
