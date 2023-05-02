@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Cta2 from '../utilities/CTA2.svelte';
 	import Plus from '$lib/components/svg/Plus.svelte';
+
+	import prodImg from '$lib/assets/hp/production-digitale.png?run&width=450&lqip=0'
 
 	let isInView: boolean;
 	const options: Options = {
@@ -85,12 +88,11 @@
 		</div>
 	</div>
 	<div class="relative flex flex-1 items-center justify-center">
-		{#if isInView}
 			<div class="relative w-full max-w-[45rem]">
-				<img
-					src="/img/hp/production-digitale.png"
+				<Img
+					src={prodImg}
 					alt="Production Digitale"
-					class="w-full {isInView ? 'animate-fade' : ''}"
+					class="w-full"
 				/>
 				{#each pluss as plus, i}
 					<div
@@ -101,6 +103,5 @@
 					</div>
 				{/each}
 			</div>
-		{/if}
 	</div>
 </div>

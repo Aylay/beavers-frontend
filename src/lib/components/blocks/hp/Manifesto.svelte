@@ -1,14 +1,15 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Palette1 from '$lib/components/svg/Palette1.svelte';
-	import Megaphone from '$lib/components/svg/Megaphone.svelte';
-	import ArrowUp from '$lib/components/svg/ArrowUp.svelte';
 	import Cta from '../utilities/CTA.svelte';
 	import Baguette from '$lib/components/svg/Baguette.svelte';
+
+	import manifesto1 from '$lib/assets/hp/manifesto-1.png?run&width=450&lqip=0'
 
 	let isInView: boolean;
 	const options: Options = {
@@ -50,12 +51,11 @@
 	</div>
 	<div class="relative flex flex-1 justify-center">
 		<div>
-			{#if isInView}
 				<div class="relative w-full max-w-[45rem]">
-					<img
-						src="/img/hp/manifesto-1.png"
+					<Img
+						src={manifesto1}
 						alt="Manifesto"
-						class="w-full {isInView ? 'animate-fade' : ''}"
+						class="w-full"
 					/>
 					<div
 						class="absolute top-16 left-24 flex h-[11rem] w-[11.75rem] items-center justify-center"
@@ -82,7 +82,6 @@
 							style="animation-delay: {800 + 200 * i}ms;" />
 					{/each}
 				</div>
-			{/if}
 		</div>
 	</div>
 </div>

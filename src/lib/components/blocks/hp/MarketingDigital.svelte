@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Cta2 from '../utilities/CTA2.svelte';
 	import Wave from '$lib/components/svg/Wave.svelte';
+
+	import marktImg from '$lib/assets/hp/manifesto-1.png?run&width=450&lqip=0'
 
 	let isInView: boolean;
 	const options: Options = {
@@ -111,12 +114,11 @@
 		</div>
 	</div>
 	<div class="relative flex flex-1 flex-col gap-28 lg:order-1">
-		{#if isInView}
 			<div class="relative mx-auto w-full max-w-[45rem]">
-				<img
-					src="/img/hp/marketing-digital.png"
+				<Img
+					src={marktImg}
 					alt="Marketing Digital"
-					class="w-full {isInView ? 'animate-fade' : ''}"
+					class="w-full"
 				/>
 				<div
 					class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
@@ -133,7 +135,6 @@
 					<Wave />
 				</div>
 			</div>
-		{/if}
 		<div>
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex justify-between">

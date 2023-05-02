@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Palette1 from '$lib/components/svg/Palette1.svelte';
 	import Megaphone from '$lib/components/svg/Megaphone.svelte';
 	import ArrowUp from '$lib/components/svg/ArrowUp.svelte';
+
+	import whyImg from '$lib/assets/hp/why.png?run&width=450&lqip=0'
 
 	let isInView: boolean;
 	const options: Options = {
@@ -87,12 +90,11 @@
 	</div>
 	<div class="relative flex flex-1 justify-center">
 		<div>
-			{#if isInView}
 				<div class="relative w-full max-w-[45rem]">
-					<img
-						src="/img/hp/why.png"
-						alt="why Beavers ?"
-						class="w-full {isInView ? 'animate-fade' : ''}"
+					<Img
+						src={whyImg}
+						alt="Why Beavers ?"
+						class="w-full"
 					/>
 					<div
 						class="absolute bottom-16 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"
@@ -125,7 +127,6 @@
 						</div>
 					{/each}
 				</div>
-			{/if}
 		</div>
 	</div>
 </div>
