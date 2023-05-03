@@ -38,7 +38,7 @@
 			label: 'Display'
 		},
 		{
-			href: '/marketing-digital',
+			href: '/influence',
 			label: 'Influence'
 		}
 	];
