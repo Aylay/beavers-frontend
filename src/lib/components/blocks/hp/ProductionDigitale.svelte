@@ -105,6 +105,7 @@
 					src="/img/hp/production-digitale.png"
 					alt="Production Digitale"
 					class="w-full {isInViewImg ? 'animate-fade' : ''}"
+					loading="lazy"
 				/>
 			{/if}
 			{#each pluss as plus, i}
