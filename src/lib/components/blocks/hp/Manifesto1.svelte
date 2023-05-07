@@ -1,15 +1,12 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
-	import Palette1 from '$lib/components/svg/Palette1.svelte';
+	import Palette1 from '$lib/assets/svg/Palette1.svelte';
 	import Cta from '../utilities/CTA.svelte';
-	import Baguette from '$lib/components/svg/Baguette.svelte';
-
-	import manifesto1 from '$lib/assets/hp/manifesto-1.png?run&width=450&lqip=0'
+	import Baguette from '$lib/assets/svg/Baguette.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -19,6 +16,16 @@
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
+	};
+
+	let isInViewImg: boolean;
+	const optionsImg: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInViewImg = detail.inView;
 	};
 
 	const tops = ['-left-8', '-left-4', 'left-0', 'left-4'];
@@ -51,37 +58,45 @@
 	</div>
 	<div class="relative flex flex-1 justify-center">
 		<div>
-				<div class="relative w-full max-w-[45rem]">
-					<Img
-						src={manifesto1}
+			<div
+				class="relative w-full max-w-[45rem]"
+				use:inview={optionsImg}
+				on:inview_change={handleChangeImg}
+			>
+				{#if isInViewImg}
+					<img
+						src="/img/hp/manifesto-1.png"
 						alt="Manifesto"
-						class="w-full"
+						class="w-full {isInViewImg ? 'animate-fade' : ''}"
 					/>
-					<div
-						class="absolute top-16 left-24 flex h-[11rem] w-[11.75rem] items-center justify-center"
-					>
-						<Palette1 newClass="transform rotate-180" />
-						<Baguette 
-							newClass="absolute z-10 bottom-10 right-10 {isInView
-								? 'animate-jump'
-								: 'opacity-0'}"
-						/>
-					</div>
-
-					{#each tops as top, i}
-						<div class="w-28 h-[1.5px] absolute bg-seance transform -rotate-45 top-12 {top} {isInView
-							? 'animate-fade'
-							: 'opacity-0'}"
-							style="animation-delay: {200 * i}ms;" />
-					{/each}
-
-					{#each bottoms as bottom, i}
-						<div class="w-44 h-[3px] absolute bg-bright transform -rotate-45 -bottom-4 {bottom} {isInView
-							? 'animate-fade'
-							: 'opacity-0'}"
-							style="animation-delay: {800 + 200 * i}ms;" />
-					{/each}
+				{/if}
+				<div
+					class="absolute left-24 top-16 flex h-[11rem] w-[11.75rem] items-center justify-center"
+				>
+					<Palette1 newClass="transform rotate-180" />
+					<Baguette
+						newClass="absolute z-10 bottom-10 right-10 {isInView ? 'animate-jump' : 'opacity-0'}"
+					/>
 				</div>
+
+				{#each tops as top, i}
+					<div
+						class="absolute top-12 h-[1.5px] w-28 -rotate-45 transform bg-seance {top} {isInView
+							? 'animate-fade'
+							: 'opacity-0'}"
+						style="animation-delay: {200 * i}ms;"
+					/>
+				{/each}
+
+				{#each bottoms as bottom, i}
+					<div
+						class="absolute -bottom-4 h-[3px] w-44 -rotate-45 transform bg-bright {bottom} {isInView
+							? 'animate-fade'
+							: 'opacity-0'}"
+						style="animation-delay: {800 + 200 * i}ms;"
+					/>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>

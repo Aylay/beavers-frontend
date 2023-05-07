@@ -74,6 +74,10 @@ module.exports = {
 					},
 					'50%': { 'animation-timing-function': 'cubic-bezier(0,0,0.2,1)', transform: 'none' }
 				}
+			},
+			flex: {
+				2: '2 2 0%',
+				3: '3 3 0%'
 			}
 		}
 	},

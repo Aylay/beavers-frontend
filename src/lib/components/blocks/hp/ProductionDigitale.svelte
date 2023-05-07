@@ -1,14 +1,11 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Cta2 from '../utilities/CTA2.svelte';
-	import Plus from '$lib/components/svg/Plus.svelte';
-
-	import prodImg from '$lib/assets/hp/production-digitale.png?run&width=450&lqip=0'
+	import Plus from '$lib/assets/svg/Plus.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -18,6 +15,16 @@
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
+	};
+
+	let isInViewImg: boolean;
+	const optionsImg: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInViewImg = detail.inView;
 	};
 
 	const links: Array<{ href: string; label: string }> = [
@@ -88,20 +95,26 @@
 		</div>
 	</div>
 	<div class="relative flex flex-1 items-center justify-center">
-		<div class="relative w-full max-w-[45rem]">
-				<Img
-					src={prodImg}
+		<div
+			class="relative w-full max-w-[45rem]"
+			use:inview={optionsImg}
+			on:inview_change={handleChangeImg}
+		>
+			{#if isInViewImg}
+				<img
+					src="/img/hp/production-digitale.png"
 					alt="Production Digitale"
-					class="w-full"
+					class="w-full {isInViewImg ? 'animate-fade' : ''}"
 				/>
-				{#each pluss as plus, i}
-					<div
-						class="absolute h-auto w-[1.8rem] {plus} {isInView ? 'animate-fade' : 'opacity-0'}"
-						style="animation-delay: {500 + 200 * i}ms;"
-					>
-						<Plus />
-					</div>
-				{/each}
-			</div>
+			{/if}
+			{#each pluss as plus, i}
+				<div
+					class="absolute h-auto w-[1.8rem] {plus} {isInView ? 'animate-fade' : 'opacity-0'}"
+					style="animation-delay: {500 + 200 * i}ms;"
+				>
+					<Plus />
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>

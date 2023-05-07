@@ -1,15 +1,12 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
-	import Palette1 from '$lib/components/svg/Palette1.svelte';
-	import Megaphone from '$lib/components/svg/Megaphone.svelte';
-	import ArrowUp from '$lib/components/svg/ArrowUp.svelte';
-
-	import whyImg from '$lib/assets/hp/why.png?run&width=450&lqip=0'
+	import Palette1 from '$lib/assets/svg/Palette1.svelte';
+	import Megaphone from '$lib/assets/svg/Megaphone.svelte';
+	import ArrowUp from '$lib/assets/svg/ArrowUp.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -19,6 +16,16 @@
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
+	};
+
+	let isInViewImg: boolean;
+	const optionsImg: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInViewImg = detail.inView;
 	};
 
 	const faqs = [
@@ -90,43 +97,49 @@
 	</div>
 	<div class="relative flex flex-1 justify-center">
 		<div>
-				<div class="relative w-full max-w-[45rem]">
-					<Img
-						src={whyImg}
-						alt="Why Beavers ?"
-						class="w-full"
+			<div
+				class="relative w-full max-w-[45rem]"
+				use:inview={optionsImg}
+				on:inview_change={handleChangeImg}
+			>
+				{#if isInViewImg}
+					<img
+						src="/img/hp/why.png"
+						alt="Why ?"
+						class="w-full {isInViewImg ? 'animate-fade' : ''}"
 					/>
-					<div
-						class="absolute bottom-16 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"
-					>
-						<Palette1 />
-						<Megaphone
-							newClass="absolute z-10 top-[2.2rem] left-[2.65rem] {isInView
-								? 'animate-jump'
-								: 'opacity-0'}"
-						/>
-					</div>
-
-					{#each tops as top, i}
-						<div
-							class="absolute left-0 -translate-x-1/2 transform {top} {isInView
-								? 'animate-fade-up'
-								: 'opacity-0'}"
-							style="animation-delay: {500 + 200 * i}ms;"
-						>
-							<ArrowUp newClass="max-w-[1.25rem] w-full h-auto" color="#00FFDA" />
-						</div>
-					{/each}
-
-					{#each bottoms as bottom, i}
-						<div
-							class="absolute right-20 {bottom} {isInView ? 'animate-fade-up' : 'opacity-0'}"
-							style="animation-delay: {500 + 200 * i}ms;"
-						>
-							<ArrowUp />
-						</div>
-					{/each}
+				{/if}
+				<div
+					class="absolute bottom-16 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"
+				>
+					<Palette1 />
+					<Megaphone
+						newClass="absolute z-10 top-[2.2rem] left-[2.65rem] {isInView
+							? 'animate-jump'
+							: 'opacity-0'}"
+					/>
 				</div>
+
+				{#each tops as top, i}
+					<div
+						class="absolute left-0 -translate-x-1/2 transform {top} {isInView
+							? 'animate-fade-up'
+							: 'opacity-0'}"
+						style="animation-delay: {500 + 200 * i}ms;"
+					>
+						<ArrowUp newClass="max-w-[1.25rem] w-full h-auto" color="#00FFDA" />
+					</div>
+				{/each}
+
+				{#each bottoms as bottom, i}
+					<div
+						class="absolute right-20 {bottom} {isInView ? 'animate-fade-up' : 'opacity-0'}"
+						style="animation-delay: {500 + 200 * i}ms;"
+					>
+						<ArrowUp />
+					</div>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>

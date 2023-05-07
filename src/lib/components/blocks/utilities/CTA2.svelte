@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Arrow from '$lib/components/svg/Arrow.svelte';
+	import Arrow from '$lib/assets/svg/Arrow.svelte';
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
 
 	export let label = '';

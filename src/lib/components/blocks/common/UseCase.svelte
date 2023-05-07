@@ -2,7 +2,7 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
-	import Blank from '../../svg/Blank.svelte';
+	import Blank from '../../../assets/svg/Blank.svelte';
 
 	export let useCase: any = {};
 
@@ -10,7 +10,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {

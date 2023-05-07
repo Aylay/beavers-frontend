@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
-	import Logo from '$lib/components/svg/LogoNespresso.svelte';
 
 	export let newStep: number;
 	const nav = [

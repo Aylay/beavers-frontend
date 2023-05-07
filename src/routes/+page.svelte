@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Articles from '$lib/components/blocks/Articles.svelte';
 	import Confidence from '$lib/components/blocks/hp/Confidence.svelte';
-	import Manifesto from '$lib/components/blocks/hp/Manifesto.svelte';
+	import Manifesto from '$lib/components/blocks/hp/Manifesto1.svelte';
+	import Manifesto2 from '$lib/components/blocks/hp/Manifesto2.svelte';
 	import MarketingDigital from '$lib/components/blocks/hp/MarketingDigital.svelte';
 	import ProductionDigitale from '$lib/components/blocks/hp/ProductionDigitale.svelte';
 	import Why from '$lib/components/blocks/hp/Why.svelte';
@@ -16,6 +17,7 @@
 	<UseCases />
 	<Confidence />
 	<Manifesto />
+	<Manifesto2 />
 	<Support />
 	<Articles />
 </div>

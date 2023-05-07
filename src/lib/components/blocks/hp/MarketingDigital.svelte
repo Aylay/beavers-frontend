@@ -1,14 +1,11 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-	import { FxReveal as Img } from '@zerodevx/svelte-img'
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Cta2 from '../utilities/CTA2.svelte';
-	import Wave from '$lib/components/svg/Wave.svelte';
-
-	import marktImg from '$lib/assets/hp/manifesto-1.png?run&width=450&lqip=0'
+	import Wave from '$lib/assets/svg/Wave.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -18,6 +15,16 @@
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
+	};
+
+	let isInViewImg: boolean;
+	const optionsImg: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInViewImg = detail.inView;
 	};
 
 	const links: Array<{ href: string; label: string }> = [
@@ -114,27 +121,33 @@
 		</div>
 	</div>
 	<div class="relative flex flex-1 flex-col gap-28 lg:order-1">
-			<div class="relative mx-auto w-full max-w-[45rem]">
-				<Img
-					src={marktImg}
+		<div
+			class="relative mx-auto w-full max-w-[45rem]"
+			use:inview={optionsImg}
+			on:inview_change={handleChangeImg}
+		>
+			{#if isInViewImg}
+				<img
+					src="/img/hp/marketing-digital.png"
 					alt="Marketing Digital"
-					class="w-full"
+					class="w-full {isInViewImg ? 'animate-fade' : ''}"
 				/>
-				<div
-					class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
-						? 'animate-shake'
-						: 'opacity-0'}"
-				>
-					<Wave color="#00FFDA" />
-				</div>
-				<div
-					class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
-						? 'animate-shake'
-						: 'opacity-0'}"
-				>
-					<Wave />
-				</div>
+			{/if}
+			<div
+				class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
+					? 'animate-shake'
+					: 'opacity-0'}"
+			>
+				<Wave color="#00FFDA" />
 			</div>
+			<div
+				class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
+					? 'animate-shake'
+					: 'opacity-0'}"
+			>
+				<Wave />
+			</div>
+		</div>
 		<div>
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex justify-between">

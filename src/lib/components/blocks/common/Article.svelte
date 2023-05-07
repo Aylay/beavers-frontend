@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
 	import Cta from '../utilities/CTA.svelte';
 
@@ -19,6 +20,16 @@
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
 	};
+
+	let isInViewImg: boolean;
+	const optionsImg: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInViewImg = detail.inView;
+	};
 </script>
 
 <Hoverable let:hovering={active}>
@@ -30,12 +41,18 @@
 		use:inview={options}
 		on:inview_change={handleChange}
 	>
-		<div class="relative h-96 w-full overflow-hidden rounded-lg">
-			<img
-				src={strapiURL + article.img.src}
-				alt={article.img.alt}
-				class="h-full w-full object-cover"
-			/>
+		<div
+			class="relative h-96 w-full overflow-hidden rounded-lg"
+			use:inview={optionsImg}
+			on:inview_change={handleChangeImg}
+		>
+			{#if isInViewImg}
+				<img
+					src={strapiURL + article.img.src}
+					alt={article.img.alt}
+					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : ''}"
+				/>
+			{/if}
 		</div>
 		<div class="mt-10 flex gap-6">
 			<p class="border-r border-r-seance pr-6 text-6 font-bold text-bright">{article.tag}</p>
