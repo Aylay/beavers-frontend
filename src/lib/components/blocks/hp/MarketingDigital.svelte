@@ -152,12 +152,14 @@
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex justify-between">
 				{#each solutions as solution, i}
+				{#if isInViewImg}
 					<img
 						src={solution.src}
 						alt={solution.alt}
 						class="max-h-[4rem] max-w-[4rem] {isInView ? 'animate-fade' : 'opacity-0'}"
 						style="animation-delay: {500 + 200 * i}ms;"
 					/>
+					{/if}
 				{/each}
 			</div>
 		</div>
