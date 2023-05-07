@@ -27,11 +27,13 @@
 		<div
 			class="absolute inset-0 z-0 h-full w-full before:absolute before:inset-0 before:z-10 before:h-full before:w-full before:bg-jaguar before:bg-opacity-40 before:content-['']"
 		>
-			<img
-				src={strapiURL + useCase.img1.src}
-				alt={useCase.img1.alt ? useCase.img1.alt : useCase.title}
-				class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
-			/>
+			{#if isInView}
+				<img
+					src={strapiURL + useCase.img1.src}
+					alt={useCase.img1.alt ? useCase.img1.alt : useCase.title}
+					class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
+				/>
+			{/if}
 		</div>
 		{#if useCase.key1 && useCase.key2}
 			<div
@@ -81,11 +83,13 @@
 				: 'max-h-0'} {isInView ? 'animate-fade' : 'opacity-0'}"
 			href={useCase.slug}
 		>
-			<img
-				src={useCase.img2.src}
-				alt={useCase.img2.alt ? useCase.img2.alt : useCase.title}
-				class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
-			/>
+			{#if isInView}
+				<img
+					src={useCase.img2.src}
+					alt={useCase.img2.alt ? useCase.img2.alt : useCase.title}
+					class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
+				/>
+			{/if}
 		</a>
 		<div
 			class="absolute inset-x-0 bottom-0 h-full w-full overflow-hidden bg-seance bg-opacity-50 transition-all duration-500 animate-delay-1000 before:absolute before:inset-x-0 before:bottom-0 before:z-20 before:h-full before:w-full before:bg-jagger before:bg-opacity-75 {active
