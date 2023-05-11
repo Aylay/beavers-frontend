@@ -10,7 +10,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '-50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
@@ -43,33 +43,33 @@
 	];
 
 	const pluss: Array<string> = [
-		'bottom-32 -left-16',
-		'bottom-32 left-0',
-		'bottom-16 -left-16',
-		'bottom-16 left-0',
-		'bottom-16 left-16',
-		'bottom-16 left-32',
-		'bottom-16 left-48',
-		'bottom-0 -left-16',
-		'bottom-0 left-0',
-		'bottom-0 left-16',
-		'bottom-0 left-32',
-		'bottom-0 left-48'
+		'bottom-32 left-0 lg:-left-16',
+		'bottom-32 left-16 lg:left-0',
+		'bottom-16 left-0 lg:-left-16',
+		'bottom-16 left-16 lg:left-0',
+		'bottom-16 left-32 lg:left-16',
+		'bottom-16 left-48 lg:left-32',
+		'bottom-16 left-60 lg:left-48',
+		'bottom-0 left-0 lg:-left-16',
+		'bottom-0 left-16 lg:left-0',
+		'bottom-0 left-32 lg:left-16',
+		'bottom-0 left-48 lg:left-32',
+		'bottom-0 left-60 lg:left-48'
 	];
 </script>
 
 <div
-	class="big-container flex items-center gap-40"
+	class="big-container flex items-center gap-32 max-lg:flex-col lg:gap-40"
 	use:inview={options}
 	on:inview_change={handleChange}
 >
-	<div class="flex-1">
+	<div class="flex-1 max-lg:order-2">
 		<Line />
 		<Title first="Production digitale" />
 		<h3
-			class="mt-2 font-highlight text-4 text-bright animate-delay-200 {isInView
-				? 'animate-fade-right'
-				: 'opacity-0'}"
+			class="mt-2 font-highlight text-4 text-bright lg:animate-delay-200 {isInView
+				? 'lg:animate-fade-right'
+				: 'lg:opacity-0'}"
 		>
 			Lorem ipsum dolor sit amet adipiscing
 		</h3>
@@ -88,15 +88,15 @@
 				problématiques :
 			</p>
 		</div>
-		<div class="mt-24 flex flex-col gap-8">
+		<div class="mt-12 flex flex-col gap-8 lg:mt-24">
 			{#each links as link, i}
 				<Cta2 href={link.href} label={link.label} {i} {isInView} />
 			{/each}
 		</div>
 	</div>
-	<div class="relative flex flex-1 items-center justify-center">
+	<div class="relative flex flex-1 items-center justify-center max-lg:order-1">
 		<div
-			class="relative w-full max-w-[45rem]"
+			class="relative w-full lg:max-w-[45rem]"
 			use:inview={optionsImg}
 			on:inview_change={handleChangeImg}
 		>

@@ -10,7 +10,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '-50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
@@ -75,7 +75,7 @@
 		<div class="flex-1">
 			<Title first="Nos dernières<br />" second="études de cas" />
 		</div>
-		<Cta label="Tout voir" href="/cas-agence" type="transparent" />
+		<Cta label="Voir tous les cas" href="/cas-agence" type="transparent" />
 	</div>
 	<div
 		use:inview={options}

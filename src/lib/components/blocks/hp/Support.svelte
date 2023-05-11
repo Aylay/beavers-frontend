@@ -2,15 +2,15 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
-	import Cta from './utilities/CTA.svelte';
-	import Line from './utilities/Line.svelte';
-	import Title from './utilities/Title.svelte';
-	import Sun from '../../assets/svg/Sun.svelte';
+	import Cta from '../utilities/CTA.svelte';
+	import Line from '../utilities/Line.svelte';
+	import Title from '../utilities/Title.svelte';
+	import Sun from '../../../assets/svg/Sun.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '-50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {

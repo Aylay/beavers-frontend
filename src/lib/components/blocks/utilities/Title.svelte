@@ -8,7 +8,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '-50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
@@ -20,7 +20,7 @@
 	<span
 		use:inview={options}
 		on:inview_change={handleChange}
-		class="absolute left-1/2 top-0 -z-10 w-screen -translate-y-1/2 transform text-1 text-seance opacity-0 {isInView
+		class="absolute whitespace-nowrap left-1/2 top-0 -z-10 w-screen -translate-y-1/2 transform text-1 text-seance opacity-0 {isInView
 			? 'animate-title'
 			: ''}"
 	>

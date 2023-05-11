@@ -10,7 +10,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '-50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
@@ -87,11 +87,55 @@
 </script>
 
 <div
-	class="big-container flex items-center gap-40"
+	class="big-container flex items-center gap-32 max-lg:flex-col lg:gap-40"
 	use:inview={options}
 	on:inview_change={handleChange}
 >
-	<div class="flex-1 lg:order-2">
+<div class="relative flex lg:flex-1 flex-col gap-28">
+	<div
+		class="relative mx-auto w-full lg:max-w-[45rem]"
+		use:inview={optionsImg}
+		on:inview_change={handleChangeImg}
+	>
+		{#if isInViewImg}
+			<img
+				src="/img/hp/marketing-digital.png"
+				alt="Marketing Digital"
+				class="w-full {isInViewImg ? 'animate-fade' : ''}"
+			/>
+		{/if}
+		<div
+			class="absolute left-0 lg:-left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
+				? 'animate-shake'
+				: 'opacity-0'}"
+		>
+			<Wave color="#00FFDA" />
+		</div>
+		<div
+			class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
+				? 'animate-shake'
+				: 'opacity-0'}"
+		>
+			<Wave />
+		</div>
+	</div>
+	<div class="max-lg:hidden">
+		<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
+		<div class="flex justify-between">
+			{#each solutions as solution, i}
+				{#if isInViewImg}
+					<img
+						src={solution.src}
+						alt={solution.alt}
+						class="max-h-[4rem] max-w-[4rem] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						style="animation-delay: {500 + 200 * i}ms;"
+					/>
+				{/if}
+			{/each}
+		</div>
+	</div>
+</div>
+	<div class="lg:flex-1">
 		<Line />
 		<Title first="Marketing digital" />
 		<h3
@@ -114,51 +158,22 @@
 				journey.
 			</p>
 		</div>
-		<div class="mt-48 grid grid-cols-2 gap-8">
+		<div class="mt-12 lg:mt-48 grid grid-cols-1 lg:grid-cols-2 gap-8">
 			{#each links as link, i}
 				<Cta2 href={link.href} label={link.label} {i} {isInView} />
 			{/each}
 		</div>
-	</div>
-	<div class="relative flex flex-1 flex-col gap-28 lg:order-1">
-		<div
-			class="relative mx-auto w-full max-w-[45rem]"
-			use:inview={optionsImg}
-			on:inview_change={handleChangeImg}
-		>
-			{#if isInViewImg}
-				<img
-					src="/img/hp/marketing-digital.png"
-					alt="Marketing Digital"
-					class="w-full {isInViewImg ? 'animate-fade' : ''}"
-				/>
-			{/if}
-			<div
-				class="absolute -left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
-					? 'animate-shake'
-					: 'opacity-0'}"
-			>
-				<Wave color="#00FFDA" />
-			</div>
-			<div
-				class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
-					? 'animate-shake'
-					: 'opacity-0'}"
-			>
-				<Wave />
-			</div>
-		</div>
-		<div>
+		<div class="lg:hidden my-24">
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
-			<div class="flex justify-between">
+			<div class="flex max-lg:justify-start justify-between gap-8 max-lg:flex-wrap">
 				{#each solutions as solution, i}
-				{#if isInViewImg}
-					<img
-						src={solution.src}
-						alt={solution.alt}
-						class="max-h-[4rem] max-w-[4rem] {isInView ? 'animate-fade' : 'opacity-0'}"
-						style="animation-delay: {500 + 200 * i}ms;"
-					/>
+					{#if isInViewImg}
+						<img
+							src={solution.src}
+							alt={solution.alt}
+							class="max-h-[4rem] max-w-[4rem] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+							style="animation-delay: {500 + 200 * i}ms;"
+						/>
 					{/if}
 				{/each}
 			</div>

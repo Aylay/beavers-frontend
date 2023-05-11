@@ -51,7 +51,7 @@
 		<div class="flex-1">
 			<Title first="Les 3 derniers articles<br />de la" second="pause café" />
 		</div>
-		<Cta label="Tout voir" href="/cas-agence" type="transparent" />
+		<Cta label="Voir tous les articles" href="/la-pause-cafe" type="transparent" />
 	</div>
 	<div class="mt-16 grid grid-cols-3 gap-14">
 		{#each articles as article, i}

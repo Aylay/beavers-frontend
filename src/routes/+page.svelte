@@ -6,11 +6,11 @@
 	import MarketingDigital from '$lib/components/blocks/hp/MarketingDigital.svelte';
 	import ProductionDigitale from '$lib/components/blocks/hp/ProductionDigitale.svelte';
 	import Why from '$lib/components/blocks/hp/Why.svelte';
-	import Support from '$lib/components/blocks/Support.svelte';
+	import Support from '$lib/components/blocks/hp/Support.svelte';
 	import UseCases from '$lib/components/blocks/UseCases.svelte';
 </script>
 
-<div class="flex flex-col gap-16 lg:gap-96">
+<div class="flex flex-col gap-32 lg:gap-96 max-lg:px-4 pb-64">
 	<ProductionDigitale />
 	<MarketingDigital />
 	<Why />

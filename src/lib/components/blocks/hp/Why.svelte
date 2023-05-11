@@ -11,7 +11,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-200px'
+		rootMargin: '-50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
@@ -49,13 +49,13 @@
 		}
 	];
 
-	const tops = ['top-16', 'top-24', 'top-32', 'top-40', 'top-48'];
+	const tops = ['top-0 lg:top-16', 'top-8 lg:top-24', 'top-16 lg:top-32', 'top-24 lg:top-40', 'top-32 lg:top-48'];
 
 	const bottoms = ['-bottom-24', '-bottom-12', 'bottom-0', 'bottom-12', 'bottom-24'];
 </script>
 
-<div class="big-container flex gap-40" use:inview={options} on:inview_change={handleChange}>
-	<div class="flex-1">
+<div class="big-container flex gap-32 max-lg:flex-col lg:gap-40" use:inview={options} on:inview_change={handleChange}>
+	<div class="flex-1 max-lg:order-2">
 		<Line />
 		<Title first="Lorem ipsum dolor<br />sit amet" second="adipiscing" />
 		<div class="mt-16 flex flex-col">
@@ -95,10 +95,10 @@
 			{/each}
 		</div>
 	</div>
-	<div class="relative flex flex-1 justify-center">
+	<div class="relative flex flex-1 justify-center max-lg:order-1">
 		<div>
 			<div
-				class="relative w-full max-w-[45rem]"
+				class="relative w-full lg:max-w-[45rem]"
 				use:inview={optionsImg}
 				on:inview_change={handleChangeImg}
 			>
@@ -127,16 +127,16 @@
 							: 'opacity-0'}"
 						style="animation-delay: {500 + 200 * i}ms;"
 					>
-						<ArrowUp newClass="max-w-[1.25rem] w-full h-auto" color="#00FFDA" />
+						<ArrowUp newClass="max-w-[1rem] lg:max-w-[1.25rem] w-full h-auto" color="#00FFDA" />
 					</div>
 				{/each}
 
 				{#each bottoms as bottom, i}
 					<div
-						class="absolute right-20 {bottom} {isInView ? 'animate-fade-up' : 'opacity-0'}"
+						class="absolute right-8 lg:right-20 {bottom} {isInView ? 'animate-fade-up' : 'opacity-0'}"
 						style="animation-delay: {500 + 200 * i}ms;"
 					>
-						<ArrowUp />
+						<ArrowUp newClass="max-lg:max-w-[1.75rem] w-full h-auto" />
 					</div>
 				{/each}
 			</div>
