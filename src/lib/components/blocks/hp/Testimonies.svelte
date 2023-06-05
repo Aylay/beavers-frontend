@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { inview } from 'svelte-inview';
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
 
@@ -6,6 +8,16 @@
   name: string;
   company: string;
   text: string;
+};
+
+let isInView: boolean;
+const options: Options = {
+  unobserveOnEnter: true,
+  rootMargin: '-50px'
+};
+
+const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+  isInView = detail.inView;
 };
 
   let testimonies: Array<Testimony> = [
@@ -40,12 +52,14 @@
   }
 </script>
 
-<div class="big-container">
+<div class="big-container"
+use:inview={options}
+on:inview_change={handleChange}>
 	<Line />
 	<Title first="Nos clients" second="témoignent" />
   <div class="flex gap-20 mt-20">
-    {#each testimoniesDisplayed as testimony}
-    <div class="flex-1">
+    {#each testimoniesDisplayed as testimony, i}
+    <div class="flex-1 {isInView ? 'animate-fade' : 'opacity-0'}" style="animation-delay: {250 + i * 250}ms;">
       <p class="mb-8 text-6">
         { @html testimony.text}
       </p>
