@@ -18,12 +18,12 @@
 		style={isInView ? 'animation-delay: ' + delay + 'ms;' : ''}
 	>
 		<div class="flex items-center gap-8">
-			<span class="text-5">{label}</span>
+			<span class="text-5 transition-colors duration-500 {active ? 'text-bright' : 'text-white'}">{label}</span>
 			<div
 				class="{isInView && !active ? 'animate-shake' : ''} {active ? 'animate-bounceRight' : ''}"
 				style={isInView && !active ? 'animation-delay: ' + delay + 'ms;' : ''}
 			>
-				<Arrow />
+				<Arrow newClass="transition-colors duration-500 {active ? 'fill-seance' : 'fill-bright'}" />
 			</div>
 		</div>
 	</a>

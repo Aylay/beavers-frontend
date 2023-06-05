@@ -9,7 +9,8 @@ module.exports = {
 			rock: '#180325',
 			jaguar: '#0B0211',
 			bright: '#00FFDA',
-			seance: '#8013BD'
+			seance: '#8013BD',
+			transparent: 'transparent'
 		},
 		fontFamily: {
 			base: 'Montserrat, Arial, sans-serif',

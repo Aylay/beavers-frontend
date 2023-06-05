@@ -8,6 +8,7 @@
 	import Why from '$lib/components/blocks/hp/Why.svelte';
 	import Support from '$lib/components/blocks/hp/Support.svelte';
 	import UseCases from '$lib/components/blocks/UseCases.svelte';
+	import Testimonies from '$lib/components/blocks/hp/Testimonies.svelte';
 </script>
 
 <div class="flex flex-col gap-32 lg:gap-96 max-lg:px-4 pb-64">
@@ -18,6 +19,7 @@
 	<Confidence />
 	<Manifesto />
 	<Manifesto2 />
+	<Testimonies />
 	<Support />
 	<Articles />
 </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	let hovering: boolean;
+	export let newClass = '';
 
 	function enter() {
 		hovering = true;
@@ -10,6 +11,6 @@
 	}
 </script>
 
-<div on:mouseenter={enter} on:mouseleave={leave}>
+<div on:mouseenter={enter} on:mouseleave={leave} class={newClass}>
 	<slot {hovering} />
 </div>

@@ -2,10 +2,10 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
-	import Line from './utilities/Line.svelte';
-	import Title from './utilities/Title.svelte';
-	import Cta from './utilities/CTA.svelte';
-	import UseCase from './common/UseCase.svelte';
+	import Line from '$lib/components/blocks/utilities/Line.svelte';
+	import Title from '$lib/components/blocks/utilities/Title.svelte';
+	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
+	import UseCase from '$lib/components/blocks/common/UseCase.svelte';
 
 	let isInView: boolean;
 	const options: Options = {

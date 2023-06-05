@@ -32,7 +32,8 @@
 	};
 </script>
 
-<Hoverable let:hovering={active}>
+
+<div>
 	<a
 		href={article.slug}
 		title={article.title}
@@ -41,29 +42,35 @@
 		use:inview={options}
 		on:inview_change={handleChange}
 	>
-		<div
-			class="relative h-96 w-full overflow-hidden rounded-lg"
-			use:inview={optionsImg}
-			on:inview_change={handleChangeImg}
-		>
-			{#if isInViewImg}
-				<img
-					src={strapiURL + article.img.src}
-					alt={article.img.alt}
-					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : ''}"
-				/>
-			{/if}
-		</div>
-		<div class="mt-10 flex gap-6">
-			<p class="border-r border-r-seance pr-6 text-6 font-bold text-bright">{article.tag}</p>
-			<p class="text-6">{article.date}</p>
-		</div>
-		<h4 class="mt-5 text-5 text-seance">
-			{article.title}
-		</h4>
-		<p class="my-8 text-6">
-			{article.description}
-		</p>
-		<Cta label="Lire l'article" type="transparent" />
+		<Hoverable let:hovering={active}>
+			<div
+				class="relative h-96 w-full overflow-hidden rounded-lg"
+				use:inview={optionsImg}
+				on:inview_change={handleChangeImg}
+			>
+				{#if isInViewImg}
+					<img
+						src={strapiURL + article.img.src}
+						alt={article.img.alt}
+						class="h-full w-full object-cover transition-transform duration-500 {isInViewImg ? 'animate-fade' : ''} {active ? 'scale-125' : ''}"
+					/>
+				{/if}
+			</div>
+			<div class="mt-10 flex gap-6">
+				<p class="border-r border-r-seance pr-6 text-6 font-bold text-bright">{article.tag}</p>
+				<p class="text-6">{article.date}</p>
+			</div>
+			<h4 class="mt-5 text-5 text-seance">
+				{article.title}
+			</h4>
+			<p class="my-8 text-6">
+				{article.description}
+			</p>
+			<div
+				class="text-6 font-bold border-bright inline-block {active ? 'bg-bright text-black' : 'text-white bg-transparent'} duration-300 rounded-[3rem] border-2 px-10 py-4 transition-colors"
+			>
+				Lire l'article
+			</div>
+		</Hoverable>
 	</a>
-</Hoverable>
+</div>
