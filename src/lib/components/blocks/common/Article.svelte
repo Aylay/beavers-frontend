@@ -60,7 +60,7 @@
 				<p class="border-r border-r-seance pr-6 text-6 font-bold text-bright">{article.tag}</p>
 				<p class="text-6">{article.date}</p>
 			</div>
-			<h4 class="mt-5 text-5 text-seance">
+			<h4 class="mt-5 text-5 transition-colors duration-300 {active ? 'text-bright' : 'text-seance'}">
 				{article.title}
 			</h4>
 			<p class="my-8 text-6">
