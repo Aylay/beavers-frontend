@@ -18,9 +18,9 @@ import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
       <h2 class="text-6 font-bold text-bright mt-6">
         L'agence Beavers, spécialisée en création de sites internet, média en ligne et SEO, mobilise les compétences dont vous avez besoin dans le développement de votre écosystème digital.
       </h2>
-      <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.08)]">
+      <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.08)] gap-2">
         <Mouse newClass="h-auto w-full" color="#FFF" />
-        <ArrowBottom  color="#FFF" />
+        <ArrowBottom newClass="animate-bounce"  color="#FFF" />
       </div>
     </div>
   </div>
