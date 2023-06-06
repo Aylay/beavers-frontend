@@ -69,7 +69,7 @@
 							0{i + 1}<span class="text-seance">.</span>
 						</p>
 						<div class="flex flex-1 items-center justify-between gap-12">
-							<p class="flex-1 text-6 font-semibold">
+							<p class="flex-1 text-[1.8rem] leading-[2.4rem] font-semibold">
 								{faq.question}
 							</p>
 							<div class="relative h-8 w-8">
