@@ -58,9 +58,9 @@
     <a href="/" title="Beavers, l'agence digitale des castors" class="pb-2 duration-300 transition-all {menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Logo newClass="max-w-[13rem] w-full h-auto" />
     </a>
-    <div class="flex justify-center gap-4 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
+    <div class="flex justify-center gap-6 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
       <p class="text-bright uppercase text-[1.8rem] leading-[2.2rem] font-bold">{@html labelMenu}</p>
-      <div class="relative h-6 w-7">
+      <div class="relative h-7 w-8">
         <span
           class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transition-all duration-300 {menuOpened
             ? 'top-1/2 -translate-y-1/2 rotate-45'
