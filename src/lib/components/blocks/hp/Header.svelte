@@ -30,7 +30,7 @@ import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
         <a
           href="/production-digitale"
           title="Production digitale"
-          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-300 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
         >
           <ProductionDigitale newClass="transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
           <span class="text-5 transition-colors {active ? 'text-black' : 'text-white'}">
@@ -42,7 +42,7 @@ import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
         <a
           href="/marketing-digital"
           title="Marketing digital"
-          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-700 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
         >
           <MarketingDigital newClass="transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
           <span class="text-5 transition-colors {active ? 'text-black' : 'text-white'}">
