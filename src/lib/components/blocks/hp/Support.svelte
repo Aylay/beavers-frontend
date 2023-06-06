@@ -5,7 +5,7 @@
 	import Cta from '../utilities/CTA.svelte';
 	import Line from '../utilities/Line.svelte';
 	import Title from '../utilities/Title.svelte';
-	import Sun from '../../../assets/svg/Sun.svelte';
+	import Sun from '$lib/assets/svg/Sun.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
