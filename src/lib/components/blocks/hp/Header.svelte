@@ -65,7 +65,7 @@
         <a
           href="/production-digitale"
           title="Production digitale"
-          class="flex gap-5 p-8 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-300 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+          class="flex gap-5 px-8 py-6 border-[2px] transition-colors rounded-2xl items-center animate-fade animate-delay-300 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
         >
           <ProductionDigitale newClass="w-16 h-auto transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
           <span class="text-[2rem] leading-[2.4rem] font-semibold transition-colors {active ? 'text-black' : 'text-white'}">
@@ -77,7 +77,7 @@
         <a
           href="/marketing-digital"
           title="Marketing digital"
-          class="flex gap-5 p-8 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-700 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+          class="flex gap-5 px-8 py-6 border-[2px] transition-colors rounded-2xl items-center animate-fade animate-delay-700 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
         >
           <MarketingDigital newClass="w-16 h-auto transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
           <span class="text-[2rem] leading-[2.4rem] font-semibold transition-colors {active ? 'text-black' : 'text-white'}">
