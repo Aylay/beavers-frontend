@@ -16,5 +16,5 @@
     </animate>
     </path>
     </svg>
-    <div class="absolute bottom-0 h-16 w-full bg-seance inset-x-0" />
+  <div class="absolute bottom-0 h-16 w-full bg-seance inset-x-0" />
 </div>

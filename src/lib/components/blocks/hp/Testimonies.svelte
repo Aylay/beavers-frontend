@@ -57,9 +57,12 @@ use:inview={options}
 on:inview_change={handleChange}>
 	<Line />
 	<Title first="Nos clients" second="témoignent" />
-  <div class="flex gap-20 mt-20">
+  <div class="flex gap-28 mt-20">
     {#each testimoniesDisplayed as testimony, i}
-    <div class="flex-1 {isInView ? 'animate-fade' : 'opacity-0'}" style="animation-delay: {250 + i * 250}ms;">
+    <div class="flex-1 relative {isInView ? 'animate-fade' : 'opacity-0'}" style="animation-delay: {250 + i * 250}ms;">
+      <span class="text-highlight text-opacity-50 absolute top-0 -left-16 text-[30rem] leading-[0.6] text-seance -z-10">
+        “
+      </span>
       <p class="mb-8 text-6">
         { @html testimony.text}
       </p>

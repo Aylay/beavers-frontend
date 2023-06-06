@@ -52,7 +52,7 @@
 					<img
 						src={strapiURL + article.img.src}
 						alt={article.img.alt}
-						class="h-full w-full object-cover transition-transform duration-500 {isInViewImg ? 'animate-fade' : ''} {active ? 'scale-125' : ''}"
+						class="h-full w-full object-cover transition-transform duration-[3000ms] {isInViewImg ? 'animate-fade' : ''} {active ? 'scale-125' : ''}"
 					/>
 				{/if}
 			</div>
