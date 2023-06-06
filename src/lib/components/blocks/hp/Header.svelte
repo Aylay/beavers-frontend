@@ -45,7 +45,7 @@
 
 <div class="lg:h-screen bg-rock relative">
   <div class="big-container">
-    <div class="lg:w-1/2 pt-[22%] pr-8 relative z-10">
+    <div class="lg:w-1/2 pt-[calc(100vh*0.22)] pr-8 relative z-10">
       <h1 class="text-2">
         Le digital à pleines dents !
       </h1>
