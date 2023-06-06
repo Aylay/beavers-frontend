@@ -99,7 +99,7 @@
 							: ''}"
 					/>
 					<img
-						src="/img/the-ocean-cleanup-badge.webp"
+						src="/img/the_ocean_cleanup-beavers.png"
 						alt="badge The Ocean Cleanup"
 						class="absolute left-8 top-full w-48 -translate-y-1/2 transform animate-delay-[1700ms] {isInViewImg
 							? 'animate-fade'

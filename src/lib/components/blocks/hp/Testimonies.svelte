@@ -3,6 +3,7 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
+	import Quote from '$lib/assets/svg/Quote.svelte';
 
   type Testimony = {
   name: string;
@@ -60,9 +61,10 @@ on:inview_change={handleChange}>
   <div class="flex gap-28 mt-20">
     {#each testimoniesDisplayed as testimony, i}
     <div class="flex-1 relative {isInView ? 'animate-fade' : 'opacity-0'}" style="animation-delay: {250 + i * 250}ms;">
-      <span class="text-highlight text-opacity-50 absolute top-0 -left-16 text-[30rem] leading-[0.6] text-seance -z-10">
-        “
-      </span>
+			<div class="absolute -left-16 -top-16 -z-10 flex w-full gap-8">
+				<Quote newClass="h-auto w-24" />
+				<Quote newClass="h-auto w-24" />
+			</div>
       <p class="mb-8 text-6">
         { @html testimony.text}
       </p>

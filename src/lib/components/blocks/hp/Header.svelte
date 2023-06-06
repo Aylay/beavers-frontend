@@ -1,20 +1,57 @@
 <script lang="ts">
-	import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
+	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
+import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
+	import Mouse from "$lib/assets/svg/Mouse.svelte";
+	import ProductionDigitale from "$lib/assets/svg/ProductionDigitale.svelte";
+	import MarketingDigital from "$lib/assets/svg/MarketingDigital.svelte";
+	import Hoverable from "$lib/components/utilities/Hoverable.svelte";
 
 
 </script>
 
 <div class="lg:h-screen bg-rock relative">
-  <div class="flex">
-    <div>
-
+  <div class="big-container">
+    <div class="lg:w-1/2 pt-[22%] pr-8 relative z-10">
+      <h1 class="text-2">
+        Le digital à pleines dents !
+      </h1>
+      <h2 class="text-6 font-bold text-bright mt-6">
+        L'agence Beavers, spécialisée en création de sites internet, média en ligne et SEO, mobilise les compétences dont vous avez besoin dans le développement de votre écosystème digital.
+      </h2>
+      <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.08)]">
+        <Mouse newClass="h-auto w-full" color="#FFF" />
+        <ArrowBottom  color="#FFF" />
+      </div>
     </div>
   </div>
-    <svg class="absolute bottom-16 w-full inset-x-0" fill="#8013BD" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 150">
-      <path d="M 0 26.1978 C 275.76 83.8152 430.707 65.0509 716.279 25.6386 C 930.422 -3.86123 1210.32 -3.98357 1439 9.18045 C 2072.34 45.9691 2201.93 62.4429 2560 26.198 V 172.199 L 0 172.199 V 26.1978 Z">
-      <animate repeatCount="indefinite" fill="#8013BD" attributeName="d" dur="15s" values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z; M0 86.3149C316 86.315 444 159.155 884 51.1554C1324 -56.8446 1320.29 34.1214 1538 70.4063C1814 116.407 2156 188.408 2560 86.315V232.317L0 232.316V86.3149Z; M0 53.6584C158 11.0001 213 0 363 0C513 0 855.555 115.001 1154 115.001C1440 115.001 1626 -38.0004 2560 53.6585V199.66L0 199.66V53.6584Z; M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z">
-    </animate>
-    </path>
-    </svg>
-  <div class="absolute bottom-0 h-16 w-full bg-seance inset-x-0" />
+  <div class="absolute bottom-12 w-full z-20">
+    <div class="big-container flex gap-16">
+      <Hoverable let:hovering={active}>
+        <a
+          href="/production-digitale"
+          title="Production digitale"
+          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+        >
+          <ProductionDigitale newClass="transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
+          <span class="text-5 transition-colors {active ? 'text-black' : 'text-white'}">
+            Production<br />digitale
+          </span>
+        </a>
+      </Hoverable>
+      <Hoverable let:hovering={active}>
+        <a
+          href="/marketing-digital"
+          title="Marketing digital"
+          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+        >
+          <MarketingDigital newClass="transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
+          <span class="text-5 transition-colors {active ? 'text-black' : 'text-white'}">
+            Marketing<br />digital
+          </span>
+        </a>
+      </Hoverable>
+    </div>
+  </div>
+  <HeaderWave />
+  <div class="absolute bottom-0 h-16 w-full bg-seance inset-x-0 z-0" />
 </div>
