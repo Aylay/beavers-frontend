@@ -8,7 +8,6 @@
 	import ProductionDigitale from "$lib/assets/svg/ProductionDigitale.svelte";
 	import MarketingDigital from "$lib/assets/svg/MarketingDigital.svelte";
 	import Hoverable from "$lib/components/utilities/Hoverable.svelte";
-	import Wave from '$lib/assets/svg/Wave2.svelte';
 	import Sun from '$lib/assets/svg/Sun.svelte';
 	import MultipleArrows from '$lib/assets/svg/MultipleArrows.svelte';
 	import Search from '$lib/assets/svg/Search.svelte';
@@ -56,9 +55,6 @@
         <Mouse newClass="h-auto w-full" color="#FFF" />
         <ArrowBottom newClass="animate-bounce"  color="#FFF" />
       </div>
-      <div class="absolute -bottom-10 right-1/4 h-auto w-[6.2rem] animate-delay-[1500ms] animate-shake animate-twice">
-        <Wave />
-      </div>
       <div class="absolute -right-10 bottom-1/4 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1500ms] animate-fade" />
       <div class="absolute -right-10 bottom-[calc(25%-2rem)] h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1800ms] animate-fade" />
     </div>
@@ -69,10 +65,10 @@
         <a
           href="/production-digitale"
           title="Production digitale"
-          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-300 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+          class="flex gap-5 p-8 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-300 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
         >
-          <ProductionDigitale newClass="transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
-          <span class="text-5 transition-colors {active ? 'text-black' : 'text-white'}">
+          <ProductionDigitale newClass="w-16 h-auto transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
+          <span class="text-[2rem] leading-[2.4rem] font-semibold transition-colors {active ? 'text-black' : 'text-white'}">
             Production<br />digitale
           </span>
         </a>
@@ -81,20 +77,20 @@
         <a
           href="/marketing-digital"
           title="Marketing digital"
-          class="flex gap-5 p-10 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-700 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
+          class="flex gap-5 p-8 border-[2px] transition-colors rounded-sm items-center animate-fade animate-delay-700 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
         >
-          <MarketingDigital newClass="transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
-          <span class="text-5 transition-colors {active ? 'text-black' : 'text-white'}">
+          <MarketingDigital newClass="w-16 h-auto transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
+          <span class="text-[2rem] leading-[2.4rem] font-semibold transition-colors {active ? 'text-black' : 'text-white'}">
             Marketing<br />digital
           </span>
         </a>
       </Hoverable>
     </div>
   </div>
-  <div class="lg:w-1/2 absolute right-0 inset-y-0 lg:h-screen flex items-center z-20"
+  <div class="lg:w-1/2 absolute right-0 inset-y-0 lg:h-screen flex items-end z-20"
 	use:inview={options}
 	on:inview_change={handleChange}>
-    <div class="relative">
+    <div class="relative mb-[calc(100vh*0.25)]">
       <img src="/img/hp/mockup.png" alt="Mockup page d'accueil" class="max-w-[80%] w-full h-auto {isInView ? 'animate-fade' : 'opacity-0'}">
       <div class="absolute left-1/4 -top-32">
         <Sun newClass="animate-once w-20 h-auto {isInView ? 'animate-ping' : 'opacity-0'}" color="#00FFDA" />
@@ -138,5 +134,5 @@
     </div>
   </div>
   <HeaderWave />
-  <div class="absolute bottom-0 h-16 w-full bg-seance inset-x-0 z-0" />
+  <div class="absolute bottom-0 h-20 w-full bg-seance inset-x-0 z-0" />
 </div>
