@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let newClass = '';
-	export let class1 = 'fill-seance';
+	export let class1 = 'fill-white';
 	export let class2 = 'fill-bright';
 </script>
 
