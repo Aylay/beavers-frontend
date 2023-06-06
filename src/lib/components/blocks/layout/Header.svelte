@@ -6,6 +6,8 @@
 
   let menuOpened = false
 
+  let y: number;
+
   const items = [
     {
       label: 'Accueil',
@@ -53,7 +55,9 @@
 
 </script>
 
-<header class="fixed top-0 inset-x-0 w-full py-8 bg-rock z-50">
+<svelte:window bind:scrollY={y}/>
+
+<header class="fixed top-0 inset-x-0 w-full py-8 transition-colors {y > 0 ? 'bg-rock' : 'bg-transparent'} z-50">
   <div class="big-container flex justify-between items-end gap-16 relative">
     <a href="/" title="Beavers, l'agence digitale des castors" class="pb-2 duration-300 transition-all {menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Logo newClass="max-w-[13rem] w-full h-auto" />
