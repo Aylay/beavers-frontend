@@ -16,5 +16,5 @@
 <div
 	use:inview={options}
 	on:inview_change={handleChange}
-	class="mb-8 h-[2px] origin-left bg-bright {isInView ? 'w-60 animate-line' : 'w-0'}"
+	class="mb-8 h-[2px] origin-left bg-bright {isInView ? 'w-40 animate-line' : 'w-0'}"
 />
