@@ -91,7 +91,8 @@
 	use:inview={options}
 	on:inview_change={handleChange}>
     <div class="relative mb-[calc(100vh*0.25)]">
-      <img src="/img/hp/mockup.png" alt="Mockup page d'accueil" class="max-w-[80%] w-full h-auto {isInView ? 'animate-fade' : 'opacity-0'}">
+      <!-- <img src="/img/hp/mockup.png" alt="Mockup page d'accueil" class="max-w-[80%] w-full h-auto {isInView ? 'animate-fade' : 'opacity-0'}"> -->
+      <div class="w-[72rem] h-[42rem]" />
       <div class="absolute left-1/4 -top-32">
         <Sun newClass="animate-once w-20 h-auto {isInView ? 'animate-ping' : 'opacity-0'}" color="#00FFDA" />
       </div>
