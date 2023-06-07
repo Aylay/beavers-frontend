@@ -62,26 +62,28 @@
     <a href="/" title="Beavers, l'agence digitale des castors" class="pb-2 duration-300 transition-all {menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Logo newClass="max-w-[13rem] w-full h-auto" />
     </a>
-    <div class="flex justify-center gap-6 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
-      <p class="text-bright uppercase text-[1.8rem] leading-[2.2rem] font-bold">{@html labelMenu}</p>
-      <div class="relative h-7 w-8">
-        <span
-          class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transition-all duration-300 {menuOpened
-            ? 'top-1/2 -translate-y-1/2 rotate-45'
-            : 'top-0'}"
-        />
-        <span
-          class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transform transition-all duration-300 {menuOpened
-            ? 'opacity-0'
-            : 'top-1/2 -translate-y-1/2 opacity-100'}"
-        />
-        <span
-          class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright duration-300 {menuOpened
-            ? 'top-1/2 -translate-y-1/2 -rotate-45'
-            : 'bottom-0'}"
-        />
+    <Hoverable let:hovering={active}>
+      <div class="flex justify-center gap-6 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
+        <p class="text-bright uppercase text-[1.8rem] leading-[2.2rem] font-bold {active ? 'animate-shake' : ''}">{@html labelMenu}</p>
+        <div class="relative h-7 w-8">
+          <span
+            class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transition-all duration-300 {menuOpened
+              ? 'top-1/2 -translate-y-1/2 rotate-45'
+              : 'top-0'}"
+          />
+          <span
+            class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transform transition-all duration-300 {menuOpened
+              ? 'opacity-0'
+              : 'top-1/2 -translate-y-1/2 opacity-100'}"
+          />
+          <span
+            class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright duration-300 {menuOpened
+              ? 'top-1/2 -translate-y-1/2 -rotate-45'
+              : 'bottom-0'}"
+          />
+        </div>
       </div>
-    </div>
+    </Hoverable>
     <nav class="absolute h-full flex items-end inset-0 w-[calc(100%-10rem)] transition-all duration-300 {!menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Hoverable let:hovering={active} newClass="flex-1">
       <ul class="w-full flex justify-between">
