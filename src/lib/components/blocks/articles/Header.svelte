@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="max-w-[90rem] w-full relative py-[calc(100vh*0.06)] bg-seance pr-40 flex justify-between gap-7 before:absolute before:right-0 before:h-full before:inset-y-0 before:w-[calc(100vw*2/3)] before:bg-seance before:z-0">
-      <div class="relative z-10 flex-1 flex flex-col items-center">
+      <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-[250ms]">
         <div>
           <Feather newClass="w-auto h-12 fill-bright" />
         </div>
@@ -73,7 +73,7 @@
           Lou Rédac
         </p>
       </div>
-      <div class="relative z-10 flex-1 flex flex-col items-center">
+      <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-500">
         <div>
           <Calendar newClass="w-auto h-12 fill-bright" />
         </div>
@@ -84,7 +84,7 @@
           17 fév 2023
         </p>
       </div>
-      <div class="relative z-10 flex-1 flex flex-col items-center">
+      <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-[750ms]">
         <div>
           <Tag newClass="w-auto h-12 fill-bright" />
         </div>
@@ -95,7 +95,7 @@
           Média
         </p>
       </div>
-      <div class="relative z-10 flex-1 flex flex-col items-center">
+      <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-1000">
         <div>
           <Clock newClass="w-auto h-12 fill-bright" />
         </div>
@@ -111,8 +111,11 @@
 
   <div class="w-1/3 bg-bright max-h-full overflow-hidden absolute z-10 inset-y-0 right-0 flex items-center p-8">
     <div class="w-full">
-      {#each allWords as word}
-      <span class="text-1 text-opacity-50 text-white leading-none break-all">
+      {#each allWords as word, i}
+      <span 
+        class="text-1 text-opacity-50 text-white leading-none break-all animate-fade" 
+        style="animation-delay: {150 * i}ms;"
+      >
         {word}
       </span>
       {/each}
