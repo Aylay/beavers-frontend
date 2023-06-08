@@ -92,7 +92,7 @@
           Catégorie
         </p>
         <p class="text-6 font-bold">
-          Média
+          Développement web
         </p>
       </div>
       <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-1000">
