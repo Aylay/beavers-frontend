@@ -1,10 +1,23 @@
 <script lang="ts">
+	import { inview } from 'svelte-inview';
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
+  
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
 	import Feather from '$lib/assets/svg/Feather.svelte';
 	import Calendar from '$lib/assets/svg/Calendar.svelte';
 	import Tag from '$lib/assets/svg/Tag.svelte';
 	import Clock from '$lib/assets/svg/Clock.svelte';
+
+	let isInView: boolean;
+	const options: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInView = detail.inView;
+	};
 
   let words: Array<string> = [
     'CNIL', 'Google Analytics', 'RGDP', 'données personnelles'
@@ -105,4 +118,27 @@
       {/each}
     </div>
   </div>
+</div>
+
+<div class="lg:h-screen flex items-center"
+  use:inview={options}
+  on:inview_change={handleChange}
+>
+  <div class="bg-seance flex-1 h-full w-full">
+    {#if isInView}
+    <img src="/img/lise.jpg" alt="couco" class="w-full h-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}" />
+    {/if}
+  </div>
+  <div class="flex-1 flex">
+    <div class="flex flex-col pl-20">
+      <h2 class="max-w-[60rem] text-bright text-5 mb-12">
+        La Commission nationale de l’informatique et des libertés (CNIL) attaque Google pour non-respect du RGPD, soit la protection des données personnelles. Google Analytics est dans le viseur, la Commission estime que le transfert des données privées des Européens vers les USA n’est pas suffisamment encadré. L’outil d’analyse d’audience proposé par Google doit être utilisé de manière à ne pas divulguer des données sensibles aux Américains sous peine de sanction. Plus de 6 entreprises françaises doivent se mettre en conformité avec la loi informatique et liberté dans un délai d’un mois. Dans quelles mesures peut-on encore utiliser Google Analytics suite aux exigences de la CNIL ?
+      </h2>
+      <div class="flex flex-col items-center w-8 gap-2">
+        <Mouse newClass="h-auto w-full" color="#FFF" />
+        <ArrowBottom newClass="animate-bounce"  color="#FFF" />
+      </div>
+    </div>
+  </div>
+
 </div>
