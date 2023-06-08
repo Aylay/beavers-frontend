@@ -3,10 +3,18 @@
 
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
 	import Logo from "$lib/assets/svg/Logo.svelte";
+	import { onMount } from 'svelte';
 
   let menuOpened = false
-
   let y: number;
+  let menuWhite: boolean = $page.data.imageHeader;
+  let windowHeight: number;
+  let labelMenu: string;
+
+  $: {
+    labelMenu = menuOpened ? '&nbsp;' : 'Menu'
+    menuWhite = $page.data.menuWhite;
+  }
 
   const items = [
     {
@@ -51,33 +59,35 @@
     }
   ]
 
-  $: labelMenu = menuOpened ? '&nbsp;' : 'Menu'
+  onMount(() => {
+    windowHeight = window.innerHeight
+  })
 
 </script>
 
 <svelte:window bind:scrollY={y}/>
 
-<header class="fixed top-0 inset-x-0 w-full py-8 transition-colors {y > 0 ? 'bg-rock' : 'bg-transparent'} z-50">
+<header class="top-0 inset-x-0 w-full py-8 transition-colors {y > windowHeight ? 'bg-rock fixed animate-fade-down' : 'bg-transparent absolute'}  {y === 0 && menuOpened ? '!bg-rock' : ''} z-50">
   <div class="big-container flex justify-between items-end gap-16 relative">
     <a href="/" title="Beavers, l'agence digitale des castors" class="pb-2 duration-300 transition-all {menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Logo newClass="max-w-[13rem] w-full h-auto" />
     </a>
     <Hoverable let:hovering={active}>
       <div class="flex justify-center gap-6 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
-        <p class="text-bright uppercase text-[1.8rem] leading-[2.2rem] font-bold {active ? 'animate-shake' : ''}">{@html labelMenu}</p>
+        <p class="uppercase text-[1.8rem] leading-[2.2rem] font-bold {active ? 'animate-shake' : ''} {menuWhite && (y < windowHeight) ? 'text-white' : 'text-bright'}">{@html labelMenu}</p>
         <div class="relative h-7 w-8">
           <span
-            class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transition-all duration-300 {menuOpened
+            class="absolute inset-x-0 h-[2px] rounded-lg w-full {menuWhite && (y < windowHeight) ? 'bg-white' : 'bg-bright'} transition-all duration-300 {menuOpened
               ? 'top-1/2 -translate-y-1/2 rotate-45'
               : 'top-0'}"
           />
           <span
-            class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright transform transition-all duration-300 {menuOpened
+            class="absolute inset-x-0 h-[2px] rounded-lg w-full {menuWhite && (y < windowHeight) ? 'bg-white' : 'bg-bright'} transform transition-all duration-300 {menuOpened
               ? 'opacity-0'
               : 'top-1/2 -translate-y-1/2 opacity-100'}"
           />
           <span
-            class="absolute inset-x-0 h-[2px] rounded-lg w-full bg-bright duration-300 {menuOpened
+            class="absolute inset-x-0 h-[2px] rounded-lg w-full {menuWhite && (y < windowHeight) ? 'bg-white' : 'bg-bright'} duration-300 {menuOpened
               ? 'top-1/2 -translate-y-1/2 -rotate-45'
               : 'bottom-0'}"
           />
