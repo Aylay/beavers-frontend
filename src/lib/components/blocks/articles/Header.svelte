@@ -6,10 +6,18 @@
 	import Tag from '$lib/assets/svg/Tag.svelte';
 	import Clock from '$lib/assets/svg/Clock.svelte';
 
-  const words = [
+  let words: Array<string> = [
     'CNIL', 'Google Analytics', 'RGDP', 'données personnelles'
   ]
-</script>
+
+  let allWords: Array<string> = []
+  for (const word of words) {
+    const newWords = word.split(' ');
+    allWords = allWords.concat(newWords)
+  }
+  allWords = allWords.concat(allWords)
+  allWords = allWords.concat(allWords)
+  </script>
 
 <div class="lg:h-screen bg-rock relative overflow-hidden">
   <div class="lg:w-2/3 flex flex-col justify-end items-end h-full">
@@ -90,23 +98,8 @@
 
   <div class="w-1/3 bg-bright max-h-full overflow-hidden absolute z-10 inset-y-0 right-0 flex items-center p-8">
     <div class="w-full">
-      {#each words as word}
-      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
-        {word}
-      </span>
-      {/each}
-      {#each words as word}
-      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
-        {word}
-      </span>
-      {/each}
-      {#each words as word}
-      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
-        {word}
-      </span>
-      {/each}
-      {#each words as word}
-      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
+      {#each allWords as word}
+      <span class="text-1 text-opacity-50 text-white leading-none break-all">
         {word}
       </span>
       {/each}
