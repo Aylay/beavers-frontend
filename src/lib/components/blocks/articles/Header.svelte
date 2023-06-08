@@ -91,22 +91,22 @@
   <div class="w-1/3 bg-bright max-h-full overflow-hidden absolute z-10 inset-y-0 right-0 flex items-center p-8">
     <div class="w-full">
       {#each words as word}
-      <span class="text-2 text-opacity-50 text-white leading-none mr-4">
+      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
         {word}
       </span>
       {/each}
       {#each words as word}
-      <span class="text-2 text-opacity-50 text-white leading-none mr-4">
+      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
         {word}
       </span>
       {/each}
       {#each words as word}
-      <span class="text-2 text-opacity-50 text-white leading-none mr-4">
+      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
         {word}
       </span>
       {/each}
       {#each words as word}
-      <span class="text-2 text-opacity-50 text-white leading-none mr-4">
+      <span class="text-1 text-opacity-50 text-white leading-none mr-4">
         {word}
       </span>
       {/each}
