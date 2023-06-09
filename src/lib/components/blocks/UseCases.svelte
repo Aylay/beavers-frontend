@@ -17,56 +17,7 @@
 		isInView = detail.inView;
 	};
 
-	const cases = [
-		{
-			img1: {
-				src: '/img/lise.jpg',
-				alt: 'image'
-			},
-			img2: {
-				src: '/img/active.jpg',
-				alt: 'image'
-			},
-			client: 'Lise-Laure Blaizot',
-			slug: '#',
-			title: 'Design et développement sur-mesure du site de l’osthéopathe D.O Lise-Laure Blaizot.',
-			tags: ['Développement web', 'Marketing Digital', 'SEO'],
-			website: '#',
-			key1: '+20%',
-			key2: 'd’utilisateurs'
-		},
-		{
-			img1: {
-				src: '/img/eflow.jpg',
-				alt: 'image'
-			},
-			img2: {
-				src: '/img/active.jpg',
-				alt: 'image'
-			},
-			client: 'Eflow',
-			slug: '#',
-			title: 'Développement sur-mesure, entièrement administrable, du site Loopz avec Wordpress.',
-			tags: ['Développement web'],
-			website: 'https://beavers-agency.fr'
-		},
-		{
-			img1: {
-				src: '/img/lise.jpg',
-				alt: 'image'
-			},
-			img2: {
-				src: '/img/active.jpg',
-				alt: 'image'
-			},
-			client: 'Arizona Hot Dogs',
-			slug: '#',
-			title: 'Gestion et recommandations SEO de la boutique en ligne Arzona.',
-			tags: ['SEO'],
-			key1: '+20%',
-			key2: 'd’utilisateurs'
-		}
-	];
+	export let cases: Array<any>;
 </script>
 
 <div class="big-container">

@@ -7,13 +7,17 @@
 
   let menuOpened = false
   let y: number;
-  let menuWhite: boolean = $page.data.imageHeader;
+  let menuWhite: boolean = $page.data.menuWhite;
+  let isArticle: boolean = $page.data.isArticle;
   let windowHeight: number;
   let labelMenu: string;
+  let widthScroll: number;
 
   $: {
     labelMenu = menuOpened ? '&nbsp;' : 'Menu'
     menuWhite = $page.data.menuWhite;
+    isArticle = $page.data.isArticle;
+
   }
 
   const items = [
@@ -61,11 +65,24 @@
 
   onMount(() => {
     windowHeight = window.innerHeight
+
+    if (isArticle) {
+      window.onscroll = function() {
+        progressScrollBar()
+      };
+    }
   })
+
+  function progressScrollBar () {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    widthScroll = (winScroll / height) * 100;
+    // document.getElementById("myBar").style.width = scrolled + "%";
+  }
 
 </script>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window bind:scrollY={y} />
 
 <header class="top-0 inset-x-0 w-full py-8 transition-colors {y > windowHeight ? 'bg-rock fixed animate-fade-down' : 'bg-transparent absolute'}  {y === 0 && menuOpened ? '!bg-rock' : ''} z-50">
   <div class="big-container flex justify-between items-end gap-16 relative">
@@ -108,4 +125,7 @@
     </Hoverable>
     </nav>
   </div>
+  {#if isArticle}
+  <div class="absolute top-full left-0 h-[8px] from-seance from-40% to-bright to-60% bg-gradient-to-r" style="width: {widthScroll}%;" />
+  {/if}
 </header>

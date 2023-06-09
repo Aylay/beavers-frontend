@@ -2,8 +2,10 @@ import type { PageServerData } from '../$types';
 
 export const load = (async ({ fetch, params }) => {
 	const menuWhite = true;
+	const isArticle = true;
 
 	return {
-		menuWhite
+		menuWhite,
+		isArticle
 	};
 }) satisfies PageServerData;
