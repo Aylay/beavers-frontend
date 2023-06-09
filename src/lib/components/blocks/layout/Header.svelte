@@ -125,7 +125,7 @@
     </Hoverable>
     </nav>
   </div>
-  {#if isArticle}
+  {#if isArticle && y > windowHeight}
   <div class="absolute top-full left-0 h-[8px] from-seance from-40% to-bright to-60% bg-gradient-to-r" style="width: {widthScroll}%;" />
   {/if}
 </header>
