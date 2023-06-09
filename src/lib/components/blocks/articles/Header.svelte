@@ -34,8 +34,8 @@
 
 <div class="lg:h-screen bg-rock relative overflow-hidden">
   <div class="lg:w-2/3 flex flex-col justify-end items-end h-full">
-    <div class="max-w-[90rem] w-full flex flex-col items-end pr-40 mb-40">
-      <ul class="flex justify-end mb-8 flex-wrap gap-y-4">
+    <div class="max-w-[90rem] w-full flex flex-col items-end pr-40 mb-[calc(100vh*0.1)]">
+      <ul class="flex justify-end mb-20 flex-wrap gap-y-4">
         <li class="pr-5 border-r-bright border-r-[2px]">
           <a href="/la-pause-café" title="La pause café Beavers" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
             La pause café
