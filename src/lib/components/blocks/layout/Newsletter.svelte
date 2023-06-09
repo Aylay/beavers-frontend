@@ -64,17 +64,27 @@
           Email
         </label>
         <div class="flex items-center gap-6">
+          {#if isArticle}
           <input
             bind:value={email}
             type="text"
             id="nlEmail"
             on:focus={() => (emailError = false)}
-            class="w-full text-6 px-4 py-4 bg-transparent border-[2px] transition-colors rounded-lg focus-within:outline-none flex-1 {emailError && !isArticle
-              ? 'text-jaguar border-jaguar'
-              : 'text-white border-bright'} {emailError && isArticle
+            class="w-full text-6 px-4 py-4 bg-transparent border-[2px] transition-colors rounded-lg focus-within:outline-none flex-1 {emailError
               ? 'text-seance border-seance'
               : 'text-jaguar border-jaguar'}"
           />
+          {:else}
+          <input
+            bind:value={email}
+            type="text"
+            id="nlEmail"
+            on:focus={() => (emailError = false)}
+            class="w-full text-6 px-4 py-4 bg-transparent border-[2px] transition-colors rounded-lg focus-within:outline-none flex-1 {emailError
+              ? 'text-jaguar border-jaguar'
+              : 'text-white border-bright'}"
+          />
+          {/if}
           <div>
             <button
               on:click|preventDefault={addProspect}
