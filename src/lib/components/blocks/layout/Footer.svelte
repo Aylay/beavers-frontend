@@ -61,7 +61,7 @@
               </a>
             </div>
             <div class="flex gap-5 items-center">
-              <WhatsApp />
+              <WhatsApp newClass="fill-bright" />
               <a
                 target="_blank"
                 rel="external noreferrer"

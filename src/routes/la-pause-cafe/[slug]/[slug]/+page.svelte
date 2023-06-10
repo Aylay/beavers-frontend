@@ -2,6 +2,7 @@
 	import Header from "$lib/components/blocks/articles/Header.svelte";
 	import Newsletter from '$lib/components/blocks/layout/Newsletter.svelte';
 	import Articles from '$lib/components/blocks/Articles.svelte';
+	import Share from "$lib/components/blocks/articles/Share.svelte";
 
 	const titleFirst = 'Nos autres articles de la catégorie'
 	const titleSecond = 'média'
@@ -45,10 +46,20 @@
 				"Huawei, IBM, la gendarmerie nationale mais encore des centaines de start-up se sont données rendez-vous au WAICF pour présenter leurs utilisations de l’IA et ses perspectives. Des exposants plus intrigants les uns que les autres, notre journée passée sur l'événement n’aura pas été assez longue pour tous les rencontrer. Nous viendrons plus préparées l’année prochaine."
 		}
 	];
+	const author = {
+		img: {
+			alt: 'lol',
+			src: '/img/lou.png'
+		},
+		name: 'Lou Rédac',
+		job: 'Rédactrice Web SEO',
+		text: 'Créatrice de contenu web, correctrice littéraire, autrice de poésie bilingue.'
+	}
 </script>
 
 <div class="flex flex-col gap-20 lg:gap-40 max-lg:px-4 pb-60">
 <Header />
+<Share {author} />
 <Newsletter isArticle={true} />
 <Articles {articles} titleFirst={titleFirst} titleSecond={titleSecond} newsUrl={newsUrl} />
 </div>
