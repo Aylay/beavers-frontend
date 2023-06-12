@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { navigating, page } from '$app/stores';
 
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
 	import Logo from "$lib/assets/svg/Logo.svelte";
-	import { onMount } from 'svelte';
+	import { afterUpdate, onMount } from 'svelte';
 
   let menuOpened = false
   let y: number;
@@ -17,7 +17,6 @@
     labelMenu = menuOpened ? '&nbsp;' : 'Menu'
     menuWhite = $page.data.menuWhite;
     isArticle = $page.data.isArticle;
-
   }
 
   const items = [
@@ -27,14 +26,9 @@
       slug: '/'
     },
     {
-      label: 'Production digitale',
-      title: 'Production digitale',
-      slug: '/production-digitale'
-    },
-    {
-      label: 'Marketing digital',
-      title: 'Marketing digital',
-      slug: '/marketing-digital'
+      label: 'Nos offres',
+      title: 'Nos offres',
+      slug: '/offres'
     },
     {
       label: "L'agence",
@@ -72,6 +66,12 @@
       };
     }
   })
+
+  afterUpdate(() => {
+    if ($navigating) {
+      menuOpened = false;
+    }
+  });
 
   function progressScrollBar () {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

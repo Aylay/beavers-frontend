@@ -43,8 +43,8 @@
             </a>
           </li>
           <li class="px-5 border-r-bright border-r-[2px]">
-            <a href="/la-pause-café/developpement-web" title="Développement web" class="text-7 text-seance transition-colors hover:text-bright font-semibold">
-              Développement web
+            <a href="/la-pause-café/site-internet" title="Site internet" class="text-7 text-seance transition-colors hover:text-bright font-semibold">
+              Site internet
             </a>
           </li>
           <li class="text-7 text-white font-semibold">
@@ -93,7 +93,7 @@
             Catégorie
           </p>
           <p class="text-6 font-bold">
-            Développement web
+            Site internet
           </p>
         </div>
         <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-1000">

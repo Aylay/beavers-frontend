@@ -14,7 +14,15 @@
 }
 
 @layer utilities {
+	.small-container {
+		@apply mx-auto w-full max-lg:px-[5%] lg:max-w-[90rem];
+	}
 	.big-container {
 		@apply mx-auto w-full max-xl:px-[5%] xl:max-w-[120rem];
+	}
+	.text-outline {
+		-webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+		@apply text-transparent;
 	}
 }
