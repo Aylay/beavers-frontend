@@ -93,12 +93,8 @@
     <div class="relative mb-[calc(100vh*0.25)]">
       <!-- <img src="/img/hp/mockup.png" alt="Mockup page d'accueil" class="max-w-[80%] w-full h-auto {isInView ? 'animate-fade' : 'opacity-0'}"> -->
       <div class="w-[72rem] h-[42rem]" />
-      <div class="absolute left-1/4 -top-32">
-        <Sun newClass="animate-once w-20 h-auto {isInView ? 'animate-ping' : 'opacity-0'}" color="#00FFDA" />
-      </div>
-      <div class="absolute -top-36 left-3/4">
-        <MultipleArrows newClass="fill-bright animate-fade animate-delay-700" />
-      </div>
+      <Sun newClass="animate-once w-20 h-auto absolute left-1/4 -top-32 {isInView ? 'animate-ping' : 'opacity-0'}" color="#00FFDA" />
+      <MultipleArrows newClass="absolute -top-36 left-3/4 fill-bright animate-fade animate-delay-700" />
       <div class="absolute p-4 bg-white rounded-2xl -top-44 left-[40%] animate-fade animate-delay-1000">
         <p class="font-bold text-6 text-black mb-2">Newsletter</p>
         <div class="flex justify-between rounded-xl border-opacity-20 border-[2px] border-jaguar items-center w-96 px-4">

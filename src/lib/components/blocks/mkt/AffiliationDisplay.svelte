@@ -1,0 +1,103 @@
+<script lang="ts">
+	import { inview } from 'svelte-inview';
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
+
+  import Title from '$lib/components/blocks/utilities/Title.svelte';
+  import Line from '$lib/components/blocks/utilities/Line.svelte';
+	import Cta from '../utilities/CTA.svelte';
+	import Star from '$lib/assets/svg/Star.svelte';
+	import Trafic from '$lib/assets/svg/Trafic.svelte';
+	import Conversion from '$lib/assets/svg/Conversion.svelte';
+	import Display from '$lib/assets/svg/Display.svelte';
+
+	let isInView: boolean;
+	const options: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '-50px'
+	};
+
+	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInView = detail.inView;
+	};
+</script>
+
+<div
+	class="big-container flex gap-32 max-lg:flex-col lg:gap-40"
+	use:inview={options}
+	on:inview_change={handleChange}
+>
+  <div class="lg:flex-1">
+    <div class="flex gap-10 items-center mb-8">
+      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
+        <Trafic newClass="h-20 w-auto" />
+      </div>
+      <div>
+        <Line />
+        <Title first="Affiliation" />
+      </div>
+    </div>
+    <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
+      ? 'animate-fade-right'
+      : 'opacity-0'}">
+      SLorem ipsum dolor sit amet, consectetur adipiscing elit integer elit augue pellentesque ultrices. 
+    </p>
+    <p class="text-6 mb-8 animate-delay-500 {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      Déployez un réseau d'affiliés qui pourront promouvoir votre marque et rémunérez-les en fonction de leurs résultats à travers des supports emailing, bannières, coupon, cashback, bon plan...
+    </p>
+    <div class="flex gap-20 mt-16">
+      <div class="flex gap-4 items-center animate-delay-1000 {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+        <Trafic newClass="w-12 h-auto fill-seance" />
+        <h3 class="font-bold text-5">Trafic</h3>
+      </div>
+      <div class="flex gap-4 items-center animate-delay-[1250ms] {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+        <Conversion newClass="w-12 h-auto fill-seance" />
+        <h3 class="font-bold text-5">Conversion</h3>
+      </div>
+    </div>
+    <div class="mt-20 animate-delay-[1500ms] {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      <Cta label="Créer un réseau d’affiliés" href="/contactez-nous" type="transparent" />
+    </div>
+  </div>
+  <div class="lg:flex-1">
+    <div class="flex gap-10 items-center mb-8">
+      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
+        <Display newClass="h-20 w-auto fill-seance" />
+      </div>
+      <div>
+        <Line />
+        <Title first="Display" />
+      </div>
+    </div>
+    <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
+      ? 'animate-fade-right'
+      : 'opacity-0'}">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit integer elit augue pellentesque ultrices. 
+    </p>
+    <p class="text-6 mb-8 animate-delay-500 {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      Affichez votre offre auprès de votre audience cible avec différents formats, bannières publicitaires, vidéos, native ads... sur ordinateur ou sur mobile, en programmatique ou non. Diffusez vos publicités auprès de vos prospects pour augmenter votre notoriété et devenir "top of mind". Le display est davantage un levier de visibilité, mais couplé à d'autres leviers il peut rapidement devenir une carte indispensable dans une stratégie d'acquisition.
+    </p>
+    <div class="flex justify-between mt-16">
+      <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+        <Star newClass="w-12 h-auto fill-seance" />
+        <h3 class="font-bold text-5">Notoriété</h3>
+      </div>
+    </div>
+    <div class="mt-20 animate-delay-[1500ms] {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      <Cta label="Etudier ma stratégie display" href="/contactez-nous" type="transparent" />
+    </div>
+  </div>
+</div>

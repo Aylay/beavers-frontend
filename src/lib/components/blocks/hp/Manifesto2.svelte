@@ -30,8 +30,8 @@
 	const bottoms = ['-bottom-28', '-bottom-8', 'bottom-12', 'bottom-32', 'bottom-52'];
 </script>
 
-<div class="big-container flex gap-40" use:inview={optionsImg} on:inview_change={handleChangeImg}>
-	<div class="relative flex flex-1 justify-center gap-8">
+<div class="big-container flex gap-40">
+	<div class="relative flex flex-1 justify-center gap-8" use:inview={optionsImg} on:inview_change={handleChangeImg}>
 		<div class="flex flex-1 flex-col gap-8">
 			<div class="flex-3 overflow-hidden rounded-lg">
 				{#if isInViewImg}
