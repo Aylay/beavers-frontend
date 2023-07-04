@@ -136,15 +136,6 @@
 	</div>
 </div>
 	<div class="lg:flex-1">
-		<Line />
-		<Title first="Marketing digital" />
-		<h3
-			class="mt-2 font-highlight text-4 text-bright animate-delay-200 {isInView
-				? 'animate-fade-right'
-				: 'opacity-0'}"
-		>
-			Lorem ipsum dolor sit amet adipiscing
-		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
 				? 'animate-fade'

@@ -3,8 +3,8 @@
 	import Confidence from '$lib/components/blocks/hp/Confidence.svelte';
 	import Manifesto from '$lib/components/blocks/hp/Manifesto1.svelte';
 	import Manifesto2 from '$lib/components/blocks/hp/Manifesto2.svelte';
-	import MarketingDigital from '$lib/components/blocks/hp/MarketingDigital.svelte';
-	import ProductionDigitale from '$lib/components/blocks/hp/ProductionDigitale.svelte';
+	import MarketingDigital2 from '$lib/components/blocks/hp/MarketingDigital2.svelte';
+	import MarketingDigital1 from '$lib/components/blocks/hp/MarketingDigital1.svelte';
 	import Why from '$lib/components/blocks/hp/Why.svelte';
 	import Header from '$lib/components/blocks/hp/Header.svelte';
 	import Support from '$lib/components/blocks/hp/Support.svelte';
@@ -108,8 +108,8 @@
 
 <div class="flex flex-col gap-48 lg:gap-96 max-lg:px-4 pb-48 lg:pb-96">
 	<Header />
-	<ProductionDigitale />
-	<MarketingDigital />
+	<MarketingDigital1 />
+	<MarketingDigital2 />
 	<Why />
 	<UseCases {cases} />
 	<Confidence />

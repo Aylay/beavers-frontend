@@ -38,7 +38,7 @@
           href="https://www.google.com/partners/agency?id=9719801224"
           target="_blank"
           title="Beavers est Google Partner"
-          class="inline-block"
+          class="inline-block lg:hover:animate-shake"
         >
           <GooglePartner newClass="max-w-[10rem] h-auto {isInView
             ? 'animate-fade'
@@ -158,6 +158,7 @@
           target="_blank"
           title="The Ocean Cleanup"
           rel="external noreferrer"
+          class="lg:hover:animate-shake"
         >
           <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
             ? 'animate-fade'
@@ -169,6 +170,7 @@
           target="_blank"
           title="Tree Nation"
           rel="external noreferrer" 
+          class="lg:hover:animate-shake"
         >
           <img
             src="https://tree-nation.com/images/tracking/label-co2-website-black-fr.png"

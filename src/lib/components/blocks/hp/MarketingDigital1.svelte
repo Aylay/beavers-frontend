@@ -4,7 +4,6 @@
 
 	import Title from '../utilities/Title.svelte';
 	import Line from '../utilities/Line.svelte';
-	import Cta2 from '../utilities/CTA2.svelte';
 	import Plus from '$lib/assets/svg/Plus.svelte';
 
 	let isInView: boolean;
@@ -26,21 +25,6 @@
 	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInViewImg = detail.inView;
 	};
-
-	const links: Array<{ href: string; label: string }> = [
-		{
-			href: '/production-digitale/creation-refonte-site-internet',
-			label: 'Développement web'
-		},
-		{
-			href: '/production-digitale/seo-referencement-naturel',
-			label: 'SEO optimisation'
-		},
-		{
-			href: '/production-digitale/newsletter',
-			label: 'Newsletters'
-		}
-	];
 
 	const pluss: Array<string> = [
 		'bottom-32 left-0 lg:-left-16',
@@ -65,7 +49,7 @@
 >
 	<div class="flex-1 max-lg:order-2">
 		<Line />
-		<Title first="Production digitale" />
+		<Title first="Marketing Digital" />
 		<h3
 			class="mt-2 font-highlight text-4 text-bright lg:animate-delay-200 {isInView
 				? 'lg:animate-fade-right'
@@ -79,19 +63,17 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Notre ère est composée de multiples sites internet noyés dans la masse. Aujourd'hui, votre
-				site doit sortir de l'ordinaire, être bien codé pour correspondre à toutes les guidelines de
-				Google, être rapide pour que l'utilisateur final ne le quitte pas précipitamment.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis hendrerit blandit.
+				Maecenas mollis purus consequat imperdiet tincidunt. Ut sit amet lobortis lorem. Mauris non
+				felis vel neque iaculis sollicitudin. Pellentesque eget lacus lacinia, congue turpis et,
+				gravida dolor. Nunc placerat faucibus nisl et venenatis.
 			</p>
 			<p class="text-6">
-				L'agence digitale Beavers vous propose donc des solutions qui répondront à toutes ces
-				problématiques :
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis hendrerit blandit.
+				Maecenas mollis purus consequat imperdiet tincidunt. Ut sit amet lobortis lorem. Mauris non
+				felis vel neque iaculis sollicitudin. Pellentesque eget lacus lacinia, congue turpis et,
+				gravida dolor. Nunc placerat faucibus nisl et venenatis.
 			</p>
-		</div>
-		<div class="mt-12 flex flex-col gap-8 lg:mt-24">
-			{#each links as link, i}
-				<Cta2 href={link.href} label={link.label} {i} {isInView} />
-			{/each}
 		</div>
 	</div>
 	<div class="relative flex flex-1 items-center justify-center max-lg:order-1">
