@@ -5,9 +5,6 @@
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
   import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
-	import ProductionDigitale from "$lib/assets/svg/ProductionDigitale.svelte";
-	import MarketingDigital from "$lib/assets/svg/MarketingDigital.svelte";
-	import Hoverable from "$lib/components/utilities/Hoverable.svelte";
 	import Sun from '$lib/assets/svg/Sun.svelte';
 	import MultipleArrows from '$lib/assets/svg/MultipleArrows.svelte';
 	import Search from '$lib/assets/svg/Search.svelte';
@@ -59,40 +56,10 @@
       <div class="absolute -right-10 bottom-[calc(25%-2rem)] h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1800ms] animate-fade" />
     </div>
   </div>
-  <div class="absolute bottom-12 w-full z-20">
-    <div class="big-container flex gap-16">
-      <Hoverable let:hovering={active}>
-        <a
-          href="/production-digitale"
-          title="Production digitale"
-          class="flex gap-5 px-8 py-6 border-[2px] transition-colors rounded-2xl items-center animate-fade animate-delay-300 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
-        >
-          <ProductionDigitale newClass="w-16 h-auto transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
-          <span class="text-[2rem] leading-[2.4rem] font-semibold transition-colors {active ? 'text-black' : 'text-white'}">
-            Production<br />digitale
-          </span>
-        </a>
-      </Hoverable>
-      <Hoverable let:hovering={active}>
-        <a
-          href="/marketing-digital"
-          title="Marketing digital"
-          class="flex gap-5 px-8 py-6 border-[2px] transition-colors rounded-2xl items-center animate-fade animate-delay-700 {active ? 'bg-white border-white' : 'bg-transparent border-bright'}"
-        >
-          <MarketingDigital newClass="w-16 h-auto transition-colors {active ? 'fill-seance' : 'fill-bright'}" />
-          <span class="text-[2rem] leading-[2.4rem] font-semibold transition-colors {active ? 'text-black' : 'text-white'}">
-            Marketing<br />digital
-          </span>
-        </a>
-      </Hoverable>
-    </div>
-  </div>
   <div class="lg:w-1/2 absolute right-0 inset-y-0 lg:h-screen flex items-end z-20"
 	use:inview={options}
 	on:inview_change={handleChange}>
-    <div class="relative mb-[calc(100vh*0.25)]">
-      <!-- <img src="/img/hp/mockup.png" alt="Mockup page d'accueil" class="max-w-[80%] w-full h-auto {isInView ? 'animate-fade' : 'opacity-0'}"> -->
-      <div class="w-[72rem] h-[42rem]" />
+    <div class="relative w-[72rem] h-[42rem] mb-[calc(100vh*0.25)]">
       <Sun newClass="animate-once w-20 h-auto absolute left-1/4 -top-32 {isInView ? 'animate-ping' : 'opacity-0'}" color="#00FFDA" />
       <MultipleArrows newClass="absolute -top-36 left-3/4 fill-bright animate-fade animate-delay-700" />
       <div class="absolute p-4 bg-white rounded-2xl -top-44 left-[40%] animate-fade animate-delay-1000">

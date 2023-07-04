@@ -91,7 +91,7 @@
     </a>
     <Hoverable let:hovering={active}>
       <div class="flex justify-center gap-6 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
-        <p class="uppercase text-[1.8rem] leading-[2.2rem] font-bold {active ? 'animate-shake' : ''} {menuWhite && (y < windowHeight) ? 'text-white' : 'text-bright'}">{@html labelMenu}</p>
+        <p class="uppercase text-[1.8rem] leading-[2.2rem] font-bold text-white {active ? 'animate-shake' : ''}">{@html labelMenu}</p>
         <div class="relative h-7 w-8">
           <span
             class="absolute inset-x-0 h-[2px] rounded-lg w-full {menuWhite && (y < windowHeight) ? 'bg-white' : 'bg-bright'} transition-all duration-300 {menuOpened
