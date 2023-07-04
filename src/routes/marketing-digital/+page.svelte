@@ -13,7 +13,7 @@
 
 </script>
 
-<div class="flex flex-col gap-20 lg:gap-40 max-lg:px-4 pb-60">
+<div class="flex flex-col gap-20 lg:gap-40 pb-20 lg:pb-40">
   <Header />
   <div class="flex flex-col gap-32 lg:gap-96">
     <SubHeader {text1} {text2} {text3} {text4} />

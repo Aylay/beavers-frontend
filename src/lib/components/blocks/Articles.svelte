@@ -16,9 +16,11 @@
 		<div class="flex-1">
 			<Title first={titleFirst} second={titleSecond} />
 		</div>
-		<Cta label="Voir tous les articles" href={newsUrl} type="transparent" />
+		<div class="flex">
+			<Cta label="Voir tous les articles" href={newsUrl} type="transparent" />
+		</div>
 	</div>
-	<div class="mt-16 grid grid-cols-3 gap-14">
+	<div class="mt-16 grid max-lg:grid-cols-1 grid-cols-3 gap-14">
 		{#each articles as article, i}
 			<Article {article} {i} />
 		{/each}

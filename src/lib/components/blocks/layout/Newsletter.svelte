@@ -42,8 +42,8 @@
 	}
 </script>
 
-<div class="{isArticle ? 'bg-bright' : 'bg-seance'} lg:py-20">
-  <div class="big-container flex items-center justify-between">
+<div class="{isArticle ? 'bg-bright' : 'bg-seance'} py-16 lg:py-20">
+  <div class="big-container flex max-lg:flex-col max-lg:gap-8 items-center justify-between">
     {#if isArticle}
     <p class="lg:w-2/5 text-3 text-jaguar">
       Recevez nos derniers <span class="font-highlight text-[5.7rem] leading-[3rem] text-seance">articles</span> par mail
@@ -58,12 +58,12 @@
       Merci pour votre inscription à notre newsletter mensuelle.<br />Vous allez recevoir un e-mail pour confirmer votre inscription.
     </p>
     {:else}
-    <form class="lg:w-1/2 flex items-center">
+    <form class="max-lg:w-full lg:w-1/2">
       <div class="flex flex-col gap-2 w-full">
         <label class="text-6 {isArticle ? 'text-jaguar' : 'text-white'}" for="nlEmail">
           Email
         </label>
-        <div class="flex items-center gap-6">
+        <div class="flex max-lg:flex-col lg:items-center gap-6">
           {#if isArticle}
           <input
             bind:value={email}

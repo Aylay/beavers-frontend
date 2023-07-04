@@ -28,10 +28,10 @@
 >
   <div class="lg:flex-1">
     <div class="flex gap-10 items-center mb-8">
-      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
-        <Trafic newClass="h-20 w-auto" />
+      <div class="max-lg:w-28 w-40 max-lg:h-28 h-40 rounded-full bg-white flex justify-center items-center">
+        <Trafic newClass="max-lg:h-14 h-20 w-auto" />
       </div>
-      <div>
+      <div class="max-lg:flex-1">
         <Line />
         <Title first="Affiliation" />
       </div>
@@ -46,7 +46,7 @@
       : 'opacity-0'}">
       Déployez un réseau d'affiliés qui pourront promouvoir votre marque et rémunérez-les en fonction de leurs résultats à travers des supports emailing, bannières, coupon, cashback, bon plan...
     </p>
-    <div class="flex gap-20 mt-16">
+    <div class="flex max-lg:flex-col max-lg:gap-4 gap-20 mt-16">
       <div class="flex gap-4 items-center animate-delay-1000 {isInView
         ? 'animate-fade'
         : 'opacity-0'}">
@@ -68,10 +68,10 @@
   </div>
   <div class="lg:flex-1">
     <div class="flex gap-10 items-center mb-8">
-      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
-        <Display newClass="h-20 w-auto fill-seance" />
+      <div class="max-lg:w-28 w-40 max-lg:h-28 h-40 rounded-full bg-white flex justify-center items-center">
+        <Display newClass="max-lg:h-14 h-20 w-auto fill-seance" />
       </div>
-      <div>
+      <div class="max-lg:flex-1">
         <Line />
         <Title first="Display" />
       </div>
@@ -86,7 +86,7 @@
       : 'opacity-0'}">
       Affichez votre offre auprès de votre audience cible avec différents formats, bannières publicitaires, vidéos, native ads... sur ordinateur ou sur mobile, en programmatique ou non. Diffusez vos publicités auprès de vos prospects pour augmenter votre notoriété et devenir "top of mind". Le display est davantage un levier de visibilité, mais couplé à d'autres leviers il peut rapidement devenir une carte indispensable dans une stratégie d'acquisition.
     </p>
-    <div class="flex justify-between mt-16">
+    <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
         ? 'animate-fade'
         : 'opacity-0'}">

@@ -57,7 +57,7 @@
 	}
 </script>
 
-<div class="flex flex-col gap-20 lg:gap-40 max-lg:px-4 pb-60">
+<div class="flex flex-col gap-32 lg:gap-40 pb-32 lg:pb-40">
 <Header />
 <Share {author} />
 <Newsletter isArticle={true} />

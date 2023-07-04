@@ -9,6 +9,7 @@ module.exports = {
 			rock: '#180325',
 			jaguar: '#0B0211',
 			bright: '#00FFDA',
+			'bright-turquoise': '#00EECB',
 			seance: '#8013BD',
 			transparent: 'transparent'
 		},

@@ -1,4 +1,4 @@
-import type { PageServerData } from '../$types';
+import type { PageData } from './$types';
 
 export const load = (async ({ fetch, params }) => {
 	const menuWhite = true;
@@ -8,4 +8,4 @@ export const load = (async ({ fetch, params }) => {
 		menuWhite,
 		isArticle
 	};
-}) satisfies PageServerData;
+}) satisfies PageData;

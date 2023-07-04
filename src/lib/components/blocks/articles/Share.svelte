@@ -12,60 +12,62 @@
   onMount(() => url = window.location.href);
 </script>
 
-<div class="flex big-container">
-  <div class="flex-1 pr-20 pl-10 border-l-[2px] border-l-jagger flex gap-10">
-      <img src={author.img.src} alt={author.img.alt ? author.img.alt : author.name} class="w-[12.5rem] h-auto" />
-    <div>
+<div class="flex big-container max-lg:flex-col max-lg:gap-16">
+  <div class="flex-1 lg:pr-20 lg:pl-10 lg:border-l-[2px] border-l-jagger flex max-lg:gap-6 gap-10">
+    <div class="max-lg:w-32 w-[12.5rem]">
+      <img src={author.img.src} alt={author.img.alt ? author.img.alt : author.name} class="w-full h-auto" />
+    </div>
+    <div class="flex-1">
       <p class="text-seance text-4 font-semibold mb-2">
         {author.name}
       </p>
-      <p class="text-bright font-highlight text-4 mb-10">
+      <p class="text-bright font-highlight text-4 max-lg:mb-2 mb-10">
         {author.job}
       </p>
-      <p class="text-6">
+      <p class="max-lg:text-7 text-6">
         {author.text}
       </p>
     </div>
   </div>
-  <div class="flex-1 pl-10 border-l-[2px] border-l-jagger">
+  <div class="flex-1 lg:pl-10 lg:border-l-[2px] border-l-jagger">
     <p class="text-seance text-4 font-semibold mb-2">
       Partagez notre article
     </p>
     <p class="text-bright font-highlight text-4 mb-10">
       autour de vous !
     </p>
-    <div class="flex gap-4">
+    <div class="flex gap-8 lg:gap-4">
       <a
       href="https://www.linkedin.com/shareArticle?url={url}"
       target="_blank"
       title="Partager l'article sur Linkedin"
-      class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
     >
-      <Linkedin newClass="w-7 h-auto" />
+      <Linkedin newClass="w-10 lg:w-7 h-auto" />
     </a>
     <a
       href="https://pinterest.com/pin/create/button/?url={url}"
       target="_blank"
       title="Partager l'article sur Pinterest"
-      class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
     >
-      <Pinterest newClass="w-auto h-7" />
+      <Pinterest newClass="w-auto h-10 lg:h-7" />
     </a>
     <a
       href="https://www.facebook.com/sharer/sharer.php?u={url}"
       target="_blank"
       title="Partager l'article sur Facebook"
-      class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
     >
-      <Facebook newClass="w-auto h-7" />
+      <Facebook newClass="w-auto h-10 lg:h-7" />
     </a>
     <a
       href="https://api.whatsapp.com/send?text={url}"
       target="_blank"
       title="Partager l'article sur WhatsApp"
-      class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
     >
-      <WhatsApp newClass="w-auto h-7" />
+      <WhatsApp newClass="w-auto h-10 lg:h-7" />
     </a>
     </div>
   </div>

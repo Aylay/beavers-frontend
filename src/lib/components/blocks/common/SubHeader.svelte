@@ -7,7 +7,6 @@
 	import Wave from '$lib/assets/svg/Wave.svelte';
 	import MultipleArrows2 from '$lib/assets/svg/MultipleArrows2.svelte';
 
-
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
@@ -30,7 +29,7 @@
   use:inview={options}
   on:inview_change={handleChange}
 >
-  <h2 class="uppercase lg:text-[8.5rem] lg:leading-none font-extrabold mb-4">
+  <h2 class="max-lg:w-screen max-lg:transform max-lg:-translate-x-[5%] uppercase text-[calc(100vw*0.14)] max-lg:overflow-visible lg:text-[8.5rem] leading-none font-extrabold mb-4">
     {@html text1}<span class="block text-outline">{@html text2}</span>
   </h2>
   <p class="text-bright text-6 font-semibold pb-12 relative after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-60 after:h-[2px] after:bg-seance lg:px-8 mt-4">

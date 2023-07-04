@@ -33,7 +33,7 @@
 	const bottoms = ['right-28', 'right-20', 'right-12', 'right-4'];
 </script>
 
-<div class="big-container flex gap-40" use:inview={options} on:inview_change={handleChange}>
+<div class="big-container flex gap-32 max-lg:flex-col lg:gap-40" use:inview={options} on:inview_change={handleChange}>
 	<div class="flex-1">
 		<Line />
 		<Title first="Notre" second="manifesto" />

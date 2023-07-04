@@ -58,10 +58,10 @@ use:inview={options}
 on:inview_change={handleChange}>
 	<Line />
 	<Title first="Nos clients" second="témoignent" />
-  <div class="flex gap-28 mt-20">
+  <div class="flex max-lg:flex-col max-lg:gap-40 gap-28 mt-20 max-lg:pt-10">
     {#each testimoniesDisplayed as testimony, i}
     <div class="flex-1 relative {isInView ? 'animate-fade' : 'opacity-0'}" style="animation-delay: {250 + i * 250}ms;">
-			<div class="absolute -left-16 -top-16 -z-10 flex w-full gap-8">
+			<div class="absolute max-lg:-left-4 -left-16 max-lg:-top-20 -top-16 -z-10 flex w-full gap-8">
 				<Quote newClass="h-auto w-24" />
 				<Quote newClass="h-auto w-24" />
 			</div>

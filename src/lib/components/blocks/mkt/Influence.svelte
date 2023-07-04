@@ -39,10 +39,10 @@
 >
   <div class="lg:flex-1">
     <div class="flex gap-10 items-center mb-8">
-      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
-        <Baguette2 newClass="h-20 w-auto fill-seance" />
+      <div class="max-lg:w-28 w-40 max-lg:h-28 h-40 rounded-full bg-white flex justify-center items-center">
+        <Baguette2 newClass="max-lg:h-14 h-20 w-auto fill-seance" />
       </div>
-      <div>
+      <div class="max-lg:flex-1">
         <Line />
         <Title first="Influence marketing" />
       </div>
@@ -63,7 +63,7 @@
       Votre marque, c'est encore vos clients qui en parlent le mieux.<br />
       Créez un réseau d'ambassadeurs sur les réseaux sociaux et augmentez votre notoriété et votre réputation.
     </p>
-    <div class="flex gap-20 mt-16">
+    <div class="flex max-lg:flex-col max-lg:gap-4 gap-20 mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
         ? 'animate-fade'
         : 'opacity-0'}">

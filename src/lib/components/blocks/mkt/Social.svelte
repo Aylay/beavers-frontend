@@ -32,7 +32,7 @@
 
 </script>
 
-<div class="big-container flex gap-40"
+<div class="big-container flex gap-32 max-lg:flex-col lg:gap-40"
 use:inview={options}
 on:inview_change={handleChange}>
 	<div class="relative flex flex-1 justify-center gap-8"  use:inview={optionsImg} on:inview_change={handleChangeImg}>
@@ -70,8 +70,8 @@ on:inview_change={handleChange}>
 	</div>
   <div class="lg:flex-1">
     <div class="flex gap-10 items-center mb-8">
-      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
-        <Thumb newClass="h-20 w-auto fill-seance" />
+      <div class="max-lg:w-28 w-40 max-lg:h-28 h-40 rounded-full bg-white flex justify-center items-center">
+        <Thumb newClass="max-lg:h-14 h-20 w-auto fill-seance" />
       </div>
       <div>
         <Line />
@@ -93,7 +93,7 @@ on:inview_change={handleChange}>
       : 'opacity-0'}">
       Grâce aux socials ads, soyez présent sur Facebook, Instagram, TikTok, Twitter, Pinterest ou encore Linkedin et touchez vos prospects. Améliorez "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
     </p>
-    <div class="flex justify-between mt-16">
+    <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
         ? 'animate-fade'
         : 'opacity-0'}">
@@ -116,7 +116,7 @@ on:inview_change={handleChange}>
     <div class="mt-20 animate-delay-[1500ms] {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      <Cta label="Booster mon business avec les Social Ads" href="/contactez-nous" type="transparent" />
+      <Cta label="Booster mon business" href="/contactez-nous" type="transparent" />
     </div>
   </div>
 </div>

@@ -40,10 +40,10 @@
 >
   <div class="lg:flex-1">
     <div class="flex gap-10 items-center mb-8">
-      <div class="w-40 h-40 rounded-full bg-white flex justify-center items-center">
-        <GoogleAds newClass="h-20 w-auto" />
+      <div class="max-lg:w-28 w-40 max-lg:h-28 h-40 rounded-full bg-white flex justify-center items-center">
+        <GoogleAds newClass="max-lg:h-14 h-20 w-auto" />
       </div>
-      <div>
+      <div class="max-lg:flex-1">
         <Line />
         <Title first="Google Ads" />
       </div>
@@ -63,7 +63,7 @@
       : 'opacity-0'}">
       Ainsi vous évitez que votre prospect se perde et vous maximisez vos taux de conversion. Nous travaillons avec des stratégies d'enchères sur différentes audiences et différents devices pour optimiser vos performances.
     </p>
-    <div class="flex justify-between mt-16">
+    <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
         ? 'animate-fade'
         : 'opacity-0'}">

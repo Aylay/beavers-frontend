@@ -62,7 +62,7 @@
 			{#each faqs as faq, i}
 				<div class="flex flex-1 flex-col gap-6 border-b border-solid border-jagger py-6">
 					<div
-						class="flex cursor-pointer items-center gap-12"
+						class="flex max-lg:flex-col cursor-pointer lg:items-center max-lg:gap-6 gap-12"
 						on:click={() => (faq.isOpened = !faq.isOpened)}
 					>
 						<p class="w-32 text-[5rem] font-semibold leading-none text-bright">
@@ -110,7 +110,7 @@
 					/>
 				{/if}
 				<div
-					class="absolute bottom-16 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"
+					class="absolute max-lg:bottom-8 bottom-16 max-lg:right-20 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"
 				>
 					<Palette1 />
 					<Megaphone

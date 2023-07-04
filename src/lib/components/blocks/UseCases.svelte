@@ -18,20 +18,23 @@
 	};
 
 	export let cases: Array<any>;
+	export let firstText: string = 'Nos dernières<br />'
 </script>
 
 <div class="big-container">
 	<Line />
 	<div class="flex max-lg:flex-col max-lg:gap-8 lg:items-end lg:justify-between">
 		<div class="flex-1">
-			<Title first="Nos dernières<br />" second="études de cas" />
+			<Title first={firstText} second="études de cas" />
 		</div>
-		<Cta label="Voir tous les cas" href="/cas-agence" type="transparent" />
+		<div class="flex">
+			<Cta label="Voir tous les cas" href="/cas-agence" type="transparent" />
+		</div>
 	</div>
 	<div
 		use:inview={options}
 		on:inview_change={handleChange}
-		class="mt-16 grid grid-cols-3 overflow-hidden transition-all delay-500 duration-700 {isInView
+		class="mt-16 grid max-lg:grid-cols-1 grid-cols-3 overflow-hidden transition-all delay-500 duration-700 {isInView
 			? 'gap-14'
 			: 'gap-0'}"
 	>

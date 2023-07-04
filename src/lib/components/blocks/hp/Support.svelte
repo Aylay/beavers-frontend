@@ -29,7 +29,7 @@
 </script>
 
 <div
-	class="big-container flex items-center gap-40"
+	class="big-container flex items-center gap-32 max-lg:flex-col lg:gap-40"
 	use:inview={options}
 	on:inview_change={handleChange}
 >
@@ -71,7 +71,7 @@
 				<img
 					src="/img/tree-nation-logo.png"
 					alt="logo tree nation"
-					class="absolute right-2 top-20 w-8/12 animate-delay-[800ms] {isInViewImg
+					class="absolute right-2 top-20 max-lg:w-full w-8/12 animate-delay-[800ms] {isInViewImg
 						? 'animate-fade'
 						: ''}"
 				/>

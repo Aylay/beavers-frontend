@@ -22,7 +22,7 @@
 	<div
 		use:inview={options}
 		on:inview_change={handleChange}
-		class="relative flex h-[575px] items-end overflow-hidden rounded-lg p-10 transition-all"
+		class="relative flex max-lg:h-[46rem] h-[575px] items-end overflow-hidden rounded-lg max-lg:p-5 p-10 transition-all"
 	>
 		<div
 			class="absolute inset-0 z-0 h-full w-full before:absolute before:inset-0 before:z-10 before:h-full before:w-full before:bg-jaguar before:bg-opacity-40 before:content-['']"
@@ -37,17 +37,21 @@
 		</div>
 		{#if useCase.key1 && useCase.key2}
 			<div
-				class="absolute left-10 top-10 z-20 flex items-center gap-4 rounded-3xl bg-seance px-6 py-1 animate-delay-1000 {isInView
+				class="absolute max-lg:left-5 left-10 max-lg:top-5 top-10 z-20 flex items-center gap-4 rounded-3xl bg-seance px-6 py-1 animate-delay-1000 {isInView
 					? 'animate-fade'
 					: 'opacity-0'}"
 			>
+				{#if useCase.key1}
 				<p class="text-5 text-bright">{useCase.key1}</p>
+				{/if}
+				{#if useCase.key2}
 				<p class="text-6">{useCase.key2}</p>
+				{/if}
 			</div>
 		{/if}
 		{#if useCase.website}
 			<a
-				class="absolute right-10 top-10 z-20 flex h-14 w-14 items-center justify-center rounded-3xl bg-bright animate-delay-1000 {isInView
+				class="absolute max-lg:right-5 right-10 max-lg:top-5 top-10 z-20 flex h-14 w-14 items-center justify-center rounded-3xl bg-bright animate-delay-1000 {isInView
 					? 'animate-fade'
 					: 'opacity-0'}"
 				target="_blank"
@@ -60,13 +64,13 @@
 		<a
 			class="relative z-30 flex h-3/5 w-full flex-col overflow-hidden animate-delay-1000 {isInView
 				? 'animate-fade'
-				: 'opacity-0'} {active ? '' : ''}"
+				: 'opacity-0'}"
 			href={useCase.slug}
 		>
 			<div
-				class="absolute z-30 flex transform flex-col transition-all duration-500 {active
-					? 'bottom-1/2 translate-y-1/2'
-					: 'bottom-0'}"
+				class="absolute z-30 flex transform flex-col transition-all duration-500 max-lg:bottom-1/2 max-lg:translate-y-1/2 {active
+					? 'lg:bottom-1/2 lg:translate-y-1/2'
+					: 'lg:bottom-0'}"
 			>
 				<h4 class="mb-5 text-5 text-bright">{useCase.client}</h4>
 				<h5 class="mb-11 text-6">{useCase.title}</h5>
@@ -78,9 +82,9 @@
 			</div>
 		</a>
 		<a
-			class="absolute inset-x-0 top-0 z-10 h-full w-full transition-all duration-500 animate-delay-1000 {active
-				? 'max-h-[40%]'
-				: 'max-h-0'} {isInView ? 'animate-fade' : 'opacity-0'}"
+			class="absolute inset-x-0 top-0 z-10 h-full w-full transition-all duration-500 animate-delay-1000 max-lg:max-h-[40%] {active
+				? 'lg:max-h-[40%]'
+				: 'lg:max-h-0'} {isInView ? 'animate-fade' : 'opacity-0'}"
 			href={useCase.slug}
 		>
 			{#if isInView}
@@ -92,9 +96,9 @@
 			{/if}
 		</a>
 		<div
-			class="absolute inset-x-0 bottom-0 h-full w-full overflow-hidden bg-seance bg-opacity-50 transition-all duration-500 animate-delay-1000 before:absolute before:inset-x-0 before:bottom-0 before:z-20 before:h-full before:w-full before:bg-jagger before:bg-opacity-75 {active
-				? 'max-h-[60%]'
-				: 'max-h-0'} {isInView ? 'animate-fade' : 'opacity-0'}"
+			class="absolute inset-x-0 bottom-0 h-full w-full overflow-hidden bg-seance bg-opacity-50 transition-all duration-500 animate-delay-1000 before:absolute before:inset-x-0 before:bottom-0 before:z-20 before:h-full before:w-full before:bg-jagger before:bg-opacity-75 max-lg:max-h-[60%] {active
+				? 'lg:max-h-[60%]'
+				: 'lg:max-h-0'} {isInView ? 'animate-fade' : 'opacity-0'}"
 		/>
 	</div>
 </Hoverable>

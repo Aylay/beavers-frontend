@@ -24,17 +24,34 @@
 
 </script>
 <footer
-  class="lg:py-32 big-container"
+  class="py-16 lg:py-32 big-container"
   use:inview={options}
   on:inview_change={handleChange}
 >
-  <div class="flex gap-28">
-    <div class="flex-1 flex flex-col gap-32">
+  <div class="flex gap-16 flex-col">
+    <div class="w-full flex justify-between max-lg:flex-col items-center max-lg:gap-8">
       <p class="lg:w-1/2 text-3 text-seance">
         Bâtissons <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright">ensemble</span> votre stratégie digitale
       </p>
-      <div class="w-full flex justify-between">
-        <div class="flex-1 border-jagger border-l-[2px] pl-10">
+      <div class="flex lg:justify-end items-center gap-8">
+        <a
+          href="https://www.google.com/partners/agency?id=9719801224"
+          target="_blank"
+          title="Beavers est Google Partner"
+          class="inline-block"
+        >
+          <GooglePartner newClass="max-w-[10rem] h-auto {isInView
+            ? 'animate-fade'
+            : 'opacity-0'}" />
+        </a>
+        <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
+          ? 'animate-fade'
+          : 'opacity-0'}">
+      </div>
+    </div>
+    <div class="w-full flex gap-28">
+      <div class="w-full flex max-lg:flex-col justify-between max-lg:gap-16">
+        <div class="flex-1 border-jagger lg:border-l-[2px] lg:pl-10">
           <p class="text-5 text-bright mb-8">
             Nous parler.
           </p>
@@ -74,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-1 border-jagger border-l-[2px] pl-10">
+        <div class="flex-1 border-jagger lg:border-l-[2px] lg:pl-10">
           <p class="text-5 text-bright mb-8">
             Nous suivre.
           </p>
@@ -84,49 +101,49 @@
               target="_blank"
               rel="external noreferrer"
               title="Retrouvez les castors de Beavers sur Linkedin"
-              class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+              class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
             >
-              <Linkedin newClass="w-7 h-auto" />
+              <Linkedin newClass="w-10 lg:w-7 h-auto" />
             </a>
             <a
               href="https://www.instagram.com/beavers.agency/"
               target="_blank"
               rel="external noreferrer"
               title="Retrouvez les castors de Beavers sur Instagram"
-              class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+              class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
             >
-              <Instagram newClass="w-7 h-auto" />
+              <Instagram newClass="w-10 lg:w-7 h-auto" />
             </a>
             <a
               href="https://www.tiktok.com/@beavers.agency"
               target="_blank"
               rel="external noreferrer"
               title="Retrouvez les castors de Beavers sur TikTok"
-              class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+              class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
             >
-              <Tiktok newClass="w-auto h-7" />
+              <Tiktok newClass="w-auto h-10 lg:h-7" />
             </a>
             <a
             href="https://www.pinterest.fr/beaversagency/"
               target="_blank"
               rel="external noreferrer"
               title="Retrouvez les castors de Beavers sur Pinterest"
-              class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+              class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
             >
-              <Pinterest newClass="w-auto h-7" />
+              <Pinterest newClass="w-auto h-10 lg:h-7" />
             </a>
             <a
               href="https://www.facebook.com/beavers.agency/"
               target="_blank"
               rel="external noreferrer"
               title="Retrouvez les castors de Beavers sur Facebook"
-              class="w-14 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+              class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
             >
-              <Facebook newClass="w-auto h-7" />
+              <Facebook newClass="w-auto h-10 lg:h-7" />
             </a>
           </div>
         </div>
-        <div class="flex-1 border-jagger border-l-[2px] pl-10">
+        <div class="flex-1 border-jagger lg:border-l-[2px] lg:pl-10">
           <p class="text-5 text-bright mb-8">
             Nos soutiens.
           </p>
@@ -135,43 +152,33 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="flex justify-around gap-4 items-center flex-col">
-      <a
-        href="https://www.google.com/partners/agency?id=9719801224"
-        target="_blank"
-        title="Beavers est Google Partner"
-        class="inline-block"
-      >
-        <GooglePartner newClass="max-w-[10rem] h-auto {isInView
-          ? 'animate-fade'
-          : 'opacity-0'}" />
-      </a>
-      <a
-        href="https://theoceancleanup.com/"
-        target="_blank"
-        title="The Ocean Cleanup"
-        rel="external noreferrer"
-      >
-        <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
-          ? 'animate-fade'
-          : 'opacity-0'}">
-      </a>
-      <div id="tree-nation-tree-counter"></div>
-      <a
-        href="https://tree-nation.com/fr/profil/impact/beavers#co2"
-        target="_blank"
-        title="Tree Nation"
-        rel="external noreferrer" 
-      >
-        <img
-          src="https://tree-nation.com/images/tracking/label-co2-website-black-fr.png"
-          alt="Logo de Tree Nation"
-          class="h-auto max-w-[18rem] {isInView
+      <div class="flex lg:justify-around max-lg:gap-8 gap-4 lg:items-center lg:flex-col max-lg:flex-wrap">
+        <a
+          href="https://theoceancleanup.com/"
+          target="_blank"
+          title="The Ocean Cleanup"
+          rel="external noreferrer"
+        >
+          <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
             ? 'animate-fade'
-            : 'opacity-0'}"
-        />
-      </a>
+            : 'opacity-0'}">
+        </a>
+        <div id="tree-nation-tree-counter"></div>
+        <a
+          href="https://tree-nation.com/fr/profil/impact/beavers#co2"
+          target="_blank"
+          title="Tree Nation"
+          rel="external noreferrer" 
+        >
+          <img
+            src="https://tree-nation.com/images/tracking/label-co2-website-black-fr.png"
+            alt="Logo de Tree Nation"
+            class="h-auto max-w-[18rem] {isInView
+              ? 'animate-fade'
+              : 'opacity-0'}"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </footer>
