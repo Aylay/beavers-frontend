@@ -52,13 +52,7 @@
       <Cta label="Voir le site de {brand.name}" href={website} type="transparent" blank={true} />
     </div>
     <div>
-      <a
-        class="text-6 font-bold bg-seance hover:bg-bright hover:border-bright hover:text-black duration-300 rounded-[3rem] border-2 border-seance px-10 py-4 transition-colors"
-        href="/contactez-nous"
-        title="Parlons de votre projet !"
-      >
-        Parlons de votre projet !
-      </a>
+      <Cta label="Parlons de votre projet !" href="/contactez-nous" type="seance" />
     </div>
   </div>
 </div>

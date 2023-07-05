@@ -26,7 +26,7 @@
 	>
 		{second !== '' ? second.replace(/<(.|\n)*?>/g, '') : first.replace(/<(.|\n)*?>/g, '')}
 	</span>
-	<h2 class="w-full max-w-[45rem] text-3 text-seance">
+	<h2 class="w-full max-w-[47rem] text-3 text-seance">
 		{@html first}
 		{#if second !== ''}
 			<span class="font-highlight text-[5.7rem] leading-[3rem] text-bright">
