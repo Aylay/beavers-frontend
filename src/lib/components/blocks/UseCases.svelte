@@ -34,12 +34,12 @@
 	<div
 		use:inview={options}
 		on:inview_change={handleChange}
-		class="mt-16 grid max-lg:grid-cols-1 grid-cols-3 overflow-hidden transition-all delay-500 duration-700 {isInView
+		class="mt-16 grid max-lg:grid-cols-1 grid-cols-6 overflow-hidden transition-all delay-500 duration-700 {isInView
 			? 'gap-14'
 			: 'gap-0'}"
 	>
-		{#each cases as useCase}
-			<UseCase {useCase} />
+		{#each cases as useCase, i}
+			<UseCase {useCase} {i} />
 		{/each}
 	</div>
 </div>

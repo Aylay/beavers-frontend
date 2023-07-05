@@ -3,11 +3,17 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
-	import Cta from '../utilities/CTA.svelte';
 
 	export let article: any;
 	export let i: number;
-	const delay = i * 200;
+	let delay: number;
+	if (i % 3 === 0) {
+		delay = 0
+	} else if (i % 3 === 1) {
+		delay = 200
+	} else if (i % 3 === 2) {
+		delay = 400
+	}
 
 	const strapiURL = import.meta.env.VITE_STRAPI_URL;
 
