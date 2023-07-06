@@ -33,7 +33,7 @@
     {
       label: "L'agence",
       title: "L'agence",
-      slug: '/qui-sommes-nous'
+      slug: '/l-agence-beavers'
     },
     {
       label: 'Cas agence',
