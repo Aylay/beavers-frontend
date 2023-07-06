@@ -70,7 +70,7 @@
     <div
       class="flex-1 flex flex-col gap-10 items-center animate-delay-1000 {isInView ? 'animate-fade' : 'opacity-0'}"
     >
-      <div class="relative">
+      <div class="relative"^>
         <Shape newClass="fill-seance" />
         <Google newClass="absolute top-7 left-1/2 transform -translate-x-1/2" />
       </div>
