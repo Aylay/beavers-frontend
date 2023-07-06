@@ -14,8 +14,8 @@
 
   export let goals: Array<string>;
   export let goalsImg: any
-</script>
-
+  export let color: string = '';
+</script> 
 
 <div class="big-container flex items-center gap-32 lg:gap-40 max-lg:flex-col"
   use:inview={options}
@@ -31,7 +31,7 @@
         class="flex max-lg:flex-col cursor-pointer lg:items-center max-lg:gap-6 gap-12 {isInView ? 'animate-fade-right' : 'opacity-0'}"
         style="animation-delay: {150 * i}ms;"
       >
-        <p class="w-32 text-[5rem] font-semibold leading-none text-seance">
+        <p class="w-32 text-[5rem] font-semibold leading-none" style="color: {color}">
           0{i + 1}<span class="text-bright">.</span>
         </p>
         <p class="flex-1 text-6 font-semibold">

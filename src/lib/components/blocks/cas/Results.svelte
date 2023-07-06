@@ -18,6 +18,7 @@
   export let results: Array<any>;
   export let website: string;
   export let brand: any;
+  export let color: string = '';
 </script>
 
 <div
@@ -38,7 +39,7 @@
     {#each results as result, i}
       <div class="flex-1 text-center flex flex-col gap-4 {isInView ? 'animate-fade' : 'opacity-0'}"
       style="animation-delay: {150 * i}ms;">
-        <p class="text-[6rem] font-bold text-bright leading-[5rem]">
+        <p class="text-[6rem] font-bold leading-[5rem]" style="color: {color}">
           {result.number}
         </p>
         <p class="text-6">

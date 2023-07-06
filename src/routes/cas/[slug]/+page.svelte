@@ -49,88 +49,91 @@
     }
   ]
 
-const cases = [
-  {
-    img1: {
-      src: '/img/lise.jpg',
-      alt: 'image'
+  const cases = [
+    {
+      img1: {
+        src: '/img/lise.jpg',
+        alt: 'image'
+      },
+      img2: {
+        src: '/img/active.jpg',
+        alt: 'image'
+      },
+      client: 'Lise-Laure Blaizot',
+      slug: '#',
+      title: 'Design et développement sur-mesure du site de l’osthéopathe D.O Lise-Laure Blaizot.',
+      tags: ['Développement web', 'Marketing Digital', 'SEO'],
+      website: '#',
+      key1: '+20%',
+      key2: 'd’utilisateurs'
     },
-    img2: {
-      src: '/img/active.jpg',
-      alt: 'image'
+    {
+      img1: {
+        src: '/img/eflow.jpg',
+        alt: 'image'
+      },
+      img2: {
+        src: '/img/active.jpg',
+        alt: 'image'
+      },
+      client: 'Eflow',
+      slug: '#',
+      title: 'Développement sur-mesure, entièrement administrable, du site Loopz avec Wordpress.',
+      tags: ['Développement web'],
+      website: 'https://beavers-agency.fr'
     },
-    client: 'Lise-Laure Blaizot',
-    slug: '#',
-    title: 'Design et développement sur-mesure du site de l’osthéopathe D.O Lise-Laure Blaizot.',
-    tags: ['Développement web', 'Marketing Digital', 'SEO'],
-    website: '#',
-    key1: '+20%',
-    key2: 'd’utilisateurs'
-  },
-  {
-    img1: {
-      src: '/img/eflow.jpg',
-      alt: 'image'
+    {
+      img1: {
+        src: '/img/lise.jpg',
+        alt: 'image'
+      },
+      img2: {
+        src: '/img/active.jpg',
+        alt: 'image'
+      },
+      client: 'Arizona Hot Dogs',
+      slug: '#',
+      title: 'Gestion et recommandations SEO de la boutique en ligne Arzona.',
+      tags: ['SEO'],
+      key1: '+20%',
+      key2: 'd’utilisateurs'
+    }
+  ];
+  const resultText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.'
+  const results = [
+    {
+      number: '84',
+      text: 'Lorem ipsum dolor sit amet.'
     },
-    img2: {
-      src: '/img/active.jpg',
-      alt: 'image'
+    {
+      number: '35%',
+      text: 'Lorem ipsum dolor sit amet.'
     },
-    client: 'Eflow',
-    slug: '#',
-    title: 'Développement sur-mesure, entièrement administrable, du site Loopz avec Wordpress.',
-    tags: ['Développement web'],
-    website: 'https://beavers-agency.fr'
-  },
-  {
-    img1: {
-      src: '/img/lise.jpg',
-      alt: 'image'
+    {
+      number: '+ 10%',
+      text: 'Lorem ipsum dolor sit amet.'
     },
-    img2: {
-      src: '/img/active.jpg',
-      alt: 'image'
-    },
-    client: 'Arizona Hot Dogs',
-    slug: '#',
-    title: 'Gestion et recommandations SEO de la boutique en ligne Arzona.',
-    tags: ['SEO'],
-    key1: '+20%',
-    key2: 'd’utilisateurs'
-  }
-];
-const resultText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.'
-const results = [
-  {
-    number: '84',
-    text: 'Lorem ipsum dolor sit amet.'
-  },
-  {
-    number: '35%',
-    text: 'Lorem ipsum dolor sit amet.'
-  },
-  {
-    number: '+ 10%',
-    text: 'Lorem ipsum dolor sit amet.'
-  },
-  {
-    number: '1048',
-    text: 'Lorem ipsum dolor sit amet.'
-  }
-]
+    {
+      number: '1048',
+      text: 'Lorem ipsum dolor sit amet.'
+    }
+  ]
+
+  const newColor: string = '#C6142F'
+  const color: string = (newColor !== '') ? newColor : '#8013BD'
 </script>
 
 <div class="flex flex-col gap-32 lg:gap-40 pb-32 lg:pb-40">
   <Header />
-  <Intro intro={intro} />
-  <Prez logo={logo} duration={duration} gear={gear} website={website} brand={brand} />
+  <Intro intro={intro} color={color} />
+  <Prez logo={logo} duration={duration} gear={gear} website={website} brand={brand} color={color} />
   <ImgFull mainImg={mainImg} />
   <ContextNeeds context={context} needs={needs} />
-  <Goals goals={goals} goalsImg={goalsImg} />
+  <Goals goals={goals} goalsImg={goalsImg} color={color} />
   <Actions actions={actions} actionsImg={actionsImg} />
   {#if otherUseCases.length > 0}
   <OtherUseCases useCases={otherUseCases} />
   {/if}
-  <Results resultText={resultText} results={results} website={website} brand={brand} />
+  <Results resultText={resultText} results={results} website={website} brand={brand} color={color} />
   <UseCases {cases} firstText="Découvrez d’autres<br />" />
 </div>

@@ -21,6 +21,7 @@
   export let gear: string;
   export let website: string;
   export let brand: any;
+	export let color: string = '';
 </script>
 
 <div class="big-container flex gap-20 lg:gap-40 max-lg:flex-col"
@@ -36,25 +37,25 @@
         Le projet
       </p>
       {#if duration}
-      <div class="flex gap-8 items-center">
-        <Clock newClass="w-auto h-12 fill-seance" />
+      <div class="flex gap-8 items-center" style="fill: {color}">
+        <Clock newClass="w-auto h-12" />
         <p class="text-6 font-semibold">
           {duration}
         </p>
       </div>
       {/if}
       {#if gear}
-      <div class="flex gap-8 items-center">
-        <Gear newClass="w-auto h-12 fill-seance" />
+      <div class="flex gap-8 items-center" style="fill: {color}">
+        <Gear newClass="w-auto h-12" />
         <p class="text-6 font-semibold">
           {gear}
         </p>
       </div>
       {/if}
       {#if website}
-      <div class="flex gap-8 items-center">
-        <Website newClass="w-auto h-12 fill-seance" />
-        <a href={website} target="_blank" class="text-6 text-seance font-semibold underline hover:no-underline">
+      <div class="flex gap-8 items-center" style="fill: {color}">
+        <Website newClass="w-auto h-12" />
+        <a href={website} target="_blank" class="text-6 font-semibold underline hover:no-underline" style="color: {color}">
           Visiter le site
         </a>
       </div>

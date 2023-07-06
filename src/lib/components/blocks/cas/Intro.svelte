@@ -4,7 +4,8 @@
 
 	import Line from '../utilities/Line.svelte';
 
-	export let intro = '';
+	export let intro: string = '';
+	export let color: string = '';
 
   let isInView: boolean;
   const options: Options = {
@@ -23,7 +24,7 @@
 	on:inview_change={handleChange}
 >
   <Line />
-  <h2 class="text-4 font-semibold lg:text-3 text-seance {isInView ? 'animate-fade-right' : 'opacity-0'}">
+  <h2 class="text-4 font-semibold lg:text-3 {isInView ? 'animate-fade-right' : 'opacity-0'}" style="color: {color}">
     {intro}
   </h2>
 </div>
