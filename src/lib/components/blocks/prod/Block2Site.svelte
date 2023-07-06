@@ -106,12 +106,12 @@ on:inview_change={handleChange}>
 			<p class="text-6 animate-delay-500 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}">
-				La publication de contenu récurrente est un très bon moyen de se positionner rapidement sur des mots clés dans les résultats des moteurs de recherche comme Google, Bing ou Yahoo. C'est un <a href="/la-pause-cafe/seo/strategies-referencement-blog-2021" title="Stratégie de référencement naturel" class="font-bold underline hover:no-underline text-seance">gain SEO</a> considérable.
+				La publication de contenu récurrente est un très bon moyen de se positionner rapidement sur des mots clés dans les résultats des moteurs de recherche comme Google, Bing ou Yahoo. C'est un <a href="/la-pause-cafe/seo/strategies-referencement-blog-2021" title="Stratégie de référencement naturel" class="font-bold underline  text-seance hover:text-bright transition-colors">gain SEO</a> considérable.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}">
-				L'agence Beavers vous propose la création et le développement d'un blog sur mesure avec la technologie <a href="https://svelte.dev/" title="Svelte" target="_blank" class="font-bold underline hover:no-underline text-seance">Svelte</a> additionnée au <a href="https://strapi.io/" title="Strapi" target="_blank" class="font-bold underline hover:no-underline text-seance">CMS Strapi</a> pour un gain de performances afin que le site s'affiche rapidement et qu'il y ait que très peu de chargement de page.
+				L'agence Beavers vous propose la création et le développement d'un blog sur mesure avec la technologie <a href="https://svelte.dev/" title="Svelte" target="_blank" class="font-bold underline  text-seance">Svelte</a> additionnée au <a href="https://strapi.io/" title="Strapi" target="_blank" class="font-bold underline  text-seance hover:text-bright transition-colors">CMS Strapi</a> pour un gain de performances afin que le site s'affiche rapidement et qu'il y ait que très peu de chargement de page.
 			</p>
 			<p class="text-6 animate-delay-500">
 				Le site sera entièrement adapté à chaque écran pour que l'intégralité de vos lecteurs soient à l'aise pour accéder à vos contenus.

@@ -55,7 +55,7 @@
       {#if website}
       <div class="flex gap-8 items-center" style="fill: {color}">
         <Website newClass="w-auto h-12" />
-        <a href={website} target="_blank" class="text-6 font-semibold underline hover:no-underline" style="color: {color}">
+        <a href={website} target="_blank" class="text-6 font-semibold underline hover:text-bright transition-colors" style="color: {color}">
           Visiter le site
         </a>
       </div>

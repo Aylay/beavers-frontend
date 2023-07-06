@@ -13,6 +13,23 @@
 	}
 }
 
+@layer components {
+	.content-style h2 {
+		@apply text-3 text-seance relative pt-8 before:absolute before:top-0 before:content-[''] before:w-40 before:h-[2px] before:bg-bright;
+	}
+	.content-style h3 {
+		@apply text-5 text-bright;
+	}
+	.content-style p,
+	.content-style ul li {
+		@apply text-6;
+	}
+	.content-style p a,
+	.content-style ul li a {
+		@apply underline font-semibold text-seance hover:text-bright transition-colors;
+	}
+}
+
 @layer utilities {
 	.small-container {
 		@apply mx-auto w-full max-lg:px-[5%] lg:max-w-[90rem];

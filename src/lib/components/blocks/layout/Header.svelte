@@ -26,11 +26,6 @@
       slug: '/'
     },
     {
-      label: 'Nos offres',
-      title: 'Nos offres',
-      slug: '/offres'
-    },
-    {
       label: "L'agence",
       title: "L'agence",
       slug: '/l-agence-beavers'

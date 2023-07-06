@@ -53,7 +53,7 @@
 				Le référencement naturel est un travail qui se fait dans le temps. Les résultats ne sont pas directs mais ils perdurent dans le temps au fur et à mesure de la mise en place d'optimisations.
 			</p>
 			<p class="text-6">
-				Il est donc toujours important de bien suivre les <a href="/la-pause-cafe/media/lexique-media-online" title="Le lexique du media online" class="font-bold underline hover:no-underline text-seance">KPI</a> du SEO et voir si les optimisations conseillées ont bien été mises en place et s'il n'y a pas de nouvelles erreurs techniques. Grâce au suivi SEO, il peut y avoir de nouvelles optimisations de contenu à mettre en place en fonction de l'évolution de Google et des moteurs de recherche.
+				Il est donc toujours important de bien suivre les <a href="/la-pause-cafe/media/lexique-media-online" title="Le lexique du media online" class="font-bold underline  text-seance hover:text-bright transition-colors">KPI</a> du SEO et voir si les optimisations conseillées ont bien été mises en place et s'il n'y a pas de nouvelles erreurs techniques. Grâce au suivi SEO, il peut y avoir de nouvelles optimisations de contenu à mettre en place en fonction de l'évolution de Google et des moteurs de recherche.
 			</p>
     </div>
     <div class="flex gap-12 mt-20">
