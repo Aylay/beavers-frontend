@@ -9,6 +9,11 @@
 	import Trafic from '$lib/assets/svg/Trafic.svelte';
 	import Conversion from '$lib/assets/svg/Conversion.svelte';
 	import Thumb from '$lib/assets/svg/Thumb.svelte';
+	import Tiktok from "$lib/assets/svg/Tiktok.svelte";
+	import Instagram from "$lib/assets/svg/Instagram.svelte";
+	import Facebook from '$lib/assets/svg/Facebook.svelte';
+	import Linkedin from '$lib/assets/svg/Linkedin.svelte';
+	import Pinterest from '$lib/assets/svg/Pinterest.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -36,35 +41,50 @@
 use:inview={options}
 on:inview_change={handleChange}>
 	<div class="relative flex flex-1 justify-center gap-8"  use:inview={optionsImg} on:inview_change={handleChangeImg}>
-		<div class="flex flex-1 flex-col gap-8">
-			<div class="flex-3 overflow-hidden rounded-lg">
+		<div class="flex flex-1 flex-col gap-8 ">
+			<div class="flex-3 relative">
 				{#if isInViewImg}
 					<img
 						src="/img/hp/manifesto-2-1.jpg"
 						alt="Coucou"
-						class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
+				<div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 w-20 h-20 bg-bright rounded-full flex justify-center items-center">
+					<Tiktok newClass="w-10 h-auto fill-seance" />
+				</div>
 			</div>
-			<div class="flex-2 overflow-hidden rounded-lg">
+			<div class="flex-2 relative">
 				{#if isInViewImg}
 					<img
-						src="/img/hp/manifesto-2-2.jpg"
+						src="/img/mkt/social-2.jpg"
 						alt="Coucou"
-						class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
+				<div class="absolute top-0 -translate-y-1/2 left-6 w-16 h-16 bg-seance rounded-full flex justify-center items-center">
+					<Instagram newClass="w-9 h-auto fill-white" />
+				</div>
+				<div class="absolute top-full -translate-y-1/2 left-full -translate-x-1/2 w-16 h-16 bg-bright rounded-full flex justify-center items-center">
+					<Facebook newClass="h-8 w-auto fill-seance" />
+				</div>
 			</div>
 		</div>
 		<div class="relative flex flex-1 items-center">
-			<div class="w-full overflow-hidden rounded-lg lg:h-1/2">
+			<div class="w-full lg:h-1/2 relative">
 				{#if isInViewImg}
 					<img
-						src="/img/hp/manifesto-2-3.jpg"
+						src="/img/mkt/social-3.jpg"
 						alt="Coucou"
-						class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
+				<div class="absolute -top-28 left-1/2 w-20 h-20 bg-seance rounded-full flex justify-center items-center">
+					<Linkedin newClass="w-10 h-auto fill-white" />
+				</div>
+				<div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-16 h-16 bg-bright rounded-full flex justify-center items-center">
+					<Pinterest newClass="h-10 w-auto fill-seance" />
+				</div>
 			</div>
 		</div>
 	</div>
