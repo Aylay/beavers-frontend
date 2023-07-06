@@ -50,7 +50,7 @@ on:inview_change={handleChange}>
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
-				<div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 w-20 h-20 bg-bright rounded-full flex justify-center items-center">
+				<div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 w-20 h-20 bg-bright rounded-full flex justify-center items-center animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Tiktok newClass="w-10 h-auto fill-seance" />
 				</div>
 			</div>
@@ -62,10 +62,10 @@ on:inview_change={handleChange}>
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
-				<div class="absolute top-0 -translate-y-1/2 left-6 w-16 h-16 bg-seance rounded-full flex justify-center items-center">
+				<div class="absolute top-0 -translate-y-1/2 left-6 w-16 h-16 bg-seance rounded-full flex justify-center items-center animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Instagram newClass="w-9 h-auto fill-white" />
 				</div>
-				<div class="absolute top-full -translate-y-1/2 left-full -translate-x-1/2 w-16 h-16 bg-bright rounded-full flex justify-center items-center">
+				<div class="absolute top-full -translate-y-1/2 left-full -translate-x-1/2 w-16 h-16 bg-bright rounded-full flex justify-center items-center animate-delay-1000 {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Facebook newClass="h-8 w-auto fill-seance" />
 				</div>
 			</div>
@@ -79,10 +79,10 @@ on:inview_change={handleChange}>
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
-				<div class="absolute -top-28 left-1/2 w-20 h-20 bg-seance rounded-full flex justify-center items-center">
+				<div class="absolute -top-28 left-1/2 w-20 h-20 bg-seance rounded-full flex justify-center items-center animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Linkedin newClass="w-10 h-auto fill-white" />
 				</div>
-				<div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-16 h-16 bg-bright rounded-full flex justify-center items-center">
+				<div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-16 h-16 bg-bright rounded-full flex justify-center items-center animate-delay-500 {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Pinterest newClass="h-10 w-auto fill-seance" />
 				</div>
 			</div>
