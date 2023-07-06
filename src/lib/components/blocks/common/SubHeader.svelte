@@ -21,7 +21,6 @@
   export let text2: string;
   export let text3: string;
   export let text4: string;
-  export let text5: string = '';
 </script>
 
 <div

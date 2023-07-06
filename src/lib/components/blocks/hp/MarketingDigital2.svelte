@@ -2,8 +2,6 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
-	import Title from '../utilities/Title.svelte';
-	import Line from '../utilities/Line.svelte';
 	import Cta2 from '../utilities/CTA2.svelte';
 	import Wave from '$lib/assets/svg/Wave.svelte';
 

@@ -1,0 +1,126 @@
+<script lang="ts">
+	import { inview } from 'svelte-inview';
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
+
+  import Title from '$lib/components/blocks/utilities/Title.svelte';
+  import Line from '$lib/components/blocks/utilities/Line.svelte';
+	import Cta from '../utilities/CTA.svelte';
+
+	let isInView: boolean;
+	const options: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '-50px'
+	};
+
+	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInView = detail.inView;
+	};
+
+	let isInViewImg: boolean;
+	const optionsImg: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInViewImg = detail.inView;
+	};
+	const tops = ['-top-28', '-top-8', 'top-12'];
+
+	const bottoms = ['-bottom-28', '-bottom-8', 'bottom-12', 'bottom-32', 'bottom-52'];
+
+</script>
+
+<div class="big-container flex gap-32 max-lg:flex-col lg:gap-40"
+use:inview={options}
+on:inview_change={handleChange}>
+<div class="relative flex flex-1 justify-center gap-8 max-lg:order-2" use:inview={optionsImg} on:inview_change={handleChangeImg}>
+	<div class="flex flex-1 flex-col gap-8">
+		<div class="flex-3 overflow-hidden rounded-lg">
+			{#if isInViewImg}
+				<img
+					src="/img/hp/manifesto-2-1.jpg"
+					alt="Coucou"
+					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+				/>
+			{/if}
+		</div>
+		<div class="flex-2 overflow-hidden rounded-lg">
+			{#if isInViewImg}
+				<img
+					src="/img/hp/manifesto-2-2.jpg"
+					alt="Coucou"
+					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+				/>
+			{/if}
+		</div>
+	</div>
+	<div class="relative flex flex-1 items-center">
+		{#each tops as top, i}
+			<div
+				class="left-8 h-4 w-4 rounded-full {top} absolute bg-bright {isInView
+					? 'animate-fade'
+					: 'opacity-0'}"
+				style="animation-delay: {200 * i}ms;"
+			/>
+		{/each}
+		{#each bottoms as bottom, i}
+			<div
+				class="left-1/2 z-10 h-4 w-4 -translate-x-1/2 transform rounded-full {bottom} absolute bg-seance {isInView
+					? 'animate-fade'
+					: 'opacity-0'}"
+				style="animation-delay: {600 + 200 * i}ms;"
+			/>
+		{/each}
+		<div class="w-full overflow-hidden rounded-lg lg:h-1/2">
+			{#if isInViewImg}
+				<img
+					src="/img/hp/manifesto-2-3.jpg"
+					alt="Coucou"
+					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+				/>
+			{/if}
+		</div>
+	</div>
+</div>
+  <div class="lg:flex-1">
+		<Line />
+		<Title first="Création de blog" />
+		<h3
+			class="mt-2 font-highlight text-4 text-bright lg:animate-delay-200 {isInView
+				? 'lg:animate-fade-right'
+				: 'lg:opacity-0'}"
+		>
+			Faîtes découvrir votre contenu en ligne
+		</h3>
+		<div
+			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
+				? 'animate-fade'
+				: 'opacity-0'}"
+		>
+			<p class="text-6 animate-delay-500 {isInView
+				? 'animate-fade'
+				: 'opacity-0'}">
+				Vous avez beaucoup de contenu chaud à publier de manière périodique mais n'avez rien à vendre de spécifique qui peut faire penser à une boutique en ligne : le blog est fait pour vous.
+			</p>
+			<p class="text-6 animate-delay-500 {isInView
+				? 'animate-fade'
+				: 'opacity-0'}">
+				La publication de contenu récurrente est un très bon moyen de se positionner rapidement sur des mots clés dans les résultats des moteurs de recherche comme Google, Bing ou Yahoo. C'est un <a href="/la-pause-cafe/seo/strategies-referencement-blog-2021" title="Stratégie de référencement naturel" class="font-bold underline hover:no-underline text-seance">gain SEO</a> considérable.
+			</p>
+			<p class="text-6 animate-delay-500 {isInView
+				? 'animate-fade'
+				: 'opacity-0'}">
+				L'agence Beavers vous propose la création et le développement d'un blog sur mesure avec la technologie <a href="https://svelte.dev/" title="Svelte" target="_blank" class="font-bold underline hover:no-underline text-seance">Svelte</a> additionnée au <a href="https://strapi.io/" title="Strapi" target="_blank" class="font-bold underline hover:no-underline text-seance">CMS Strapi</a> pour un gain de performances afin que le site s'affiche rapidement et qu'il y ait que très peu de chargement de page.
+			</p>
+			<p class="text-6 animate-delay-500">
+				Le site sera entièrement adapté à chaque écran pour que l'intégralité de vos lecteurs soient à l'aise pour accéder à vos contenus.
+			</p>
+		</div>
+    <div class="mt-20 animate-delay-1000 {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      <Cta label="Contactez-nous" href="/contactez-nous" type="transparent" />
+    </div>
+  </div>
+</div>

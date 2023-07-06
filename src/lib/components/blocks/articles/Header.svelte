@@ -36,16 +36,30 @@
   <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60">
     <div class="lg:w-2/3 flex flex-col justify-end items-end h-full">
       <div class="max-w-[90rem] w-full flex flex-col lg:items-end lg:pr-40 mb-16 lg:mb-[calc(100vh*0.1)] max-lg:px-[5%]">
-        <ul class="max-lg:hidden flex justify-end mb-20 flex-wrap gap-y-4">
-          <li class="pr-5 border-r-bright border-r-[2px]">
+        <ul class="max-lg:hidden flex justify-end mb-20 flex-wrap gap-5">
+          <li>
+            <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
+              Accueil
+            </a>
+          </li>
+          <li class="text-7 text-bright font-bold">
+            |
+          </li>
+          <li>
             <a href="/la-pause-café" title="La pause café Beavers" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
               La pause café
             </a>
           </li>
-          <li class="px-5 border-r-bright border-r-[2px]">
+          <li class="text-7 text-bright font-bold">
+            |
+          </li>
+          <li>
             <a href="/la-pause-café/site-internet" title="Site internet" class="text-7 text-seance transition-colors hover:text-bright font-semibold">
               Site internet
             </a>
+          </li>
+          <li class="text-7 text-bright font-bold">
+            |
           </li>
           <li class="text-7 text-white font-semibold">
             Quelles sont les mesures d’utilisation de Google Analytics suite à la décision de la CNIL ?

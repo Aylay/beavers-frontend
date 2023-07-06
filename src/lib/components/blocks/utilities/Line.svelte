@@ -11,10 +11,12 @@
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
 	};
+
+	export let color: string = 'bg-bright';
 </script>
 
 <div
 	use:inview={options}
 	on:inview_change={handleChange}
-	class="mb-8 h-[2px] origin-left bg-bright {isInView ? 'w-40 animate-line' : 'w-0'}"
+	class="mb-8 h-[2px] origin-left {color} {isInView ? 'w-40 animate-line' : 'w-0'}"
 />

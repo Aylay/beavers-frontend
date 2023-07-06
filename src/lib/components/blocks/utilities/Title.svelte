@@ -29,7 +29,7 @@
 	<h2 class="w-full max-w-[47rem] text-3 text-seance">
 		{@html first}
 		{#if second !== ''}
-			<span class="font-highlight text-[5.7rem] leading-[3rem] text-bright">
+			<span class="font-highlight text-[5.7rem] leading-[3rem] text-bright font-normal">
 				{second ? ' ' + second : ''}
 			</span>
 		{/if}
