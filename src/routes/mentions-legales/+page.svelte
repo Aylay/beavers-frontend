@@ -19,7 +19,7 @@ const subtitle = 'Les mentions légales vues par les castors'
       SIREN : 853 663 334<br />
       R.C.S de Fréjus<br />
       N° TVA : FR88853663334<br />
-      E-mail : les-castors@beavers-agency.fr
+      E-mail : <span data-user="les-castors" data-website="beavers-agency.fr" class="before:content-[attr(data-user)'\0040'attr(data-website)] before:[unicode-bidi:bidi-override]"></span>
     </p>
 
     <h3>Création du site</h3>
@@ -28,7 +28,7 @@ const subtitle = 'Les mentions légales vues par les castors'
     <h3>Directeur de la publication et Webmaster</h3>
     <p>
       Lucas ATTALI – Personne physique<br />
-      E-mail : lattali@beavers-agency.fr
+      E-mail : <span data-user="lattali" data-website="beavers-agency.fr" class="before:content-[attr(data-user)'\0040'attr(data-website)] before:[unicode-bidi:bidi-override]"></span>
     </p>
 
     <h3>Hébergement</h3>

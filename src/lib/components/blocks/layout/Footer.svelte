@@ -164,7 +164,6 @@
             ? 'animate-fade'
             : 'opacity-0'}">
         </a>
-        <div id="tree-nation-tree-counter"></div>
         <a
           href="https://tree-nation.com/fr/profil/impact/beavers#co2"
           target="_blank"

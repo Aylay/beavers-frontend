@@ -17,16 +17,27 @@
 	.content-style h2 {
 		@apply text-3 text-seance relative pt-8 before:absolute before:top-0 before:content-[''] before:w-40 before:h-[2px] before:bg-bright;
 	}
+	.content-style * + h2 {
+		@apply mt-20;
+	}
 	.content-style h3 {
 		@apply text-5 text-bright;
 	}
-	.content-style p,
-	.content-style ul li {
+	.content-style p{
 		@apply text-6;
 	}
 	.content-style p a,
 	.content-style ul li a {
 		@apply underline font-semibold text-seance hover:text-bright transition-colors;
+	}
+	.content-style ul {
+		@apply flex flex-col gap-4;
+	}
+	.content-style ul li {
+		@apply relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8;
+	}
+	.content-style img {
+		@apply overflow-hidden rounded-lg;
 	}
 }
 
