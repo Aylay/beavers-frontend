@@ -36,7 +36,7 @@
           <ArrowBottom newClass="animate-bounce"  color="#FFF" />
         </div>
       </div>
-      <div class="flex flex-col flex-1 {isOceanActive ? 'animade-fade' : 'opacity-0 invisible'}">
+      <div class="flex flex-col flex-1 {isOceanActive ? 'animate-fade' : 'opacity-0 invisible'}">
         <p class="text-6 font-semibold text-bright">
           Beavers s'engage auprès de The Ocean CleanUp pour reverser 2% de son chiffre d'affaires à l'association.
         </p>

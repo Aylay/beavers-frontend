@@ -19,7 +19,7 @@
   export let job: any;
 </script>
 
-<a class="w-full bg-rock {isInView ? 'animate-fade' : 'opacity-0'}"
+<a class="w-full bg-rock hover:bg-seance transition-colors {isInView ? 'animate-fade' : 'opacity-0'}"
   href="/jobs/{job.slug}"
   title={job.title}
   use:inview={options}
@@ -28,7 +28,7 @@
   <Hoverable let:hovering={active}>
     <div class="flex justify-between items-center p-16">
       <div class="flex flex-col flex-1 gap-10">
-        <h3 class="text-seance font-semibold text-4">
+        <h3 class="transition-colors font-semibold text-4 {active ? 'text-white' : 'text-seance'}">
           {job.title}
         </h3>
         <div class="flex gap-20 items-center">

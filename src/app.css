@@ -23,6 +23,9 @@
 	.content-style h3 {
 		@apply text-5 text-bright;
 	}
+	.content-style h4 {
+		@apply text-5 text-seance;
+	}
 	.content-style p{
 		@apply text-6;
 	}

@@ -148,7 +148,7 @@
             Nos soutiens.
           </p>
           <p class="text-6">
-            L'agence Beavers soutient les associations <a title="L'agence Beavers soutient les associations The Ocean Cleanup et Tree Nation" class="text-seance hover:text-bright transition-colors underline font-semibold" href="/the-ocean-cleanup-tree-nation">The Ocean Cleanup et Tree Nation</a>.
+            L'agence Beavers soutient les associations <a title="L'agence Beavers soutient les associations The Ocean Cleanup et Tree Nation" class="text-seance hover:text-bright transition-colors underline font-semibold" href="/programme-rse">The Ocean Cleanup et Tree Nation</a>.
           </p>
         </div>
       </div>
