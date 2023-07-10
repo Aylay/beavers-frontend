@@ -9,14 +9,15 @@
 
 <div class="h-screen relative flex justify-center items-center bg-rock">
   <div class="big-container flex flex-col items-center relative z-20">
-    <div
-      class="w-24 h-24 bg-seance rounded-full flex justify-center items-center cursor-pointer"
-      on:click={() => isOceanActive = !isOceanActive}
-    >
-      <Hoverable let:hovering={active}>
-        <Switch newClass="fill-white w-14 h-auto {active ? 'animate-jump' : ''}" />
-      </Hoverable>
-    </div>
+    <Hoverable newClass="rounded-full" let:hovering={active}>
+      <div
+        class="w-24 h-24 rounded-full flex justify-center items-center cursor-pointer transition-colors {active ? 'bg-bright' : 'bg-seance'}"
+        on:click={() => isOceanActive = !isOceanActive}
+      >
+      
+        <Switch newClass=" w-14 h-auto animate-jump {active ? 'fill-seance animate-infinite' : 'fill-white'}" />
+      </div>
+    </Hoverable>
     <h1 class="text-center text-2 mt-10">
       <span class="block {!isOceanActive ? 'text-outline' : ''}">
         Beavers x The Ocean Cleanup

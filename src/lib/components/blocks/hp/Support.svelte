@@ -35,7 +35,7 @@
 >
 	<div class="flex-1">
 		<Line />
-		<Title first="Nos" second="soutiens" />
+		<Title first="Notre programme" second="RSE" />
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
 				? 'animate-fade'

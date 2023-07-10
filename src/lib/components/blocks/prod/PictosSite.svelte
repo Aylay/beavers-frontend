@@ -3,9 +3,10 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	import Google from "$lib/assets/svg/Google.svelte";
-	import Medal from "$lib/assets/svg/Medal.svelte";
-	import Search2 from "$lib/assets/svg/Search2.svelte";
-	import Graph from "$lib/assets/svg/Graph.svelte";
+	import Mobile from "$lib/assets/svg/Mobile.svelte";
+	import Pencil from "$lib/assets/svg/Pencil.svelte";
+	import Code from "$lib/assets/svg/Code.svelte";
+	import Cursor from "$lib/assets/svg/Cursor.svelte";
   import Shape from "$lib/assets/svg/Shape.svelte";
   import Line from "../utilities/Line.svelte";
 
@@ -38,7 +39,7 @@
     >
       <div class="relative">
         <Shape newClass="fill-seance" />
-        <Medal newClass="absolute top-5 left-1/2 transform -translate-x-1/2" />
+        <Mobile newClass="absolute top-5 left-1/2 transform -translate-x-1/2 fill-white" />
       </div>
       <h3 class="text-5 text-center">
         Une approche<br />mobile-first
@@ -49,7 +50,7 @@
     >
       <div class="relative">
         <Shape newClass="fill-seance" />
-        <Google newClass="absolute top-7 left-1/2 transform -translate-x-1/2" />
+        <Pencil newClass="absolute top-7 left-1/2 transform -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
         Un design personnalisé
@@ -60,7 +61,7 @@
     >
       <div class="relative">
         <Shape newClass="fill-seance" />
-        <Search2 newClass="absolute top-5 left-1/2 transform -translate-x-1/2" />
+        <Code newClass="absolute top-8 left-1/2 transform -translate-x-1/2 -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
         Un développement<br />sur mesure
@@ -82,7 +83,7 @@
     >
       <div class="relative">
         <Shape newClass="fill-seance" />
-        <Graph newClass="absolute top-4 left-1/2 transform -translate-x-1/2" />
+        <Cursor newClass="absolute top-8 left-1/2 transform -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
         Un parcours<br />utilisateur optimisé
