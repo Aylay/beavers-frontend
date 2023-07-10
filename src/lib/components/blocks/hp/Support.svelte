@@ -53,7 +53,7 @@
 			</p>
 		</div>
 		<div class="animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			<Cta label="En savoir plus" href="/tree-nation-the-ocean-cleanup" type="transparent" />
+			<Cta label="En savoir plus" href="/programme-rse" type="transparent" />
 		</div>
 	</div>
 	<div
