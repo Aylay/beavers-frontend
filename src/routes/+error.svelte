@@ -13,7 +13,7 @@
 <div class="flex flex-col gap-20 lg:gap-40 pb-20 lg:pb-40">
   <Header {title} {subtitle} />
   <div class="small-container content-style flex flex-col gap-8">
-    <h3>Et voilà, vous êtes arrivé à un endroit où il ne fallait pas.</h3>
+    <h3>Et voilà, vous êtes arrivé.e à un endroit où il ne fallait pas.</h3>
     <p>
       Reprenez vite ce que vous étiez en train de faire en repartant par exemple à partir de <a href="/" title="Beavers, l'agence média des castors">la page d'accueil</a>.
     </p>

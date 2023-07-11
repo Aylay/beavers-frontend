@@ -8,6 +8,7 @@
 	import Header from '$lib/components/blocks/layout/Header.svelte';
 
 	const noLayout: Array<string> = ['/tout-savoir-sur-beavers'];
+	const noNewsletter: Array<string> = ['/newsletter-confirmation', '/newsletter-refus'];
 </script>
 
 <div class="overflow-hidden">
@@ -16,7 +17,9 @@
 	{/if}
 	<slot />
 	{#if !noLayout.includes($page.route.id)}
+	{#if !noNewsletter.includes($page.route.id)}
 	<Newsletter />
+	{/if}
 	<Footer />
 	<Subfooter />
 	{/if}

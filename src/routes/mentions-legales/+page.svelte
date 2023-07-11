@@ -19,7 +19,7 @@ const subtitle = 'Les mentions légales vues par les castors'
       SIREN : 853 663 334<br />
       R.C.S de Fréjus<br />
       N° TVA : FR88853663334<br />
-      E-mail : <span data-user="les-castors" data-website="beavers-agency.fr" class="before:content-[attr(data-user)'\0040'attr(data-website)] before:[unicode-bidi:bidi-override]"></span>
+      E-mail : <span data-user="les-castors" data-website="beavers-agency.fr" class="before:content-[attr(data-user)'\0040'attr(data-website)] before:[unicode-bidi:bidi-override]" />
     </p>
 
     <h3>Création du site</h3>

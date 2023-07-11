@@ -1,24 +1,9 @@
 <script lang="ts">
-	import { inview } from 'svelte-inview';
-	import type { ObserverEventDetails, Options } from 'svelte-inview';
-  
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
-	import Calendar from '$lib/assets/svg/Calendar.svelte';
-	import Tag from '$lib/assets/svg/Tag.svelte';
 	import Clock from '$lib/assets/svg/Clock.svelte';
 	import Contract from '$lib/assets/svg/Contract.svelte';
 	import Pin from '$lib/assets/svg/Pin.svelte';
-
-	let isInView: boolean;
-	const options: Options = {
-		unobserveOnEnter: true,
-		rootMargin: '50px'
-	};
-
-	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
-		isInView = detail.inView;
-	};
 
   export let title: string;
   export let contract: string;
