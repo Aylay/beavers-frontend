@@ -65,7 +65,8 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
       },
       "reviewRating": {
         "@type": "AggregateRating",
-        "ratingValue": review.text.replace(/<(.|\n)*?>/g, '')
+        "ratingValue": review.text.replace(/<(.|\n)*?>/g, ''),
+        "reviewCount": testimonies.length
       }
 		}
 		reviews.push(newReview)
