@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "/jobs/chef-projet-media",
+      "destination": "/jobs"
+    }
+  ]
+}
