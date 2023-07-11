@@ -7,6 +7,7 @@
 	import Palette1 from '$lib/assets/svg/Palette1.svelte';
 	import Megaphone from '$lib/assets/svg/Megaphone.svelte';
 	import ArrowUp from '$lib/assets/svg/ArrowUp.svelte';
+	import LDTag from '$lib/components/utilities/LDTag.svelte'
 
 	let isInView: boolean;
 	const options: Options = {
@@ -52,7 +53,29 @@
 	const tops = ['top-0 lg:top-16', 'top-8 lg:top-24', 'top-16 lg:top-32', 'top-24 lg:top-40', 'top-32 lg:top-48'];
 
 	const bottoms = ['-bottom-24', '-bottom-12', 'bottom-0', 'bottom-12', 'bottom-24'];
+
+	let faqsSchema = []
+	for (let i = 0; i < faqs.length; i++) {
+		const faq = faqs[i];
+		const newFaq = {
+			"@type": "Question",
+			"name": faq.question,
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": faq.answer
+			}
+		}
+		faqsSchema.push(newFaq)
+	}
+
+	const schema = {
+    '@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		"mainEntity": faqsSchema
+	}
 </script>
+
+<LDTag {schema} />
 
 <div class="big-container flex gap-32 max-lg:flex-col lg:gap-40" use:inview={options} on:inview_change={handleChange}>
 	<div class="flex-1 max-lg:order-2">

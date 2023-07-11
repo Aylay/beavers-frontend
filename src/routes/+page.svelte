@@ -222,7 +222,7 @@
 				}
 			}
 		]
-}
+	}
 </script>
 
 <LDTag {schema} />
