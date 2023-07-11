@@ -55,7 +55,7 @@
   ]
 </script>
 
-<div class="lg:min-h-screen flex justify-center bg-rock overflow-hidden pt-40">
+<div class="lg:min-h-screen flex justify-center overflow-hidden bg-rock pt-40">
   <div class="small-container relative flex flex-col items-center gap-8">
     <a href="/" title="Beavers, l'agence digitale des castors" class="mb-20">
       <Logo newClass="max-w-[18rem] w-full h-auto" />
@@ -118,13 +118,11 @@
       </a>
     </div>
     <Sun newClass="w-24 h-auto absolute left-1/4 bottom-full animate-infinite animate-delay-500 animate-ping" color="#8013BD" />
-    <Sun newClass="w-28 h-auto absolute right-1/4 -bottom-48 animate-infinite animate-ping" color="#00FFDA" />
-    <MultipleArrows newClass="absolute top-16 right-[15%] fill-bright animate-infinite animate-delay-700 animate-fade" />
-    <Wave2 newClass="absolute top-28 left-0 fill-bright animate-infinite animate-delay-1000 animate-shake" />
-    <Wave2 newClass="absolute -bottom-32 right-0 fill-seance animate-infinite animate-delay-500 animate-shake" />
+    <Sun newClass="w-28 h-auto absolute -right-[20rem] top-1/2 animate-infinite animate-ping" color="#00FFDA" />
+    <MultipleArrows newClass="absolute top-16 left-[15%] fill-bright animate-infinite animate-delay-700 animate-fade" />
+    <Wave2 newClass="absolute top-28 right-0 fill-bright animate-infinite animate-delay-1000 animate-shake" />
+    <Wave2 newClass="absolute top-1/3 -left-[20rem] fill-seance animate-infinite animate-delay-500 animate-shake" />
     <div class="absolute right-1/4 top-0 h-[2px] w-20 -rotate-45 transform bg-seance animate-infinite animate-delay-[1200ms] animate-fade" />
     <div class="absolute right-1/4 top-8 h-[2px] w-20 -rotate-45 transform bg-seance animate-infinite animate-delay-[1400ms] animate-fade" />
-    <div class="absolute left-1/4 bottom-[-12rem] h-[2px] w-20 -rotate-45 transform bg-bright animate-infinite animate-delay-[1800ms] animate-fade" />
-    <div class="absolute left-1/4 bottom-[-14rem] h-[2px] w-20 -rotate-45 transform bg-bright animate-infinite animate-delay-[2000ms] animate-fade" />
   </div>
 </div>
