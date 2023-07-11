@@ -63,10 +63,7 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
         "name": review.name,
         "worksFor": review.company
       },
-      "reviewRating": {
-        "@type": "AggregateRating",
-        "ratingValue": review.text.replace(/<(.|\n)*?>/g, '')
-      },
+      
       'reviewBody': review.text.replace(/<(.|\n)*?>/g, '')
 		}
 		reviews.push(newReview)
