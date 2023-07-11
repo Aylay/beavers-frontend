@@ -4,6 +4,9 @@
 
 	export let src: string;
 	export let alt: string;
+	export let newClass: string;
+	export let href: string;
+	export let title: string;
 	export let i: number;
 	const delay = i * 200;
 	let isInView: boolean;
@@ -17,8 +20,14 @@
 	};
 </script>
 
-<div use:inview={options} on:inview_change={handleChange} class="max-h-[10rem] max-w-[20rem]">
+<a
+	use:inview={options}
+	on:inview_change={handleChange}
+	class="h-[10rem] w-[20rem] opacity-50 transition-opacity hover:opacity-100 flex justify-center items-center"
+	{href}
+	{title}
+>
 	{#if isInView}
-		<img {src} {alt} class={isInView ? 'animate-fade' : ''} style="animation-delay: {delay}ms;" />
+		<img {src} alt={title} class="{newClass} {isInView ? 'animate-fade' : ''}" style="animation-delay: {delay}ms;" />
 	{/if}
-</div>
+</a>

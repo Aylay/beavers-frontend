@@ -5,28 +5,40 @@
 
 	const logos = [
 		{
-			src: '/img/Imagine.png',
-			alt: 'image'
+			src: '/img/clients/keune.svg',
+			newClass: 'w-full h-auto',
+			href: '#',
+			title: 'Keune Haircosmetics'
 		},
 		{
-			src: '/img/Imagine.png',
-			alt: 'image'
+			src: '/img/clients/v-zug.svg',
+			newClass: 'h-full w-auto',
+			href: '#',
+			title: 'V-ZUG'
 		},
 		{
-			src: '/img/Imagine.png',
-			alt: 'image'
+			src: '/img/clients/imagine-2050.svg',
+			newClass: 'h-full w-auto',
+			href: '#',
+			title: 'Imagine 2050'
 		},
 		{
-			src: '/img/Imagine.png',
-			alt: 'image'
+			src: '/img/clients/we-van.png',
+			newClass: 'w-full h-auto',
+			href: '#',
+			title: 'We Van'
 		},
 		{
-			src: '/img/Imagine.png',
-			alt: 'image'
+			src: '/img/clients/ki.svg',
+			newClass: 'w-full h-auto',
+			href: '#',
+			title: 'Ki Lyon'
 		},
 		{
-			src: '/img/Imagine.png',
-			alt: 'image'
+			src: '/img/clients/cafes-richard.svg',
+			newClass: 'w-full h-auto',
+			href: '#',
+			title: 'Cafés Richard'
 		}
 	];
 </script>
@@ -43,7 +55,7 @@
 	</div>
 	<div class="mt-24 flex max-lg:flex-wrap items-center justify-between gap-20">
 		{#each logos as logo, i}
-			<ConfidenceLogo src={logo.src} alt={logo.alt} {i} />
+			<ConfidenceLogo src={logo.src} alt={logo.alt} newClass={logo.newClass} {i} href={logo.href} title={logo.title} />
 		{/each}
 	</div>
 </div>

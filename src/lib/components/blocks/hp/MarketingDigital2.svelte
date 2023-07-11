@@ -4,6 +4,14 @@
 
 	import Cta2 from '../utilities/CTA2.svelte';
 	import Wave from '$lib/assets/svg/Wave.svelte';
+	import Bing from '$lib/assets/svg/social/Bing.svelte';
+	import GAds from '$lib/assets/svg/social/GAds.svelte';
+	import LinkedIn from '$lib/assets/svg/social/LinkedIn.svelte';
+	import Meta from '$lib/assets/svg/social/Meta.svelte';
+	import Tiktok from '$lib/assets/svg/social/Tiktok.svelte';
+	import Waze from '$lib/assets/svg/social/Waze.svelte';
+	import YouTube from '$lib/assets/svg/social/YouTube.svelte';
+	import Pinterest from '$lib/assets/svg/social/Pinterest.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -120,16 +128,14 @@
 	<div class="max-lg:hidden">
 		<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 		<div class="flex justify-between">
-			{#each solutions as solution, i}
-				{#if isInViewImg}
-					<img
-						src={solution.src}
-						alt={solution.alt}
-						class="max-h-[4rem] max-w-[4rem] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-						style="animation-delay: {500 + 200 * i}ms;"
-					/>
-				{/if}
-			{/each}
+			<Pinterest newClass="h-16 w-auto animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#333743" />
+			<Bing newClass="h-16 w-auto animate-delay-[500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#545B6E" />
+			<GAds newClass="h-16 w-auto animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#444A5A" fill2="#30343F" fill3="#393F4D" />
+			<LinkedIn newClass="h-16 w-auto animate-delay-[1000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#0B0211" />
+			<Tiktok newClass="h-16 w-auto animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#414757" fill3="#414757" />
+			<Waze newClass="h-16 w-auto animate-delay-[1500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#7E87A6" />
+			<Meta newClass="w-16 h-auto animate-delay-[1750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#2D313C" />
+			<YouTube newClass="w-16 h-auto animate-delay-[2000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#2E323D" fill2="#0B0211" />
 		</div>
 	</div>
 </div>
@@ -155,16 +161,14 @@
 		<div class="lg:hidden my-24">
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex max-lg:justify-start justify-between gap-8 max-lg:flex-wrap">
-				{#each solutions as solution, i}
-					{#if isInViewImg}
-						<img
-							src={solution.src}
-							alt={solution.alt}
-							class="max-h-[4rem] max-w-[4rem] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-							style="animation-delay: {500 + 200 * i}ms;"
-						/>
-					{/if}
-				{/each}
+				<Pinterest newClass="h-16 w-auto animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#333743" />
+				<Bing newClass="h-16 w-auto animate-delay-[500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#545B6E" />
+				<GAds newClass="h-16 w-auto animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#444A5A" fill2="#30343F" fill3="#393F4D" />
+				<LinkedIn newClass="h-16 w-auto animate-delay-[1000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#0B0211" />
+				<Tiktok newClass="h-16 w-auto animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#414757" fill3="#414757" />
+				<Waze newClass="h-16 w-auto animate-delay-[1500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#7E87A6" />
+				<Meta newClass="w-16 h-auto animate-delay-[1750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#2D313C" />
+				<YouTube newClass="w-16 h-auto animate-delay-[2000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#2E323D" fill2="#0B0211" />
 			</div>
 		</div>
 	</div>

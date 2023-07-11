@@ -12,7 +12,7 @@
 
   const intro = "Collaboration entre l'agence Beavers & le domaine viticole Terre Rouge pour le développement de leur site internet en WordPress."
   const logo = {
-    src: '/img/Imagine.png',
+    src: '/img/imagine-2050.png',
     alt: 'image'
   }
   const duration = '3 mois'
