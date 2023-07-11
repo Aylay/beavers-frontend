@@ -65,8 +65,7 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
       },
       "reviewRating": {
         "@type": "AggregateRating",
-        "ratingValue": review.text.replace(/<(.|\n)*?>/g, ''),
-        "reviewCount": testimonies.length
+        "ratingValue": review.text.replace(/<(.|\n)*?>/g, '')
       }
 		}
 		reviews.push(newReview)
@@ -76,7 +75,11 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
     '@context': 'https://schema.org',
     "@type": "Organization",
     "@id": 'https://beavers-agency.fr',
-    "review": reviews
+    "review": reviews,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "reviewCount": testimonies.length
+    }
   }
 </script>
 
