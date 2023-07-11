@@ -8,7 +8,7 @@ const subtitle = 'Les mentions légales vues par les castors'
 
 <div class="flex flex-col gap-20 lg:gap-40 pb-20 lg:pb-40">
   <Header {title} {subtitle} />
-  <div class="big-container content-style flex flex-col gap-8">
+  <div class="small-container content-style flex flex-col gap-8">
     <h2>Le site beavers-agency.fr</h2>
     <h3>Informations légales</h3>
     <p>

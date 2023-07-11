@@ -8,7 +8,7 @@ const subtitle = 'Les cookies vus par les castors'
 
 <div class="flex flex-col gap-20 lg:gap-40 pb-20 lg:pb-40">
   <Header {title} {subtitle} />
-  <div class="big-container content-style flex flex-col gap-8">
+  <div class="small-container content-style flex flex-col gap-8">
     <h2>Définitions</h2>
     <p>
       L’éditeur : La personne, physique ou morale, qui édite les services de communication au public en ligne => Beavers<br />

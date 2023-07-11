@@ -1,0 +1,130 @@
+<script lang="ts">
+	import Sun from '$lib/assets/svg/Sun.svelte';
+	import MultipleArrows from '$lib/assets/svg/MultipleArrows.svelte';
+	import Wave2 from '$lib/assets/svg/Wave2.svelte';
+	import Logo from "$lib/assets/svg/Logo.svelte";
+	import Linkedin from "$lib/assets/svg/Linkedin.svelte";
+	import Instagram from "$lib/assets/svg/Instagram.svelte";
+	import Tiktok from "$lib/assets/svg/Tiktok.svelte";
+	import Facebook from "$lib/assets/svg/Facebook.svelte";
+	import Pinterest from "$lib/assets/svg/Pinterest.svelte";
+
+  const links: Array<any> = [
+    {
+      href: "/l-agence-beavers",
+      title: "Connaître Beavers",
+      label: "Connaître l'agence et l'équipe",
+      blank: false
+    },
+    {
+      href: "/contactez-nous",
+      title: "Demander un devis",
+      label: "Demander un devis",
+      blank: false
+    },
+    {
+      href: "/la-pause-cafe",
+      title: "Lire les articles du blog de Beavers",
+      label: "Lire nos articles de blog",
+      blank: false
+    },
+    {
+      href: "/cas-agence",
+      title: "Voir les cas de l'agence Beavers",
+      label: "Voir les cas agence",
+      blank: false
+    },
+    {
+      href: "/programme-rse",
+      title: "Le programme RSE de Beavers",
+      label: "Voir notre programme RSE",
+      blank: false
+    },
+    {
+      href: "https://tree-nation.com/fr/profil/beavers",
+      title: "La forêt Tree-Nation de Beavers",
+      label: "Voir la forêt de Beavers",
+      blank: true
+    },
+    {
+      href: "/",
+      title: "Beavers, l'agence digitale des castors",
+      label: "Visiter le site",
+      blank: false
+    }
+  ]
+</script>
+
+<div class="lg:min-h-screen flex justify-center bg-rock overflow-hidden pt-40">
+  <div class="small-container relative flex flex-col items-center gap-8">
+    <a href="/" title="Beavers, l'agence digitale des castors" class="mb-20">
+      <Logo newClass="max-w-[18rem] w-full h-auto" />
+    </a>
+    {#each links as link}
+    <a
+      class="text-6 font-bold hover:bg-bright hover:text-black duration-300 rounded-[3rem] border-2 px-10 py-4 transition-colors w-full text-center"
+      href={link.href}
+      title={link.title}
+      target={link.blank ? '_blank' : '_self'}
+    >
+      {link.label}
+    </a>
+    {/each}
+    <div class="flex gap-8 mt-8">
+      <a
+        href="https://www.linkedin.com/company/beavers-agency/"
+        target="_blank"
+        rel="external noreferrer"
+        title="Retrouvez les castors de Beavers sur Linkedin"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+      >
+        <Linkedin newClass="w-10 lg:w-7 h-auto" />
+      </a>
+      <a
+        href="https://www.instagram.com/beavers.agency/"
+        target="_blank"
+        rel="external noreferrer"
+        title="Retrouvez les castors de Beavers sur Instagram"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+      >
+        <Instagram newClass="w-10 lg:w-7 h-auto" />
+      </a>
+      <a
+        href="https://www.tiktok.com/@beavers.agency"
+        target="_blank"
+        rel="external noreferrer"
+        title="Retrouvez les castors de Beavers sur TikTok"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+      >
+        <Tiktok newClass="w-auto h-10 lg:h-7" />
+      </a>
+      <a
+      href="https://www.pinterest.fr/beaversagency/"
+        target="_blank"
+        rel="external noreferrer"
+        title="Retrouvez les castors de Beavers sur Pinterest"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+      >
+        <Pinterest newClass="w-auto h-10 lg:h-7" />
+      </a>
+      <a
+        href="https://www.facebook.com/beavers.agency/"
+        target="_blank"
+        rel="external noreferrer"
+        title="Retrouvez les castors de Beavers sur Facebook"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-bright bg-seance"
+      >
+        <Facebook newClass="w-auto h-10 lg:h-7" />
+      </a>
+    </div>
+    <Sun newClass="w-24 h-auto absolute left-1/4 bottom-full animate-infinite animate-delay-500 animate-ping" color="#8013BD" />
+    <Sun newClass="w-28 h-auto absolute right-1/4 -bottom-48 animate-infinite animate-ping" color="#00FFDA" />
+    <MultipleArrows newClass="absolute top-16 right-[15%] fill-bright animate-infinite animate-delay-700 animate-fade" />
+    <Wave2 newClass="absolute top-28 left-0 fill-bright animate-infinite animate-delay-1000 animate-shake" />
+    <Wave2 newClass="absolute -bottom-32 right-0 fill-seance animate-infinite animate-delay-500 animate-shake" />
+    <div class="absolute right-1/4 top-0 h-[2px] w-20 -rotate-45 transform bg-seance animate-infinite animate-delay-[1200ms] animate-fade" />
+    <div class="absolute right-1/4 top-8 h-[2px] w-20 -rotate-45 transform bg-seance animate-infinite animate-delay-[1400ms] animate-fade" />
+    <div class="absolute left-1/4 bottom-[-12rem] h-[2px] w-20 -rotate-45 transform bg-bright animate-infinite animate-delay-[1800ms] animate-fade" />
+    <div class="absolute left-1/4 bottom-[-14rem] h-[2px] w-20 -rotate-45 transform bg-bright animate-infinite animate-delay-[2000ms] animate-fade" />
+  </div>
+</div>
