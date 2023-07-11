@@ -19,8 +19,8 @@
   allWords = allWords.concat(allWords)
 </script>
 
-<div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60 flex justify-center items-center">
-  <div class="big-container bg-rock relative z-20 flex justify-between items-center gap-32">
+<div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60 max-lg:pb-28 flex justify-center items-center">
+  <div class="big-container bg-rock relative z-20 flex justify-between items-center gap-16 lg:gap-32 max-lg:flex-col">
     <div class="flex-1">
       <Line />
       <h1 class="text-3 text-seance">
@@ -67,7 +67,7 @@
         </div>
       </div>
     </div>
-    <div class="p-20 max-w-[70rem] w-full">
+    <div class="py-20 lg:px-20 lg:max-w-[70rem] w-full">
       <LeadForm />
     </div>
   </div>

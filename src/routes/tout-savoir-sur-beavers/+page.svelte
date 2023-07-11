@@ -55,10 +55,10 @@
   ]
 </script>
 
-<div class="lg:min-h-screen flex justify-center overflow-hidden bg-rock pt-40">
+<div class="lg:min-h-screen flex justify-center overflow-hidden bg-rock pt-20 lg:pt-40">
   <div class="small-container relative flex flex-col items-center gap-8">
     <a href="/" title="Beavers, l'agence digitale des castors" class="mb-20">
-      <Logo newClass="max-w-[18rem] w-full h-auto" />
+      <Logo newClass="max-w-[16rem] lg:max-w-[18rem] w-full h-auto" />
     </a>
     {#each links as link}
     <a

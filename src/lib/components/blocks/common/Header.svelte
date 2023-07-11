@@ -7,12 +7,12 @@
   export let subtitle: string;
 </script>
 
-<div class="lg:h-screen flex justify-center items-center bg-rock">
+<div class="h-screen flex justify-center items-center bg-rock">
   <div class="big-container relative">
-    <h1 class="text-outline text-1 text-center">
+    <h1 class="text-outline text-1-m lg:text-1 text-center">
       {title}
     </h1>
-    <h2 class="text-seance text-3 text-center mt-1">
+    <h2 class="text-seance text-4 font-semibold lg:text-3 text-center mt-1">
       {subtitle}
     </h2>
     <Sun newClass="animate-once w-24 h-auto absolute left-1/4 bottom-full animate-delay-500 animate-ping" color="#8013BD" />

@@ -16,16 +16,16 @@
   </script>
 
 <div>
-  <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60">
-    <div class="big-container flex flex-col h-screen items-center justify-center relative z-20">
-      <div class="w-full flex flex-col">
-        <h1 class="text-1 text-outline text-center">
+  <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60 max-lg:pb-28">
+    <div class="big-container flex flex-col lg:h-screen items-center justify-center relative z-20">
+      <div class="w-full flex flex-col max-lg:gap-8">
+        <h1 class="text-1-m lg:text-1 text-outline lg:text-center">
           Etudes de cas
         </h1>
-        <p class="mb-12 text-3 text-center">
+        <p class="text-4 font-semibold lg:text-3 lg:text-center">
           Réalisation. Objectifs. Conversions.
         </p>
-        <div class="w-full mt-20 flex justify-end">
+        <div class="w-full lg:mt-32 flex justify-end">
           <div class="lg:w-1/2 lg:pl-20">
             <h2 class="text-left text-6 text-bright font-semibold mb-16">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis vehicula imperdiet. Nam et placerat dui, vel condimentum ligula. Morbi velit enim, gravida sed ligula eget, pharetra vulputate elit. Sed mollis, dolor in luctus bibendum, turpis libero tempus nunc, ut efficitur lorem eros vel orci. Nunc posuere mi urna.

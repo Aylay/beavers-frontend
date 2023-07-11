@@ -31,13 +31,13 @@
         <h3 class="transition-colors font-semibold text-4 {active ? 'text-white' : 'text-seance'}">
           {job.title}
         </h3>
-        <div class="flex gap-20 items-center">
-          <div class="flex gap-4 items-center">
+        <div class="flex max-lg:flex-col gap-10 lg:gap-20 lg:items-center">
+          <div class="flex gap-8 lg:gap-4 items-center">
             <Contract newClass="fill-bright w-10 h-auto" />
             <p class="text-6 font-semibold">{job.contract}</p>
           </div>
-          <div class="flex gap-4 items-center">
-            <Pin newClass="fill-bright w-7 h-auto" />
+          <div class="flex gap-8 lg:gap-4 items-center">
+            <Pin newClass="fill-bright w-10 lg:w-7 h-auto" />
             <p class="text-6 font-semibold">{job.localisation}</p>
           </div>
         </div>

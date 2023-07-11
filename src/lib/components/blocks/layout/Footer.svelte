@@ -152,7 +152,7 @@
           </p>
         </div>
       </div>
-      <div class="flex lg:justify-around max-lg:gap-8 gap-4 lg:items-center lg:flex-col max-lg:flex-wrap">
+      <div class="flex lg:justify-around gap-8 lg:items-center lg:flex-col max-lg:flex-wrap">
         <a
           href="https://theoceancleanup.com/"
           target="_blank"

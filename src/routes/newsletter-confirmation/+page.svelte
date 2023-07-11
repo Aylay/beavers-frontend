@@ -9,4 +9,6 @@
 	<meta name="robots" content="noindex" />
 </svelte:head>
 
-<Header {title} {subtitle} />
+<div class="max-lg:px-4">
+  <Header {title} {subtitle} />
+</div>

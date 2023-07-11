@@ -78,12 +78,12 @@
 
 <svelte:window bind:scrollY={y} />
 
-<header class="top-0 inset-x-0 w-full py-8 transition-colors {y > windowHeight ? 'bg-rock fixed animate-fade-down' : 'bg-transparent absolute'}  {y === 0 && menuOpened ? '!bg-rock' : ''} z-50">
-  <div class="big-container flex justify-between items-end gap-16 relative">
+<header class="top-0 inset-x-0 w-full py-8 transition-colors {y > windowHeight ? 'bg-rock absolute lg:fixed lg:animate-fade-down' : 'bg-transparent absolute'}  {y === 0 && menuOpened ? '!bg-rock' : ''} z-50">
+  <div class="big-container flex justify-center lg:justify-between items-end gap-16 relative">
     <a href="/" title="Beavers, l'agence digitale des castors" class="pb-2 duration-300 transition-all {menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Logo newClass="max-w-[13rem] w-full h-auto" />
     </a>
-    <Hoverable let:hovering={active}>
+    <Hoverable newClass="max-lg:hidden" let:hovering={active}>
       <div class="flex justify-center gap-6 items-center cursor-pointer" on:click={() => (menuOpened = !menuOpened)}>
         <p class="uppercase text-[1.8rem] leading-[2.2rem] font-bold text-white {active ? 'animate-shake' : ''}">{@html labelMenu}</p>
         <div class="relative h-7 w-8">
@@ -105,7 +105,7 @@
         </div>
       </div>
     </Hoverable>
-    <nav class="absolute h-full flex items-end inset-0 w-[calc(100%-10rem)] transition-all duration-300 {!menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
+    <nav class="max-lg:hidden absolute h-full flex items-end inset-0 w-[calc(100%-10rem)] transition-all duration-300 {!menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
       <Hoverable let:hovering={active} newClass="flex-1">
       <ul class="w-full flex justify-between">
         {#each items as item}
@@ -120,6 +120,6 @@
     </nav>
   </div>
   {#if isArticle && y > windowHeight}
-  <div class="absolute top-full left-0 h-[8px] from-seance from-40% to-bright to-60% bg-gradient-to-r" style="width: {widthScroll}%;" />
+  <div class="max-lg:hidden absolute top-full left-0 h-[8px] from-seance from-40% to-bright to-60% bg-gradient-to-r" style="width: {widthScroll}%;" />
   {/if}
 </header>
