@@ -118,22 +118,19 @@
       text: 'Lorem ipsum dolor sit amet.'
     }
   ]
-
-  const newColor: string = '#C6142F'
-  const color: string = (newColor !== '') ? newColor : '#8013BD'
 </script>
 
 <div class="flex flex-col gap-32 lg:gap-40 pb-32 lg:pb-40">
   <Header />
-  <Intro intro={intro} color={color} />
-  <Prez logo={logo} duration={duration} gear={gear} website={website} brand={brand} color={color} />
+  <Intro intro={intro} />
+  <Prez logo={logo} duration={duration} gear={gear} website={website} brand={brand} />
   <ImgFull mainImg={mainImg} />
   <ContextNeeds context={context} needs={needs} />
-  <Goals goals={goals} goalsImg={goalsImg} color={color} />
+  <Goals goals={goals} goalsImg={goalsImg} />
   <Actions actions={actions} actionsImg={actionsImg} />
   {#if otherUseCases.length > 0}
   <OtherUseCases useCases={otherUseCases} />
   {/if}
-  <Results resultText={resultText} results={results} website={website} brand={brand} color={color} />
+  <Results resultText={resultText} results={results} website={website} brand={brand} />
   <UseCases {cases} firstText="Découvrez d’autres<br />" />
 </div>

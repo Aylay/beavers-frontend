@@ -24,7 +24,7 @@
 	on:inview_change={handleChange}
 >
   <Line />
-  <h2 class="text-4 font-semibold lg:text-3 {isInView ? 'animate-fade-right' : 'opacity-0'}" style="color: {color}">
+  <h2 class="text-4 font-semibold lg:text-3 text-seance {isInView ? 'animate-fade-right' : 'opacity-0'}">
     {intro}
   </h2>
 </div>

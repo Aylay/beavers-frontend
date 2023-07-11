@@ -5,22 +5,28 @@
 
 	const logos = [
 		{
+			src: '/img/clients/cafes-richard.svg',
+			newClass: 'w-full h-auto',
+			href: '#',
+			title: 'Cafés Richard'
+		},
+		{
 			src: '/img/clients/keune.svg',
 			newClass: 'w-full h-auto',
 			href: '#',
 			title: 'Keune Haircosmetics'
 		},
 		{
-			src: '/img/clients/v-zug.svg',
-			newClass: 'h-full w-auto',
-			href: '#',
-			title: 'V-ZUG'
-		},
-		{
 			src: '/img/clients/imagine-2050.svg',
 			newClass: 'h-full w-auto',
 			href: '#',
 			title: 'Imagine 2050'
+		},
+		{
+			src: '/img/clients/v-zug.svg',
+			newClass: 'h-full w-auto',
+			href: '#',
+			title: 'V-ZUG'
 		},
 		{
 			src: '/img/clients/we-van.png',
@@ -33,12 +39,6 @@
 			newClass: 'w-full h-auto',
 			href: '#',
 			title: 'Ki Lyon'
-		},
-		{
-			src: '/img/clients/cafes-richard.svg',
-			newClass: 'w-full h-auto',
-			href: '#',
-			title: 'Cafés Richard'
 		}
 	];
 </script>
