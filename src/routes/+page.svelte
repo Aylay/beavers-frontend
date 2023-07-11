@@ -126,6 +126,7 @@
 				"email" : "les-castors@beavers-agency.fr",
 				"address": {
 					"@type": "PostalAddress",
+					"streetAddress": "28 rue de la font des anguilles",
 					"addressLocality": "Roquebrune-sur-Argens, France",
 					"postalCode": "F-83520"
 				},
@@ -146,6 +147,31 @@
 					"https://www.pinterest.fr/beaversagency",
 					"https://societe.com/societe/beavers-853663334.html",
 					"https://www.infogreffe.fr/entreprise-societe/853663334-beavers-830322B017320000.html"
+				],
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday"
+						],
+						"opens": "09:00",
+						"closes": "12:00"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Thursday",
+							"Friday"
+						],
+						"opens": "14:00",
+						"closes": "18:00"
+					}
 				],
 				"foundingDate": "2019",
 				"founders": [
