@@ -3,7 +3,6 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	export let src: string;
-	export let alt: string;
 	export let newClass: string;
 	export let href: string;
 	export let title: string;

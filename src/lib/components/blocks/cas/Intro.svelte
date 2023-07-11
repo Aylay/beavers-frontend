@@ -5,7 +5,6 @@
 	import Line from '../utilities/Line.svelte';
 
 	export let intro: string = '';
-	export let color: string = '';
 
   let isInView: boolean;
   const options: Options = {
