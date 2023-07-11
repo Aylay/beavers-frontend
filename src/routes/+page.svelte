@@ -10,6 +10,7 @@
 	import Support from '$lib/components/blocks/hp/Support.svelte';
 	import UseCases from '$lib/components/blocks/UseCases.svelte';
 	import Testimonies from '$lib/components/blocks/hp/Testimonies.svelte';
+	import LDTag from '$lib/components/utilities/LDTag.svelte'
 
 	const titleFirst = 'Les 3 derniers articles<br />de la'
 	const titleSecond = 'pause café'
@@ -104,7 +105,127 @@
 			key2: 'd’utilisateurs'
 		}
 	];
+
+	const schema = {
+    '@context': 'https://schema.org',
+    "@graph": [
+			{
+				"@type": "WebSite",
+				"name": "Beavers",
+				"url": 'https://beavers-agency.fr',
+				"@id": 'https://beavers-agency.fr'
+			},
+			{
+				"@type": "Organization",
+				"@id": 'https://beavers-agency.fr',
+				"name": "Beavers",
+				"url": 'https://beavers-agency.fr',
+				"legalName": "Beavers SAS",
+				"slogan": "Beavers, le digital à pleines dents !",
+				"description": "L'agence Beavers, spécialisée dans le marketing digital, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+				"email" : "les-castors@beavers-agency.fr",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Roquebrune-sur-Argens, France",
+					"postalCode": "F-83520"
+				},
+				"contactPoint" : [{
+					"@type" : "ContactPoint",
+					"email" : "les-castors@beavers-agency.fr",
+					"url": 'https://beavers-agency.fr/contactez-nous',
+					"telephone" : "+33-664644470",
+					"contactType" : "customer service",
+					"contactOption" : "TollFree",
+					"availableLanguage" : ["French", "English"]
+				}],
+				"sameAs": [
+					"https://www.linkedin.com/company/beavers-agency/",
+					"https://www.facebook.com/beavers.agency/",
+					"https://www.instagram.com/beavers.agency/",
+					"https://www.tiktok.com/@beavers.agency",
+					"https://www.pinterest.fr/beaversagency",
+					"https://societe.com/societe/beavers-853663334.html",
+					"https://www.infogreffe.fr/entreprise-societe/853663334-beavers-830322B017320000.html"
+				],
+				"foundingDate": "2019",
+				"founders": [
+					{
+						"@type": "Person",
+						"name": "Lucas ATTALI",
+						"alternateName": "Aylay",
+						"@id": "https://www.lucas-attali.me",
+						"url": "https://www.lucas-attali.me",
+						"sameAs": [
+							"https://www.facebook.com/lucas.attali",
+							"https://twitter.com/LucasAttali",
+							"https://www.instagram.com/aylllay",
+							"https://www.linkedin.com/in/lucasattali",
+							"https://github.com/Aylay"
+						],
+						"image": [
+							{
+								"@type": "ImageObject",
+								"contentUrl": "https://www.lucas-attali.me/lucas-attali.jpeg"
+							}
+						],
+						"email": "lattali@beavers-agency.fr",
+						"gender": "Male",
+						"birthDate": "1988-09-20",
+						"birthPlace": "Paris, France",
+						"nationality": "France",
+						"alumniOf": [
+							{
+								"@type": "CollegeOrUniversity",
+								"name": "Institut de l'Internet et du Multimédia",
+								"sameAs": "https://www.iim.fr/"
+							}
+						],
+						"colleague": [
+							{
+								"@type": "Person",
+								"@id": "https://marie-claire-blaizot.me"
+							}
+						],
+						"jobTitle": "Président & Directeur de Production"
+					},
+					{
+						"@type": "Person",
+						"name": "Marie-Claire BLAIZOT",
+						"@id": "https://marie-claire-blaizot.me",
+						"url": "https://marie-claire-blaizot.me",
+						"jobTitle": "Directrice Générale & Directrice Média",
+						"birthDate": "1988-06-03",
+						"birthPlace": "Le Mans, France",
+						"nationality": "France",
+						"gender": "Female",
+						"sameAs": [
+							"https://www.linkedin.com/in/marie-claire-blaizot-7332192b/"
+						],
+						"email": "mcblaizot@beavers-agency.fr",
+						"image": [
+							{
+								"@type": "ImageObject",
+								"contentUrl": "https://www.marie-claire-blaizot.me/mcb.jpg"
+							}
+						],
+						"colleague": [
+							{
+								"@type": "Person",
+								"@id": "https://www.lucas-attali.me"
+							}
+						]
+					}
+				],
+				"logo": {
+					"@type": "ImageObject",
+					"url": 'https://beavers-agency.fr/logo-beavers.png'
+				}
+			}
+		]
+}
 </script>
+
+<LDTag {schema} />
 
 <div class="flex flex-col gap-48 lg:gap-96 max-lg:px-4 pb-48 lg:pb-96">
 	<Header />
