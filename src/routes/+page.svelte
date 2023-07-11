@@ -128,7 +128,8 @@
 					"@type": "PostalAddress",
 					"streetAddress": "28 rue de la font des anguilles",
 					"addressLocality": "Roquebrune-sur-Argens, France",
-					"postalCode": "F-83520"
+					"postalCode": "83520",
+					"addressCountry": "FR"
 				},
 				"contactPoint" : [{
 					"@type" : "ContactPoint",
