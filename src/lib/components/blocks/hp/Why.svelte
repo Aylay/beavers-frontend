@@ -54,10 +54,10 @@
 
 	const bottoms = ['-bottom-24', '-bottom-12', 'bottom-0', 'bottom-12', 'bottom-24'];
 
-	let faqsSchema = []
+	let faqsSchema: Array<any> = []
 	for (let i = 0; i < faqs.length; i++) {
-		const faq = faqs[i];
-		const newFaq = {
+		const faq: any = faqs[i];
+		const newFaq: any = {
 			"@type": "Question",
 			"name": faq.question,
 			"acceptedAnswer": {

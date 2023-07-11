@@ -4,6 +4,7 @@
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
 	import Quote from '$lib/assets/svg/Quote.svelte';
+	import LDTag from '$lib/components/utilities/LDTag.svelte'
 
   type Testimony = {
   name: string;
@@ -51,7 +52,34 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 
     return shuffled.slice(0, num);
   }
+
+  let reviews: Array<any> = []
+	for (let i = 0; i < testimonies.length; i++) {
+		const review: any = testimonies[i];
+		const newReview: any = {
+			"@type": "Review",
+			"author": {
+        "@type": "Person",
+        "name": review.name,
+        "worksFor": review.company
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": review.text.replace(/<(.|\n)*?>/g, '')
+      }
+		}
+		reviews.push(newReview)
+	}
+
+  const schema = {
+    '@context': 'https://schema.org',
+    "@type": "Organization",
+    "@id": 'https://beavers-agency.fr',
+    "review": reviews
+  }
 </script>
+
+<LDTag {schema} />
 
 <div class="big-container"
 use:inview={options}
