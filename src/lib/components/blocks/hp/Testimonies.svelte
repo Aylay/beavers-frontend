@@ -76,7 +76,8 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
     "review": reviews,
     "aggregateRating": {
       "@type": "AggregateRating",
-      "reviewCount": testimonies.length
+      "reviewCount": testimonies.length,
+      'ratingValue': '5'
     }
   }
 </script>
