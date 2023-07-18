@@ -36,21 +36,21 @@ use:inview={options}
 on:inview_change={handleChange}>
 <div class="relative flex flex-1 justify-center gap-8 max-lg:order-2" use:inview={optionsImg} on:inview_change={handleChangeImg}>
 	<div class="flex flex-1 flex-col gap-8">
-		<div class="flex-3 overflow-hidden rounded-lg">
+		<div class="flex-3">
 			{#if isInViewImg}
 				<img
 					src="/img/hp/manifesto-2-1.jpg"
-					alt="Coucou"
-					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					alt="Un pot de fausse fleur + un téléphone avec Instagram"
+					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}
 		</div>
-		<div class="flex-2 overflow-hidden rounded-lg">
+		<div class="flex-2">
 			{#if isInViewImg}
 				<img
 					src="/img/hp/manifesto-2-2.jpg"
-					alt="Coucou"
-					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					alt="Tasse à café tenue par une personne"
+					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}
 		</div>
@@ -72,12 +72,12 @@ on:inview_change={handleChange}>
 				style="animation-delay: {600 + 200 * i}ms;"
 			/>
 		{/each}
-		<div class="w-full overflow-hidden rounded-lg lg:h-1/2">
+		<div class="w-full lg:h-1/2">
 			{#if isInViewImg}
 				<img
 					src="/img/hp/manifesto-2-3.jpg"
-					alt="Coucou"
-					class="h-full w-full object-cover {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					alt="4 personnes qui se tiennent le poignet"
+					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}
 		</div>

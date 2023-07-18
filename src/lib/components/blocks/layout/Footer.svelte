@@ -183,9 +183,3 @@
     </div>
   </div>
 </footer>
-
-<style>
-#tree-nation-tree-counter > div {
-  width: 100% !important;
-}
-</style>

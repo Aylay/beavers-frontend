@@ -39,10 +39,10 @@
       <div class="flex-1 text-center flex flex-col gap-4 {isInView ? 'animate-fade' : 'opacity-0'}"
       style="animation-delay: {150 * i}ms;">
         <p class="text-[6rem] font-bold leading-[5rem] text-seance">
-          {result.number}
+          {result.text1}
         </p>
         <p class="text-6">
-          {result.text}
+          {result.text2}
         </p>
       </div>
     {/each}

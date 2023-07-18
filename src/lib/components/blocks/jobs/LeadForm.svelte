@@ -1,5 +1,6 @@
 <script lang="ts">
   export let id: number;
+  export let jobTitle: string;
 	import SpecificInput from "$lib/components/blocks/utilities/SpecificInput.svelte";
   import Line from "../utilities/Line.svelte";
 	import SpecificTextarea from "../utilities/SpecificTextarea.svelte";
@@ -14,9 +15,76 @@
   let linkedin = '';
 	let linkedinError = false;
   let website = '';
-	let websiteError = false;
   let cv = '';
   let message = '';
+  let onError = false;
+  let textDisplayed: string = '';
+
+  async function addApplicant() {
+		checkFormError();
+		if (emailError) {
+			return;
+		}
+
+    const data = {
+      firstName: firstName,
+      lastName: lastName,
+      phone: phone,
+      email: email,
+      linkedIn: linkedin,
+      portfolio: website,
+      cv: cv,
+      message: message,
+      job: id,
+      jobTitle: jobTitle
+    };
+
+    fetch(import.meta.env.VITE_STRAPI_URL + '/api/candidatures', {
+      method: 'POST',
+      body: JSON.stringify({ data }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+	}
+
+  function checkFormError() {
+    firstNameError = false;
+	  lastNameError = false;
+	  emailError = false;
+    linkedinError = false;
+    onError = false;
+
+    if (firstName === '' || firstName.length < 2) {
+      onError = true;
+      firstNameError = true;
+    }
+
+    if (lastName === '' || lastName.length < 2) {
+      onError = true;
+      lastNameError = true;
+    }
+
+    if (email === '' || (email !== '' && !validEmail(email))) {
+      emailError = true;
+      onError = true;
+    }
+
+    if (linkedin === '' || linkedin.length < 2) {
+      onError = true;
+      linkedinError = true;
+    }
+
+    if (onError) {
+      textDisplayed = "Une erreur s'est glissée ici."
+    }
+  }
+
+  function validEmail(email: string) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
 </script>
 
 <div class="bg-rock py-32 lg:py-40">
@@ -69,7 +137,6 @@
           required={true}
         />
         <SpecificInput
-          error={websiteError}
           content="Portfolio"
           bind:value={website}
         />
@@ -85,6 +152,11 @@
         content="Quelque chose à ajouter ?"
         bind:value={message}
       />
+      {#if textDisplayed !== ''}
+        <p class="text-7 w-full text-bright">
+          {textDisplayed}
+        </p>
+      {/if}
       <div class="flex max-lg:flex-col gap-10 lg:gap-40 justify-between">
         <div>
           <p class="text-7">
@@ -95,7 +167,9 @@
           </p>
         </div>
         <div class="flex-1">
-          <button class="text-6 font-bold text-white border-bright bg-transparent hover:bg-bright hover:text-black duration-300 rounded-[3rem] border-2 px-10 py-4 transition-colors">
+          <button
+            on:click|preventDefault={addApplicant}
+            class="text-6 font-bold text-white border-bright bg-transparent hover:bg-bright hover:text-black duration-300 rounded-[3rem] border-2 px-10 py-4 transition-colors">
             Postuler
           </button>
         </div>

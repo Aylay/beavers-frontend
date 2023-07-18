@@ -88,7 +88,7 @@
 							{treeNation.co2_compensated.toLocaleString()} tonnes
 						</h3>
 						<p class="text-6">
-							Total de CO2 capturé
+							Total de CO2 capturés
 						</p>
 					</div>
 				</div>

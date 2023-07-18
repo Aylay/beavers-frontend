@@ -5,6 +5,7 @@
 	import Block4Site from "$lib/components/blocks/prod/Block4Site.svelte";
   import Header2 from "$lib/components/blocks/prod/Header2.svelte";
 	import PictosSite from "$lib/components/blocks/prod/PictosSite.svelte";
+	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 
   const title = 'Création de site internet'
   const subtitle = 'Site vitrine. Blog. Site e-commerce.'
@@ -14,7 +15,14 @@
   ]
 
   const title2 = 'UX, Web Design et Développement Web'
+
+  const meta = {
+    title: "Tous les Cas agence de l'agence digitale Beavers",
+    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+  }
 </script>
+
+<MetaFront {meta} />
 
 <div class="flex flex-col gap-48 lg:gap-96 max-lg:px-4 pb-48 lg:pb-96">
 	<Header2 {title} {subtitle} {intro} {words} />

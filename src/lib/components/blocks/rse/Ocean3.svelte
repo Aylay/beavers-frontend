@@ -56,7 +56,7 @@ on:inview_change={handleChange}>
 				{#if isInViewImg}
 					<img
 						src="/img/rse/the-ocean-cleanup-4.jpg"
-						alt="Coucou"
+						alt="The Ocean Cleanup"
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}

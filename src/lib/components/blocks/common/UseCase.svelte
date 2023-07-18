@@ -2,7 +2,7 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
-	import Blank from '../../../assets/svg/Blank.svelte';
+	import Blank from '$lib/assets/svg/Blank.svelte';
 
 	export let useCase: any = {};
 	export let i: number;
@@ -39,34 +39,32 @@
 		>
 			{#if isInView}
 				<img
-					src={strapiURL + useCase.img1.src}
-					alt={useCase.img1.alt ? useCase.img1.alt : useCase.title}
+					src={strapiURL + useCase.attributes.mainImg.data.attributes.url}
+					alt={useCase.attributes.mainImg.data.attributes.alternativeText ? useCase.attributes.mainImg.data.attributes.alternativeText : useCase.attributes.title}
 					class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}
 		</div>
-		{#if useCase.key1 && useCase.key2}
+		{#if useCase.attributes.resultDisplayed}
 			<div
 				class="absolute max-lg:left-5 left-10 max-lg:top-5 top-10 z-20 flex items-center gap-4 rounded-3xl bg-seance px-6 py-1 animate-delay-1000 {isInView
 					? 'animate-fade'
 					: 'opacity-0'}"
 			>
-				{#if useCase.key1}
-				<p class="text-5 text-bright">{useCase.key1}</p>
-				{/if}
-				{#if useCase.key2}
-				<p class="text-6">{useCase.key2}</p>
-				{/if}
+				
+				<p class="text-5 text-bright">{useCase.attributes.resultDisplayed.text1}</p>
+				<p class="text-6">{useCase.attributes.resultDisplayed.text2}</p>
 			</div>
 		{/if}
-		{#if useCase.website}
+		{#if useCase.attributes.website}
 			<a
 				class="absolute max-lg:right-5 right-10 max-lg:top-5 top-10 z-20 flex h-14 w-14 items-center justify-center rounded-3xl bg-bright animate-delay-1000 {isInView
 					? 'animate-fade'
 					: 'opacity-0'}"
 				target="_blank"
 				rel="noopener"
-				href={useCase.website}
+				href={useCase.attributes.website}
+				title="Site {useCase.attributes.client.data.attributes.name}"
 			>
 				<Blank />
 			</a>
@@ -75,18 +73,19 @@
 			class="relative z-30 flex h-3/5 w-full flex-col overflow-hidden animate-delay-1000 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}"
-			href={useCase.slug}
+			href="/cas/{useCase.attributes.slug}"
+			title={useCase.attributes.title}
 		>
 			<div
 				class="absolute z-30 flex transform flex-col transition-all duration-500 max-lg:bottom-1/2 max-lg:translate-y-1/2 {active
 					? 'lg:bottom-1/2 lg:translate-y-1/2'
 					: 'lg:bottom-0'}"
 			>
-				<h4 class="mb-5 text-5 text-bright">{useCase.client}</h4>
-				<h5 class="mb-11 text-6">{useCase.title}</h5>
+				<h4 class="mb-5 text-5 text-bright">{useCase.attributes.client.data.attributes.name}</h4>
+				<h5 class="mb-11 text-6">{useCase.attributes.title}</h5>
 				<div class="flex flex-wrap gap-3">
-					{#each useCase.tags as tag}
-						<p class="rounded-3xl bg-seance px-6 py-2 text-7 font-medium">{tag}</p>
+					{#each useCase.attributes.categories.data as tag}
+						<p class="rounded-3xl bg-seance px-6 py-2 text-7 font-medium">{tag.attributes.title}</p>
 					{/each}
 				</div>
 			</div>
@@ -95,12 +94,13 @@
 			class="absolute inset-x-0 top-0 z-10 h-full w-full transition-all duration-500 animate-delay-1000 max-lg:max-h-[40%] {active
 				? 'lg:max-h-[40%]'
 				: 'lg:max-h-0'} {isInView ? 'animate-fade' : 'opacity-0'}"
-			href={useCase.slug}
+			href="/cas/{useCase.attributes.slug}"
+			title={useCase.attributes.title}
 		>
 			{#if isInView}
 				<img
-					src={useCase.img2.src}
-					alt={useCase.img2.alt ? useCase.img2.alt : useCase.title}
+					src={strapiURL + useCase.attributes.thumbnail.data.attributes.url}
+					alt={useCase.attributes.thumbnail.data.attributes.alternativeText ? useCase.attributes.thumbnail.data.attributes.alternativeText : useCase.attributes.title}
 					class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}

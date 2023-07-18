@@ -5,6 +5,15 @@
 	import Linkedin from "$lib/assets/svg/Linkedin.svelte";
 	import Pinterest from "$lib/assets/svg/Pinterest.svelte";
 	import WhatsApp from "$lib/assets/svg/WhatsApp.svelte";
+	import SvelteMarkdown from 'svelte-markdown';
+
+  const strapiURL = import.meta.env.VITE_STRAPI_URL;
+
+  const mdOptions = {
+    breaks: true,
+    gfm: true,
+    headerIds: false
+  };
 
   export let author: any;
   let url = ``;
@@ -15,7 +24,7 @@
 <div class="flex big-container max-lg:flex-col max-lg:gap-16">
   <div class="flex-1 lg:pr-20 lg:pl-10 lg:border-l-[2px] border-l-jagger flex max-lg:gap-6 gap-10">
     <div class="max-lg:w-32 w-[12.5rem]">
-      <img src={author.img.src} alt={author.img.alt ? author.img.alt : author.name} class="w-full h-auto" />
+      <img src={strapiURL + author.img.data.attributes.url} alt={author.img.data.attributes.alternativeText ? author.img.data.attributes.alternativeText : author.name} class="w-full h-auto" />
     </div>
     <div class="flex-1">
       <p class="text-seance text-4 font-semibold mb-2">
@@ -24,8 +33,8 @@
       <p class="text-bright font-highlight text-4 max-lg:mb-2 mb-10">
         {author.job}
       </p>
-      <p class="max-lg:text-7 text-6">
-        {author.text}
+      <p class="content-style">
+        <SvelteMarkdown source={author.text} options={mdOptions} />
       </p>
     </div>
   </div>

@@ -56,4 +56,10 @@
     -webkit-text-stroke-width: 1px;
 		@apply text-transparent;
 	}
+	.iframe-div {
+    @apply relative overflow-hidden w-full pt-[56.25%];
+  }
+  .iframe-div iframe {
+    @apply w-full h-full absolute inset-0;
+  }
 }

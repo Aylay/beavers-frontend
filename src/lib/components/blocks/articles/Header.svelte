@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/stores';
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
   
@@ -8,6 +9,14 @@
 	import Calendar from '$lib/assets/svg/Calendar.svelte';
 	import Tag from '$lib/assets/svg/Tag.svelte';
 	import Clock from '$lib/assets/svg/Clock.svelte';
+	import LDTag from '$lib/components/utilities/LDTag.svelte'
+	import SvelteMarkdown from 'svelte-markdown';
+
+  const mdOptions = {
+    breaks: true,
+    gfm: true,
+    headerIds: false
+  };
 
 	let isInView: boolean;
 	const options: Options = {
@@ -19,18 +28,66 @@
 		isInView = detail.inView;
 	};
 
-  let words: Array<string> = [
-    'CNIL', 'Google Analytics', 'RGDP', 'données personnelles'
-  ]
+  const strapiURL = import.meta.env.VITE_STRAPI_URL;
 
+  export let words: Array<string>;
+  export let category: any;
+  export let img: any;
+  export let title: string;
+  export let intro: string;
+  export let publishedDate: string;
+  export let updatedDate: string;
+  export let author: string;
+  export let readingTime: number;
   let allWords: Array<string> = []
-  for (const word of words) {
-    const newWords = word.split(' ');
-    allWords = allWords.concat(newWords)
+
+  $: {
+    allWords = []
+    for (const word of words) {
+      const newWords = word.split(' ');
+      allWords = allWords.concat(newWords)
+    }
+    allWords = allWords.concat(allWords)
+    allWords = allWords.concat(allWords)
   }
-  allWords = allWords.concat(allWords)
-  allWords = allWords.concat(allWords)
-  </script>
+
+  
+  const siteURL = import.meta.env.VITE_SITE_URL
+
+  let schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "Beavers",
+        "item": siteURL
+      },
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "La pause cafe",
+        "item": siteURL + '/la-pause-cafe'
+      },
+      {
+        "@type":"ListItem",
+        "position": 2,
+        "name": category.title,
+        "item": siteURL + '/la-pause-cafe/' + category.slug
+      },
+      {
+        "@type":"ListItem",
+        "position": 3,
+        "name": title,
+        "item": siteURL + '/la-pause-cafe/' + category.slug + '/' + $page.params.slug
+      },
+    ]
+  }
+
+</script>
+
+<LDTag {schema} />
 
 <div>
   <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60">
@@ -46,7 +103,7 @@
             |
           </li>
           <li>
-            <a href="/la-pause-café" title="La pause café Beavers" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
+            <a href="/la-pause-cafe" title="La pause café Beavers" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
               La pause café
             </a>
           </li>
@@ -54,23 +111,25 @@
             |
           </li>
           <li>
-            <a href="/la-pause-café/site-internet" title="Site internet" class="text-7 text-seance transition-colors hover:text-bright font-semibold">
-              Site internet
+            <a href="/la-pause-cafe/{category.slug}" title={category.title} class="text-7 text-seance transition-colors hover:text-bright font-semibold">
+              {category.title}
             </a>
           </li>
           <li class="text-7 text-bright font-bold">
             |
           </li>
           <li class="text-7 text-white font-semibold">
-            Quelles sont les mesures d’utilisation de Google Analytics suite à la décision de la CNIL ?
+            {title}
           </li>
         </ul>
         <h1 class="text-3 lg:text-right mb-20">
-          Quelles sont les mesures d’utilisation de Google Analytics suite à la décision de la CNIL ?
+          {title}
         </h1>
+        {#if updatedDate !== ''}
         <p class="mb-12 text-6 lg:text-right font-bold text-bright">
-          Article mis à jour le 24 mars 2023.
+          Article mis à jour le {updatedDate}.
         </p>
+        {/if}
         <div class="flex flex-col items-center w-8 gap-2">
           <Mouse newClass="h-auto w-full" color="#FFF" />
           <ArrowBottom newClass="animate-bounce"  color="#FFF" />
@@ -85,7 +144,7 @@
             Ecrit par
           </p>
           <p class="text-6 font-bold">
-            Lou Rédac
+            {author}
           </p>
         </div>
         <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-500">
@@ -96,7 +155,7 @@
             Publié le
           </p>
           <p class="text-6 font-bold">
-            17 fév 2023
+            {publishedDate}
           </p>
         </div>
         <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-[750ms]">
@@ -107,7 +166,7 @@
             Catégorie
           </p>
           <p class="text-6 font-bold">
-            Site internet
+            {category.title}
           </p>
         </div>
         <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-1000">
@@ -118,7 +177,7 @@
             Lecture
           </p>
           <p class="text-6 font-bold">
-            2 minutes
+            {readingTime} minute{readingTime > 1 ? 's' : ''}
           </p>
         </div>
       </div>
@@ -138,20 +197,19 @@
     </div>
   </div>
   
-  <div class="max-lg:mt-20 mt-40 flex big-container max-lg:gap-20 gap-40 max-lg:flex-col"
+  <div class="max-lg:mt-20 mt-40 flex big-container items-center max-lg:gap-20 gap-40 max-lg:flex-col"
     use:inview={options}
     on:inview_change={handleChange}
   >
-    <div class="lg:flex-1 h-[36rem] w-full lg:order-2 rounded-lg overflow-hidden">
+    <div class="lg:flex-1 h-[36rem] w-full lg:order-2">
       {#if isInView}
-      <img src="/img/lise.jpg" alt="couco" class="w-full h-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}" />
+        <img src={strapiURL + img.url} alt={img.alternativeText ? img.alternativeText : title} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}" />
       {/if}
     </div>
     <div class="flex-1 lg:order-1">
-      <h2 class="text-white text-6 font-semibold">
-        La Commission nationale de l’informatique et des libertés (CNIL) attaque Google pour non-respect du RGPD, soit la protection des données personnelles. Google Analytics est dans le viseur, la Commission estime que le transfert des données privées des Européens vers les USA n’est pas suffisamment encadré. L’outil d’analyse d’audience proposé par Google doit être utilisé de manière à ne pas divulguer des données sensibles aux Américains sous peine de sanction. Plus de 6 entreprises françaises doivent se mettre en conformité avec la loi informatique et liberté dans un délai d’un mois.<br /><br />Dans quelles mesures peut-on encore utiliser Google Analytics suite aux exigences de la CNIL ?
+      <h2 class="content-style">
+        <SvelteMarkdown source={intro} options={mdOptions} />
       </h2>
     </div>
-  
   </div>
 </div>

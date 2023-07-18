@@ -2,6 +2,8 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
+  import { DateTime } from "luxon";
+
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
 
 	export let article: any;
@@ -36,13 +38,14 @@
 	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInViewImg = detail.inView;
 	};
-</script>
 
+	const publishedDate = article.attributes.date ? DateTime.fromFormat(article.attributes.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLLL yyyy', { locale: "fr" }) : DateTime.fromISO(article.attributes.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
+</script>
 
 <div>
 	<a
-		href={article.slug}
-		title={article.title}
+		href="/la-pause-cafe/{article.attributes.category.data.attributes.slug}/{article.attributes.slug}"
+		title={article.attributes.title}
 		class="flex w-full flex-col {isInView ? 'animate-fade' : 'opacity-0'}"
 		style="animation-delay: {delay}ms;"
 		use:inview={options}
@@ -56,21 +59,21 @@
 			>
 				{#if isInViewImg}
 					<img
-						src={strapiURL + article.img.src}
-						alt={article.img.alt}
+						src={strapiURL + article.attributes.mainImg.data.attributes.url}
+						alt={article.attributes.mainImg.data.attributes.alternativeText ? article.attributes.mainImg.data.attributes.alternativeText : article.attributes.title}
 						class="h-full w-full object-cover transition-transform duration-[3000ms] {isInViewImg ? 'animate-fade' : ''} {active ? 'scale-125' : ''}"
 					/>
 				{/if}
 			</div>
 			<div class="mt-10 flex gap-6">
-				<p class="border-r border-r-seance pr-6 text-6 font-bold text-bright">{article.tag}</p>
-				<p class="text-6">{article.date}</p>
+				<p class="border-r border-r-seance pr-6 text-6 font-bold text-bright">{article.attributes.category.data.attributes.title}</p>
+				<p class="text-6">{publishedDate}</p>
 			</div>
 			<h4 class="mt-5 text-5 transition-colors duration-300 {active ? 'text-bright' : 'text-seance'}">
-				{article.title}
+				{article.attributes.title}
 			</h4>
 			<p class="my-8 text-6">
-				{article.description}
+				{article.attributes.excerpt}
 			</p>
 			<div
 				class="text-6 font-bold border-bright inline-block {active ? 'bg-bright text-black' : 'text-white bg-transparent'} duration-300 rounded-[3rem] border-2 px-10 py-4 transition-colors"

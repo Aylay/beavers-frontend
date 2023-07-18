@@ -40,13 +40,13 @@
 <div class="big-container flex gap-32 max-lg:flex-col lg:gap-40"
 use:inview={options}
 on:inview_change={handleChange}>
-	<div class="relative flex flex-1 justify-center gap-8"  use:inview={optionsImg} on:inview_change={handleChangeImg}>
+	<div class="relative flex flex-1 justify-center gap-8" use:inview={optionsImg} on:inview_change={handleChangeImg}>
 		<div class="flex flex-1 flex-col gap-8 ">
 			<div class="flex-3 relative">
 				{#if isInViewImg}
 					<img
 						src="/img/hp/manifesto-2-1.jpg"
-						alt="Coucou"
+						alt="Un pot de fausse fleur + un téléphone avec Instagram"
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
@@ -58,7 +58,7 @@ on:inview_change={handleChange}>
 				{#if isInViewImg}
 					<img
 						src="/img/mkt/social-2.jpg"
-						alt="Coucou"
+						alt="Personne tapant sur le clavier d'un ordinateur portable"
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
@@ -75,7 +75,7 @@ on:inview_change={handleChange}>
 				{#if isInViewImg}
 					<img
 						src="/img/mkt/social-3.jpg"
-						alt="Coucou"
+						alt="Personne prenant une autre personne en photo avec un téléphone"
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}

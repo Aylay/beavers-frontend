@@ -84,7 +84,7 @@
 		<div class="mt-16 flex flex-col">
 			{#each faqs as faq, i}
 				<div class="flex flex-1 flex-col gap-6 border-b border-solid border-jagger py-6">
-					<div
+					<button
 						class="flex max-lg:flex-col cursor-pointer lg:items-center max-lg:gap-6 gap-12"
 						on:click={() => (faq.isOpened = !faq.isOpened)}
 					>
@@ -92,7 +92,7 @@
 							0{i + 1}<span class="text-seance">.</span>
 						</p>
 						<div class="flex flex-1 items-center justify-between gap-12">
-							<p class="flex-1 text-[1.8rem] leading-[2.4rem] font-semibold">
+							<p class="flex-1 text-[1.8rem] leading-[2.4rem] font-semibold text-left">
 								{faq.question}
 							</p>
 							<div class="relative h-8 w-8">
@@ -108,7 +108,7 @@
 								/>
 							</div>
 						</div>
-					</div>
+					</button>
 					{#if faq.isOpened}
 						<p class="animate-fade-down text-6">
 							{faq.answer}
@@ -128,7 +128,7 @@
 				{#if isInViewImg}
 					<img
 						src="/img/hp/why.png"
-						alt="Why ?"
+						alt="personne surlignant une feuille avec un téléphone au milieu"
 						class="w-full {isInViewImg ? 'animate-fade' : ''}"
 					/>
 				{/if}

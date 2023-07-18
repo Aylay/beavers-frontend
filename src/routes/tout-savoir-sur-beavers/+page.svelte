@@ -8,6 +8,7 @@
 	import Tiktok from "$lib/assets/svg/Tiktok.svelte";
 	import Facebook from "$lib/assets/svg/Facebook.svelte";
 	import Pinterest from "$lib/assets/svg/Pinterest.svelte";
+	import MetaFront from '$lib/components/utilities/MetaFront.svelte';
 
   const links: Array<any> = [
     {
@@ -53,7 +54,14 @@
       blank: false
     }
   ]
+
+  const meta = {
+    title: "Tous les Cas agence de l'agence digitale Beavers",
+    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+  }
 </script>
+
+<MetaFront {meta} />
 
 <div class="lg:min-h-screen flex justify-center overflow-hidden bg-rock pt-20 lg:pt-40">
   <div class="small-container relative flex flex-col items-center gap-8">

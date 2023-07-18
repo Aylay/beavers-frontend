@@ -6,25 +6,43 @@
 
   let formSent = false;
 
-	function addProspect() {
+  let textDisplayed: string = '';
+
+	async function addProspect() {
 		checkFormError();
 		if (emailError) {
 			return;
 		}
 
-		// const data = {
-		// 	email: email
-		// };
+    const allEmailsResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/newsletters', {
+      method: 'GET'
+    })
+    const allEmailsData = await allEmailsResponse.json();
+    const allEmails = allEmailsData.data ? allEmailsData.data : '';
+    if (allEmails.some((elm: any) => elm.attributes.email === email && elm.attributes.check === true)) {
+      textDisplayed = 'Vous êtes déjà inscrit.e à notre newsletter.'
+    } else {
+      let uniqueId = Math.random().toString(16).slice(2)
+      const checkUniqueId = allEmails.filter((a: any) => a.uid === uniqueId)
+      do {
+        uniqueId = Math.random().toString(16).slice(2)
+      } while (checkUniqueId.length !== 0);
 
-		// fetch(import.meta.env.VITE_STRAPI_URL + '/api/contacts', {
-		// 	method: 'POST',
-		// 	body: JSON.stringify({ data }),
-		// 	headers: {
-		// 		'Content-Type': 'application/json'
-		// 	}
-		// });
+      const data = {
+        email: email,
+        uid: uniqueId
+      };
 
-		formSent = true;
+      fetch(import.meta.env.VITE_STRAPI_URL + '/api/newsletters', {
+        method: 'POST',
+        body: JSON.stringify({ data }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      formSent = true;
+    }
 	}
 
 	function checkFormError() {
@@ -32,6 +50,7 @@
 
 		if (email === '' || (email !== '' && !validEmail(email))) {
 			emailError = true;
+      textDisplayed = "Une erreur s'est glissée ici."
 		}
 	}
 
@@ -58,7 +77,7 @@
       Merci pour votre inscription à notre newsletter mensuelle.<br />Vous allez recevoir un e-mail pour confirmer votre inscription.
     </p>
     {:else}
-    <form class="max-lg:w-full lg:w-1/2">
+    <form class="max-lg:w-full lg:w-1/2 relative">
       <div class="flex flex-col gap-2 w-full">
         <label class="text-6 {isArticle ? 'text-jaguar' : 'text-white'}" for="nlEmail">
           Email
@@ -95,8 +114,12 @@
           </div>
         </div>
       </div>
+      {#if textDisplayed !== ''}
+        <p class="absolute -bottom-8 text-7 w-full">
+          {textDisplayed}
+        </p>
+      {/if}
     </form>
     {/if}
-
   </div>
 </div>

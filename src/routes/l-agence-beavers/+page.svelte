@@ -4,6 +4,7 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
 	import People from "$lib/components/blocks/agence/People.svelte";
   import Header from "$lib/components/blocks/common/Header.svelte";
 	import SubHeader from "$lib/components/blocks/common/SubHeader.svelte";
+	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 
   const title = "L'agence"
   const subtitle = 'Humaine. À l’écoute.'
@@ -33,7 +34,14 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
       text: "Après avoir travaillé en tant que chargée de marketing et communication et avec une expérience approfondie en relation client, Orane sera très soucieuse de votre satisfaction.<br /><br />Du haut de ses 162 cm, elle sera prête à prendre des échasses pour <span class='text-seance font-semibold'>vous positionner au plus haut !</span>"
     }
   ]
+
+  const meta = {
+    title: "Tous les Cas agence de l'agence digitale Beavers",
+    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+  }
 </script>
+
+<MetaFront {meta} />
 
 <div class="flex flex-col gap-48 lg:gap-96 pb-48 lg:pb-96">
   <Header {title} {subtitle} />

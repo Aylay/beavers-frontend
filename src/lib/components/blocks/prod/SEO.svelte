@@ -77,7 +77,7 @@
       {#if isInViewImg}
         <img
           src="/img/prod/seo.png"
-          alt="SEO"
+          alt="Ordinateur portable avec un graphique Google Search Console"
           class="w-full {isInViewImg ? 'animate-fade' : ''}"
         />
       {/if}

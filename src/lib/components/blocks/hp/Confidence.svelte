@@ -55,7 +55,7 @@
 	</div>
 	<div class="mt-24 flex max-lg:flex-wrap items-center justify-between gap-20">
 		{#each logos as logo, i}
-			<ConfidenceLogo src={logo.src} alt={logo.alt} newClass={logo.newClass} {i} href={logo.href} title={logo.title} />
+			<ConfidenceLogo src={logo.src} newClass={logo.newClass} {i} href={logo.href} title={logo.title} />
 		{/each}
 	</div>
 </div>

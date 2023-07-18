@@ -5,6 +5,7 @@
 	import Line from "$lib/components/blocks/utilities/Line.svelte";
 	import Clock from '$lib/assets/svg/Clock.svelte';
 	import LeadForm from "$lib/components/blocks/contact/LeadForm.svelte";
+	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 
   const words = [
     'Contact', 'Café', 'Rendez-vous', 'Demande de devis', 'Informations', 'Besoin'
@@ -17,7 +18,14 @@
   }
   allWords = allWords.concat(allWords)
   allWords = allWords.concat(allWords)
+
+  const meta = {
+    title: "Contactez l'agence digitale Beavers",
+    description: "Contactez l'agence Beavers pour plus d'informations sur votre projet ou pour que nous étudions vos opportunités digitales."
+  }
 </script>
+
+<MetaFront {meta} />
 
 <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60 max-lg:pb-28 flex justify-center items-center">
   <div class="big-container bg-rock relative z-20 flex justify-between items-center gap-16 lg:gap-32 max-lg:flex-col">

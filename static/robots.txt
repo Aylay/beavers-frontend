@@ -14,4 +14,3 @@ User-agent: Googlebot-news
 Disallow:
 
 Sitemap: https://beavers-agency.fr/sitemap.xml
-Sitemap: https://beavers-agency.fr/sitemap.xml.gz

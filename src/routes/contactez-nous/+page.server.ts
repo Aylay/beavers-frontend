@@ -2,10 +2,10 @@ export const prerender = true;
 
 import type { PageData } from './$types';
 
-export const load = (async ({ fetch, params }) => {
-	const menuWhite = true;
+export const load = (async () => {
+	const menuDark = true;
 
 	return {
-		menuWhite
+		menuDark
 	};
 }) satisfies PageData;

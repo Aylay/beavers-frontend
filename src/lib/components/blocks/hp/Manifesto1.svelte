@@ -53,7 +53,7 @@
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">
-			<Cta label="Découvrir l'équipe" href="/agence-beavers" type="transparent" />
+			<Cta label="Découvrir l'équipe" href="/l-agence-beavers" type="transparent" />
 		</div>
 	</div>
 	<div class="relative flex flex-1 justify-center">
@@ -66,7 +66,7 @@
 				{#if isInViewImg}
 					<img
 						src="/img/hp/manifesto-1.png"
-						alt="Manifesto"
+						alt="Homme faisant de l'ordinateur et Femme travaillant à un tableau"
 						class="w-full {isInViewImg ? 'animate-fade' : ''}"
 					/>
 				{/if}

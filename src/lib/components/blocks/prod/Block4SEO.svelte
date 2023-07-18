@@ -73,7 +73,7 @@
       {#if isInViewImg}
         <img
           src="/img/prod/newsletter.png"
-          alt="Newsletter"
+          alt="Ordinateur portable avec une image newsletter dessus"
           class="w-full {isInViewImg ? 'animate-fade' : ''}"
         />
       {/if}

@@ -17,11 +17,21 @@
   };
 
   export let job: any;
+
+  function localisation () {
+    let localisation = ''
+    if (job.attributes.contract !== "Freelance") {
+      localisation = 'Fréjus & Télétravail'
+    } else {
+      localisation = 'Télétravail'
+    }
+    return localisation
+  }
 </script>
 
 <a class="w-full bg-rock hover:bg-seance transition-colors {isInView ? 'animate-fade' : 'opacity-0'}"
-  href="/jobs/{job.slug}"
-  title={job.title}
+  href="/jobs/{job.attributes.slug}"
+  title={job.attributes.title}
   use:inview={options}
   on:inview_change={handleChange}
 >
@@ -29,16 +39,16 @@
     <div class="flex justify-between items-center p-16">
       <div class="flex flex-col flex-1 gap-10">
         <h3 class="transition-colors font-semibold text-4 {active ? 'text-white' : 'text-seance'}">
-          {job.title}
+          {job.attributes.title}
         </h3>
         <div class="flex max-lg:flex-col gap-10 lg:gap-20 lg:items-center">
           <div class="flex gap-8 lg:gap-4 items-center">
             <Contract newClass="fill-bright w-10 h-auto" />
-            <p class="text-6 font-semibold">{job.contract}</p>
+            <p class="text-6 font-semibold">{job.attributes.contract}</p>
           </div>
           <div class="flex gap-8 lg:gap-4 items-center">
             <Pin newClass="fill-bright w-10 lg:w-7 h-auto" />
-            <p class="text-6 font-semibold">{job.localisation}</p>
+            <p class="text-6 font-semibold">{localisation()}</p>
           </div>
         </div>
       </div>

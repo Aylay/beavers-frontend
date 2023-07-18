@@ -40,7 +40,7 @@ on:inview_change={handleChange}>
 			{#if isInViewImg}
 				<img
 					src="/img/hp/manifesto-2-1.jpg"
-					alt="Coucou"
+					alt="Un pot de fausse fleur + un téléphone avec Instagram"
 					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}
@@ -49,7 +49,7 @@ on:inview_change={handleChange}>
 			{#if isInViewImg}
 				<img
 					src="/img/hp/manifesto-2-2.jpg"
-					alt="Coucou"
+					alt="Tasse à café tenue par une personne"
 					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}
@@ -76,7 +76,7 @@ on:inview_change={handleChange}>
 			{#if isInViewImg}
 				<img
 					src="/img/hp/manifesto-2-3.jpg"
-					alt="Coucou"
+					alt="4 personnes qui se tiennent le poignet"
 					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 				/>
 			{/if}

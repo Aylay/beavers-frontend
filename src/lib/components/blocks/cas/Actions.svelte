@@ -2,6 +2,8 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
+  const strapiURL = import.meta.env.VITE_STRAPI_URL;
+
   let isInView: boolean;
   const options: Options = {
     unobserveOnEnter: true,
@@ -14,6 +16,7 @@
 
   export let actions: string;
   export let actionsImg: any
+  export let title: string;
 </script>
 
 
@@ -29,11 +32,11 @@
       {@html actions}
     </p>
   </div>
-  <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8 rounded-lg overflow-hidden lg:order-1">
+  <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8  lg:order-1">
     <img 
-      src={actionsImg.src}
-      alt={actionsImg.alt}
-      class="w-full h-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
+      src={strapiURL + actionsImg.url}
+      alt={actionsImg.alternativeText ? actionsImg.alternativeText : title}
+      class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}"
     />
   </div>
 </div>

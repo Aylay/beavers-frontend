@@ -6,6 +6,8 @@
 	import Gear from '$lib/assets/svg/Gear.svelte';
 	import Website from '$lib/assets/svg/Website.svelte';
 
+	const strapiURL = import.meta.env.VITE_STRAPI_URL;
+
   let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
@@ -16,11 +18,11 @@
 		isInView = detail.inView;
 	};
 
-  export let logo: any;
+  export let client: any;
   export let duration: string;
   export let gear: string;
   export let website: string;
-  export let brand: any;
+
 </script>
 
 <div class="big-container flex gap-20 lg:gap-40 max-lg:flex-col"
@@ -29,7 +31,7 @@
 >
   <div class="flex-1 flex max-lg:flex-col gap-20">
     <div class="lg:w-72">
-      <img src={logo.src} alt={logo.alt} class="max-w-[50%] lg:max-w-[12rem] lg:max-h-[10rem] w-full h-auto mx-auto {isInView ? 'animate-fade' : 'opacity-0'}">
+      <img src={strapiURL + client.logo.data.attributes.url} alt={client.logo.data.attributes ? client.logo.data.attributes : client.name} class="max-w-[50%] lg:max-w-[12rem] lg:max-h-[10rem] w-full h-auto mx-auto {isInView ? 'animate-fade' : 'opacity-0'}">
     </div>
     <div class="flex-1 lg:pl-10 lg:border-l-[2px] border-l-jagger flex flex-col gap-8 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
       <p class="text-5 text-bright">
@@ -37,24 +39,24 @@
       </p>
       {#if duration}
       <div class="flex gap-8 items-center fill-seance">
-        <Clock newClass="w-auto h-12" />
-        <p class="text-6 font-semibold">
+        <Clock newClass="w-12 h-auto" />
+        <p class="flex-1 text-6 font-semibold">
           {duration}
         </p>
       </div>
       {/if}
       {#if gear}
       <div class="flex gap-8 items-center fill-seance">
-        <Gear newClass="w-auto h-12" />
-        <p class="text-6 font-semibold">
+        <Gear newClass="w-12 h-auto" />
+        <p class="flex-1 text-6 font-semibold">
           {gear}
         </p>
       </div>
       {/if}
       {#if website}
       <div class="flex gap-8 items-center fill-seance">
-        <Website newClass="w-auto h-12" />
-        <a href={website} target="_blank" class="text-6 font-semibold underline hover:text-bright transition-colors text-seance">
+        <Website newClass="w-12 h-auto" />
+        <a href={website} target="_blank" class="flex-1 text-6 font-semibold underline hover:text-bright transition-colors text-seance" title="Site {client.name}">
           Visiter le site
         </a>
       </div>
@@ -63,10 +65,10 @@
   </div>
   <div class="flex-1 lg:pl-10 lg:border-l-[2px] border-l-jagger flex flex-col gap-8 animate-delay-1000 {isInView ? 'animate-fade' : 'opacity-0'}">
     <p class="text-5 text-bright">
-      A propos de {brand.name}
+      A propos de {client.name}
     </p>
     <p class="text-6">
-      {@html brand.description}
+      {@html client.description}
     </p>
   </div>
 </div>

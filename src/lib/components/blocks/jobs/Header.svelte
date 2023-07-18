@@ -1,9 +1,11 @@
 <script lang="ts">
+  import { page } from '$app/stores';
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
 	import Clock from '$lib/assets/svg/Clock.svelte';
 	import Contract from '$lib/assets/svg/Contract.svelte';
 	import Pin from '$lib/assets/svg/Pin.svelte';
+	import LDTag from '$lib/components/utilities/LDTag.svelte'
 
   export let title: string;
   export let contract: string;
@@ -18,7 +20,36 @@
   }
   allWords = allWords.concat(allWords)
   allWords = allWords.concat(allWords)
+  
+  const siteURL = import.meta.env.VITE_SITE_URL
+
+  let schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "Beavers",
+        "item": siteURL
+      },
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "Jobs",
+        "item": siteURL + '/jobs'
+      },
+      {
+        "@type":"ListItem",
+        "position": 2,
+        "name": title,
+        "item": siteURL + '/jobs/' + $page.params.slug 
+      },
+    ]
+  }
 </script>
+
+<LDTag {schema} />
 
 <div>
   <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60">

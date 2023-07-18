@@ -2,6 +2,8 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
+  const strapiURL = import.meta.env.VITE_STRAPI_URL;
+
   let isInView: boolean;
   const options: Options = {
     unobserveOnEnter: true,
@@ -12,8 +14,9 @@
     isInView = detail.inView;
   };
 
-  export let goals: Array<string>;
+  export let goals: Array<any>;
   export let goalsImg: any
+  export let title: string;
 </script> 
 
 <div class="big-container flex items-center gap-32 lg:gap-40 max-lg:flex-col"
@@ -34,17 +37,17 @@
           0{i + 1}<span class="text-bright">.</span>
         </p>
         <p class="flex-1 text-6 font-semibold">
-          {goal}
+          {goal.text}
         </p>
       </div>
       {/each}
     </div>
   </div>
-  <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8 rounded-lg overflow-hidden">
+  <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8">
     <img 
-      src={goalsImg.src}
-      alt={goalsImg.alt}
-      class="w-full h-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
+      src={strapiURL + goalsImg.url}
+      alt={goalsImg.alternativeText ? goalsImg.alternativeText : title}
+      class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}"
       style="animation-delay: {150 * (goals.length) + 150}ms;"
 
     />

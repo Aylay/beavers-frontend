@@ -113,6 +113,14 @@
       "destination": "/l-agence-beavers"
     },
     {
+      "source": "/beavers-the-ocean-cleanup",
+      "destination": "/programme-rse"
+    },
+    {
+      "source": "/beavers-tree-nation",
+      "destination": "/programme-rse"
+    },
+    {
       "source": "/la-pause-cafe/developpement-web/:path*",
       "destination": "/la-pause-cafe/site-internet/:path*"
     }

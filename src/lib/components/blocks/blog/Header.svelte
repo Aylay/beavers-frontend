@@ -1,5 +1,4 @@
 <script lang="ts">
-  
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
 
