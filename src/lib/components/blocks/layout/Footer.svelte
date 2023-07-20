@@ -15,7 +15,7 @@
 	let isInView: boolean;
 	const options: Options = {
 		unobserveOnEnter: true,
-		rootMargin: '-50px'
+		rootMargin: '50px'
 	};
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
@@ -44,12 +44,14 @@
             ? 'animate-fade'
             : 'opacity-0'}" />
         </a>
+        {#if isInView}
         <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
+        {/if}
       </div>
     </div>
-    <div class="w-full flex gap-28">
+    <div class="w-full flex max-lg:flex-col gap-16 lg:gap-28">
       <div class="w-full flex max-lg:flex-col justify-between max-lg:gap-16">
         <div class="flex-1 border-jagger lg:border-l-[2px] lg:pl-10">
           <p class="text-5 text-bright mb-8">
@@ -152,7 +154,7 @@
           </p>
         </div>
       </div>
-      <div class="flex lg:justify-around gap-8 lg:items-center lg:flex-col max-lg:flex-wrap">
+      <div class="flex lg:justify-around gap-8 items-center lg:flex-col max-lg:justify-center">
         <a
           href="https://theoceancleanup.com/"
           target="_blank"
@@ -160,9 +162,11 @@
           rel="external noreferrer"
           class="lg:hover:animate-shake"
         >
-          <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
-            ? 'animate-fade'
-            : 'opacity-0'}">
+          {#if isInView}
+              <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
+              ? 'animate-fade'
+              : 'opacity-0'}" />
+            {/if}
         </a>
         <a
           href="https://tree-nation.com/fr/profil/impact/beavers#co2"
@@ -171,13 +175,15 @@
           rel="external noreferrer" 
           class="lg:hover:animate-shake"
         >
-          <img
-            src="https://tree-nation.com/images/tracking/label-co2-website-black-fr.png"
-            alt="Logo de Tree Nation"
-            class="h-auto max-w-[18rem] {isInView
+          {#if isInView}
+            <img
+              src="https://tree-nation.com/images/tracking/label-co2-website-black-fr.png"
+              alt="Logo de Tree Nation"
+              class="h-auto max-w-[18rem] {isInView
               ? 'animate-fade'
               : 'opacity-0'}"
-          />
+            />
+          {/if}
         </a>
       </div>
     </div>

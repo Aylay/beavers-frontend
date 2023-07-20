@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 import type { PageData } from './$types';
 
 export const load = (async ({ fetch, params }) => {
-	const catResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/categories/' + params.slug + '?populate=deep&sort=publishedAt%3Adesc&pagination[pageSize]=100', {
+	const catResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/categories/' + params.slug + '?populate=deep', {
 		method: 'GET'
 	})
 	const catData = await catResponse.json();

@@ -9,8 +9,8 @@
 
   const text1 = 'le digital<br />est en constante'
   const text2 = 'évolution.'
-  const text3 = 'Votre écosystème digital est un mystère pour vous et vous ne savez pas comment vous y prendre.'
-  const text4 = 'Que ce soit une création de site internet, une amélioration SEO de votre site actuel ou des envois de newsletters, racontez-nous votre besoin digital.'
+  const text3 = 'Suivre les dernières tendances vous prend trop temps ? Vous ne savez plus comment vous y prendre ? Beavers est là pour vous accompagner. '
+  const text4 = 'Obtenez un plan média incluant une stratégie complète basée sur une analyse de votre entreprise selon vos besoins. Nous sélectionnons et activons les leviers digitaux les plus pertinents pour répondre à vos objectifs : de notoriété, de trafic, ou de conversion.'
 
   const meta = {
     title: "Tous les Cas agence de l'agence digitale Beavers",

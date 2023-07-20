@@ -78,7 +78,7 @@
 			},
 			"datePublished": publishedDate,
 			"dateModified": updatedDate !== '' ? updatedDate : publishedDate,
-			"headline": content.title,
+			"headline": content.title.replace(/&nbsp;/g, ' '),
 			"image": images,
 			"creator": {
 				"@type": "Organization",
@@ -137,6 +137,6 @@
 	<Share author={content.author.data.attributes} />
 	{#if articles.length > 0}
 		<Newsletter isArticle={true} />
-		<Articles titleFirst="Nos autres articles de la catégorie" {articles} titleSecond={content.category.data.attributes.title} newsUrl="/la-pause-cafe/ + {content.category.data.attributes.slug}" />
+		<Articles titleFirst="D'autres articles de la catégorie" {articles} titleSecond={content.category.data.attributes.title} newsUrl="/la-pause-cafe/{content.category.data.attributes.slug}" />
 	{/if}
 </div>

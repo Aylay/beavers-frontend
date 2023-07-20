@@ -101,17 +101,24 @@ on:inview_change={handleChange}>
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      75% des internautes dans le monde déclarent utiliser les réseaux sociaux au moins une fois par jour.  
+      75% de la population mondiale utilisent les réseaux sociaux au moins une fois par jour.<br /><br />
+			1h28 / jour sur les réseaux sociaux en France<br /><br />
+			Temps passé sur les réseaux sociaux fin 2022 : +17% 
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Communiquez auprès de vos prospects dans leur navigation en fonction de leur appétence pour votre service ou vos produits. Nous travaillons sur une approche "right place, right time, right people" pour maximiser votre visibilité et vos taux de conversion.
+      Communiquez auprès de vos prospects en fonction de leur intérêt pour votre service ou vos produits.
+    </p>
+    <p class="text-6 mb-8 animate-delay-500 {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      Nous travaillons sur une approche "right place, right time, right people" pour maximiser votre visibilité et vos taux de conversion.
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Grâce aux socials ads, soyez présent sur Facebook, Instagram, TikTok, Twitter, Pinterest ou encore Linkedin et touchez vos prospects. Améliorez "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
+      Grâce aux social ads soyez présent sur TikTok, Instagram, LinkedIn, Facebook, Twitter ou encore Snapchat et toucher vos prospects. Améliorer "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
@@ -136,7 +143,7 @@ on:inview_change={handleChange}>
     <div class="mt-20 animate-delay-[1500ms] {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      <Cta label="Booster mon business" href="/contactez-nous" type="transparent" />
+      <Cta label="Toucher ma cible avec des Social Ads" href="/contactez-nous" type="transparent" />
     </div>
   </div>
 </div>

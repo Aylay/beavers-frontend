@@ -55,7 +55,7 @@
       : 'opacity-0'}">
       Toutes les créations Beavers sont pensées pour Google (et aussi mais surtout pour le visiteur). L'agence Beavers vous propose un audit d'une page ou d'un site internet complet qu'il soit un site e-commerce, un blog ou un site vitrine simple.
     </p>
-    <div class="flex gap-12 mt-20">
+    <div class="flex gap-12 mt-20 max-lg:flex-col">
       <div class="animate-delay-1000 {isInView
         ? 'animate-fade'
         : 'opacity-0'}">
@@ -68,7 +68,7 @@
       </div>
     </div>
   </div>
-  <div class="lg:flex-1 lg:order-1">
+  <div class="lg:flex-1 lg:order-1 max-lg:hidden">
     <div
       class="relative mx-auto w-full lg:max-w-[45rem]"
       use:inview={optionsImg}

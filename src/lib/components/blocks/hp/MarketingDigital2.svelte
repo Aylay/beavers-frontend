@@ -146,11 +146,7 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Selon votre problématique, nous connectons les leviers pour un mix media performant. Chez
-				Beavers, la pertinence d'un levier n'est pas mesure uniquement à sa performance propre mais
-				à son impact dans un plan média global et son influence dans le processus de décisions. Nous
-				pilotons l'intégralité de vos leviers média pour maitriser les synergies et le custumer
-				journey.
+				Selon votre problématique, nous connectons les leviers pour un mix média performant. Chez Beavers, la pertinence d'un levier n'est pas liée uniquement à sa performance mais à son impact dans un plan média global et son influence dans le processus de décision. Nous pilotons l'intégralité de vos leviers média pour maitriser les synergies et le parcours client.
 			</p>
 		</div>
 		<div class="mt-12 lg:mt-48 grid grid-cols-1 lg:grid-cols-2 gap-8">

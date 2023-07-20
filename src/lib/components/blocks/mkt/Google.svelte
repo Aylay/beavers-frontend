@@ -51,17 +51,27 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Soyez visible sur les résultats de recherche de vos prospects et apparaissez avant vos concurrents. 
+      Soyez visible sur les résultats de recherche Google de vos prospects et apparaissez avant vos concurrents.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Vos prospects cherchent un produit ou un service que vous offrez. Grâce à une stratégie adaptée d'achat de mots clé, soyez visible et invitez les internautes à se rendre sur votre site. Grâce aux extensions, rajoutez des informations pour guider vos prospects vers la section de votre site qui les intéresse.
+      Beavers vous propose de diffuser vos spots vidéos sur YouTube Ads pour toucher un maximum de clients suivant leurs centres d'intérêts.
+    </p>
+    <p class="text-6 mb-8 animate-delay-500 {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      Vos prospects cherchent un produit ou un service que vous offrez. Grâce à une stratégie adaptée d'achat de mots clés, soyez visible et invitez les internautes à se rendre sur votre site. 
+    </p>
+    <p class="text-6 mb-8 animate-delay-500 {isInView
+      ? 'animate-fade'
+      : 'opacity-0'}">
+      Grâce aux extensions, nous ajoutons des informations pour guider vos prospects vers la section de votre site qui les intéresse. Ainsi vous évitez que votre prospect se perde et vous maximisez vos taux de conversion.
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Ainsi vous évitez que votre prospect se perde et vous maximisez vos taux de conversion. Nous travaillons avec des stratégies d'enchères sur différentes audiences et différents devices pour optimiser vos performances.
+      Nous travaillons avec des stratégies d'enchères sur différentes audiences et différents devices (desktop et mobile) pour optimiser vos performances.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
@@ -86,10 +96,10 @@
     <div class="mt-20 animate-delay-[1500ms] {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      <Cta label="Être premier sur Google" href="/contactez-nous" type="transparent" />
+      <Cta label="Être 1er sur Google" href="/contactez-nous" type="transparent" />
     </div>
   </div>
-  <div class="lg:flex-1">
+  <div class="lg:flex-1 max-lg:hidden">
     <div
       class="relative mx-auto w-full lg:max-w-[45rem]"
       use:inview={optionsImg}

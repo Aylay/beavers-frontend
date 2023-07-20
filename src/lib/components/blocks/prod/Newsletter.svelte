@@ -57,7 +57,7 @@
       : 'opacity-0'}">
       L'agence Beavers peut vous aider dans la création, le développement et l'envoi de vos newsletters.
     </p>
-    <div class="flex gap-12 mt-20">
+    <div class="flex gap-12 mt-20 max-lg:flex-col">
       <div class="animate-delay-1000 {isInView
         ? 'animate-fade'
         : 'opacity-0'}">
@@ -65,7 +65,7 @@
       </div>
     </div>
   </div>
-  <div class="lg:flex-1">
+  <div class="lg:flex-1 max-lg:hidden">
     <div
       class="relative mx-auto w-full lg:max-w-[45rem]"
       use:inview={optionsImg}

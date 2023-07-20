@@ -26,21 +26,38 @@
 	.content-style h4 {
 		@apply text-5 text-seance;
 	}
-	.content-style p{
+	.content-style p {
 		@apply text-6;
 	}
 	.content-style p a,
-	.content-style ul li a {
+	.content-style ul li a,
+	.content-style ol li a {
 		@apply underline font-semibold text-seance hover:text-bright transition-colors;
 	}
-	.content-style ul {
+	.content-style ul,
+	.content-style ol {
 		@apply flex flex-col gap-4;
 	}
+	.content-style ul li,
+	.content-style ol li {
+		@apply relative text-6 before:absolute before:left-0 pl-12;
+	}
 	.content-style ul li {
-		@apply relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8;
+		@apply before:content-[''] before:w-3 before:h-3 before:bg-seance before:top-3 before:rounded-full;
+	}
+	.content-style ol {
+		counter-reset: item;
+	}
+	.content-style ol li:before {
+		content: counter(item) '.';
+		counter-increment: item;
+		@apply text-seance font-semibold;
 	}
 	.content-style img {
 		@apply overflow-hidden rounded-lg;
+	}
+	.content-style ul li ul {
+		@apply mt-4;
 	}
 }
 
@@ -59,7 +76,8 @@
 	.iframe-div {
     @apply relative overflow-hidden w-full pt-[56.25%];
   }
-  .iframe-div iframe {
+  .iframe-div iframe,
+	.iframe-div blockquote {
     @apply w-full h-full absolute inset-0;
   }
 }

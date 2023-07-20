@@ -49,13 +49,13 @@
 >
 	<div class="flex-1 max-lg:order-2">
 		<Line />
-		<Title first="Marketing Digital" />
+		<Title first="Digital Média" />
 		<h3
 			class="mt-2 font-highlight text-4 text-bright lg:animate-delay-200 {isInView
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-			Lorem ipsum dolor sit amet adipiscing
+			Votre plan média sur mesure
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -63,16 +63,7 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis hendrerit blandit.
-				Maecenas mollis purus consequat imperdiet tincidunt. Ut sit amet lobortis lorem. Mauris non
-				felis vel neque iaculis sollicitudin. Pellentesque eget lacus lacinia, congue turpis et,
-				gravida dolor. Nunc placerat faucibus nisl et venenatis.
-			</p>
-			<p class="text-6">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis hendrerit blandit.
-				Maecenas mollis purus consequat imperdiet tincidunt. Ut sit amet lobortis lorem. Mauris non
-				felis vel neque iaculis sollicitudin. Pellentesque eget lacus lacinia, congue turpis et,
-				gravida dolor. Nunc placerat faucibus nisl et venenatis.
+				Beavers s'engage à vous accompagner au plus près dans toute votre stratégie digitale. Le marketing digital évolue chaque jour, nos castors mobilisent leurs connaissances pour vous proposer leurs meilleures idées afin de construire votre meilleur projet, avec les meilleurs matériaux (supports digitaux).
 			</p>
 		</div>
 	</div>

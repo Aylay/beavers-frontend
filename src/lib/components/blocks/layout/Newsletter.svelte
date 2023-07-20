@@ -7,8 +7,20 @@
   let formSent = false;
 
   let textDisplayed: string = '';
+  
+  // const key = import.meta.env.VITE_RECAPTCHA;
+  // let State = {
+  //   idle: "idle",
+  //   requesting: "requesting",
+  //   success: "success"
+  // };
+  // let token;
+  // let state = State.idle;
 
 	async function addProspect() {
+    // state = State.requesting;
+    // doRecaptcha();
+    // console.log(state, token)
 		checkFormError();
 		if (emailError) {
 			return;
@@ -59,7 +71,20 @@
 			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		return re.test(email);
 	}
+
+  // function doRecaptcha() {
+  //   grecaptcha.ready(function() {
+  //     grecaptcha.execute(key, { action: "submit" }).then(function(t: any) {
+  //       state = State.success;
+  //       token = t;
+  //     });
+  //   });
+  // }
 </script>
+
+<!-- <svelte:head>
+  <script src="https://www.google.com/recaptcha/api.js?render={key}" async defer></script>
+</svelte:head> -->
 
 <div class="{isArticle ? 'bg-bright' : 'bg-seance'} py-16 lg:py-20">
   <div class="big-container flex max-lg:flex-col max-lg:gap-8 items-center justify-between">

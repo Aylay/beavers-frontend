@@ -5,7 +5,7 @@
   export let title: string;
 </script>
 
-<div class="big-container flex flex-col gap-32 lg:gap-40">
+<div class="flex flex-col gap-32 lg:gap-40">
   {#each content as block}
     <ContentManagerBlock {block} {title} />
   {/each}

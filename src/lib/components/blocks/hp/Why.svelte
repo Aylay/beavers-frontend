@@ -31,21 +31,27 @@
 
 	const faqs = [
 		{
-			question: 'Lorem ipsum dolor sit amet adipiscing consectetur ?',
+			question: 'Pour quelle.s raison.s nous contacter&nbsp;?',
 			answer:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus aliquam velit sed varius. Proin sit amet erat vitae erat lacinia vulputate ut nec dolor. Integer ante quam, aliquet eu purus auctor, viverra elementum lacus.',
+				'Prenez contact avec nous et décrivez votre besoin, que ce soit pour améliorer votre visibilité, vous faire connaître ou encore obtenir de nouveaux clients, Beavers vous proposera une stratégie adaptée.',
 			isOpened: true
 		},
 		{
-			question: 'Lorem ipsum dolor sit amet adipiscing consectetur ?',
+			question: 'Comment Beavers répond à votre demande&nbsp;?',
 			answer:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus aliquam velit sed varius. Proin sit amet erat vitae erat lacinia vulputate ut nec dolor. Integer ante quam, aliquet eu purus auctor, viverra elementum lacus.',
+				"Selon votre besoin, nous analysons l'existant, avec un benchmark de la concurrence, et vous proposons un plan média adapté. Nous choisissons les meilleurs leviers avec une stratégie adaptée à chacun d'entre eux.",
 			isOpened: false
 		},
 		{
-			question: 'Lorem ipsum dolor sit amet adipiscing consectetur ?',
+			question: 'Comment se passe la mise en place&nbsp;?',
 			answer:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus aliquam velit sed varius. Proin sit amet erat vitae erat lacinia vulputate ut nec dolor. Integer ante quam, aliquet eu purus auctor, viverra elementum lacus.',
+				'Une fois le plan validé ensemble, nous nous assurons que tout est clair pour vous. Puis nous mettons en place les campagnes média sur chacun des leviers.',
+			isOpened: false
+		},
+		{
+			question: 'Comment se déroule votre suivi&nbsp;?',
+			answer:
+				"Des ajustements et des optimisations régulières sont effectués tout au long de votre campagne. Nous réalisons des reportings basés sur des KPI's en fonction de votre objectif. Puis nous vous proposons des pistes d'optimisation pour les prochaines campagnes.",
 			isOpened: false
 		}
 	];
@@ -59,7 +65,7 @@
 		const faq: any = faqs[i];
 		const newFaq: any = {
 			"@type": "Question",
-			"name": faq.question,
+			"name": faq.question.replace(/&nbsp;/g, ' '),
 			"acceptedAnswer": {
 				"@type": "Answer",
 				"text": faq.answer
@@ -80,7 +86,7 @@
 <div class="big-container flex gap-32 max-lg:flex-col lg:gap-40" use:inview={options} on:inview_change={handleChange}>
 	<div class="flex-1 max-lg:order-2">
 		<Line />
-		<Title first="Lorem ipsum dolor<br />sit amet" second="adipiscing" />
+		<Title first="La relation avec" second="Beavers" />
 		<div class="mt-16 flex flex-col">
 			{#each faqs as faq, i}
 				<div class="flex flex-1 flex-col gap-6 border-b border-solid border-jagger py-6">
@@ -93,7 +99,7 @@
 						</p>
 						<div class="flex flex-1 items-center justify-between gap-12">
 							<p class="flex-1 text-[1.8rem] leading-[2.4rem] font-semibold text-left">
-								{faq.question}
+								{@html faq.question}
 							</p>
 							<div class="relative h-8 w-8">
 								<div

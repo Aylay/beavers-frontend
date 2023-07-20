@@ -79,7 +79,7 @@
       {
         "@type":"ListItem",
         "position": 3,
-        "name": title,
+        "name": title.replace(/&nbsp;/g, ' '),
         "item": siteURL + '/la-pause-cafe/' + category.slug + '/' + $page.params.slug
       },
     ]
@@ -119,11 +119,11 @@
             |
           </li>
           <li class="text-7 text-white font-semibold">
-            {title}
+            {@html title}
           </li>
         </ul>
         <h1 class="text-3 lg:text-right mb-20">
-          {title}
+          {@html title}
         </h1>
         {#if updatedDate !== ''}
         <p class="mb-12 text-6 lg:text-right font-bold text-bright">
@@ -203,7 +203,7 @@
   >
     <div class="lg:flex-1 h-[36rem] w-full lg:order-2">
       {#if isInView}
-        <img src={strapiURL + img.url} alt={img.alternativeText ? img.alternativeText : title} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}" />
+        <img src={strapiURL + img.url} alt={img.alternativeText ? img.alternativeText : title.replace(/&nbsp;/g, ' ')} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}" />
       {/if}
     </div>
     <div class="flex-1 lg:order-1">

@@ -2,7 +2,7 @@
   let currentDate = new Date();
 </script>
 
-<div class="bg-bright lg:px-8 py-8">
+<div class="bg-bright lg:px-8 py-8 max-lg:mb-24">
   <div class="big-container flex max-lg:flex-wrap lg:justify-center gap-8">
     <p class="text-[1.4rem] leading-[2.4rem] text-black">
       © 2019 - {currentDate.getFullYear()} Tous droits réservés par Beavers

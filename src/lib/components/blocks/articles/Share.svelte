@@ -47,7 +47,7 @@
     </p>
     <div class="flex gap-8 lg:gap-4">
       <a
-      href="https://www.linkedin.com/shareArticle?url={url}"
+      href="https://www.linkedin.com/sharing/share-offsite/?url={url}"
       target="_blank"
       title="Partager l'article sur Linkedin"
       class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"

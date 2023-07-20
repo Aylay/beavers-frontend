@@ -28,21 +28,22 @@
 	};
 </script>
 
-<div class="lg:h-screen bg-rock"
+<div class="h-screen bg-rock"
   use:inview={options}
   on:inview_change={handleChange}
 >
   <div class="big-container flex h-full items-center justify-center relative z-10">
     <div class="lg:w-1/2">
-      <h1 class="text-2">
+      <h1 class="text-1-m lg:text-2 max-lg:text-bright">
         Production<br />digitale
       </h1>
+      <h2 class="text-3 lg:hidden mt-16">Site internet. SEO. Newsletters.</h2>
       <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.1)] gap-2">
         <Mouse newClass="h-auto w-full" color="#FFF" />
         <ArrowBottom newClass="animate-bounce"  color="#FFF" />
       </div>
     </div>
-    <div class="lg:w-1/2 flex justify-center ">
+    <div class="lg:w-1/2 flex justify-center max-lg:hidden">
       <div class="w-[47rem] h-[41rem] relative">
         <Sun newClass="animate-once w-20 h-auto absolute right-full top-0 animate-ping {isInView ? 'animate-ping animate-delay-500' : 'opacity-0'}" color="#8013BD" />
         <Sun newClass="animate-once w-24 h-auto absolute right-0 top-full animate-ping {isInView ? 'animate-ping animate-delay-1000' : 'opacity-0'}" color="#00FFDA" />
@@ -81,11 +82,11 @@
       </div>
     </div>
   </div>
-  <div class="absolute bottom-24 w-full z-20">
+  <div class="absolute bottom-24 w-full z-20 max-lg:hidden">
     <div class="big-container">
       <h2 class="text-3">Site internet. SEO. Newsletters.</h2>
     </div>
   </div>
   <HeaderWave />
-  <div class="absolute bottom-0 h-20 w-full bg-seance inset-x-0 z-0" />
+  <div class="absolute bottom-0 h-20 w-full bg-seance inset-x-0 z-0 max-lg:hidden" />
 </div>

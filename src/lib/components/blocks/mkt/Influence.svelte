@@ -9,6 +9,7 @@
 	import Thumb from '$lib/assets/svg/Thumb.svelte';
 	import Baguette2 from '$lib/assets/svg/Baguette2.svelte';
 	import Wave from '$lib/assets/svg/Wave.svelte';
+	import Conversion from '$lib/assets/svg/Conversion.svelte';
 
   let isInView: boolean;
   const options: Options = {
@@ -50,18 +51,17 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      De plus en plus de marques investissent en influence marketing.
+      27 % des jeunes sont actifs sur les plateformes pour suivre leurs idoles ou des influenceurs.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Vos prospects sont à la recherche de recommandations sociales et c'est auprès des influenceurs qu'ils suivent, qu'ils jugent la crédibilité de votre marque. Créer un sentiment d'appartenance en travaillant avec des influenceurs qui vous ressemblent et qui peuvent véhiculer les valeurs de votre marque.
+      De plus en plus de marques investissent dans l'influence marketing. Vos prospects sont à la recherche de recommandations sociales et c'est auprès des influenceurs qu'ils suivent, qu'ils jugent la crédibilité de votre marque.
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Votre marque, c'est encore vos clients qui en parlent le mieux.<br />
-      Créez un réseau d'ambassadeurs sur les réseaux sociaux et augmentez votre notoriété et votre réputation.
+      Créer un sentiment d'appartenance en travaillant avec des influenceurs qui vous ressemblent et qui peuvent véhiculer les valeurs de votre marque. Votre marque, ce sont encore vos clients qui en parlent le mieux. Créez un réseau d'ambassadeurs sur les réseaux sociaux et augmentez votre notoriété et votre réputation.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 gap-20 mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
@@ -76,14 +76,20 @@
         <Thumb newClass="w-12 h-auto fill-seance" />
         <h3 class="font-bold text-5">Réputation</h3>
       </div>
+      <div class="flex gap-4 items-center animate-delay-[1250ms] {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+        <Conversion newClass="w-12 h-auto fill-seance" />
+        <h3 class="font-bold text-5">Acquisition</h3>
+      </div>
     </div>
     <div class="mt-20 animate-delay-[1500ms] {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      <Cta label="Me lancer dans l'influence" href="/contactez-nous" type="transparent" />
+      <Cta label="Trouver mon Influenceur.se" href="/contactez-nous" type="transparent" />
     </div>
   </div>
-  <div class="lg:flex-1">
+  <div class="lg:flex-1 max-lg:hidden">
     <div
       class="relative mx-auto w-full lg:max-w-[45rem]"
       use:inview={optionsImg}

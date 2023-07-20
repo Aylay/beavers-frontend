@@ -79,12 +79,25 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit integer elit augue pellentesque ultrices. 
+       Affichez votre offre auprès de votre audience cible, sur ordinateur ou sur mobile, en programmatique ou non, avec différents formats&nbsp;:
     </p>
+    <ul class="flex flex-col gap-4 mb-8 {isInView
+      ? 'animate-fade-right'
+      : 'opacity-0'}">
+      <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        Bannières publicitaires
+      </li>
+      <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        Vidéos
+      </li>
+      <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        Native ads
+      </li>
+    </ul>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Affichez votre offre auprès de votre audience cible avec différents formats, bannières publicitaires, vidéos, native ads... sur ordinateur ou sur mobile, en programmatique ou non. Diffusez vos publicités auprès de vos prospects pour augmenter votre notoriété et devenir "top of mind". Le display est davantage un levier de visibilité, mais couplé à d'autres leviers il peut rapidement devenir une carte indispensable dans une stratégie d'acquisition.
+      Diffusez vos publicités auprès de vos prospects pour augmenter votre notoriété et devenir "top of mind". Le display est davantage un levier de visibilité, mais couplé à d'autres leviers, il peut rapidement devenir une carte indispensable dans une stratégie d'acquisition.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView

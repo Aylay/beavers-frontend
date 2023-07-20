@@ -53,7 +53,7 @@
 
 {#if block.layout === 'texte'}
   <div
-    class="content-style flex flex-col gap-8 {isInView ? 'animate-fade' : 'opacity-0'}"
+    class="small-container content-style flex flex-col gap-8 {isInView ? 'animate-fade' : 'opacity-0'}"
     use:inview={options}
     on:inview_change={handleChange}
   >
@@ -63,14 +63,14 @@
 
 {#if block.layout === 'image'}
   <div
-    class="w-full"
+    class="w-full big-container"
     use:inview={optionsImg}
     on:inview_change={handleChangeImg}
   >
     {#if isInViewImg}
       <img
         src={strapiURL + block.img.data.attributes.url}
-        alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title}
+        alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
         class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
       />
     {/if}
@@ -79,7 +79,7 @@
 
 {#if block.layout === 'iframe'}
   <div
-    class="w-full iframe-div"
+    class="w-full iframe-div big-container"
     use:inview={optionsImg}
     on:inview_change={handleChangeImg}
   >
@@ -91,7 +91,7 @@
 
 {#if block.layout === 'texte + texte'}
   <div
-    class="flex max-lg:flex-col gap-32 lg:gap-40"
+    class="small-container flex max-lg:flex-col gap-32 lg:gap-40"
     use:inview={options}
     on:inview_change={handleChange}
   >
@@ -106,7 +106,7 @@
 
 {#if block.layout === 'texte + image'}
   <div
-    class="flex max-lg:flex-col gap-32 lg:gap-40"
+    class="big-container flex max-lg:flex-col gap-32 lg:gap-40"
     use:inview={optionsImg}
     on:inview_change={handleChangeImg}
   >
@@ -119,7 +119,7 @@
       {#if isInViewImg}
         <img
           src={strapiURL + block.img.data.attributes.url}
-          alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title}
+          alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
           class="h-full w-full object-cover overflow-hidden rounded-lg animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
       {/if}
@@ -129,7 +129,7 @@
 
 {#if block.layout === 'image + texte'}
   <div
-    class="flex max-lg:flex-col gap-32 lg:gap-40"
+    class="big-container flex max-lg:flex-col gap-32 lg:gap-40"
     use:inview={optionsImg}
     on:inview_change={handleChangeImg}
   >
@@ -137,7 +137,7 @@
       {#if isInViewImg}
         <img
           src={strapiURL + block.img.data.attributes.url}
-          alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title}
+          alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
           class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
       {/if}
