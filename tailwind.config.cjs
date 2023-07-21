@@ -12,7 +12,8 @@ module.exports = {
 			'bright-turquoise': '#00EECB',
 			seance: '#8013BD',
 			transparent: 'transparent',
-			purple: '#760EB0'
+			purple: '#760EB0',
+			electric: '#A118F0'
 		},
 		fontFamily: {
 			base: 'Montserrat, Arial, sans-serif',

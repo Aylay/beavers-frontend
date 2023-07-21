@@ -32,7 +32,7 @@
 	.content-style p a,
 	.content-style ul li a,
 	.content-style ol li a {
-		@apply underline font-semibold text-seance hover:text-bright transition-colors;
+		@apply underline font-semibold text-electric hover:text-bright transition-colors;
 	}
 	.content-style ul,
 	.content-style ol {
