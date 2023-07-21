@@ -8,12 +8,12 @@
 
   const text1 = 'le digital<br />est en constante'
   const text2 = 'évolution.'
-  const text3 = 'Votre écosystème digital est un mystère pour vous et vous ne savez pas comment vous y prendre.'
-  const text4 = 'Que ce soit une création de site internet, une amélioration SEO de votre site actuel ou des envois de newsletters, racontez-nous votre besoin digital.'
+  const text3 = 'Faites vous accompagner par des castors professionnels pour mettre en place votre meilleure stratégie digitale.'
+  const text4 = 'Que ce soit une création de site internet, une amélioration SEO de votre site actuel, envoyer une newsletter mensuelle, ou tout autre demande, décrivez-nous votre besoin digital.'
 
 const meta = {
-  title: "Tous les Cas agence de l'agence digitale Beavers",
-  description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+  title: "Beavers améliore votre visiblité grâce à la production digitale.",
+  description: "L'agence Beavers vous propose différentes offres entre la création et le développement de site internet en passant par les audit SEO et la création, développement et envoi de newsletters."
 }
 </script>
 

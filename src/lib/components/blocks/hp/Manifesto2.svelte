@@ -83,7 +83,8 @@
 	<div class="flex-1 max-lg:order-1" use:inview={options} on:inview_change={handleChange}>
 		<div class="relative pt-20 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 			<p class="pl-6 font-highlight text-4 text-bright">
-				Lorem ipsum dolor sit amet adipiscing <br />consectetur mollas donde..
+				Chez Beavers, nous croyons fermement que le cœur de notre entreprise, ce sont les personnes qui la composent. Chaque castor compte pour la complémentarité, et nous mettons un point d'honneur à valoriser les talents, les idées et les contributions de chacun.<br /><br />
+				L'efficacité est dans notre nature ! Nous construisons avec une précision sans faille, pour vous mener au plus haut.
 			</p>
 			<div class="absolute left-0 top-0 -z-10 flex w-full gap-8">
 				<Quote />

@@ -31,7 +31,7 @@
   <div class="flex gap-16 flex-col">
     <div class="w-full flex justify-between max-lg:flex-col items-center max-lg:gap-8">
       <p class="lg:w-1/2 text-3 text-seance">
-        Bâtissons <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright">ensemble</span> votre stratégie digitale
+        Bâtissons <span class="font-highlight font-normal text-[5.7rem] leading-[3rem] text-bright">ensemble</span> votre stratégie digitale
       </p>
       <div class="flex lg:justify-end items-center gap-8">
         <a

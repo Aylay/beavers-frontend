@@ -13,8 +13,8 @@
   const text4 = 'Obtenez un plan média incluant une stratégie complète basée sur une analyse de votre entreprise selon vos besoins. Nous sélectionnons et activons les leviers digitaux les plus pertinents pour répondre à vos objectifs : de notoriété, de trafic, ou de conversion.'
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Touchez vos prospects, générez des visites ou des ventes.",
+    description: "L'agence média digitale Beavers vous propose le meilleur mix média pour activer les bons leviers auprès de la bonne audience au bon moment."
   }
 </script>
 

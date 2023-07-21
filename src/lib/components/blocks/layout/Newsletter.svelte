@@ -90,11 +90,11 @@
   <div class="big-container flex max-lg:flex-col max-lg:gap-8 items-center justify-between">
     {#if isArticle}
     <p class="lg:w-2/5 text-3 text-jaguar">
-      Recevez nos derniers <span class="font-highlight text-[5.7rem] leading-[3rem] text-seance">articles</span> par mail
+      Recevez nos derniers <span class="font-highlight font-normal text-[5.7rem] leading-[3rem] text-seance">articles</span> par mail
     </p>
     {:else}
     <p class="lg:w-2/5 text-3 text-white">
-      Inscrivez-vous à notre <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright">newsletter</span> mensuelle
+      Inscrivez-vous à notre <span class="font-highlight font-normal text-[5.7rem] leading-[3rem] text-bright">newsletter</span> mensuelle
     </p>
     {/if}
     {#if formSent}

@@ -50,6 +50,7 @@
 		style="animation-delay: {delay}ms;"
 		use:inview={options}
 		on:inview_change={handleChange}
+		data-sveltekit-preload-data
 	>
 		<Hoverable let:hovering={active}>
 			<div

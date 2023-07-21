@@ -43,12 +43,12 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mt-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Arriver tout en haut des résultats de recherche de Google est une des choses les plus désirées pour tout site internet. 
+      Arriver tout en haut des résultats de recherche de Google est une des choses les plus désirées pour tout site internet.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Y être n'est pas une mince affaire mais ce n'est pas si compliqué que ça et le référencement naturel est un maillon très important pour y arriver. Le SEO (Search Engine Optimisation) est le fer de lance pour arriver dans le top des résultats de recherche sur Google.
+      Y être n'est pas une mince affaire, mais ce n'est pas si compliqué que ça et le référencement naturel est un maillon très important pour y arriver. Le SEO (Search Engine Optimisation) est l'élément qui vous mènera dans le top des résultats de recherche sur Google.
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'

@@ -40,7 +40,7 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mt-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Les sites internet sont rapidement devenus incontournables dans la longue et dure vie d'une entreprise. 
+      Les sites internet sont rapidement devenus incontournables pour la visibilité d'une entreprise, son image mais aussi pour convertir de nouveaux clients.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
@@ -55,7 +55,7 @@
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Les castors de Beavers peuvent  vous aider à créer ou refondre votre site internet qui répondra aux best practices de l'expérience utilisateur et aux guidelines de Google.
+      Les castors de Beavers peuvent vous aider à créer un site vitrine ou e-commerce, le refondre, pour répondre aux best practices de l'expérience utilisateur et aux guidelines de Google.
     </p>
     <div class="flex gap-12 mt-20 max-lg:flex-col">
       <div class="animate-delay-1000 {isInView

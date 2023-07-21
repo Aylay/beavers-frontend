@@ -42,15 +42,21 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis hendrerit blandit.
-				Maecenas mollis purus consequat imperdiet tincidunt. Ut sit amet lobortis lorem. Mauris non
-				felis vel neque iaculis sollicitudin. Pellentesque eget lacus lacinia, congue turpis et,
-				gravida dolor. Nunc placerat faucibus nisl et venenatis.
+				Nous soutenons deux associations pour la protection de notre environnement, en reversant 2% de notre chiffre d'affaires à The OceanCleanUp et Tree-Nation.
 			</p>
 			<p class="text-6">
-				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-				Nunc diam urna, pretium quis neque vel, scelerisque rhoncus tortor.
+				Grâce à vous :
 			</p>
+			<ul class="flex flex-col gap-4 mb-8 {isInView
+				? 'animate-fade-right'
+				: 'opacity-0'}">
+				<li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+					Des fonds marins sont nettoyés chaque jour ;
+				</li>
+				<li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+					+ de 2000 arbres ont été plantés.
+				</li>
+			</ul>
 		</div>
 		<div class="animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 			<Cta label="En savoir plus" href="/programme-rse" type="transparent" />

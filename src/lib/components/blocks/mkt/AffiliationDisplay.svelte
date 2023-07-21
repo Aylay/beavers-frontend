@@ -39,7 +39,7 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      SLorem ipsum dolor sit amet, consectetur adipiscing elit integer elit augue pellentesque ultrices. 
+      Utilisez l’audience d’une personne ou d’une entreprise pour convertir. Vous obtenez des clients de confiance, et en échange, l’affilié reçoit une commission pour le partage de votre marque auprès de ses fans.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
@@ -78,6 +78,11 @@
     </div>
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
+      : 'opacity-0'}">
+      Le display vous permet de communiquer sur votre marque ou vos services par des visuels attrayants insérés au sein d'un site internet.
+    </p>
+    <p class="text-6 mb-8 animate-delay-500 {isInView
+      ? 'animate-fade'
       : 'opacity-0'}">
        Affichez votre offre auprès de votre audience cible, sur ordinateur ou sur mobile, en programmatique ou non, avec différents formats&nbsp;:
     </p>

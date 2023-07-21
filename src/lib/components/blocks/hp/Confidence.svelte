@@ -31,7 +31,7 @@
 		{
 			src: '/img/clients/we-van.png',
 			newClass: 'w-full h-auto',
-			href: '#',
+			href: '/cas/strategie-digitale-media-pilotage-campagnes-wevan',
 			title: 'We Van'
 		},
 		{
@@ -48,9 +48,7 @@
 	<Title first="Ils nous font" second="confiance" />
 	<div class="mt-5 w-full lg:max-w-[calc(50%-75px)]">
 		<p class="text-6">
-			Ces clients nous accordent une pleine confiance quant à la réalisation de leurs objectifs. Que
-			ce soit pour de la production digitale ou du marketing digital, nous répondons toujours
-			présents à tous ces clients.
+			Ces clients font appel à Beavers pour mettre en place une stratégie de communication digitale efficace.
 		</p>
 	</div>
 	<div class="mt-24 flex max-lg:flex-wrap items-center justify-between gap-20">

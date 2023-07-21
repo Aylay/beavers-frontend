@@ -167,11 +167,11 @@
 </script>
 
 <svelte:head>
-  <title>couocu</title>
-  <meta name="title" content="couocu" />
-  <meta property="og:title" content="couocu" />
-  <meta name="description" content="couocu" />
-  <meta property="og:description" content="couocu" />
+  <title>Beavers, l'agence digitale spécialiste en stratégie média.</title>
+  <meta name="title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
+  <meta property="og:title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
+  <meta name="description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
+  <meta property="og:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
 	<meta property="og:type" content="website" />
 	<meta
 		property="og:image"
