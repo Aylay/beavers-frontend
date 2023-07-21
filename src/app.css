@@ -43,7 +43,7 @@
 		@apply relative text-6 before:absolute before:left-0 pl-12;
 	}
 	.content-style ul li {
-		@apply before:content-[''] before:w-3 before:h-3 before:bg-seance before:top-3 before:rounded-full;
+		@apply before:content-[''] before:w-3 before:h-3 before:bg-electric before:top-3 before:rounded-full;
 	}
 	.content-style ol {
 		counter-reset: item;
@@ -51,7 +51,7 @@
 	.content-style ol li:before {
 		content: counter(item) '.';
 		counter-increment: item;
-		@apply text-seance font-semibold;
+		@apply text-electric font-semibold;
 	}
 	.content-style img {
 		@apply overflow-hidden rounded-lg;

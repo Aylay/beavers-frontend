@@ -57,7 +57,7 @@
       <div class="max-w-[90rem] w-full flex flex-col lg:items-end lg:pr-40 mb-16 lg:mb-[calc(100vh*0.1)] max-lg:px-[5%]">
         <ul class="max-lg:hidden flex justify-end mb-20 flex-wrap gap-5">
           <li>
-            <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
+            <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
               Accueil
             </a>
           </li>
@@ -65,7 +65,7 @@
             |
           </li>
           <li>
-            <a href="/jobs" title="Les jobs chez Beavers" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
+            <a href="/jobs" title="Les jobs chez Beavers" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
               Jobs
             </a>
           </li>

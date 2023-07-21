@@ -38,7 +38,7 @@
 				: 'opacity-0'}"
 		>
       <p class="text-6">
-        Afin d'avoir un bon <a href="/la-pause-cafe/seo/" title="Articles SEO" class="font-bold underline  text-seance hover:text-bright transition-colors">SEO</a> sur votre site internet, il est important de déterminer les mots-clés sur lesquels il faut se positionner.
+        Afin d'avoir un bon <a href="/la-pause-cafe/seo/" title="Articles SEO" class="font-bold underline text-electric hover:text-bright transition-colors">SEO</a> sur votre site internet, il est important de déterminer les mots-clés sur lesquels il faut se positionner.
       </p>
       <p class="text-6">
         Après avoir analysé les pages de votre site et donc leur contenu textes, nous vous recommandons une liste de mots clés à insérer sur le site. Il sera possible que vous ayez besoin de créer de nouvelles pages ou de modifier certains contenus. Cette liste de mots clés pertinents est basée sur leur volume de recherche et son évolution, et sur la difficulté de s'y positionner.

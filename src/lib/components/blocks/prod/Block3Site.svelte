@@ -41,17 +41,17 @@
         Vous avez des produits, physiques et / ou digitaux, à proposer à des clients ? Le site e-commerce est l'outil de vente en ligne qu'il vous faut.
       </p>
       <p class="text-6">
-        Nous proposons des sites e-commerce sur mesure, optimisé en <a href="/la-pause-cafe/seo" title="Articles SEO" class="font-bold underline  text-seance hover:text-bright transition-colors">SEO</a>, pensé mobile-first (plus de 50 % des ventes se font aujourd'hui sur mobile), ayant un parcours utilisateur réfléchi pour votre cible.
+        Nous proposons des sites e-commerce sur mesure, optimisé en <a href="/la-pause-cafe/seo" title="Articles SEO" class="font-bold underline text-electric hover:text-bright transition-colors">SEO</a>, pensé mobile-first (plus de 50 % des ventes se font aujourd'hui sur mobile), ayant un parcours utilisateur réfléchi pour votre cible.
       </p>
 			<p class="text-6">
 				L'agence Beavers développe ses sites e-commerce sur mesure :
 			</p>
       <ul class="flex flex-col gap-4">
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           avec le service Shopify ;
         </li>
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
-          avec la stack Svelte + CMS Strapi + <a href="https://stripe.com/fr" title="Stripe" target="_blank" class="font-bold underline  text-seance hover:text-bright transition-colors">Stripe</a>, s'il y a peu de produits à mettre en vente.
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
+          avec la stack Svelte + CMS Strapi + <a href="https://stripe.com/fr" title="Stripe" target="_blank" class="font-bold underline text-electric hover:text-bright transition-colors">Stripe</a>, s'il y a peu de produits à mettre en vente.
         </li>
       </ul>
     </div>

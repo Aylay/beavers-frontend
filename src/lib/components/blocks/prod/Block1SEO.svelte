@@ -64,28 +64,28 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Afin d'améliorer et optimiser le référencement naturel d'un site existant, il est important, primordial & nécessaire d'effectuer un audit SEO au préalable. Ce travail a pour but de repartir sur de meilleures bases pour le <a href="/la-pause-cafe/seo/definition-seo-search-engine-optimization" title="Définitiion du SEO" class="font-bold underline  text-seance hover:text-bright transition-colors">SEO</a>.
+				Afin d'améliorer et optimiser le référencement naturel d'un site existant, il est important, primordial & nécessaire d'effectuer un audit SEO au préalable. Ce travail a pour but de repartir sur de meilleures bases pour le <a href="/la-pause-cafe/seo/definition-seo-search-engine-optimization" title="Définitiion du SEO" class="font-bold underline text-electric hover:text-bright transition-colors">SEO</a>.
 			</p>
 			<p class="text-6">
 				De cet <strong>audit</strong> ressortira :
 			</p>
       <ul class="flex flex-col gap-4">
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Un état de santé technique du site ;
         </li>
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Un tracking de position de mots-clé préalablement choisis ;
         </li>
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
-          Une vérification que les <a href="/la-pause-cafe/seo/top-5-seo-problemes-on-page" title="Top 5 SEO" class="font-bold underline  text-seance hover:text-bright transition-colors">bonnes pratiques SEO</a> ont été mises en place sur le site ;
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
+          Une vérification que les <a href="/la-pause-cafe/seo/top-5-seo-problemes-on-page" title="Top 5 SEO" class="font-bold underline  text-electric hover:text-bright transition-colors">bonnes pratiques SEO</a> ont été mises en place sur le site ;
         </li>
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Un tableau comparatif des concurrents et de la puissance social media ;
         </li>
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Une analyse des backlinks ;
         </li>
-        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
+        <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Une liste d'optimisations & recommandations SEO à mettre en place.
         </li>
       </ul>

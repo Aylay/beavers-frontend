@@ -70,7 +70,7 @@
 				De la TPE aux grandes entreprises, un site vitrine peut suffire pour se montrer et être contacté.
 			</p>
 			<p class="text-6">
-				L'agence Beavers analyse vos besoins et vous propose un site vitrine sur mesure optimisé en <a href="/la-pause-cafe/seo/definition-seo-search-engine-optimization" title="Définitiion du SEO" class="font-bold underline  text-seance hover:text-bright transition-colors">SEO</a> avec un back-office s'il y a un besoin d'administration. Dans tous les cas, le site vitrine sera responsive, c'est-à-dire qu'il s'adaptera à tout type d'écran : ordinateur, tablette, téléphone et même télévision.
+				L'agence Beavers analyse vos besoins et vous propose un site vitrine sur mesure optimisé en <a href="/la-pause-cafe/seo/definition-seo-search-engine-optimization" title="Définitiion du SEO" class="font-bold underline text-electric hover:text-bright transition-colors">SEO</a> avec un back-office s'il y a un besoin d'administration. Dans tous les cas, le site vitrine sera responsive, c'est-à-dire qu'il s'adaptera à tout type d'écran : ordinateur, tablette, téléphone et même télévision.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

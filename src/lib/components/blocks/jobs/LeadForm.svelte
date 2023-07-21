@@ -146,7 +146,7 @@
           content="Url pour télécharger CV & lettre de motivation"
           bind:value={cv}
         />
-        <p class="text-7 mt-4">Nous préférons utiliser les services comme Dropbox, Google Drive ou <a href="https://fromsmash.com/" title="Smash" class="underline font-semibold text-seance hover:text-bright transition-colors" target="_blank">Smash</a> afin de récupérer ce genre de fichier.</p>
+        <p class="text-7 mt-4">Nous préférons utiliser les services comme Dropbox, Google Drive ou <a href="https://fromsmash.com/" title="Smash" class="underline font-semibold text-electric hover:text-bright transition-colors" target="_blank">Smash</a> afin de récupérer ce genre de fichier.</p>
       </div>
       <SpecificTextarea 
         content="Quelque chose à ajouter ?"

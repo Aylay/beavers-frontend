@@ -23,7 +23,7 @@
           <div class="lg:w-1/2 lg:pr-20 flex flex-col">
             <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
               <li>
-                <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
+                <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
                   Accueil
                 </a>
               </li>
@@ -31,7 +31,7 @@
                 |
               </li>
               <li>
-                <a href="/production-digitale" title="Production digitale des castors" class="text-7 text-seance transition-colors font-semibold hover:text-bright">
+                <a href="/production-digitale" title="Production digitale des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
                   Production digitale
                 </a>
               </li>

@@ -106,8 +106,7 @@
 				bonnes pratiques.
 			</p>
 			<p class="text-6 font-bold text-seance">
-				Pour nous, l'écoute et la compréhension des enjeux de nos clients sont au coeur de notre
-				métier.
+				Pour nous, l'écoute et la compréhension des enjeux de nos clients sont au coeur de notre métier.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

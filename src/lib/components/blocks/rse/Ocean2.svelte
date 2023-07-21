@@ -86,6 +86,6 @@
     </div>
   </div>
   <p class="text-center text-6 mt-16">
-    Source : <a href="https://www.theseacleaners.org/" target="_blank" title="The Sea Cleaners" class="text-seance underline hover:text-bright font-semibold">The Sea Cleaners</a>
+    Source : <a href="https://www.theseacleaners.org/" target="_blank" title="The Sea Cleaners" class="text-electric underline hover:text-bright font-semibold">The Sea Cleaners</a>
   </p>
 </div>
