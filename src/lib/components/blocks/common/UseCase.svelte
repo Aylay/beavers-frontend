@@ -39,7 +39,7 @@
 		>
 			{#if isInView}
 				<img
-					src={strapiURL + useCase.attributes.mainImg.data.attributes.url}
+					src={useCase.attributes.mainImg.data.attributes.formats && useCase.attributes.mainImg.data.attributes.formats.large ? strapiURL + useCase.attributes.mainImg.data.attributes.formats.large.url : strapiURL + useCase.attributes.mainImg.data.attributes.url}
 					alt={useCase.attributes.mainImg.data.attributes.alternativeText ? useCase.attributes.mainImg.data.attributes.alternativeText : useCase.attributes.title}
 					class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
 				/>
@@ -99,7 +99,7 @@
 		>
 			{#if isInView}
 				<img
-					src={strapiURL + useCase.attributes.thumbnail.data.attributes.url}
+					src={useCase.attributes.thumbnail.data.attributes.formats && useCase.attributes.thumbnail.data.attributes.formats.large ? strapiURL + useCase.attributes.thumbnail.data.attributes.formats.large.url : strapiURL + useCase.attributes.thumbnail.data.attributes.url}
 					alt={useCase.attributes.thumbnail.data.attributes.alternativeText ? useCase.attributes.thumbnail.data.attributes.alternativeText : useCase.attributes.title}
 					class="relative z-0 h-full w-full object-cover {isInView ? 'animate-fade' : 'opacity-0'}"
 				/>

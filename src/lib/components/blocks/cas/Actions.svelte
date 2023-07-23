@@ -33,10 +33,12 @@
     </p>
   </div>
   <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8  lg:order-1">
+    {#if isInView}
     <img 
       src={strapiURL + actionsImg.url}
       alt={actionsImg.alternativeText ? actionsImg.alternativeText : title}
       class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}"
     />
+    {/if}
   </div>
 </div>

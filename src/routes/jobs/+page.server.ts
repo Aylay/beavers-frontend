@@ -3,7 +3,7 @@ export const prerender = true;
 import type { PageData } from './$types';
 
 export const load = (async ({ fetch }) => {
-	const jobsResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/jobs', {
+	const jobsResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/jobs?fields[0]=slug&fields[1]=title&fields[2]=contract&sort=publishedAt%3Adesc&pagination[pageSize]=100', {
 		method: 'GET'
 	})
 	const jobsData = await jobsResponse.json();

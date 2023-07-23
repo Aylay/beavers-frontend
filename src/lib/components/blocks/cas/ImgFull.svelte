@@ -23,6 +23,8 @@
   on:inview_change={handleChange}
 >
   <div class="h-[36rem] lg:h-[68rem]">
+    {#if isInView}
     <img src={strapiURL + mainImg.url} alt={mainImg.alternativeText ? mainImg.alternativeText : title} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}" />
+    {/if}
   </div>
 </div>

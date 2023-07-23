@@ -3,7 +3,6 @@
 
   const siteURL = import.meta.env.VITE_SITE_URL
 
-  console.log
 </script>
 
 <svelte:head>

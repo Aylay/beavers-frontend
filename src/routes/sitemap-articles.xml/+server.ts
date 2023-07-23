@@ -6,7 +6,7 @@ export async function GET({ fetch, setHeaders }) {
 		'Content-Type': 'application/xml'
 	});
 
-	const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?populate=deep&pagination[pageSize]=100', {
+	const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?sort=updatedAt%3Adesc&pagination[pageSize]=100&fields[0]=slug&populate[category][fields][0]=slug', {
 		method: 'GET'
 	})
 	const articlesData = await articlesResponse.json();

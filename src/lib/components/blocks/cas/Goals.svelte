@@ -44,12 +44,13 @@
     </div>
   </div>
   <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8">
+    {#if isInView}
     <img 
       src={strapiURL + goalsImg.url}
       alt={goalsImg.alternativeText ? goalsImg.alternativeText : title}
       class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}"
       style="animation-delay: {150 * (goals.length) + 150}ms;"
-
     />
+    {/if}
   </div>
 </div>

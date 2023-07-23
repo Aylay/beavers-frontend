@@ -40,6 +40,7 @@
 	};
 
 	const publishedDate = article.attributes.date ? DateTime.fromFormat(article.attributes.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLLL yyyy', { locale: "fr" }) : DateTime.fromISO(article.attributes.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
+
 </script>
 
 <div>
@@ -60,7 +61,7 @@
 			>
 				{#if isInViewImg}
 					<img
-						src={strapiURL + article.attributes.mainImg.data.attributes.url}
+						src={article.attributes.mainImg.data.attributes.formats && article.attributes.mainImg.data.attributes.formats.medium ? strapiURL + article.attributes.mainImg.data.attributes.formats.medium.url : strapiURL + article.attributes.mainImg.data.attributes.url}
 						alt={article.attributes.mainImg.data.attributes.alternativeText ? article.attributes.mainImg.data.attributes.alternativeText : article.attributes.title}
 						class="h-full w-full object-cover transition-transform duration-[3000ms] {isInViewImg ? 'animate-fade' : ''} {active ? 'scale-125' : ''}"
 					/>
