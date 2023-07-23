@@ -22,9 +22,9 @@
         <h1 class="text-1-m lg:text-1 text-outline lg:text-center">
           Etudes de cas
         </h1>
-        <p class="text-4 font-semibold lg:text-3 lg:text-center">
+        <h2 class="text-4 font-semibold lg:text-3 lg:text-center">
           Réalisation. Objectifs. Conversions.
-        </p>
+        </h2>
         <div class="w-full lg:mt-32 flex justify-end">
           <div class="lg:w-1/2 lg:pl-20">
             <h2 class="text-left text-6 text-bright font-semibold mb-16">

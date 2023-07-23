@@ -81,8 +81,8 @@
 					? 'lg:bottom-1/2 lg:translate-y-1/2'
 					: 'lg:bottom-0'}"
 			>
-				<h4 class="mb-5 text-5 text-bright">{useCase.attributes.client.data.attributes.name}</h4>
-				<h5 class="mb-11 text-6">{useCase.attributes.title}</h5>
+				<h3 class="mb-5 text-5 text-bright">{useCase.attributes.client.data.attributes.name}</h3>
+				<h4 class="mb-11 text-6">{useCase.attributes.title}</h4>
 				<div class="flex flex-wrap gap-3">
 					{#each useCase.attributes.categories.data as tag}
 						<p class="rounded-3xl bg-seance px-6 py-2 text-7 font-medium">{tag.attributes.title}</p>
