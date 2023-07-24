@@ -36,6 +36,11 @@
       slug: '/l-agence-beavers'
     },
     {
+      label: "RSE",
+      title: "Programme RSE",
+      slug: '/programme-rse'
+    },
+    {
       label: 'Cas agence',
       title: 'Cas agence',
       slug: '/cas-agence'
@@ -84,10 +89,12 @@
     menuOpened = !menuOpened
     document.body.classList.toggle('overflow-hidden');
   }
+  console.log($page)
 </script>
 
 <svelte:window bind:scrollY={y} />
 
+{#if $page.route.id !== "/programme-rse"}
 <header class="top-0 inset-x-0 w-full py-8 transition-colors {y > windowHeight ? 'bg-rock absolute lg:fixed lg:animate-fade-down' : 'bg-transparent absolute'}  {y === 0 && menuOpened ? '!bg-rock' : ''} z-50">
   <div class="big-container flex justify-center lg:justify-between items-end gap-16 relative">
     <a href="/" title="Beavers, l'agence digitale des castors" class="pb-2 duration-300 transition-all {menuOpened ? 'invisible opacity-0' : 'opacity-100 visible'}">
@@ -133,6 +140,7 @@
   <div class="max-lg:hidden absolute top-full left-0 h-[8px] from-seance from-40% to-bright to-60% bg-gradient-to-r" style="width: {widthScroll}%;" />
   {/if}
 </header>
+{/if}
 
 <div class="lg:hidden bottom-0 z-50 inset-x-0 w-full fixed grid grid-cols-5 items-center bg-seance">
   <button class="flex col-span-2 bg-jagger justify-center gap-6 items-center cursor-pointer py-8" on:click={() => openMobileMenu()}>

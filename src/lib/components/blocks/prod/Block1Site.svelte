@@ -48,7 +48,7 @@
 	use:inview={options}
 	on:inview_change={handleChange}
 >
-	<div class="flex-1 max-lg:order-2">
+	<div class="flex-1">
 		<Line />
 		<Title first="Création de site vitrine" />
 		<h3
@@ -77,7 +77,7 @@
 			<Cta label="Contactez-nous" href="/contactez-nous" type="transparent" />
 		</div>
 	</div>
-	<div class="relative flex flex-1 items-center justify-center max-lg:order-1">
+	<div class="relative flex flex-1 items-center justify-center max-lg:hidden">
 		<div
 			class="relative w-full lg:max-w-[45rem]"
 			use:inview={optionsImg}

@@ -33,7 +33,7 @@
       {title}
     </h2>
   </div>
-  <div class="flex justify-between lg:mt-40">
+  <div class="flex max-lg:flex-wrap max-lg:gap-12 justify-between mt-20 lg:mt-40">
     <div
       class="flex-1 flex flex-col gap-10 items-center animate-delay-[250ms] {isInView ? 'animate-fade' : 'opacity-0'}"
     >

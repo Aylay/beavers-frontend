@@ -17,7 +17,7 @@
 
 <div>
   <div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60">
-    <div class="big-container flex flex-col h-screen items-center justify-center relative z-20">
+    <div class="big-container flex flex-col lg:h-screen items-center justify-center relative z-20 max-lg:pb-20">
       <div class="w-full flex flex-col">
         <div class="w-full flex">
           <div class="lg:w-1/2 lg:pr-20 flex flex-col">

@@ -5,6 +5,8 @@
   import Line from "../utilities/Line.svelte";
 	import SpecificTextarea from "../utilities/SpecificTextarea.svelte";
 
+  const title = "Vous souhaitez <span class='text-[5.7rem] leading-[3rem] text-bright font-normal font-highlight'>postuler à cette offre&nbsp;?"
+
   let firstName = '';
 	let firstNameError = false;
   let lastName = '';
@@ -92,7 +94,7 @@
     <div class="flex flex-col justify-center items-center mb-32 lg:mb-40">
       <Line color="bg-seance" />
       <h2 class="text-center text-seance text-3">
-        Vous souhaitez <span class="text-[5.7rem] leading-[3rem] text-bright font-normal font-highlight">postuler à cette offre ?</span>
+       {@html title}
       </h2>
       <p class="text-center text-6 mt-8">
         Toute candidature incomplète ne sera pas prise en compte.
@@ -120,7 +122,7 @@
             bind:value={phone}
           />
         </div>
-        <div class="col-span-2">
+        <div class="col-span-1 lg:col-span-2">
           <SpecificInput
             error={emailError}
             content="Email"

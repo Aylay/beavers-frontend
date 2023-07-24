@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-  <div class="lg:flex-1">
+  <div class="lg:flex-1 max-lg:hidden">
     <div
       class="relative mx-auto w-full lg:max-w-[45rem]"
       use:inview={optionsImg}

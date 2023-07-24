@@ -34,55 +34,55 @@
 <div class="big-container flex gap-32 max-lg:flex-col lg:gap-40"
 use:inview={options}
 on:inview_change={handleChange}>
-<div class="relative flex flex-1 justify-center gap-8 max-lg:order-2" use:inview={optionsImg} on:inview_change={handleChangeImg}>
-	<div class="flex flex-1 flex-col gap-8">
-		<div class="flex-3">
-			{#if isInViewImg}
-				<img
-					src="/img/hp/manifesto-2-1.jpg"
-					alt="Un pot de fausse fleur + un téléphone avec Instagram"
-					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-				/>
-			{/if}
+	<div class="relative flex flex-1 justify-center gap-8 max-lg:hidden" use:inview={optionsImg} on:inview_change={handleChangeImg}>
+		<div class="flex flex-1 flex-col gap-8">
+			<div class="flex-3">
+				{#if isInViewImg}
+					<img
+						src="/img/hp/manifesto-2-1.jpg"
+						alt="Un pot de fausse fleur + un téléphone avec Instagram"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					/>
+				{/if}
+			</div>
+			<div class="flex-2">
+				{#if isInViewImg}
+					<img
+						src="/img/hp/manifesto-2-2.jpg"
+						alt="Tasse à café tenue par une personne"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					/>
+				{/if}
+			</div>
 		</div>
-		<div class="flex-2">
-			{#if isInViewImg}
-				<img
-					src="/img/hp/manifesto-2-2.jpg"
-					alt="Tasse à café tenue par une personne"
-					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+		<div class="relative flex flex-1 items-center">
+			{#each tops as top, i}
+				<div
+					class="left-8 h-4 w-4 rounded-full {top} absolute bg-bright {isInView
+						? 'animate-fade'
+						: 'opacity-0'}"
+					style="animation-delay: {200 * i}ms;"
 				/>
-			{/if}
+			{/each}
+			{#each bottoms as bottom, i}
+				<div
+					class="left-1/2 z-10 h-4 w-4 -translate-x-1/2 transform rounded-full {bottom} absolute bg-seance {isInView
+						? 'animate-fade'
+						: 'opacity-0'}"
+					style="animation-delay: {600 + 200 * i}ms;"
+				/>
+			{/each}
+			<div class="w-full lg:h-1/2">
+				{#if isInViewImg}
+					<img
+						src="/img/hp/manifesto-2-3.jpg"
+						alt="4 personnes qui se tiennent le poignet"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					/>
+				{/if}
+			</div>
 		</div>
 	</div>
-	<div class="relative flex flex-1 items-center">
-		{#each tops as top, i}
-			<div
-				class="left-8 h-4 w-4 rounded-full {top} absolute bg-bright {isInView
-					? 'animate-fade'
-					: 'opacity-0'}"
-				style="animation-delay: {200 * i}ms;"
-			/>
-		{/each}
-		{#each bottoms as bottom, i}
-			<div
-				class="left-1/2 z-10 h-4 w-4 -translate-x-1/2 transform rounded-full {bottom} absolute bg-seance {isInView
-					? 'animate-fade'
-					: 'opacity-0'}"
-				style="animation-delay: {600 + 200 * i}ms;"
-			/>
-		{/each}
-		<div class="w-full lg:h-1/2">
-			{#if isInViewImg}
-				<img
-					src="/img/hp/manifesto-2-3.jpg"
-					alt="4 personnes qui se tiennent le poignet"
-					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-				/>
-			{/if}
-		</div>
-	</div>
-</div>
   <div class="lg:flex-1">
 		<Line />
 		<Title first="Optimisations<br />& conseils techniques" />

@@ -27,7 +27,7 @@
   <p class="text-center text-bright font-highlight text-[5.7rem] leading-[3rem]">
     Le saviez-vous* ?
   </p>
-  <div class="flex justify-between gap-14 lg:mt-40">
+  <div class="flex max-lg:flex-col justify-between gap-14 mt-20 lg:mt-40">
     <div
       class="flex-1 flex flex-col gap-6 items-center animate-delay-[250ms] {isInView ? 'animate-fade' : 'opacity-0'}"
     >

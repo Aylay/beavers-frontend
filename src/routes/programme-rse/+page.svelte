@@ -17,7 +17,7 @@
 
 <MetaFront {meta} />
 
-<div class="flex flex-col gap-48 lg:gap-96 max-lg:px-4 pb-48 lg:pb-96">
+<div class="flex flex-col gap-48 lg:gap-96 pb-48 lg:pb-96">
   <Header bind:isOceanActive />
   <Ocean newClass={isOceanActive ? 'order-1' : 'order-2'} />
   <Tree newClass={isOceanActive ? 'order-2' : 'order-1'} />

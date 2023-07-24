@@ -61,11 +61,11 @@
 			<p class="text-6 mt-12">
 				Voici les chiffres de la forêt Beavers de Tree-Nation entièrement <span class="font-bold text-electric">grâce à vous</span> :
 			</p>
-			<div class="flex justify-between mt-2">
+			<div class="flex max-lg:flex-col max-lg:gap-8 justify-between mt-2">
 				<div class="flex-1 flex items-center gap-8 animate-delay-500 {isInView
           ? 'animate-fade'
           : ''}">
-					<div>
+					<div class="max-lg:w-1/5 max-lg:flex max-lg:justify-end">
 						<Tree2 />
 					</div>
 					<div class="flex flex-col gap-2">
@@ -80,7 +80,7 @@
 				<div class="flex-1 flex items-center gap-8 animate-delay-[750ms] {isInView
           ? 'animate-fade'
           : ''}">
-					<div>
+					<div class="max-lg:w-1/5 max-lg:flex max-lg:justify-end">
 						<Cloud />
 					</div>
 					<div class="flex flex-col gap-2">
@@ -107,7 +107,7 @@
 					alt="Tree Nation"
 					class="w-full {isInViewImg ? 'animate-fade' : ''}"
 				/>
-        <div class="absolute rounded-full bg-white w-64 h-64 top-4 -left-24 flex justify-center items-center animate-delay-500 {isInView
+        <div class="absolute rounded-full bg-white w-64 h-64 top-2/3 lg:top-4 -left-8 lg:-left-24 flex justify-center items-center animate-delay-500 {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
           <img src="/img/rse/tree-nation-logo.png" alt="Logo Tree Nation" class="max-w-[12.5rem] h-auto">

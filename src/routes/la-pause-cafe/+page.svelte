@@ -16,7 +16,7 @@
 
 <div class="flex flex-col">
   <Header />
-  <div class="big-container py-32 lg:py-64 grid max-lg:grid-cols-1 grid-cols-3 gap-14">
+  <div class="big-container py-32 lg:py-64 grid max-lg:grid-cols-1 grid-cols-3 gap-32 lg:gap-14">
 		{#each articlesList as article, i}
 			<Article {article} {i} />
 		{/each}
