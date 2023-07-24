@@ -23,12 +23,12 @@
           Etudes de cas
         </h1>
         <h2 class="text-4 font-semibold lg:text-3 lg:text-center">
-          Réalisation. Objectifs. Conversions.
+          Stratégie. Réalisation. Satisfaction.
         </h2>
         <div class="w-full lg:mt-32 flex justify-end">
           <div class="lg:w-1/2 lg:pl-20">
             <h2 class="text-left text-6 text-bright font-semibold mb-16">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis vehicula imperdiet. Nam et placerat dui, vel condimentum ligula. Morbi velit enim, gravida sed ligula eget, pharetra vulputate elit. Sed mollis, dolor in luctus bibendum, turpis libero tempus nunc, ut efficitur lorem eros vel orci. Nunc posuere mi urna.
+              Ils ont fait appel à Beavers pour leurs projets digitaux, et voici ce que nos castors ont construit pour répondre à leurs demandes.
             </h2>
             <div class="flex flex-col items-center w-8 gap-2">
               <Mouse newClass="h-auto w-full" color="#FFF" />

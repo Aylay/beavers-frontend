@@ -42,7 +42,7 @@
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-      Administration. Suivi. Maintenance.
+      Continuez le travail sur votre site
 		</h3>
     <div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -63,7 +63,7 @@
           Le suivi du site en le mettant à jour en fonction des services / technologies utilisés ;
         </li>
         <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
-          la maintenance du site si des problèmes venaient à surgir. Il se peut aussi que vous souhaitiez juste améliorer et ajouter une fonctionnalité à votre site.
+          La maintenance du site si des problèmes venaient à surgir. Il se peut aussi que vous souhaitiez juste améliorer et ajouter une fonctionnalité à votre site.
         </li>
       </ul>
     </div>

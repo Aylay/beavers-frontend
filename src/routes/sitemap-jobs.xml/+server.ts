@@ -12,18 +12,23 @@ export async function GET({ fetch, setHeaders }) {
 	const jobsData = await jobsResponse.json();
 
 	const jobsSlug: any[] = [];
-	for (const useCase of jobsData.data) {
-		jobsSlug.push(useCase.attributes.slug);
+	for (const job of jobsData.data) {
+		const elm = {
+			slug: job.attributes.slug,
+			date: job.attributes.updatedAt
+		}
+		jobsSlug.push(elm);
 	}
 	
 	const sitemap = `<?xml version="1.0" encoding="UTF-8" ?>
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 		${jobsSlug
 			.map(
-				(slug) => `
+				(job) => `
 		<url>
-			<loc>${siteURL}/jobs/${slug}</loc>
-		</url>
+			<loc>${siteURL}/jobs/${job.slug}</loc>
+			<lastmod>${job.date}</lastmod>
+			</url>
 		`
 			)
 			.join('')}

@@ -50,13 +50,13 @@
 >
 	<div class="flex-1 max-lg:order-2">
 		<Line />
-		<Title first="Réalisation d'un audit SEO" />
+		<Title first="Réaliser<br />un audit SEO" />
 		<h3
 			class="mt-2 font-highlight text-4 text-bright lg:animate-delay-200 {isInView
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-      Analyser avant d'optimiser 
+			Analyser pour mieux optimiser 
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -83,7 +83,7 @@
           Un tableau comparatif des concurrents et de la puissance social media ;
         </li>
         <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
-          Une analyse des backlinks ;
+          Une analyse des backlinks(liens entrants) ;
         </li>
         <li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Une liste d'optimisations & recommandations SEO à mettre en place.

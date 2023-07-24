@@ -69,7 +69,7 @@
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-      Gardez votre SEO avec un nouveau design
+      Améliorez votre design en gardant votre référencement
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView

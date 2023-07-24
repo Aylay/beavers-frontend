@@ -30,7 +30,7 @@
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-      Le maître-mot des mots clés
+      Les mots clés de Père Castor
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -66,7 +66,7 @@
 				: 'opacity-0'}"
 		>
       <p class="text-6">
-        La liaison entre les pages internes d'un site et la liaison entre votre site avec le reste du web sont 2 choses déterminantes pour votre SEO.
+        La liaison entre les pages internes de votre site et sa liaison avec les autres sites web sont 2 choses déterminantes pour votre SEO.
       </p>
       <p class="text-6">
         Après un état des lieux des différentes pages, nous pouvons vous proposer une liste de sites sur lesquels il est possible d'obtenir des liens sortants, netlinking, ainsi qu'une liste de vos pages sur lesquelles il est recommandé de la lier avec une autre, maillage interne.

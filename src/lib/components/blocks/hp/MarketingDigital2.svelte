@@ -55,41 +55,6 @@
 			label: 'Influence'
 		}
 	];
-
-	const solutions: Array<{ src: string; alt: string }> = [
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		},
-		{
-			src: '/img/hp/meta-ads.svg',
-			alt: 'Meta ads'
-		}
-	];
 </script>
 
 <div

@@ -3,7 +3,7 @@
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
 
   let words: Array<string> = [
-    'Site Internet', 'Média', 'Marketing Digital', 'SEO', 'Développement', 'Référencement Naturel', 'RGPD', 'UX', 'Publicité', 'Social Media'
+    'Actu', 'Digital', 'Astuces', 'Marketing', 'Réseaux Sociaux', 'SEO', 'Actu', 'Digital', 'Astuces', 'Marketing', 'Réseaux Sociaux', 'SEO'
   ]
 
   let allWords: Array<string> = []
@@ -22,12 +22,12 @@
           La pause café
         </h1>
         <p class="text-4 font-semibold lg:text-3 lg:text-center">
-          Prenez 5 min pour lire un de nos articles.
+          L'actu fraiche des castors
         </p>
         <div class="w-full lg:mt-32 flex">
           <div class="lg:w-1/2 lg:pr-20 lg:flex lg:flex-col lg:items-end">
             <h2 class="text-6 text-bright font-semibold mb-16 lg:text-right">
-              La veille fait partie de notre métier. Retrouvez dans ce blog des articles pour les débutants comme pour les érudits du digital. Des actu, des back to basics, nos retours d'expérience ou encore nos réflexions sur des sujets qui portent au débat. Social Média, SEO, SEA, acquisition online mais aussi RGPD, développement web ou Analytics.
+              La veille fait partie de notre métier. Retrouvez dans ce blog des articles pour les débutants comme pour les pros du digital. Des actu, des back to basics, nos retours d'expérience ou encore nos réflexions sur des sujets qui portent au débat. Social Média, SEA, SEO, Développement Web mais aussi RGPD jusqu'à Analytics.
             </h2>
             <div class="flex flex-col items-center w-8 gap-2">
               <Mouse newClass="h-auto w-full" color="#FFF" />

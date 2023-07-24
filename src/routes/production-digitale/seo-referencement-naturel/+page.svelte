@@ -8,17 +8,17 @@
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 
   const title = 'SEO.<br /> Référencement Naturel.'
-  const subtitle = 'Google. Bing. Yahoo... 1ère position.'
+  const subtitle = '1ère position sur votre moteur de recherche.'
   const intro = "L'agence Beavers est spécialisée dans l'optimisation du référencement naturel afin d'atteindre les meilleures positions dans les moteurs de recherche comme Google, Yahoo ou Bing.<br />Le SEO reste un levier primordial pour toute entreprise."
   const words: Array<string> = [
     'SEO', 'Référencement Naturel', 'Position 0', 'Google', 'Bing', 'Yahoo', '1ère position', 'Données structurées', 'Audit SEO', 'Résultats de recherche'
   ]
 
-  const title2 = 'Le SEO : la base de tout site internet'
+  const title2 = 'Le SEO à la base de tout site internet'
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Beavers met en place toutes les optimisations pour votre SEO.",
+    description: "Votre agence digitale spécialisée en référencement naturel vous propose un audit de votre SEO, des optimisations techniques, de contenu, de maillage, jusqu'au suivi à long terme."
   }
 </script>
 

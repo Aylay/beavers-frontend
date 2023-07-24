@@ -42,7 +42,7 @@
         <Mobile newClass="absolute top-5 left-1/2 transform -translate-x-1/2 fill-white" />
       </div>
       <h3 class="text-5 text-center">
-        Une approche<br />mobile-first
+        Mobile-first
       </h3>
     </div>
     <div
@@ -53,7 +53,7 @@
         <Pencil newClass="absolute top-7 left-1/2 transform -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
-        Un design personnalisé
+        Design personnalisé
       </h3>
     </div>
     <div
@@ -64,7 +64,7 @@
         <Code newClass="absolute top-8 left-1/2 transform -translate-x-1/2 -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
-        Un développement<br />sur mesure
+        Développement<br />sur mesure
       </h3>
     </div>
     <div
@@ -72,10 +72,10 @@
     >
       <div class="relative">
         <Shape newClass="fill-seance" />
-        <Google newClass="absolute top-7 left-1/2 transform -translate-x-1/2" />
+        <Cursor newClass="absolute top-8 left-1/2 transform -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
-        Une optimisation SEO
+        Parcours<br />utilisateur
       </h3>
     </div>
     <div
@@ -83,10 +83,10 @@
     >
       <div class="relative">
         <Shape newClass="fill-seance" />
-        <Cursor newClass="absolute top-8 left-1/2 transform -translate-x-1/2" />
+        <Google newClass="absolute top-7 left-1/2 transform -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
-        Un parcours<br />utilisateur optimisé
+        Optimisation<br />SEO
       </h3>
     </div>
   </div>

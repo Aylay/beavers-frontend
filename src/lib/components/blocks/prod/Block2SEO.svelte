@@ -91,7 +91,7 @@ on:inview_change={handleChange}>
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-			Site SEO & Google friendly 
+			Mission Google friendly
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -101,13 +101,12 @@ on:inview_change={handleChange}>
 			<p class="text-6 animate-delay-500 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}">
-				Après avoir réalisé l'audit SEO de votre site internet, nous vous enverrons une liste d'optimisations & conseils techniques. Ainsi votre site sera dans un état de santé optimal pour Google et les autres moteurs de recherche. Les différentes optimisations peuvent être
-				la mise à jour des balises du site, l'amélioration du responsive design afin que ce soit plus lisible en mobile tout comme sur ordinateur, les slugs utilisés, le remplissage des balises SEO qui peuvent manquer, etc.
+				Après avoir réalisé l'audit SEO de votre site internet, nous vous enverrons une liste d'optimisations & conseils techniques. Ainsi votre site sera dans un état de santé optimal pour Google et les autres moteurs de recherche. Les différentes optimisations peuvent être la mise à jour des balises du site, l'amélioration du responsive design afin que ce soit plus lisible en mobile et sur ordinateur, les slugs utilisés, le remplissage des balises SEO qui peuvent manquer, etc.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}">
-				L'agence Beavers peut vous aider dans la mise en place de ces optimisations.
+				L'agence Beavers vous propose de mettre en place ces optimisations.
 			</p>
 		</div>
     <div class="mt-20 animate-delay-1000 {isInView

@@ -13,6 +13,7 @@
     allWords = allWords.concat(newWords)
   }
   allWords = allWords.concat(allWords)
+  allWords = allWords.concat(allWords)
   </script>
 
 <div>

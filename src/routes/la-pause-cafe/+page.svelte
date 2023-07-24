@@ -7,8 +7,8 @@
 	const articlesList: any = $page.data.articlesList;
 
 	const meta = {
-		title: "Tous les Cas agence de l'agence digitale Beavers",
-		description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+		title: "Le blog des actualités digitales de l'agence Beavers",
+		description: "Retrouvez dans notre blog des réflexions sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers."
 	}
 </script>
 

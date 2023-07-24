@@ -56,7 +56,7 @@
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-			Soyez visible sur internet
+			Parlez de vous et vos services
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView

@@ -175,7 +175,7 @@
 	<meta property="og:type" content="website" />
 	<meta
 		property="og:image"
-		content="{siteURL}/lll"
+		content="{siteURL}/img/og-beavers.png"
 	/>
 	<meta
 		property="og:image:width"

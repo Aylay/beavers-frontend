@@ -8,8 +8,8 @@
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 
   const title = 'Création de site internet'
-  const subtitle = 'Site vitrine. Blog. Site e-commerce.'
-  const intro = "Notre agence digitale crée et développe votre futur site web du début de la réflexion à la mise en production finale clé en main. Pour nous, chaque étape est importante : la réflexion de la technologie à utiliser pour le développement, la création d'une charte graphique et d'un design moderne et épuré ainsi qu'un parcours utilisateur correspondant à votre cible pour finir avec un développement optimisé en SEO."
+  const subtitle = 'Vitrine. Blog. E-commerce.'
+  const intro = "Notre agence digitale crée et développe votre futur site web du début de la réflexion jusqu'à sa mise en production, clé en main. Pour nous, chaque étape est importante : la réflexion de la technologie à utiliser pour le développement, la création d'une charte graphique et d'un design moderne et épuré ainsi qu'un parcours utilisateur correspondant à votre cible pour finir avec un développement optimisé en SEO."
   const words: Array<string> = [
     'Site', 'Blog', 'Site vitrine', 'Développement', 'UX / UI', 'SEO', 'Web design', 'Site e-commerce', 'Refonte'
   ]
@@ -17,8 +17,8 @@
   const title2 = 'UX, Web Design et Développement Web'
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Beavers crée votre site internet, vitrine, e-commerce ou blog.",
+    description: "L'agence digitale Beavers crée votre site internet, blog, ou encore un site e-commerce. Beavers s'occupe de la refonte de votre site en gardant votre SEO."
   }
 </script>
 

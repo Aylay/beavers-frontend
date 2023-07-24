@@ -86,7 +86,7 @@
         <Graph newClass="absolute top-4 left-1/2 transform -translate-x-1/2" />
       </div>
       <h3 class="text-5 text-center">
-        Un suivi du<br />référencement
+        Optimisation du<br />référencement
       </h3>
     </div>
   </div>

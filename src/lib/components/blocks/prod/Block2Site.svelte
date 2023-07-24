@@ -91,7 +91,7 @@ on:inview_change={handleChange}>
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-			Faîtes découvrir votre contenu en ligne
+			Partagez votre actualité
 		</h3>
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -106,7 +106,7 @@ on:inview_change={handleChange}>
 			<p class="text-6 animate-delay-500 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}">
-				La publication de contenu récurrente est un très bon moyen de se positionner rapidement sur des mots clés dans les résultats des moteurs de recherche comme Google, Bing ou Yahoo. C'est un <a href="/la-pause-cafe/seo/strategies-referencement-blog-2021" title="Stratégie de référencement naturel" class="font-bold underline text-electric hover:text-bright transition-colors">gain SEO</a> considérable.
+				La publication de contenu récurrente est un très bon moyen de se positionner rapidement sur des mots clés dans les résultats des moteurs de recherche comme Google, Bing ou Yahoo.<br />C'est un <a href="/la-pause-cafe/seo/strategies-referencement-blog-2021" title="Stratégie de référencement naturel" class="font-bold underline text-electric hover:text-bright transition-colors">gain SEO</a> considérable.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView
 				? 'animate-fade'
