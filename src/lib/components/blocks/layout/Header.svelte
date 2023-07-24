@@ -89,7 +89,6 @@
     menuOpened = !menuOpened
     document.body.classList.toggle('overflow-hidden');
   }
-  console.log($page)
 </script>
 
 <svelte:window bind:scrollY={y} />
