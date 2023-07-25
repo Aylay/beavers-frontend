@@ -59,14 +59,29 @@
 			words.push(word.text)
 		}
 
-		publishedHeaderDate = content.date ? DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLL yyyy', { locale: "fr" }) : DateTime.fromISO(content.publishedAt).toFormat('dd LLL yyyy', { locale: "fr" })
-		updatedHeaderDate = content.date ? '' : DateTime.fromISO(content.updatedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
-		
-		publishedDate = content.date ? DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('yyyy-LL-dd', { locale: "fr" }) : DateTime.fromISO(content.publishedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
-		updatedDate = content.date ? '' : DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
-		
-		publishedOGDate = content.date ? DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).valueOf() : DateTime.fromISO(content.publishedAt).valueOf()
-		updatedOGDate = content.date ? '' : DateTime.fromISO(content.updatedAt).valueOf()
+		if (content.date) {
+			publishedHeaderDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLL yyyy', { locale: "fr" })
+			publishedDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('yyyy-LL-dd', { locale: "fr" })
+			publishedOGDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).valueOf()
+
+			if (DateTime.fromISO(content.updatedAt) > DateTime.fromFormat('26/07/2023', 'dd/LL/yyyy', { locale: "fr" })) {
+				updatedHeaderDate = DateTime.fromISO(content.updatedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
+				updatedDate = DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
+				updatedOGDate = DateTime.fromISO(content.updatedAt).valueOf()
+			} else {
+				updatedHeaderDate = ''
+				updatedDate = ''
+				updatedOGDate = ''
+			}
+		} else {
+			publishedHeaderDate = DateTime.fromISO(content.publishedAt).toFormat('dd LLL yyyy', { locale: "fr" })
+			publishedDate = DateTime.fromISO(content.publishedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
+			publishedOGDate = DateTime.fromISO(content.publishedAt).valueOf()
+
+			updatedHeaderDate = DateTime.fromISO(content.updatedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
+			updatedDate = DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
+			updatedOGDate = DateTime.fromISO(content.updatedAt).valueOf()
+		}
 
 		schema = {
 			"@context": "https://schema.org",

@@ -47,7 +47,7 @@
   ]
 </script>
 
-<div class="h-screen bg-rock"
+<div class="h-screen bg-rock relative"
   use:inview={options}
   on:inview_change={handleChange}
 >

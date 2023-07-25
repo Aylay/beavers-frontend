@@ -1,3 +1,79 @@
-<div class="lg:h-screen bg-rock relative overflow-hidden max-lg:pt-60">
-  coucou
+<script lang="ts">
+  import { page } from '$app/stores';
+	import Mouse from "$lib/assets/svg/Mouse.svelte";
+	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
+	import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
+	import LDTag from '$lib/components/utilities/LDTag.svelte'
+
+  export let client: string;
+  export let title: string;
+  
+  const siteURL = import.meta.env.VITE_SITE_URL
+
+  let schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "Beavers",
+        "item": siteURL
+      },
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "Les études de cas de Beavers",
+        "item": siteURL + '/cas-agence'
+      },
+      {
+        "@type":"ListItem",
+        "position": 2,
+        "name": title.replace(/&nbsp;/g, ' '),
+        "item": siteURL + '/cas-agence/' + $page.params.slug
+      },
+    ]
+  }
+</script>
+
+<LDTag {schema} />
+
+<div class="h-screen relative flex justify-center items-center bg-rock">
+  <div class="big-container">
+    <div class="w-2/3">
+      <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
+        <li>
+          <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
+            Accueil
+          </a>
+        </li>
+        <li class="text-7 text-bright font-bold">
+          |
+        </li>
+        <li>
+          <a href="/cas-agence" title="Les études de cas de Beavers" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
+            Cas agence
+          </a>
+        </li>
+        <li class="text-7 text-bright font-bold">
+          |
+        </li>
+        <li class="text-7 text-white font-semibold">
+          {title}
+        </li>
+      </ul>
+      <h1 class="text-3 mb-20 text-bright">
+        {title}
+      </h1>
+      <div class="flex flex-col items-center w-8 gap-2">
+        <Mouse newClass="h-auto w-full" color="#FFF" />
+        <ArrowBottom newClass="animate-bounce"  color="#FFF" />
+      </div>
+    </div>
+  </div>
+  <div class="w-full lg:w-1/3 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 right-0 z-10 transition-opacity">
+    <img src="/img/soutiens/the-ocean-cleanup.jpg" alt="The Ocean Cleanup" class="w-full h-full object-cover">
+  </div>
+  <HeaderWave />
+  <div class="absolute bottom-0 h-20 w-full bg-seance inset-x-0 z-0 max-lg:hidden" />
 </div>

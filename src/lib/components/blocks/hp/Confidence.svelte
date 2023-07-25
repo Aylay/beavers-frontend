@@ -13,7 +13,7 @@
 		{
 			src: '/img/clients/keune.svg',
 			newClass: 'w-full h-auto',
-			href: '#',
+			href: '/cas/gestion-strategie-sea-keune-haircosmetics',
 			title: 'Keune Haircosmetics'
 		},
 		{
@@ -25,7 +25,7 @@
 		{
 			src: '/img/clients/v-zug.svg',
 			newClass: 'h-full w-auto',
-			href: '#',
+			href: '/cas/creation-gestion-publications-reseaux-sociaux-v-zug',
 			title: 'V-ZUG'
 		},
 		{
