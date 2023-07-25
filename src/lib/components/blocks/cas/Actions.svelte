@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+	import SvelteMarkdown from 'svelte-markdown';
+
+  const mdOptions = {
+    breaks: true,
+    gfm: true,
+    headerIds: false
+  };
 
   const strapiURL = import.meta.env.VITE_STRAPI_URL;
 
@@ -28,9 +35,9 @@
     <p class="text-5 text-bright">
       Nos actions
     </p>
-    <p class="text-6">
-      {@html actions}
-    </p>
+    <div class="content-style flex flex-col gap-8">
+      <SvelteMarkdown source={actions} options={mdOptions} />
+    </div>
   </div>
   <div class="max-lg:w-full lg:flex-1 h-[36rem] lg:h-[55rem] flex flex-col gap-8  lg:order-1">
     {#if isInView}

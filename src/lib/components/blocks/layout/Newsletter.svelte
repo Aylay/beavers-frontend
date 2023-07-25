@@ -72,6 +72,13 @@
 		return re.test(email);
 	}
 
+  function checkEmail(email: string) {
+    emailError = false;
+    if (email === '' || (email !== '' && !validEmail(email))) {
+      emailError = true;
+    }
+  }
+
   // function doRecaptcha() {
   //   grecaptcha.ready(function() {
   //     grecaptcha.execute(key, { action: "submit" }).then(function(t: any) {
@@ -113,7 +120,7 @@
             bind:value={email}
             type="text"
             id="nlEmail"
-            on:focus={() => (emailError = false)}
+            on:keyup={() => checkEmail(email)}
             class="w-full text-6 px-4 py-4 bg-transparent border-[2px] transition-colors rounded-lg focus-within:outline-none flex-1 {emailError
               ? 'text-seance border-seance'
               : 'text-jaguar border-jaguar'}"
@@ -123,7 +130,7 @@
             bind:value={email}
             type="text"
             id="nlEmail"
-            on:focus={() => (emailError = false)}
+            on:keyup={() => checkEmail(email)}
             class="w-full text-6 px-4 py-4 bg-transparent border-[2px] transition-colors rounded-lg focus-within:outline-none flex-1 {emailError
               ? 'text-jaguar border-jaguar'
               : 'text-white border-bright'}"

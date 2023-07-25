@@ -32,16 +32,16 @@
 	use:inview={options}
 	on:inview_change={handleChange}
 >
-<div class="lg:flex-1">
-	<Line />
-	<Title first="Agence digitale uniquement composée" second="d'experts" />
-	<p class="mt-8 text-6 animate-delay-500 {isInView
-		? 'animate-fade'
-		: 'opacity-0'}">
-		Nos expériences en agence de communication et chez l’annonceur nous permettent de comprendre vos enjeux tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
-	</p>
-</div>
-	<div class="relative flex flex-1 justify-center gap-8" use:inview={optionsImg} on:inview_change={handleChangeImg}>
+	<div class="lg:flex-1">
+		<Line />
+		<Title first="Agence digitale uniquement composée" second="d'experts" />
+		<p class="mt-8 text-6 animate-delay-500 {isInView
+			? 'animate-fade'
+			: 'opacity-0'}">
+			Nos expériences en agence de communication et chez l’annonceur nous permettent de comprendre vos enjeux tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
+		</p>
+	</div>
+	<div class="relative flex flex-1 justify-center gap-8 max-lg:hidden" use:inview={optionsImg} on:inview_change={handleChangeImg}>
 		<div class="relative flex flex-1 items-center">
 			<div class="w-full lg:h-1/2 relative">
 				{#if isInViewImg}

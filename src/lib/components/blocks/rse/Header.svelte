@@ -8,10 +8,10 @@
 </script>
 
 <div class="h-[calc(100vh-64px)] lg:h-screen relative flex justify-center items-center bg-rock">
-  <div class="big-container flex flex-col items-center relative z-50 lg:z-20">
+  <div class="big-container flex flex-col items-center relative z-40 lg:z-20">
     <Hoverable newClass="rounded-full" let:hovering={active}>
       <button
-        class="w-24 h-24 rounded-full flex justify-center items-center cursor-pointer transition-colors {active ? 'bg-seance lg:bg-bright' : 'bg-seance'}"
+        class="w-24 h-24 rounded-full flex justify-center items-center max-lg:transform max-lg:rotate-90 cursor-pointer transition-colors {active ? 'bg-seance lg:bg-bright' : 'bg-seance'}"
         on:click={() => isOceanActive = !isOceanActive}
       >
       

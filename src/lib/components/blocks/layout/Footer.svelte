@@ -63,7 +63,7 @@
               <a
                 href="/contactez-nous"
                 title="Ecrire un message aux castors de Beavers"
-                class="font-semibold text-6 text-seance underline hover:text-bright transition-colors"
+                class="font-semibold text-6 text-electric underline hover:text-bright transition-colors"
               >
                 Ecrivez-nous
               </a>
@@ -74,7 +74,7 @@
                 target="_blank"
                 href="tel:+33664644470"
                 title="Parler avec les castors de Beavers au téléphone"
-                class="font-semibold text-6 text-seance underline hover:text-bright transition-colors"
+                class="font-semibold text-6 text-electric underline hover:text-bright transition-colors"
               >
                 06 64 64 44 60
               </a>
@@ -86,7 +86,7 @@
                 rel="external noreferrer"
                 href="https://wa.me/+33664644470"
                 title="Parler avec les castors de Beavers sur WhatsApp"
-                class="font-semibold text-6 text-seance underline hover:text-bright transition-colors"
+                class="font-semibold text-6 text-electric underline hover:text-bright transition-colors"
               >
                 06 64 64 44 60
               </a>
@@ -150,7 +150,7 @@
             Nos soutiens.
           </p>
           <p class="text-6">
-            L'agence Beavers soutient les associations <a title="L'agence Beavers soutient les associations The Ocean Cleanup et Tree Nation" class="text-seance hover:text-bright transition-colors underline font-semibold" href="/programme-rse">The Ocean Cleanup et Tree Nation</a>.
+            L'agence Beavers soutient les associations <a title="L'agence Beavers soutient les associations The Ocean Cleanup et Tree Nation" class="text-electric hover:text-bright transition-colors underline font-semibold" href="/programme-rse">The Ocean Cleanup et Tree Nation</a>.
           </p>
         </div>
       </div>
