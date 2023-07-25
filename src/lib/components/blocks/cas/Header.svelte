@@ -62,7 +62,7 @@
   on:inview_change={handleChange}
 >
   <div class="big-container">
-    <div class="lg:w-2/3 relative">
+    <div class="lg:w-2/3 relative z-10">
       <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
         <li>
           <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
