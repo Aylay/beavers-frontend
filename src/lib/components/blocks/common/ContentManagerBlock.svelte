@@ -63,7 +63,7 @@
 
 {#if block.layout === 'image'}
   <div
-    class="w-full big-container"
+    class="w-full big-container relative"
     use:inview={optionsImg}
     on:inview_change={handleChangeImg}
   >
@@ -73,6 +73,11 @@
         alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
         class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
       />
+    {/if}
+    {#if block.legend}
+      <div class="content-style absolute -bottom-12 w-full text-right">
+        <SvelteMarkdown source={block.legend} options={mdOptions} />
+      </div>
     {/if}
   </div>
 {/if}
@@ -115,13 +120,18 @@
     >
       <SvelteMarkdown source={block.text1} options={mdOptions} />
     </div>
-    <div class="flex-1">
+    <div class="flex-1 relative">
       {#if isInViewImg}
         <img
           src={strapiURL + block.img.data.attributes.url}
           alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
           class="h-full w-full object-cover overflow-hidden rounded-lg animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
+      {/if}
+      {#if block.legend}
+        <div class="content-style absolute -bottom-12 w-full text-right">
+          <SvelteMarkdown source={block.legend} options={mdOptions} />
+        </div>
       {/if}
     </div>
   </div>  
@@ -133,7 +143,7 @@
     use:inview={optionsImg}
     on:inview_change={handleChangeImg}
   >
-    <div class="flex-1">
+    <div class="flex-1 relative max-lg:order-2">
       {#if isInViewImg}
         <img
           src={strapiURL + block.img.data.attributes.url}
@@ -141,9 +151,14 @@
           class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
       {/if}
+      {#if block.legend}
+        <div class="content-style absolute -bottom-12 w-full max-lg:text-right">
+          <SvelteMarkdown source={block.legend} options={mdOptions} />
+        </div>
+      {/if}
     </div>
     <div
-      class="content-style flex-1 flex flex-col gap-8 animate-delay-[250ms] {isInView ? 'animate-fade' : 'opacity-0'}"
+      class="content-style flex-1 flex max-lg:order-1 flex-col gap-8 animate-delay-[250ms] {isInView ? 'animate-fade' : 'opacity-0'}"
       use:inview={options}
       on:inview_change={handleChange}
     >
