@@ -6,11 +6,14 @@
 	import Footer from '$lib/components/blocks/layout/Footer.svelte';
 	import Subfooter from '$lib/components/blocks/layout/Subfooter.svelte';
 	import Header from '$lib/components/blocks/layout/Header.svelte';
+	import GTM from '$lib/components/utilities/GTM.svelte'
 
 	const noLayout: Array<string> = ['/tout-savoir-sur-beavers'];
 	const noNewsletter: Array<string> = ['/newsletter-confirmation', '/newsletter-refus'];
   const siteURL = import.meta.env.VITE_SITE_URL
 </script>
+
+<!-- <GTM gtmId="GTM-W6ZCCTM" /> -->
 
 <svelte:head>
   <meta property="og:site_name" content="Beavers" />
@@ -21,14 +24,14 @@
 
 <div class="overflow-hidden">
 	{#if !noLayout.includes($page.route.id)}
-	<Header />
+		<Header />
 	{/if}
 	<slot />
 	{#if !noLayout.includes($page.route.id)}
-	{#if !noNewsletter.includes($page.route.id)}
-	<Newsletter />
-	{/if}
-	<Footer />
+		{#if !noNewsletter.includes($page.route.id)}
+			<Newsletter />
+		{/if}
+		<Footer />
 	<Subfooter />
 	{/if}
 </div>

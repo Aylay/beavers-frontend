@@ -23,6 +23,7 @@
 
   export let client: any;
   export let title: string;
+  export let imgSite: any;
   
   const siteURL = import.meta.env.VITE_SITE_URL
   const strapiURL = import.meta.env.VITE_STRAPI_URL;
@@ -51,8 +52,7 @@
       },
     ]
   }
-
-  console.log(client)
+  console.log(imgSite)
 </script>
 
 <LDTag {schema} />
@@ -62,7 +62,7 @@
   on:inview_change={handleChange}
 >
   <div class="big-container">
-    <div class="lg:w-2/3 relative z-10">
+    <div class="lg:w-2/3 relative z-30">
       <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
         <li>
           <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
@@ -100,11 +100,20 @@
       </div>
     </div>
   </div>
+  {#if imgSite}
+  <div class="absolute top-[10%] h-[calc(100vh*0.8)] right-1/3 z-20 transform translate-x-1/2 flex items-center justify-center animate-fade animate-delay-[1500ms] max-lg:hidden">
+    <img
+      src={strapiURL + imgSite.attributes.url}
+      alt={imgSite.attributes.alternativeText ? imgSite.attributes.alternativeText : title}
+      class="w-full h-full object-cover"
+    />
+  </div>
+  {/if}
   <div class="w-full lg:w-1/3 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 right-0 z-10 transition-opacity max-lg:hidden">
     {#if client.imgBg && client.imgBg.data}
     <img
       src={strapiURL + client.imgBg.data.attributes.url}
-      alt="The Ocean Cleanup" 
+      alt={client.imgBg.data.attributes.alternativeText ? client.imgBg.data.attributes.alternativeText : client.name}
       class="w-full h-full object-cover animate-fade animate-delay-[1250ms]"
     />
     {/if}
