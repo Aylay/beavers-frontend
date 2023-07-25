@@ -1,9 +1,25 @@
 <script lang="ts">
+	import { inview } from 'svelte-inview';
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
+
   import { page } from '$app/stores';
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
 	import LDTag from '$lib/components/utilities/LDTag.svelte'
+	import Sun from '$lib/assets/svg/Sun.svelte';
+	import Wave2 from '$lib/assets/svg/Wave2.svelte';
+	import MultipleArrows from '$lib/assets/svg/MultipleArrows.svelte';
+
+	let isInView: boolean;
+	const options: Options = {
+		unobserveOnEnter: true,
+		rootMargin: '50px'
+	};
+
+	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+		isInView = detail.inView;
+	};
 
   export let client: any;
   export let title: string;
@@ -41,9 +57,12 @@
 
 <LDTag {schema} />
 
-<div class="h-screen relative flex justify-center items-center bg-rock">
+<div class="h-screen relative flex justify-center items-center bg-rock"
+  use:inview={options}
+  on:inview_change={handleChange}
+>
   <div class="big-container">
-    <div class="w-2/3">
+    <div class="w-2/3 relative">
       <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
         <li>
           <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
@@ -72,15 +91,20 @@
         <Mouse newClass="h-auto w-full" color="#FFF" />
         <ArrowBottom newClass="animate-bounce"  color="#FFF" />
       </div>
-    </div>
+      <Sun newClass="animate-once w-24 h-auto absolute left-1/2 top-full animate-ping {isInView ? 'animate-ping animate-delay-1000' : 'opacity-0'}" color="#00FFDA" />
+      <Wave2 newClass="absolute -top-1/4 left-2/3 fill-seance animate-shake animate-delay-500" />
+      <MultipleArrows newClass="absolute -bottom-1/2 left-1/4 fill-bright animate-fade animate-delay-700" />
+      <div class="absolute -left-32 -top-32 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1500ms] animate-fade" />
+      <div class="absolute -left-32 -top-40 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1800ms] animate-fade" />
+      </div>
   </div>
   <div class="w-full lg:w-1/3 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 right-0 z-10 transition-opacity">
     {#if client.imgBg && client.imgBg.data}
     <img
       src={strapiURL + client.imgBg.data.attributes.url}
       alt="The Ocean Cleanup" 
-      class="w-full h-full object-cover animate-fade"
-    >
+      class="w-full h-full object-cover animate-fade animate-delay-[1250ms]"
+    />
     {/if}
   </div>
   <HeaderWave />
