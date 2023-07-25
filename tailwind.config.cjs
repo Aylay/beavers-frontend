@@ -13,7 +13,8 @@ module.exports = {
 			seance: '#8013BD',
 			transparent: 'transparent',
 			purple: '#760EB0',
-			electric: '#A118F0'
+			electric: '#A118F0',
+			caribbean: '#00C1A3'
 		},
 		fontFamily: {
 			base: 'Montserrat, Arial, sans-serif',

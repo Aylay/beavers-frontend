@@ -31,6 +31,11 @@
       slug: '/'
     },
     {
+      label: "Marketing digital",
+      title: "Marketing digital",
+      slug: '/marketing-digital'
+    },
+    {
       label: "L'agence",
       title: "L'agence",
       slug: '/l-agence-beavers'

@@ -31,7 +31,7 @@
 </script>
 
 <div class="big-container flex gap-32 max-lg:flex-col lg:gap-40">
-	<div class="relative flex flex-1 justify-center gap-8 max-lg:order-2" use:inview={optionsImg} on:inview_change={handleChangeImg}>
+	<div class="relative flex flex-1 justify-center gap-8 max-lg:hidden" use:inview={optionsImg} on:inview_change={handleChangeImg}>
 		<div class="flex flex-1 flex-col gap-8">
 			<div class="flex-3">
 				{#if isInViewImg}

@@ -51,7 +51,7 @@
 			Ces clients font appel à Beavers pour mettre en place une stratégie de communication digitale efficace.
 		</p>
 	</div>
-	<div class="mt-24 flex max-lg:flex-wrap items-center justify-between gap-20">
+	<div class="mt-24 flex max-lg:flex-wrap items-center justify-center lg:justify-between gap-20">
 		{#each logos as logo, i}
 			<ConfidenceLogo src={logo.src} newClass={logo.newClass} {i} href={logo.href} title={logo.title} />
 		{/each}

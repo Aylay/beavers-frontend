@@ -84,7 +84,7 @@
 <LDTag {schema} />
 
 <div class="big-container flex gap-32 max-lg:flex-col lg:gap-40" use:inview={options} on:inview_change={handleChange}>
-	<div class="flex-1 max-lg:order-2">
+	<div class="flex-1">
 		<Line />
 		<Title first="La relation avec" second="Beavers" />
 		<div class="mt-16 flex flex-col">
@@ -124,7 +124,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="relative flex flex-1 justify-center max-lg:order-1">
+	<div class="relative flex flex-1 justify-center max-lg:hidden">
 		<div>
 			<div
 				class="relative w-full lg:max-w-[45rem]"

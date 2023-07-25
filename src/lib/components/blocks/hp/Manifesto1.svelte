@@ -56,7 +56,7 @@
 			<Cta label="Découvrir l'équipe" href="/l-agence-beavers" type="transparent" />
 		</div>
 	</div>
-	<div class="relative flex flex-1 justify-center">
+	<div class="relative flex flex-1 justify-center max-lg:hidden">
 		<div>
 			<div
 				class="relative w-full max-w-[45rem]"

@@ -47,7 +47,7 @@
 	use:inview={options}
 	on:inview_change={handleChange}
 >
-	<div class="flex-1 max-lg:order-2">
+	<div class="flex-1">
 		<Line />
 		<Title first="Digital Média" />
 		<h3
@@ -67,7 +67,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="relative flex flex-1 items-center justify-center max-lg:order-1">
+	<div class="relative flex flex-1 items-center justify-center max-lg:hidden">
 		<div
 			class="relative w-full lg:max-w-[45rem]"
 			use:inview={optionsImg}
