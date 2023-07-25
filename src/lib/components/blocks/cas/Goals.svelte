@@ -23,7 +23,7 @@
   use:inview={options}
   on:inview_change={handleChange}
 >
-  <div class="flex-1">
+  <div class="flex-1 max-lg:w-full">
     <p class="text-5 text-bright">
       Les objectifs à atteindre
     </p>

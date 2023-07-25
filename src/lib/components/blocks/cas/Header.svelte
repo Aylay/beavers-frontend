@@ -62,7 +62,7 @@
   on:inview_change={handleChange}
 >
   <div class="big-container">
-    <div class="w-2/3 relative">
+    <div class="lg:w-2/3 relative">
       <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
         <li>
           <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
@@ -84,21 +84,23 @@
           {title}
         </li>
       </ul>
-      <h1 class="text-3 mb-20 text-bright">
+      <h1 class="text-3 mb-20 text-bright font-semibold">
         {title}
       </h1>
       <div class="flex flex-col items-center w-8 gap-2">
         <Mouse newClass="h-auto w-full" color="#FFF" />
         <ArrowBottom newClass="animate-bounce"  color="#FFF" />
       </div>
-      <Sun newClass="animate-once w-24 h-auto absolute left-1/2 top-full animate-ping {isInView ? 'animate-ping animate-delay-1000' : 'opacity-0'}" color="#00FFDA" />
-      <Wave2 newClass="absolute -top-1/4 left-2/3 fill-seance animate-shake animate-delay-500" />
-      <MultipleArrows newClass="absolute -bottom-1/2 left-1/4 fill-bright animate-fade animate-delay-700" />
-      <div class="absolute -left-32 -top-32 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1500ms] animate-fade" />
-      <div class="absolute -left-32 -top-40 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1800ms] animate-fade" />
+      <div class="max-lg:hidden">
+        <Sun newClass="animate-once w-24 h-auto absolute left-1/2 top-full animate-ping {isInView ? 'animate-ping animate-delay-1000' : 'opacity-0'}" color="#00FFDA" />
+        <Wave2 newClass="absolute -top-1/4 left-2/3 fill-seance animate-shake animate-delay-500" />
+        <MultipleArrows newClass="absolute -bottom-1/2 left-1/4 fill-bright animate-fade animate-delay-700" />
+        <div class="absolute -left-32 -top-32 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1500ms] animate-fade" />
+        <div class="absolute -left-32 -top-40 h-[2px] w-20 -rotate-45 transform bg-bright animate-delay-[1800ms] animate-fade" />
       </div>
+    </div>
   </div>
-  <div class="w-full lg:w-1/3 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 right-0 z-10 transition-opacity">
+  <div class="w-full lg:w-1/3 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 right-0 z-10 transition-opacity max-lg:hidden">
     {#if client.imgBg && client.imgBg.data}
     <img
       src={strapiURL + client.imgBg.data.attributes.url}
