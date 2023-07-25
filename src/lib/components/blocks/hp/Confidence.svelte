@@ -19,7 +19,7 @@
 		{
 			src: '/img/clients/imagine-2050.svg',
 			newClass: 'h-full w-auto',
-			href: '#',
+			href: '/cas/developpement-site-internet-imagine-2050',
 			title: 'Imagine 2050'
 		},
 		{

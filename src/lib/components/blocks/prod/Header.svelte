@@ -72,9 +72,9 @@
         <Wave2 newClass="absolute top-1/4 left-1/2 fill-bright animate-shake animate-delay-1000 transform -translate-x-1/2" />
         <Wave2 newClass="absolute top-1/2 left-2/3 fill-seance animate-shake animate-delay-500" />
 
-        <p class="absolute max-w-[36rem] w-full bg-jaguar top-1/3 left-0 p-4 text-7 animate-fade animate-delay-[1500ms]">
+        <p class="absolute max-w-[36rem] w-full bg-jaguar top-1/3 left-0 p-6 text-7 animate-fade animate-delay-[1500ms] font-medium">
           {line11}<span class="text-bright">ts</span>{line12}<br />
-          <span class="block pl-8"><span class="text-electric">console</span>{line21}<span class="text-bright">Bienvenue</span> chez les <span class="text-electric">castors</span>{line22}</span>
+          <span class="block pl-10"><span class="text-electric">console</span>{line21}<span class="text-bright">Bienvenue</span> chez les <span class="text-electric">castors</span>{line22}</span>
           {line31}<span class="text-bright">/</span>{line32}
         </p>
 
