@@ -5,10 +5,11 @@
 	import HeaderWave from "$lib/assets/svg/HeaderWave.svelte";
 	import LDTag from '$lib/components/utilities/LDTag.svelte'
 
-  export let client: string;
+  export let client: any;
   export let title: string;
   
   const siteURL = import.meta.env.VITE_SITE_URL
+  const strapiURL = import.meta.env.VITE_STRAPI_URL;
 
   let schema = {
     "@context": "https://schema.org",
@@ -34,6 +35,8 @@
       },
     ]
   }
+
+  console.log(client)
 </script>
 
 <LDTag {schema} />
@@ -72,7 +75,13 @@
     </div>
   </div>
   <div class="w-full lg:w-1/3 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 right-0 z-10 transition-opacity">
-    <img src="/img/soutiens/the-ocean-cleanup.jpg" alt="The Ocean Cleanup" class="w-full h-full object-cover">
+    {#if client.imgBg && client.imgBg.data}
+    <img
+      src={strapiURL + client.imgBg.data.attributes.url}
+      alt="The Ocean Cleanup" 
+      class="w-full h-full object-cover animate-fade"
+    >
+    {/if}
   </div>
   <HeaderWave />
   <div class="absolute bottom-0 h-20 w-full bg-seance inset-x-0 z-0 max-lg:hidden" />

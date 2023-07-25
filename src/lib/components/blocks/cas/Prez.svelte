@@ -32,7 +32,7 @@
   <div class="flex-1 flex max-lg:flex-col gap-20">
     <div class="lg:w-72">
       {#if isInView}
-      <img src={strapiURL + client.logo.data.attributes.url} alt={client.logo.data.attributes.alternativeText ? client.logo.data.attributes.alternativeText : client.name} class="max-w-[50%] lg:max-w-[12rem] lg:max-h-[10rem] w-full h-auto mx-auto {isInView ? 'animate-fade' : 'opacity-0'}">
+      <img src={strapiURL + client.logo.data.attributes.url} alt={client.logo.data.attributes.alternativeText ? client.logo.data.attributes.alternativeText : client.name} class="max-w-[50%] lg:max-w-[12rem] lg:max-h-[12rem] w-auto h-auto mx-auto {client.logoColor ? 'brightness-0 invert' : ''} {isInView ? 'animate-fade' : 'opacity-0'}">
       {/if}
     </div>
     <div class="flex-1 lg:pl-10 lg:border-l-[2px] border-l-jagger flex flex-col gap-8 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">

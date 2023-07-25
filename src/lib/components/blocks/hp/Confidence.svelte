@@ -7,7 +7,7 @@
 		{
 			src: '/img/clients/cafes-richard.svg',
 			newClass: 'w-full h-auto',
-			href: '#',
+			href: '/cas/sea-social-media-landing-page-cafes-richard',
 			title: 'Cafés Richard'
 		},
 		{
@@ -37,7 +37,7 @@
 		{
 			src: '/img/clients/ki.svg',
 			newClass: 'w-full h-auto',
-			href: '#',
+			href: '/cas/developpement-site-vitrine-ki-lyon',
 			title: 'Ki Lyon'
 		}
 	];

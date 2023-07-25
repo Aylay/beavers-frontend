@@ -50,7 +50,7 @@
 <Meta meta={content.meta} />
 
 <div class="flex flex-col gap-32 lg:gap-40 pb-32 lg:pb-40">
-  <Header title={content.title} client={content.client.data.attributes.name} />
+  <Header title={content.title} client={content.client.data.attributes} />
   <Intro intro={content.intro} />
   <Prez client={content.client.data.attributes} duration={content.duration} gear={content.techLever} website={content.website} />
   <ImgFull mainImg={content.mainImg.data.attributes} title={content.title} />
