@@ -14,7 +14,7 @@
 <textarea
 	bind:this={textArea}
 	bind:value
-	id={content}
+	id={content.replace(/\s/g, "-")}
 	placeholder={required ? content + '*' : content}
 	on:focus={() => (error = false)}
 	on:keypress={() => auto_grow(textArea)}

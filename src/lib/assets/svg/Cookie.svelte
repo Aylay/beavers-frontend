@@ -5,7 +5,7 @@
 <svg
 	class={newClass} width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1427_2)">
-<mask id="mask0_1427_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="31">
+<mask style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="31">
 <path d="M29.861 0H0V30.832H29.861V0Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_1427_2)">

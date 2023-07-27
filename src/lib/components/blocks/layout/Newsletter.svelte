@@ -119,7 +119,7 @@
           <input
             bind:value={email}
             type="text"
-            id="nlEmail"
+            id="nlEmailArticle"
             on:keyup={() => checkEmail(email)}
             class="w-full text-6 px-4 py-4 bg-transparent border-[2px] transition-colors rounded-lg focus-within:outline-none flex-1 {emailError
               ? 'text-seance border-seance'

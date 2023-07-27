@@ -133,7 +133,7 @@
           <input
             bind:value={email}
             type="text"
-            id="Email"
+            id="email-job"
             placeholder="Email*"
             on:keyup={() => checkEmail(email)}
             class="w-full border-[2px] border-solid rounded-lg py-6 px-8 text-6 bg-transparent focus-within:outline-none {emailError

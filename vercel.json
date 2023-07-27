@@ -124,5 +124,9 @@
       "source": "/la-pause-cafe/developpement-web/:path*",
       "destination": "/la-pause-cafe/site-internet/:path*"
     }
+    {
+      "source": "/cas",
+      "destination": "/cas-agence"
+    }
   ]
 }
