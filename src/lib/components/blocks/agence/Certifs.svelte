@@ -16,7 +16,7 @@
 
 </script>
 
-<div class="big-container flex flex-col justify-center items-center">
+<div class="small-container flex flex-col justify-center items-center">
   <Line />
   <div class="relative">
     <span
@@ -26,17 +26,17 @@
         ? 'animate-title'
         : ''}"
     >
-      certifications
+      certifiée
     </span>
     <h2 class="w-full text-3 text-seance">
-      L'agence Beavers et ses
+      Beavers
         <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright font-normal">
-          certifications
+          certifiée
         </span>
     </h2>
   </div>
-  <p class="text-6 mt-6">
-    Lorem.....
+  <p class="text-6 mt-6 text-center">
+    Toute l'équipe de Beavers développe ses connaissances continuellement et les valide. Chaque collaborateur a permis d'obtenir ces certifications :
   </p>
   <div class="flex justify-center gap-20 max-lg:flex-col items-center mt-16"
     use:inview={options}

@@ -11,8 +11,8 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
 
   const text1 = 'En quoi<br />sommes-nous'
   const text2 = 'différents ?'
-  const text3 = "Etre une agence à taille humaine, pour ne pas noyer votre projet dans les rouages d'une grosse agence."
-  const text4 = "Pour nous, se nommer être l'expert en tout, c'est être l'expert en rien. C'est pourquoi nous sommes accompagnés de personnes aguerries prêtes à répondre à des demandes précises. Et pour chaque problématique nous faisons appel à un savoir faire précis."
+  const text3 = "À l'heure où l'intelligence artificielle se développe, passez par une équipe humaine, qui vous accompagnera personnellement que vous soyez débutant ou expert."
+  const text4 = "Pour nous, se nommer être l'expert en tout, c'est être l'expert en rien. C'est pourquoi nous sommes accompagnés de personnes qualifiées, prêtes à répondre à votre demande. Chaque problématique nécessite un savoir-faire précis auquel nous faisons appel."
 
   const people = [
     {
@@ -36,8 +36,8 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
   ]
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Beavers vous montre ses compétences et ses valeurs.",
+    description: "Pourquoi faire confiance à Beavers ? Votre agence digitale humaine, vous accompagne au plus près grâce à ses certifications et son amour pour le digital et ses clients."
   }
 </script>
 

@@ -38,7 +38,7 @@
 		<p class="mt-8 text-6 animate-delay-500 {isInView
 			? 'animate-fade'
 			: 'opacity-0'}">
-			Nos expériences en agence de communication et chez l’annonceur nous permettent de comprendre vos enjeux tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
+			Beavers est un mélange d'expériences en agence de communication et chez l’annonceur. Ces expériences nous permettent de comprendre vos enjeux tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
 		</p>
 	</div>
 	<div class="relative flex flex-1 justify-center gap-8 max-lg:hidden" use:inview={optionsImg} on:inview_change={handleChangeImg}>

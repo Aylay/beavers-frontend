@@ -4,14 +4,14 @@
   import Job from "$lib/components/blocks/jobs/Job.svelte";
 	import MetaFront from '$lib/components/utilities/MetaFront.svelte';
 
-  const title = "Jobs"
+  const title = "Recrutement"
   const subtitle = 'Vous pensez faire la différence ? Parlons-en !'
 
   const jobs: Array<any> = $page.data.content
 
   const meta = {
-		title: "Tous les Cas agence de l'agence digitale Beavers",
-		description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+		title: "Offres d'emploi dans votre agence digitale Beavers.",
+		description: "Toutes les offres d'emploi de l'agence digitale Beavers. Si vous pensez faire la différence, envoyez votre candidature pour faire partie de notre famille de castors."
 	}
 </script>
 

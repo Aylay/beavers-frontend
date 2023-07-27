@@ -15,7 +15,7 @@
         on:click={() => isOceanActive = !isOceanActive}
       >
       
-        <Switch newClass=" w-14 h-auto animate-jump {active ? 'fill-white lg:fill-seance animate-infinite' : 'fill-white'}" />
+        <Switch newClass=" w-14 h-auto animate-jump animate-infinite {active ? 'fill-white lg:fill-seance' : 'fill-white'}" />
       </button>
     </Hoverable>
     <h1 class="text-center text-2 mt-10 max-lg:hidden">
