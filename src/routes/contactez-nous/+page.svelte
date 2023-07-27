@@ -11,6 +11,8 @@
     'Contact', 'Café', 'Rendez-vous', 'Demande de devis', 'Informations', 'Besoin'
   ]
 
+  const title = 'Comment vous <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright font-normal">aider</span>&nbsp;?'
+
   let allWords: Array<string> = []
   for (const word of words) {
     const newWords = word.split(' ');
@@ -20,8 +22,8 @@
   allWords = allWords.concat(allWords)
 
   const meta = {
-    title: "Contactez l'agence digitale Beavers",
-    description: "Contactez l'agence Beavers pour plus d'informations sur votre projet ou pour que nous étudions vos opportunités digitales."
+    title: "Formulaire de contact Beavers",
+    description: "Envoyez votre demande à Beavers via un formulaire précisant votre besoin et qui vous êtes. L'équipe vous prendra en charge rapidement et avec le sourire."
   }
 </script>
 
@@ -32,10 +34,10 @@
     <div class="flex-1">
       <Line />
       <h1 class="text-3 text-seance">
-        Comment pouvons-nous vous <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright font-normal">aider</span> ?
+        {@html title}
       </h1>
       <p class="font-semibold text-6 mt-8">
-        Vous souhaitez nous dire quelque chose ?<br />Co-construire votre projet digital avec Beavers ?<br />Boire un café et parler de votre projet ? 
+        Dites-nous pourquoi vous nous contactez, et nous nous ferons un plaisir de répondre rapidement à votre demande.
       </p>
       <div class="border-jagger lg:border-l-[2px] lg:pl-10 mt-16">
         <p class="text-5 text-bright mb-8">

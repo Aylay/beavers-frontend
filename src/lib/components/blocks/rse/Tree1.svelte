@@ -59,7 +59,7 @@
 				Tree-Nation est une Organisation à but non lucratif, fondée en 2006 par Maxime Renaudin, qui permet aux citoyens comme aux entreprises de planter des arbres partout dans le monde et de compenser leurs émissions de CO2.
 			</p>
 			<p class="text-6 mt-12">
-				Voici les chiffres de la forêt Beavers de Tree-Nation entièrement <span class="font-bold text-electric">grâce à vous</span> :
+				La forêt Beavers x Tree-Nation <span class="font-bold text-electric">grâce à vous</span> :
 			</p>
 			<div class="flex max-lg:flex-col max-lg:gap-8 justify-between mt-2">
 				<div class="flex-1 flex items-center gap-8 animate-delay-500 {isInView

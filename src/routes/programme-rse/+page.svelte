@@ -10,8 +10,8 @@
   let isOceanActive: boolean = $page.data.isOceanActive;
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Beavers s'engage auprès d'associations environnementales.",
+    description: "Votre agence digitale reverse 2% de son chiffres d'affaires à deux associations pour la protection de l'environnement : The Ocean Cleanup et Tree-Nation. "
   }
 </script>
 

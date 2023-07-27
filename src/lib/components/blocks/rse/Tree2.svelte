@@ -38,7 +38,7 @@
         <span class="text-bright">Mettre fin</span><br />à la déforestation
       </h3>
       <p class="text-6 text-center">
-        Chacun des projets de Tree-Nation se bat contre les taux alarmants de déforestation dans le monde.
+        Chacun des projets de Tree-Nation est de se battre contre les taux alarmants de déforestation dans le monde.
       </p>
     </div>
     <div
@@ -52,7 +52,7 @@
         <span class="text-bright">Combattre</span><br />le changement climatique
       </h3>
       <p class="text-6 text-center">
-        Planter des arbres a été reconnu par la communauté scientifique comme un pilier essentiel pour s'attaquer au changement climatique.
+        Planter des arbres a été reconnu par la communauté scientifique être un pilier essentiel pour s'attaquer au changement climatique.
       </p>
     </div>
     <div
@@ -66,7 +66,7 @@
         <span class="text-bright">Soutenir</span><br />les communautés locales
       </h3>
       <p class="text-6 text-center">
-        Leurs projets ont également un impact économique positif sur les populations locales.
+        Les projets de Tree-Nation ont également un impact économique positif sur les populations locales. Sources de nourriture, de boisson et d'équipement, les forêts peuvent représenter jusqu'à 28 % du revenu total des ménages dans certaines régions.
       </p>
     </div>
   </div>

@@ -65,23 +65,22 @@ on:inview_change={handleChange}>
   <div class="lg:flex-1">
     <Line />
     <h2 class="w-full max-w-[47rem] text-3 text-seance">
-      Ce qu’en  <span class="text-[5.7rem] leading-[3rem] text-bright font-normal font-highlight">pensent</span> les castors de Beavers
+			Des arbres pour <span class="text-[5.7rem] leading-[3rem] text-bright font-normal font-highlight">la vie</span>, la nôtre
     </h2>
     <p class="font-semibold text-bright animate-duration-200 text-6 my-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Sans langue de bois (et nous sommes des castors), nous pensons que c’est avec l’effort de chacun que nous	pouvons réaliser de grandes choses.
+      La déforestation empêche les castors de construire, mais aussi de vivre, comment capturer le CO2 sans arbre ?
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Nous sommes sensibles à notre environnement et aux animaux qui en sont victimes. Nous voulons apporter quelque chose d’utile à la planète. Même si cela reste à notre échelle, nous adhérons à l’adage qui dit que ce sont les petits ruisseaux qui créent
-			les grandes rivières.			
+     Sans langue de bois (et nous sommes des castors), nous pensons que c’est avec l’effort de chacun que nous pouvons réaliser de grandes choses. Nous sommes sensibles à notre environnement et aux animaux victimes de la déforestation. En contribuant à la reforestation nous capturons du CO2 pour respirer, et nous alimentons nos stocks de bois pour bâtir ensemble de grands projets.		
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Pour en savoir plus, rendez-vous dans la forêt Beavers de Tree-Nation&nbsp;:
+      La forêt de Beavers avec Tree-Nation
     </p>
     <div class="mt-20 animate-delay-1000 {isInView
       ? 'animate-fade'

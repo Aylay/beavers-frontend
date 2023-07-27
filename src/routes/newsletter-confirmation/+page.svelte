@@ -3,11 +3,11 @@
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 
   const title = "Newsletter"
-  const subtitle = 'Vous avez été inscrit.e à notre newsletter mensuelle'
+  const subtitle = "Merci ! Nos castors préparent l'envoi de votre newsletter."
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Confirmation d'inscription à la newsletter Beavers.",
+    description: "L'inscription à la newsletter de l'agence digitale Beavers a été finalisée. Recevez toutes les dernières actus, les derniers articles et les dernières publications des réseaux sociaux de Beavers."
   }
 </script>
 

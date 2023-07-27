@@ -66,22 +66,22 @@ on:inview_change={handleChange}>
   <div class="lg:flex-1">
     <Line />
     <h2 class="w-full max-w-[47rem] text-3 text-seance">
-      Ce qu’en  <span class="text-[5.7rem] leading-[3rem] text-bright font-normal font-highlight">pensent</span> les castors de Beavers
+			Les castors ne veulent pas <span class="text-[5.7rem] leading-[3rem] text-bright font-normal font-highlight">manger de plastique</span>
     </h2>
     <p class="font-semibold text-bright animate-duration-200 text-6 my-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Vous pouvez pensez que ça ne vous affecte pas directement. Mais pensez-vous que le poisson que vous consommez au quotidien s’est trouvé une petite bulle VIP sans plastique ?
+      Pensez-vous vraiment que le poisson que vous consommez au quotidien s’est trouvé une petite bulle VIP sans plastique ?
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Sans langue de bois (et nous sommes des castors), nous pensons que c’est avec l’effort de chacun que nous pouvons réaliser de grandes choses. Nous sommes sensibles à notre environnement et aux animaux qui en sont victimes. Nous voulons apporter quelque chose d’utile à la planète. Même si cela reste à notre échelle, nous adhérons à l’adage qui dit que ce sont les petits ruisseaux qui créent les grandes rivières.
+      Même si cela reste à notre échelle, nous adhérons à l’adage qui dit que ce sont les petits ruisseaux qui créent les grandes rivières. C'est pourquoi nous mettons notre patte à la pâte pour nettoyer nos rivières ainsi que nos océans en contribuant financièrement à l'association The Ocean CleanUp. Tous nos clients y contribuent, alors merci à eux, à vous.
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Pour en savoir plus, rendez-vous sur le site de The Ocean Cleanup :
+      Découvrez votre impact au coeur des océans
     </p>
     <div class="mt-20 animate-delay-1000 {isInView
       ? 'animate-fade'

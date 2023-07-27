@@ -55,7 +55,10 @@
 				The Ocean Cleanup est une association fondée en 2013 ayant pour but de nettoyer les océans des déchets plastiques qui les polluent de plus en plus.
 			</p>
 			<p class="text-6">
-				Le Néerlandais Boyan Slat a imaginé un système de recueil et de filtrage des cours d’eau pour en récupérer et traiter tout le plastique qui y est dispersé.
+				Le Néerlandais Boyan Slat a imaginé un système de recueil et de filtrage des cours d’eau pour récupérer et traiter tout le plastique qui y est jeté.
+			</p>
+			<p class="text-6">
+				Le deuxième objectif de The Ocean CleanUp est d'empêcher les ruisseaux de déverser les déchets plastiques dans l'océan.
 			</p>
 		</div>
 	</div>

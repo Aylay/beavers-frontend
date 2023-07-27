@@ -13,8 +13,8 @@
   const links: Array<any> = [
     {
       href: "/l-agence-beavers",
-      title: "Connaître Beavers",
-      label: "Connaître l'agence et l'équipe",
+      title: "Connaître l'agence Beavers et l'équipe",
+      label: "Qui est Beavers ?",
       blank: false
     },
     {
@@ -24,40 +24,40 @@
       blank: false
     },
     {
-      href: "/la-pause-cafe",
-      title: "Lire les articles du blog de Beavers",
-      label: "Lire nos articles de blog",
-      blank: false
-    },
-    {
       href: "/cas-agence",
-      title: "Voir les cas de l'agence Beavers",
-      label: "Voir les cas agence",
+      title: "Voir les cas agence",
+      label: "Nos clients",
       blank: false
     },
     {
       href: "/programme-rse",
-      title: "Le programme RSE de Beavers",
-      label: "Voir notre programme RSE",
+      title: "Voir notre programme RSE",
+      label: "Programme RSE",
       blank: false
     },
     {
       href: "https://tree-nation.com/fr/profil/beavers",
-      title: "La forêt Tree-Nation de Beavers",
+      title: "Voir La forêt de Beavers",
       label: "Voir la forêt de Beavers",
       blank: true
     },
     {
+      href: "/la-pause-cafe",
+      title: "Lire nos articles de blog",
+      label: "Lire un article",
+      blank: false
+    },
+    {
       href: "/",
-      title: "Beavers, l'agence digitale des castors",
+      title: "Visiter le site",
       label: "Visiter le site",
       blank: false
     }
   ]
 
   const meta = {
-    title: "Tous les Cas agence de l'agence digitale Beavers",
-    description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+    title: "Tout savoir sur votre agence digitale Beavers",
+    description: "Accéder aux informations les plus importantes à connaître. Découvrez l'écosystème de votre agence digitale Beavers entre présentation, devis, études de cas, engagements et les articles by Beavers."
   }
 </script>
 
