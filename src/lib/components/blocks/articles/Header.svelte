@@ -203,7 +203,10 @@
   >
     <div class="lg:flex-1 h-[36rem] w-full lg:order-2">
       {#if isInView}
-        <img src={strapiURL + img.url} alt={img.alternativeText ? img.alternativeText : title.replace(/&nbsp;/g, ' ')} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}" />
+        <img
+          src={img.formats && img.formats.medium ? strapiURL + img.formats.medium.url : strapiURL + img.url}
+          alt={img.alternativeText ? img.alternativeText : title.replace(/&nbsp;/g, ' ')} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}"
+        />
       {/if}
     </div>
     <div class="flex-1 lg:order-1">
