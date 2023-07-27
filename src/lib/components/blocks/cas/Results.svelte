@@ -48,9 +48,11 @@
     {/each}
   </div>
   <div class="flex justify-center max-lg:flex-col max-lg:items-center gap-12 mt-24 lg:mt-32">
+    {#if website}
     <div>
       <Cta label="Voir le site de {brand.name}" href={website} type="transparent" blank={true} />
     </div>
+    {/if}
     <div>
       <Cta label="Parlons de votre projet !" href="/contactez-nous" type="seance" />
     </div>

@@ -1,5 +1,3 @@
-export const prerender = true;
-
 import type { PageData } from './$types';
 // export const prerender = true;
 
