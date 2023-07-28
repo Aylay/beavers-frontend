@@ -52,7 +52,6 @@
       },
     ]
   }
-  console.log(imgSite)
 </script>
 
 <LDTag {schema} />
