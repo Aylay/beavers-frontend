@@ -143,7 +143,7 @@ on:inview_change={handleChange}>
     <div class="mt-20 animate-delay-[1500ms] {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      <Cta label="Toucher ma cible avec des Social Ads" href="/contactez-nous" type="transparent" />
+      <Cta label="Activer des Social Ads" href="/contactez-nous" type="transparent" />
     </div>
   </div>
 </div>
