@@ -18,13 +18,13 @@
   let state = State.idle;
 
 	async function addProspect() {
-    state = State.requesting;
-    doRecaptcha();
-    console.log(state, token)
 		checkFormError();
 		if (emailError) {
 			return;
 		}
+
+    state = State.requesting;
+    doRecaptcha();
 
     const allEmailsResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/newsletters', {
       method: 'GET'
