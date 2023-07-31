@@ -6,8 +6,8 @@ const title = "Politique RGPD"
 const subtitle = 'Les cookies vus par les castors'
 
 const meta = {
-  title: "Tous les Cas agence de l'agence digitale Beavers",
-  description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+  title: "La politique RGPD de l'agence digitale Beavers",
+  description: "Voici comment les cookies, la confidentialité & le RGPD sont vus par les castors de l'agence digitale média Beavers"
 }
 </script>
 

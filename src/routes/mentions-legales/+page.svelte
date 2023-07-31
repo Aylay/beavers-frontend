@@ -6,8 +6,8 @@ const title = "Mentions Légales"
 const subtitle = 'Les mentions légales vues par les castors'
 
 const meta = {
-  title: "Tous les Cas agence de l'agence digitale Beavers",
-  description: "Voici une présentation de tous les case studies de l'agence digitale Beavers, spécialisée en création de sites internet et marketing digital."
+  title: "Les mentions légales de l'agence digitale Beavers",
+  description: "Voici les informations légales des castors de l'agence digital média Beavers"
 }
 </script>
 
