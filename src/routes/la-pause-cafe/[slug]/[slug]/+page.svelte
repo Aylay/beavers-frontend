@@ -64,7 +64,7 @@
 			publishedDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('yyyy-LL-dd', { locale: "fr" })
 			publishedOGDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).valueOf()
 
-			if (DateTime.fromISO(content.updatedAt) > DateTime.fromFormat('26/07/2023', 'dd/LL/yyyy', { locale: "fr" })) {
+			if (DateTime.fromISO(content.updatedAt) > DateTime.fromFormat('31/07/2023', 'dd/LL/yyyy', { locale: "fr" })) {
 				updatedHeaderDate = DateTime.fromISO(content.updatedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
 				updatedDate = DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
 				updatedOGDate = DateTime.fromISO(content.updatedAt).valueOf()
