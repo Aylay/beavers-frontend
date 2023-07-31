@@ -89,10 +89,6 @@
   }
 </script>
 
-<svelte:head>
-  <script src="https://www.google.com/recaptcha/api.js?render={key}" async defer></script>
-</svelte:head>
-
 <div class="{isArticle ? 'bg-bright' : 'bg-seance'} py-16 lg:py-20">
   <div class="big-container flex max-lg:flex-col max-lg:gap-8 items-center justify-between">
     {#if isArticle}

@@ -11,6 +11,7 @@
 	const noLayout: Array<string> = ['/tout-savoir-sur-beavers'];
 	const noNewsletter: Array<string> = ['/newsletter-confirmation', '/newsletter-refus'];
   const siteURL = import.meta.env.VITE_SITE_URL
+  const key = import.meta.env.VITE_RECAPTCHA;
 </script>
 
 <GTM gtmId="GTM-W6ZCCTM" />
@@ -20,6 +21,7 @@
 	<meta property="og:locale" content="fr" />
   <link rel="canonical" href={siteURL + $page.url.pathname} />
   <meta property="og:url" content={siteURL + $page.url.pathname} />
+  <script src="https://www.google.com/recaptcha/api.js?render={key}" async defer></script>
 </svelte:head>
 
 <div class="overflow-hidden">

@@ -22,12 +22,24 @@
   let message = '';
   let onError = false;
   let textDisplayed: string = '';
+  
+  const key = import.meta.env.VITE_RECAPTCHA;
+  let State = {
+    idle: "idle",
+    requesting: "requesting",
+    success: "success"
+  };
+  let token;
+  let state = State.idle;
 
   async function addApplicant() {
 		checkFormError();
 		if (emailError) {
 			return;
 		}
+
+    state = State.requesting;
+    doRecaptcha();
 
     const data = {
       firstName: firstName,
@@ -96,6 +108,15 @@
     if (email === '' || (email !== '' && !validEmail(email))) {
       emailError = true;
     }
+  }
+
+  function doRecaptcha() {
+    grecaptcha.ready(function() {
+      grecaptcha.execute(key, { action: "submit" }).then(function(t: any) {
+        state = State.success;
+        token = t;
+      });
+    });
   }
 </script>
 
