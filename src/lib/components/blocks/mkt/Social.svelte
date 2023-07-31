@@ -118,7 +118,7 @@ on:inview_change={handleChange}>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Grâce aux social ads soyez présent sur TikTok, Instagram, LinkedIn, Facebook, Twitter ou encore Snapchat et toucher vos prospects. Améliorer "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
+      Grâce aux social ads soyez présent sur TikTok, Instagram, LinkedIn, Facebook, Twitter ou encore Snapchat et touchez vos prospects. Améliorer "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
