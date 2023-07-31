@@ -7,7 +7,7 @@
 
   const meta = {
     title: "Formulaire de contact envoyé à Beavers.",
-    description: "Le formulaire de demande de devis a été envoyé à l'agence digitale Beavers. L'équipe de castors répond à votre demande dans les plus brefs délais."
+    description: "Le formulaire a bien été envoyé à l'agence digitale Beavers. L'équipe de castors répond à votre demande dans les plus brefs délais."
   }
 </script>
 

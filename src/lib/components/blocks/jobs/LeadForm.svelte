@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
   export let id: number;
   export let jobTitle: string;
 	import SpecificInput from "$lib/components/blocks/utilities/SpecificInput.svelte";
@@ -48,6 +49,8 @@
         'Content-Type': 'application/json'
       }
     });
+
+    goto('/contactez-nous/bien-recu')
 	}
 
   function checkFormError() {
