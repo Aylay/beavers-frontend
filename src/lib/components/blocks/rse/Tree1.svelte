@@ -6,6 +6,7 @@
 	import Line from '../utilities/Line.svelte';
 	import Tree2 from '$lib/assets/svg/Tree2.svelte';
 	import Cloud from '$lib/assets/svg/Cloud.svelte';
+	import TreeNation from '$lib/assets/svg/TreeNationIcon.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -110,7 +111,7 @@
         <div class="absolute rounded-full bg-white w-64 h-64 top-2/3 lg:top-4 -left-8 lg:-left-24 flex justify-center items-center animate-delay-500 {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
-          <img src="/img/rse/tree-nation-logo.png" alt="Logo Tree Nation" class="max-w-[12.5rem] h-auto">
+					<TreeNation newClass="max-w-[12.5rem] h-auto" />
         </div>
         {/if}
 		</div>

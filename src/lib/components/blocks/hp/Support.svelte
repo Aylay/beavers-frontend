@@ -6,6 +6,7 @@
 	import Line from '../utilities/Line.svelte';
 	import Title from '../utilities/Title.svelte';
 	import Sun from '$lib/assets/svg/Sun.svelte';
+	import TreeNation from '$lib/assets/svg/TreeNation.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -74,12 +75,9 @@
 					: 'opacity-0'}"
 			/>
 			{#if isInViewImg}
-				<img
-					src="/img/tree-nation-logo.png"
-					alt="logo tree nation"
-					class="absolute right-2 top-20 max-lg:w-full w-8/12 animate-delay-[800ms] {isInViewImg
-						? 'animate-fade'
-						: ''}"
+				<TreeNation newClass="absolute right-2 top-20 max-lg:w-full w-8/12 animate-delay-[800ms] {isInViewImg
+					? 'animate-fade'
+					: ''}"
 				/>
 			{/if}
 			<div class="h-[26rem]">
