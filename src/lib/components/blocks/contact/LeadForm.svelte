@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
 	import SpecificInput from "$lib/components/blocks/utilities/SpecificInput.svelte";
 	import SpecificTextarea from "../utilities/SpecificTextarea.svelte";
 
@@ -37,6 +38,8 @@
         'Content-Type': 'application/json'
       }
     });
+
+    goto('/contactez-nous/bien-recu')
 	}
 
   function checkFormError() {
