@@ -127,6 +127,10 @@
     {
       "source": "/cas",
       "destination": "/cas-agence"
+    },
+    {
+      "source": "/cas/site-multilingue-reservation-my-paris-cruise",
+      "destination": "/cas-agence"
     }
   ]
 }

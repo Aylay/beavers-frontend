@@ -13,7 +13,7 @@
   const siteURL = import.meta.env.VITE_SITE_URL
 </script>
 
-<!-- <GTM gtmId="GTM-W6ZCCTM" /> -->
+<GTM gtmId="GTM-W6ZCCTM" />
 
 <svelte:head>
   <meta property="og:site_name" content="Beavers" />
