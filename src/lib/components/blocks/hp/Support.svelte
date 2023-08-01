@@ -47,7 +47,7 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Nous soutenons deux associations pour la protection de notre environnement, en reversant 2% de notre chiffre d'affaires à The OceanCleanUp et Tree-Nation.
+				Nous soutenons deux associations pour la protection de notre environnement, en reversant 2% de notre chiffre d'affaires à The Ocean CleanUp et Tree-Nation.
 			</p>
 			<p class="text-6">
 				Grâce à vous :
