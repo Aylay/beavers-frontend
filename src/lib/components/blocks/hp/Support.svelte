@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
@@ -27,6 +29,8 @@
 	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInViewImg = detail.inView;
 	};
+
+	let trees = $page.data.treeNation.tree_count
 </script>
 
 <div
@@ -55,7 +59,7 @@
 					Des fonds marins sont nettoyés chaque jour ;
 				</li>
 				<li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-seance before:left-0 before:top-3 before:rounded-full pl-8">
-					+ de 2000 arbres ont été plantés.
+					+ de {(Math.floor(trees / 100) * 100).toLocaleString()} arbres ont été plantés.
 				</li>
 			</ul>
 		</div>

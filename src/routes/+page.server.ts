@@ -22,9 +22,18 @@ export const load = (async ({ fetch }) => {
 	if (useCasesData.data) {
     useCasesList = useCasesData.data
 	}
+
+	const treeNationResponse = await fetch('https://tree-nation.com/api/forests/466954',
+		{
+			method: 'GET'
+		}
+	)
+	const treeNationData = await treeNationResponse.json();
+	const treeNation = treeNationData ? treeNationData : '';
 	
 	return {
 		articlesList,
-		useCasesList
+		useCasesList,
+		treeNation
 	};
 }) satisfies PageData;
