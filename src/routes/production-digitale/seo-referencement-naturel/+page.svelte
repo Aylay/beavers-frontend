@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import Block1Seo from "$lib/components/blocks/prod/Block1SEO.svelte";
 	import Block2Seo from "$lib/components/blocks/prod/Block2SEO.svelte";
 	import Block3Seo from "$lib/components/blocks/prod/Block3SEO.svelte";
@@ -6,6 +8,7 @@
   import Header2 from "$lib/components/blocks/prod/Header2.svelte";
 	import PictosSEO from "$lib/components/blocks/prod/PictosSEO.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
+	import UseCases from "$lib/components/blocks/UseCases.svelte";
 
   const title = 'SEO.<br /> Référencement Naturel.'
   const subtitle = '1ère position sur votre moteur de recherche.'
@@ -20,6 +23,29 @@
     title: "Beavers met en place toutes les optimisations pour votre SEO.",
     description: "Votre agence digitale spécialisée en référencement naturel vous propose un audit de votre SEO, des optimisations techniques, de contenu, de maillage, jusqu'au suivi à long terme."
   }
+
+  let useCases: Array<any> = $page.data.useCases;
+  let cases: Array<any> = []
+  $: {
+    useCases = $page.data.useCases;
+    shuffle(useCases)
+    cases = useCases.slice(0, 3)
+  }
+
+  function shuffle(array:Array<any>) {
+    let currentIndex = array.length,  randomIndex;
+
+    while (currentIndex != 0) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
 </script>
 
 <MetaFront {meta} />
@@ -31,4 +57,5 @@
   <Block2Seo />
   <Block3Seo />
   <Block4Seo />
-</div>
+  <UseCases {cases} firstText="Découvrez nos<br />" />
+  </div>

@@ -1,10 +1,13 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import SubHeader from "$lib/components/blocks/common/SubHeader.svelte";
 	import WebSite from "$lib/components/blocks/prod/WebSite.svelte";
 	import SEO from "$lib/components/blocks/prod/SEO.svelte";
 	import Newsletter from "$lib/components/blocks/prod/Newsletter.svelte";
   import Header from "$lib/components/blocks/prod/Header.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
+	import UseCases from "$lib/components/blocks/UseCases.svelte";
 
   const text1 = 'le digital<br />est en constante'
   const text2 = 'évolution.'
@@ -14,6 +17,29 @@
 const meta = {
   title: "Beavers améliore votre visiblité grâce à la production digitale.",
   description: "L'agence Beavers vous propose différentes offres entre la création et le développement de site internet en passant par les audit SEO et la création, développement et envoi de newsletters."
+}
+
+let useCases: Array<any> = $page.data.useCases;
+let cases: Array<any> = []
+$: {
+  useCases = $page.data.useCases;
+  shuffle(useCases)
+  cases = useCases.slice(0, 3)
+}
+
+function shuffle(array:Array<any>) {
+  let currentIndex = array.length,  randomIndex;
+
+  while (currentIndex != 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
 }
 </script>
 
@@ -26,5 +52,6 @@ const meta = {
     <WebSite />
     <SEO />
     <Newsletter />
+    <UseCases {cases} firstText="Découvrez nos<br />" />
   </div>
 </div>

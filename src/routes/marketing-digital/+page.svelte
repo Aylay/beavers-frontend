@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import SubHeader from "$lib/components/blocks/common/SubHeader.svelte";
 	import AffiliationDisplay from "$lib/components/blocks/mkt/AffiliationDisplay.svelte";
 	import Google from "$lib/components/blocks/mkt/Google.svelte";
@@ -6,6 +8,7 @@
 	import Influence from "$lib/components/blocks/mkt/Influence.svelte";
 	import Social from "$lib/components/blocks/mkt/Social.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
+	import UseCases from "$lib/components/blocks/UseCases.svelte";
 
   const text1 = 'le digital<br />est en constante'
   const text2 = 'évolution.'
@@ -15,6 +18,29 @@
   const meta = {
     title: "Touchez vos prospects, générez des visites ou des ventes.",
     description: "L'agence média digitale Beavers vous propose le meilleur mix média pour activer les bons leviers auprès de la bonne audience au bon moment."
+  }
+
+  let useCases: Array<any> = $page.data.useCases;
+  let cases: Array<any> = []
+  $: {
+    useCases = $page.data.useCases;
+    shuffle(useCases)
+    cases = useCases.slice(0, 3)
+  }
+
+  function shuffle(array:Array<any>) {
+    let currentIndex = array.length,  randomIndex;
+
+    while (currentIndex != 0) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
   }
 </script>
 
@@ -28,5 +54,6 @@
     <Social />
     <AffiliationDisplay />
     <Influence />
+    <UseCases {cases} firstText="Découvrez nos<br />" />
   </div>
 </div>

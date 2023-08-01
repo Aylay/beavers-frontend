@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import Block1Site from "$lib/components/blocks/prod/Block1Site.svelte";
 	import Block2Site from "$lib/components/blocks/prod/Block2Site.svelte";
 	import Block3Site from "$lib/components/blocks/prod/Block3Site.svelte";
@@ -6,6 +8,7 @@
   import Header2 from "$lib/components/blocks/prod/Header2.svelte";
 	import PictosSite from "$lib/components/blocks/prod/PictosSite.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
+	import UseCases from "$lib/components/blocks/UseCases.svelte";
 
   const title = 'Création de site internet'
   const subtitle = 'Vitrine. Blog. E-commerce.'
@@ -20,6 +23,29 @@
     title: "Beavers crée votre site internet, vitrine, e-commerce ou blog.",
     description: "L'agence digitale Beavers crée votre site internet, blog, ou encore un site e-commerce. Beavers s'occupe de la refonte de votre site en gardant votre SEO."
   }
+
+  let useCases: Array<any> = $page.data.useCases;
+  let cases: Array<any> = []
+  $: {
+    useCases = $page.data.useCases;
+    shuffle(useCases)
+    cases = useCases.slice(0, 3)
+  }
+
+  function shuffle(array:Array<any>) {
+    let currentIndex = array.length,  randomIndex;
+
+    while (currentIndex != 0) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
 </script>
 
 <MetaFront {meta} />
@@ -31,4 +57,5 @@
   <Block2Site />
   <Block3Site />
   <Block4Site />
-</div>
+  <UseCases {cases} firstText="Découvrez nos<br />" />
+  </div>
