@@ -78,7 +78,7 @@
       {link.label}
     </a>
     {/each}
-    <div class="flex gap-8 mt-8">
+    <div class="flex gap-8 mt-8 mb-32">
       <a
         href="https://www.linkedin.com/company/beavers-agency/"
         target="_blank"
