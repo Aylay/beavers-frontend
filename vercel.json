@@ -125,10 +125,6 @@
       "destination": "/la-pause-cafe/site-internet/:path*"
     },
     {
-      "source": "/cas-agence/:path*",
-      "destination": "/cas/:path*"
-    },
-    {
       "source": "/cas",
       "destination": "/cas-agence"
     },
