@@ -143,12 +143,15 @@
 <Meta meta={content.meta} />
 
 <svelte:head>
-	<meta name="author" content={content.author.data.attributes.name} />
+	<meta name="author" content={content.author.data.attributes.name + ' - Beavers'} />
 	<meta name="publish_date" property="og:publish_date" content={publishedOGDate}>
-	<meta property="article:author" content={content.author.data.attributes.name} />
 	<meta property="article:published_time" content={publishedOGDate} />
 	<meta property="article:modified_time" content={updatedOGDate !== '' ? updatedOGDate : publishedOGDate} />
 	<meta property="article:section" content={content.category.data.attributes.title} />
+	<meta property="article:author" content={content.author.data.attributes.name + ' - Beavers'} />
+	{#each words as word}
+	<meta property="article:tag" content={word} />
+	{/each}
 	<meta name="twitter:label1" content="Écrit par" />
 	<meta name="twitter:data1" content={content.author.data.attributes.name + ' - Beavers'} />
 	<meta name="twitter:label2" content="Durée de lecture estimée" />
