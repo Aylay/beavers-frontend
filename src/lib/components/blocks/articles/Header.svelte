@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+  import { DateTime } from "luxon";
   
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
@@ -66,19 +67,19 @@
       },
       {
         "@type":"ListItem",
-        "position": 1,
+        "position": 2,
         "name": "La pause cafe",
         "item": siteURL + '/la-pause-cafe'
       },
       {
         "@type":"ListItem",
-        "position": 2,
+        "position": 3,
         "name": category.title,
         "item": siteURL + '/la-pause-cafe/' + category.slug
       },
       {
         "@type":"ListItem",
-        "position": 3,
+        "position": 4,
         "name": title.replace(/&nbsp;/g, ' '),
         "item": siteURL + '/la-pause-cafe/' + category.slug + '/' + $page.params.slug
       },
@@ -158,9 +159,9 @@
           <p class="text-6 mt-4">
             Publié le
           </p>
-          <p class="text-6 font-bold">
+          <time datetime={DateTime.fromFormat(publishedDate, 'dd LLL yyyy', { locale: "fr" }).toFormat('yyyy-LL-dd', { locale: "fr" })} class="text-6 font-bold">
             {publishedDate}
-          </p>
+          </time>
         </div>
         <div class="relative z-10 flex-1 flex flex-col items-center animate-fade animate-delay-[750ms]">
           <div>

@@ -40,13 +40,13 @@
       },
       {
         "@type":"ListItem",
-        "position": 1,
+        "position": 2,
         "name": "Les études de cas de Beavers",
         "item": siteURL + '/cas-agence'
       },
       {
         "@type":"ListItem",
-        "position": 2,
+        "position": 3,
         "name": title.replace(/&nbsp;/g, ' '),
         "item": siteURL + '/cas/' + $page.params.slug
       },

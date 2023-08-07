@@ -35,13 +35,13 @@
       },
       {
         "@type":"ListItem",
-        "position": 1,
+        "position": 2,
         "name": "Jobs",
         "item": siteURL + '/jobs'
       },
       {
         "@type":"ListItem",
-        "position": 2,
+        "position": 3,
         "name": title,
         "item": siteURL + '/jobs/' + $page.params.slug 
       },
