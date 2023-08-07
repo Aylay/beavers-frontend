@@ -62,27 +62,31 @@
 >
   <div class="big-container">
     <div class="lg:w-2/3 relative z-30">
-      <ul class="max-lg:hidden flex mb-20 flex-wrap gap-5">
-        <li>
-          <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
-            Accueil
-          </a>
-        </li>
-        <li class="text-7 text-bright font-bold">
-          |
-        </li>
-        <li>
-          <a href="/cas-agence" title="Les études de cas de Beavers" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
-            Cas agence
-          </a>
-        </li>
-        <li class="text-7 text-bright font-bold">
-          |
-        </li>
-        <li class="text-7 text-white font-semibold">
-          {title}
-        </li>
-      </ul>
+      <nav aria-label="Breadcrumb" class="max-lg:hidden">
+        <ol class="flex mb-20 flex-wrap gap-5">
+          <li>
+            <a href="/" title="Beavers, l'agence média des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
+              Accueil
+            </a>
+          </li>
+          <li class="text-7 text-bright font-bold">
+            |
+          </li>
+          <li>
+            <a href="/cas-agence" title="Les études de cas de Beavers" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
+              Cas agence
+            </a>
+          </li>
+          <li class="text-7 text-bright font-bold">
+            |
+          </li>
+          <li>
+            <a href={siteURL + '/cas/' + $page.params.slug} aria-current="page" class="text-7 text-white font-semibold pointer-events-none" {title}>
+              {title}
+            </a>
+          </li>
+        </ol>
+      </nav>
       <h1 class="text-3 mb-20 text-bright font-semibold">
         {title}
       </h1>
