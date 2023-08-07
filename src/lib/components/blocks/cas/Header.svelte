@@ -48,7 +48,7 @@
         "@type":"ListItem",
         "position": 2,
         "name": title.replace(/&nbsp;/g, ' '),
-        "item": siteURL + '/cas-agence/' + $page.params.slug
+        "item": siteURL + '/cas/' + $page.params.slug
       },
     ]
   }
