@@ -170,12 +170,22 @@
   <title>Beavers, l'agence digitale spécialiste en stratégie média.</title>
   <meta name="title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
   <meta property="og:title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
+  <meta property="twitter:title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
   <meta name="description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
   <meta property="og:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
+  <meta property="twitter:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
 	<meta property="og:type" content="website" />
 	<meta
 		property="og:image"
 		content="{siteURL}/img/og-beavers.png"
+	/>
+	<meta
+		property="twitter:image"
+		content="{siteURL}/img/og-beavers.png"
+	/>
+	<meta
+		property="twitter:card"
+		content="summary_large_image"
 	/>
 	<meta
 		property="og:image:width"
