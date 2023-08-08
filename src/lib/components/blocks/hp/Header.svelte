@@ -37,7 +37,7 @@
     {
       number: '4,5%',
       text: 'Taux de conversion',
-      percent: '10%'
+      percent: '60%'
     },
     {
       number: '51 000€',
