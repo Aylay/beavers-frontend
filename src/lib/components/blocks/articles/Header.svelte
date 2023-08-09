@@ -121,7 +121,7 @@
               |
             </li>
             <li>
-              <a href={siteURL + '/cas/' + $page.params.slug} aria-current="page" class="text-7 text-white font-semibold pointer-events-none" title={title.replace(/&nbsp;/g, ' ')}>
+              <a href="/la-pause-cafe/{category.slug}/{$page.params.slug}" aria-current="page" class="text-7 text-white font-semibold pointer-events-none" title={title.replace(/&nbsp;/g, ' ')}>
                 {@html title}
               </a>
             </li>

@@ -81,7 +81,7 @@
             |
           </li>
           <li>
-            <a href={siteURL + '/cas/' + $page.params.slug} aria-current="page" class="text-7 text-white font-semibold pointer-events-none" {title}>
+            <a href="/cas/{$page.params.slug}" aria-current="page" class="text-7 text-white font-semibold pointer-events-none" {title}>
               {title}
             </a>
           </li>
