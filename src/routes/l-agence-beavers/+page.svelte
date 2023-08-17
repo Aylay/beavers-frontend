@@ -31,9 +31,37 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
       img : '/signature/beavers-orane.png',
       name: 'Orane DEMANDRE',
       job: 'Cheffe de projets Média',
-      text: "Après avoir travaillé en tant que chargée de marketing et communication et avec une expérience approfondie en relation client, Orane sera très soucieuse de votre satisfaction.<br /><br />Du haut de ses 162 cm, elle sera prête à prendre des échasses pour <span class='text-electric font-semibold'>vous positionner au plus haut !</span>"
+      text: "Après avoir travaillé en tant que chargée de marketing et communication et avec une expérience approfondie en relation client, Orane sera très soucieuse de votre satisfaction.<br /><br />Du haut de ses 162 cm, elle sera prête à prendre des échasses pour <span class='text-electric font-semibold'>vous positionner au plus haut</span> !"
+    },
+    {
+      img : '/img/agence/claire.png',
+      name: 'Claire MÉJEAN',
+      job: 'UX / UI Designer',
+      text: "Passionnée d'art et d'informatique depuis toujours, Claire vous accompagne en tant qu'UX / UI Designer dans le cadre du développement de vos projets numériques.<br /><br /><span class='text-electric font-semibold'>Autodidacte, touche à tout</span>, elle met à votre profit son expérience de plus de 11 ans !"
+    },
+    {
+      img : '/img/agence/virginia.png',
+      name: 'Virginia BLANCO',
+      job: 'Rédactrice web SEO',
+      text: "Amoureuse des mots, Virginia crée du contenu unique et pertinent pour propulser votre site internet. En tant que rédactrice web SEO bilingue français-espagnol et correctrice, elle s'adapte à tout projet digital dans les deux langues. Elle vous accompagne dans la mise en place d'une stratégie éditoriale afin d'obtenir le meilleur référencement possible.<br /><br /><span class='text-electric font-semibold'>Sa potion magique :</span> une écriture fluide adaptée au web associée aux techniques SEO !"
+    },
+    {
+      img : '/img/agence/karine.png',
+      name: 'Karine PIBIRI',
+      job: 'Social Media Manager',
+      text: "Karine vous propose son expertise en community management. Elle vous aidera à exploiter la puissance des réseaux pour développer votre présence digitale  🚀.<br /><br />Ultra-connectée, ses missions sont une vraie passion et les réseaux son <span class='text-electric font-semibold'>terrain de jeu</span> !"
     }
   ]
+
+  
+  
+
+
+
+
+
+
+
 
   const meta = {
     title: "Beavers vous montre ses compétences et ses valeurs.",
