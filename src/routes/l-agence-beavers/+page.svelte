@@ -53,16 +53,6 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
     }
   ]
 
-  
-  
-
-
-
-
-
-
-
-
   const meta = {
     title: "Beavers vous montre ses compétences et ses valeurs.",
     description: "Pourquoi faire confiance à Beavers ? Votre agence digitale humaine, vous accompagne au plus près grâce à ses certifications et son amour pour le digital et ses clients."
