@@ -204,8 +204,8 @@
 	<MarketingDigital1 />
 	<MarketingDigital2 />
 	<Why />
-	<UseCases cases={$page.data.useCasesList} />
 	<Confidence />
+	<UseCases cases={$page.data.useCasesList} />
 	<Manifesto />
 	<Manifesto2 />
 	<Testimonies />
