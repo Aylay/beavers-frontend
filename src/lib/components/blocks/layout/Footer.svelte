@@ -168,7 +168,7 @@
               : 'opacity-0'}" />
             {/if}
         </a>
-        <div id="tree-nation-offset-website"></div>
+        <div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
       </div>
     </div>
   </div>
