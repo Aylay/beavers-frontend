@@ -168,23 +168,7 @@
               : 'opacity-0'}" />
             {/if}
         </a>
-        <a
-          href="https://tree-nation.com/fr/profil/impact/beavers#co2"
-          target="_blank"
-          title="Tree Nation"
-          rel="external noreferrer" 
-          class="lg:hover:animate-shake"
-        >
-          {#if isInView}
-            <img
-              src="https://tree-nation.com/images/tracking/label-co2-website-black-fr.png"
-              alt="Logo de Tree Nation"
-              class="h-auto max-w-[18rem] {isInView
-              ? 'animate-fade'
-              : 'opacity-0'}"
-            />
-          {/if}
-        </a>
+        <div id="tree-nation-offset-website"></div>
       </div>
     </div>
   </div>
