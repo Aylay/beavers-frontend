@@ -35,10 +35,10 @@
 			title: 'We Van'
 		},
 		{
-			src: '/img/clients/ki.svg',
+			src: '/img/clients/extreme-design.svg',
 			newClass: 'w-full h-auto',
-			href: '/cas/developpement-site-vitrine-ki-lyon',
-			title: 'Ki Lyon'
+			href: '/cas/creation-site-extreme-design',
+			title: 'Extreme Design'
 		}
 	];
 </script>
