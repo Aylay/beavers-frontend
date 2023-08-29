@@ -140,10 +140,17 @@ on:inview_change={handleChange}>
         <h3 class="font-bold text-5">Conversion</h3>
       </div>
     </div>
-    <div class="mt-20 animate-delay-[1500ms] {isInView
-      ? 'animate-fade'
-      : 'opacity-0'}">
-      <Cta label="Activer des Social Ads" href="/contactez-nous" type="transparent" />
-    </div>
+		<div class="flex gap-12 mt-20 max-lg:flex-col">
+			<div class="animate-delay-[1500ms] {isInView
+				? 'animate-fade'
+				: 'opacity-0'}">
+				<Cta label="Activer des Social Ads" href="/contactez-nous" type="transparent" />
+			</div>
+			<div class="animate-delay-[1700ms] {isInView
+				? 'animate-fade'
+				: 'opacity-0'}">
+				<Cta label="En savoir plus" href="/marketing-digital/social-ads" type="seance" />
+			</div>
+		</div>
   </div>
 </div>

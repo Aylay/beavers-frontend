@@ -39,7 +39,7 @@
 			label: 'Search ads'
 		},
 		{
-			href: '/marketing-digital',
+			href: '/marketing-digital/social-ads',
 			label: 'Social ads'
 		},
 		{
