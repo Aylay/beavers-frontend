@@ -81,8 +81,8 @@
 		>
 			{#if isInViewImg}
 				<img
-					src="/img/hp/production-digitale.png"
-					alt="Personne utilisant un ordinateur portable"
+					src="/img/mkt/social-ads.png"
+					alt="Plusieurs téléphones qui entourent une bulle avec un coeur et des chiffres"
 					class="w-full {isInViewImg ? 'animate-fade' : ''}"
 				/>
 			{/if}

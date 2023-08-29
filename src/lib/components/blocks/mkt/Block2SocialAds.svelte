@@ -87,8 +87,8 @@ on:inview_change={handleChange}>
 			<div class="flex-3">
 				{#if isInViewImg}
 					<img
-						src="/img/hp/manifesto-2-1.jpg"
-						alt="Un pot de fausse fleur + un téléphone avec Instagram"
+						src="/img/mkt/social-ads-3.png"
+						alt="Une tablette et un téléphone avec une maquette de publicité"
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
@@ -96,8 +96,8 @@ on:inview_change={handleChange}>
 			<div class="flex-2">
 				{#if isInViewImg}
 					<img
-						src="/img/hp/manifesto-2-2.jpg"
-						alt="Tasse à café tenue par une personne"
+						src="/img/mkt/social-ads-4.png"
+						alt="Dashboard avec chiffres et graphique"
 						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
@@ -123,9 +123,9 @@ on:inview_change={handleChange}>
 			<div class="w-full lg:h-1/2">
 				{#if isInViewImg}
 					<img
-						src="/img/hp/manifesto-2-3.jpg"
-						alt="4 personnes qui se tiennent le poignet"
-						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						src="/img/mkt/social-ads-5.png"
+						alt="Personne qui clique sur son téléphone avec une publication Instagram"
+						class="h-full w-full object-cover overflow-hidden rounded-lg object-right {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				{/if}
 			</div>
