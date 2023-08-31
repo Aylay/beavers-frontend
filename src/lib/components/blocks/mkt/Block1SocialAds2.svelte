@@ -39,8 +39,8 @@
 	>
 		{#if isInViewImg}
 			<img
-				src="/img/hp/marketing-digital.png"
-				alt="Marketing Digital"
+				src="/img/mkt/social-ads-2.png"
+				alt="Picto Instagram sous fond rose"
 				class="w-full {isInViewImg ? 'animate-fade' : ''}"
 			/>
 		{/if}
