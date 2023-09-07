@@ -13,7 +13,6 @@
 		"beavers:lint": "yarn format && yarn lint"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-vercel": "^2.4.1",
 		"@sveltejs/kit": "^1.5.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
