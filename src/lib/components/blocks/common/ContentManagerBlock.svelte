@@ -123,7 +123,7 @@
     <div class="flex-1 relative">
       {#if isInViewImg}
         <img
-          src={strapiURL + block.img.data.attributes.url}
+          src={block.img.data.attributes.formats && block.img.data.attributes.formats.medium ? strapiURL + block.img.data.attributes.formats.medium.url : strapiURL + block.img.data.attributes.url}
           alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
           class="h-full w-full object-cover overflow-hidden rounded-lg animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
@@ -146,7 +146,7 @@
     <div class="flex-1 relative max-lg:order-2">
       {#if isInViewImg}
         <img
-          src={strapiURL + block.img.data.attributes.url}
+          src={block.img.data.attributes.formats && block.img.data.attributes.formats.medium ? strapiURL + block.img.data.attributes.formats.medium.url : strapiURL + block.img.data.attributes.url}
           alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
           class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
