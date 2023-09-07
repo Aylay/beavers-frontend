@@ -6,6 +6,7 @@
 	export let newClass: string;
 	export let href: string;
 	export let title: string;
+	export let blank: boolean = false;
 	export let i: number;
 	const delay = i * 200;
 	let isInView: boolean;
@@ -25,6 +26,7 @@
 	class="h-[10rem] w-[20rem] opacity-50 transition-opacity hover:opacity-100 flex justify-center items-center"
 	{href}
 	{title}
+	target={blank ? '_blank' : '_self'}
 >
 	{#if isInView}
 		<img {src} alt={title} class="{newClass} {isInView ? 'animate-fade' : ''}" style="animation-delay: {delay}ms;" />
