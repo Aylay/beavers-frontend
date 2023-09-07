@@ -8,7 +8,8 @@
 
   const meta = {
     title: "Beavers, l'agence spécialisée des professionnels de l'habitat",
-    description: "Découvrez les experts média des professionnels de l'aménagement intérieur et extérieur de l’habitat. Nous vous aidons à améliorer votre notoriété, accroître votre visibilité et augmenter vos ventes."
+    description: "Découvrez les experts média des professionnels de l'aménagement intérieur et extérieur de l’habitat. Nous vous aidons à améliorer votre notoriété, accroître votre visibilité et augmenter vos ventes.",
+    image: '/img/og-beavers.png'
   }
 </script>
 

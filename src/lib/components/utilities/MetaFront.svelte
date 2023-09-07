@@ -18,6 +18,14 @@
       content="{siteURL}{meta.image}"
     />
     <meta
+      property="twitter:image"
+      content="{siteURL}{meta.image}"
+    />
+    <meta
+      property="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
       property="og:image:width"
       content="1200"
     />
