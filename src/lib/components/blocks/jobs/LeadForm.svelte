@@ -34,7 +34,7 @@
 
   async function addApplicant() {
 		checkFormError();
-		if (emailError) {
+		if (onError) {
 			return;
 		}
 

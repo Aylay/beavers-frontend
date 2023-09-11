@@ -25,7 +25,7 @@
   
   async function addContact() {
 		checkFormError();
-		if (emailError) {
+		if (onError) {
 			return;
 		}
 
