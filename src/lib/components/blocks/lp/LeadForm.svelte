@@ -163,7 +163,7 @@
         on:click|preventDefault={addContact}
         class="text-6 font-bold text-white border-bright bg-transparent hover:bg-bright hover:text-black duration-300 rounded-[3rem] border-2 px-10 py-4 transition-colors"
       >
-        Découvrir l'offre&nbsp;!
+        Découvrir&nbsp;l'offre&nbsp;!
       </button>
     </div>
   </div>
