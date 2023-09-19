@@ -76,7 +76,7 @@
                 title="Parler avec les castors de Beavers au téléphone"
                 class="font-semibold text-6 text-electric underline hover:text-bright transition-colors"
               >
-                06 64 64 44 60
+                06 64 64 44 70
               </a>
             </div>
             <div class="flex gap-5 items-center">
@@ -88,7 +88,7 @@
                 title="Parler avec les castors de Beavers sur WhatsApp"
                 class="font-semibold text-6 text-electric underline hover:text-bright transition-colors"
               >
-                06 64 64 44 60
+                06 64 64 44 70
               </a>
             </div>
           </div>
