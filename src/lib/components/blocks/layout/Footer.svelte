@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-  import Carbonbadge from "svelte-carbonbadge";
 
 	import WhatsApp from "$lib/assets/svg/WhatsApp.svelte";
 	import Tel from "$lib/assets/svg/Tel.svelte";
@@ -170,7 +169,7 @@
             {/if}
         </a>
         <div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
-        <Carbonbadge dark />
+        <div id="wcb" class="carbonbadge wcb-d"></div>
       </div>
     </div>
   </div>
