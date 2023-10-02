@@ -33,35 +33,27 @@
       <p class="lg:w-1/2 text-3 text-seance">
         Bâtissons <span class="font-highlight font-normal text-[5.7rem] leading-[3rem] text-bright">ensemble</span> votre stratégie digitale
       </p>
-      <div class="flex lg:justify-end items-center gap-8">
-        <a
-          href="https://www.google.com/partners/agency?id=9719801224"
-          target="_blank"
-          title="Beavers est Google Partner"
-          class="inline-block lg:hover:animate-shake"
-        >
-          <GooglePartner newClass="max-w-[10rem] h-auto {isInView
-            ? 'animate-fade'
-            : 'opacity-0'}" />
-        </a>
-        {#if isInView}
-        <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
-          ? 'animate-fade'
-          : 'opacity-0'}">
-        {/if}
-        <a
-          href="https://theoceancleanup.com/"
-          target="_blank"
-          title="The Ocean Cleanup"
-          rel="external noreferrer"
-          class="lg:hover:animate-shake"
-        >
-          {#if isInView}
-              <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
+      <div class="flex max-lg:flex-col lg:justify-end items-center gap-8">
+        <div>
+          <div id="wcb" class="carbonbadge wcb-d"></div>
+        </div>
+        <div class="flex lg:justify-end items-center gap-8">
+          <a
+            href="https://www.google.com/partners/agency?id=9719801224"
+            target="_blank"
+            title="Beavers est Google Partner"
+            class="inline-block lg:hover:animate-shake"
+          >
+            <GooglePartner newClass="max-w-[10rem] h-auto {isInView
               ? 'animate-fade'
               : 'opacity-0'}" />
-            {/if}
-        </a>
+          </a>
+          {#if isInView}
+          <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
+            ? 'animate-fade'
+            : 'opacity-0'}">
+          {/if}
+        </div>
       </div>
     </div>
     <div class="w-full flex max-lg:flex-col gap-16 lg:gap-28">
@@ -168,8 +160,20 @@
         </div>
       </div>
       <div class="flex lg:justify-around gap-8 items-center lg:flex-col max-lg:justify-center">
+        <a
+          href="https://theoceancleanup.com/"
+          target="_blank"
+          title="The Ocean Cleanup"
+          rel="external noreferrer"
+          class="lg:hover:animate-shake"
+        >
+          {#if isInView}
+              <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
+              ? 'animate-fade'
+              : 'opacity-0'}" />
+            {/if}
+        </a>
         <div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
-        <div id="wcb" class="carbonbadge wcb-d"></div>
       </div>
     </div>
   </div>
