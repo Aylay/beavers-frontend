@@ -49,6 +49,19 @@
           ? 'animate-fade'
           : 'opacity-0'}">
         {/if}
+        <a
+          href="https://theoceancleanup.com/"
+          target="_blank"
+          title="The Ocean Cleanup"
+          rel="external noreferrer"
+          class="lg:hover:animate-shake"
+        >
+          {#if isInView}
+              <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
+              ? 'animate-fade'
+              : 'opacity-0'}" />
+            {/if}
+        </a>
       </div>
     </div>
     <div class="w-full flex max-lg:flex-col gap-16 lg:gap-28">
@@ -155,19 +168,6 @@
         </div>
       </div>
       <div class="flex lg:justify-around gap-8 items-center lg:flex-col max-lg:justify-center">
-        <a
-          href="https://theoceancleanup.com/"
-          target="_blank"
-          title="The Ocean Cleanup"
-          rel="external noreferrer"
-          class="lg:hover:animate-shake"
-        >
-          {#if isInView}
-              <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
-              ? 'animate-fade'
-              : 'opacity-0'}" />
-            {/if}
-        </a>
         <div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
         <div id="wcb" class="carbonbadge wcb-d"></div>
       </div>
