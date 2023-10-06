@@ -47,7 +47,7 @@
               : 'opacity-0'}" />
           </a>
           {#if isInView}
-          <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
+          <img src="/img/certification-linkedin.webp" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
             ? 'animate-fade'
             : 'opacity-0'}">
           {/if}
@@ -166,7 +166,7 @@
           class="lg:hover:animate-shake"
         >
           {#if isInView}
-              <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
+              <img src="/img/the_ocean_cleanup-beavers.webp" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
               ? 'animate-fade'
               : 'opacity-0'}" />
             {/if}

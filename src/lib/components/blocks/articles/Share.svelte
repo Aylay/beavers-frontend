@@ -47,37 +47,37 @@
     </p>
     <div class="flex gap-8 lg:gap-4">
       <a
-      href="https://www.linkedin.com/sharing/share-offsite/?url={url}"
-      target="_blank"
-      title="Partager l'article sur Linkedin"
-      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
-    >
-      <Linkedin newClass="w-10 lg:w-7 h-auto" />
-    </a>
-    <a
-      href="https://pinterest.com/pin/create/button/?url={url}"
-      target="_blank"
-      title="Partager l'article sur Pinterest"
-      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
-    >
-      <Pinterest newClass="w-auto h-10 lg:h-7" />
-    </a>
-    <a
-      href="https://www.facebook.com/sharer/sharer.php?u={url}"
-      target="_blank"
-      title="Partager l'article sur Facebook"
-      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
-    >
-      <Facebook newClass="w-auto h-10 lg:h-7" />
-    </a>
-    <a
-      href="https://api.whatsapp.com/send?text={url}"
-      target="_blank"
-      title="Partager l'article sur WhatsApp"
-      class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
-    >
-      <WhatsApp newClass="w-auto h-10 lg:h-7" />
-    </a>
+        href="https://www.linkedin.com/sharing/share-offsite/?url={url}"
+        target="_blank"
+        title="Partager l'article sur Linkedin"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      >
+        <Linkedin newClass="w-10 lg:w-7 h-auto" />
+      </a>
+      <a
+        href="https://pinterest.com/pin/create/button/?url={url}"
+        target="_blank"
+        title="Partager l'article sur Pinterest"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      >
+        <Pinterest newClass="w-auto h-10 lg:h-7" />
+      </a>
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u={url}"
+        target="_blank"
+        title="Partager l'article sur Facebook"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      >
+        <Facebook newClass="w-auto h-10 lg:h-7" />
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?text={url}"
+        target="_blank"
+        title="Partager l'article sur WhatsApp"
+        class="max-lg:w-20 w-14 max-lg:h-20 h-14 rounded-full transition-colors flex justify-center items-center hover:bg-seance bg-white"
+      >
+        <WhatsApp newClass="w-auto h-10 lg:h-7" />
+      </a>
     </div>
   </div>
 </div>

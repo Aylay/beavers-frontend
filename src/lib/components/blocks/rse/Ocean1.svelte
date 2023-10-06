@@ -77,7 +77,7 @@
         <div class="absolute rounded-full bg-white w-64 h-64 top-2/3 lg:top-4 -left-8 lg:-left-24 flex justify-center items-center animate-delay-500 {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
-          <img src="/img/the_ocean_cleanup-beavers.png" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[12.5rem] h-auto">
+          <img src="/img/the_ocean_cleanup-beavers.webp" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[12.5rem] h-auto">
         </div>
         {/if}
 		</div>

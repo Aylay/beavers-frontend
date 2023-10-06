@@ -52,7 +52,7 @@
         ? 'animate-fade'
         : 'opacity-0'}" />
     </a>
-    <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[22rem] h-auto {isInView
+    <img src="/img/certification-linkedin.webp" alt="Certification Marketing insider Linkedin" class="max-w-[22rem] h-auto {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
   </div>
