@@ -47,9 +47,13 @@
               : 'opacity-0'}" />
           </a>
           {#if isInView}
-          <img src="/img/certification-linkedin.webp" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
-            ? 'animate-fade'
-            : 'opacity-0'}">
+            <picture>
+              <source srcset="/img/certification-linkedin.webp" type="image/webp">
+              <source srcset="/img/certification-linkedin.png" type="image/png"> 
+              <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
+                ? 'animate-fade'
+                : 'opacity-0'}">
+            </picture>
           {/if}
         </div>
       </div>
@@ -166,10 +170,18 @@
           class="lg:hover:animate-shake"
         >
           {#if isInView}
-              <img src="/img/the_ocean_cleanup-beavers.webp" alt="The Ocean Cleanup x Beavers Logo" class="max-w-[10rem] h-auto {isInView
-              ? 'animate-fade'
-              : 'opacity-0'}" />
-            {/if}
+            <picture>
+              <source srcset="/img/the_ocean_cleanup-beavers.webp" type="image/webp">
+              <source srcset="/img/the_ocean_cleanup-beavers.png" type="image/png"> 
+              <img
+                src="/img/the_ocean_cleanup-beavers.png"
+                alt="badge The Ocean Cleanup"
+                class="max-w-[10rem] h-auto {isInView
+                  ? 'animate-fade'
+                  : 'opacity-0'}"
+              />
+					  </picture>
+          {/if}
         </a>
         <div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
       </div>

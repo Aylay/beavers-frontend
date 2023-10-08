@@ -69,11 +69,15 @@
 		on:inview_change={handleChangeImg}
 	>
 		{#if isInViewImg}
-			<img
-				src="/img/hp/marketing-digital.png"
-				alt="Marketing Digital"
-				class="w-full {isInViewImg ? 'animate-fade' : ''}"
-			/>
+			<picture>
+				<source srcset="/img/hp/marketing-digital.webp" type="image/webp">
+				<source srcset="/img/hp/marketing-digital.png" type="image/png">
+				<img
+					src="/img/hp/marketing-digital.png"
+					alt="Marketing Digital"
+					class="w-full {isInViewImg ? 'animate-fade' : ''}"
+				/>
+			</picture>
 		{/if}
 		<div
 			class="absolute left-0 lg:-left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView

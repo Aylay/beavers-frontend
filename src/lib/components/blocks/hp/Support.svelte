@@ -86,33 +86,45 @@
 			{/if}
 			<div class="h-[26rem]">
 				{#if isInViewImg}
-					<img
-						src="/img/tree-nation.webp"
-						alt="Femme qui plante un arbre"
-						class="left h-full w-full rounded-2xl object-cover animate-delay-[600ms] {isInViewImg
-							? 'animate-fade'
-							: ''}"
-					/>
+					<picture>
+						<source srcset="/img/tree-nation.webp" type="image/webp">
+						<source srcset="/img/tree-nation.jpg" type="image/jpeg"> 
+						<img
+							src="/img/tree-nation.jpg"
+							alt="Femme qui plante un arbre"
+							class="left h-full w-full rounded-2xl object-cover animate-delay-[600ms] {isInViewImg
+								? 'animate-fade'
+								: ''}"
+						/>
+					</picture>
 				{/if}
 			</div>
 		</div>
 		<div class="relative flex-1">
 			<div class="relative h-[26rem]">
 				{#if isInViewImg}
-					<img
-						src="/img/the-ocean-cleanup.webp"
-						alt="Tortue qui nage en pleine mer ou océan"
-						class="h-full w-full rounded-2xl object-cover animate-delay-[1500ms] {isInViewImg
-							? 'animate-fade'
-							: ''}"
-					/>
-					<img
-						src="/img/the_ocean_cleanup-beavers.webp"
-						alt="badge The Ocean Cleanup"
-						class="absolute left-8 top-full w-48 -translate-y-1/2 transform animate-delay-[1700ms] {isInViewImg
-							? 'animate-fade'
-							: ''}"
-					/>
+					<picture>
+						<source srcset="/img/the-ocean-cleanup.webp" type="image/webp">
+						<source srcset="/img/the-ocean-cleanup.jpg" type="image/jpeg"> 
+						<img
+							src="/img/the-ocean-cleanup.jpg"
+							alt="Tortue qui nage en pleine mer ou océan"
+							class="h-full w-full rounded-2xl object-cover animate-delay-[1500ms] {isInViewImg
+								? 'animate-fade'
+								: ''}"
+						/>
+					</picture>
+					<picture>
+						<source srcset="/img/the_ocean_cleanup-beavers.webp" type="image/webp">
+						<source srcset="/img/the_ocean_cleanup-beavers.png" type="image/png"> 
+						<img
+							src="/img/the_ocean_cleanup-beavers.png"
+							alt="badge The Ocean Cleanup"
+							class="absolute left-8 top-full w-48 -translate-y-1/2 transform animate-delay-[1700ms] {isInViewImg
+								? 'animate-fade'
+								: ''}"
+						/>
+					</picture>
 				{/if}
 			</div>
 			<Sun

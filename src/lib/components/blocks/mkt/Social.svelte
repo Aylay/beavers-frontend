@@ -44,11 +44,15 @@ on:inview_change={handleChange}>
 		<div class="flex flex-1 flex-col gap-8 ">
 			<div class="flex-3 relative">
 				{#if isInViewImg}
-					<img
-						src="/img/hp/manifesto-2-1.jpg"
-						alt="Un pot de fausse fleur + un téléphone avec Instagram"
-						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-					/>
+					<picture>
+						<source srcset="/img/hp/manifesto-2-1.webp" type="image/webp">
+						<source srcset="/img/hp/manifesto-2-1.jpg" type="image/jpeg">
+						<img
+							src="/img/hp/manifesto-2-1.jpg"
+							alt="Un pot de fausse fleur + un téléphone avec Instagram"
+							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						/>
+					</picture>
 				{/if}
 				<div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 w-20 h-20 bg-bright rounded-full flex justify-center items-center animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Tiktok newClass="w-10 h-auto fill-seance" />

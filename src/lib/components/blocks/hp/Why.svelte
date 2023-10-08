@@ -132,11 +132,15 @@
 				on:inview_change={handleChangeImg}
 			>
 				{#if isInViewImg}
-					<img
-						src="/img/hp/why.png"
-						alt="personne surlignant une feuille avec un téléphone au milieu"
-						class="w-full {isInViewImg ? 'animate-fade' : ''}"
-					/>
+					<picture>
+						<source srcset="/img/hp/why.webp" type="image/webp">
+						<source srcset="/img/hp/why.png" type="image/png">
+						<img
+							src="/img/hp/why.png"
+							alt="personne surlignant une feuille avec un téléphone au milieu"
+							class="w-full {isInViewImg ? 'animate-fade' : ''}"
+						/>
+					</picture>
 				{/if}
 				<div
 					class="absolute max-lg:bottom-8 bottom-16 max-lg:right-20 right-40 flex h-[11rem] w-[11.75rem] items-center justify-center"

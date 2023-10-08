@@ -64,11 +64,15 @@
 				on:inview_change={handleChangeImg}
 			>
 				{#if isInViewImg}
-					<img
-						src="/img/hp/manifesto-1.png"
-						alt="Homme faisant de l'ordinateur et Femme travaillant à un tableau"
-						class="w-full {isInViewImg ? 'animate-fade' : ''}"
-					/>
+					<picture>
+						<source srcset="/img/hp/manifesto-1.webp" type="image/webp">
+						<source srcset="/img/hp/manifesto-1.png" type="image/png">
+						<img
+							src="/img/hp/manifesto-1.png"
+							alt="Homme faisant de l'ordinateur et Femme travaillant à un tableau"
+							class="w-full {isInViewImg ? 'animate-fade' : ''}"
+						/>
+					</picture>
 				{/if}
 				<div
 					class="absolute left-24 top-16 flex h-[11rem] w-[11.75rem] items-center justify-center"

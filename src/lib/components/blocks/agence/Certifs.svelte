@@ -52,8 +52,12 @@
         ? 'animate-fade'
         : 'opacity-0'}" />
     </a>
-    <img src="/img/certification-linkedin.webp" alt="Certification Marketing insider Linkedin" class="max-w-[22rem] h-auto {isInView
-      ? 'animate-fade'
-      : 'opacity-0'}">
+    <picture>
+      <source srcset="/img/certification-linkedin.webp" type="image/webp">
+      <source srcset="/img/certification-linkedin.png" type="image/png"> 
+      <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[22rem] h-auto {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+    </picture>
   </div>
 </div>

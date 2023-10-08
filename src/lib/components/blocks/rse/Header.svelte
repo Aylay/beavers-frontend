@@ -48,10 +48,18 @@
     </div>
   </div>
   <div class="w-full lg:w-1/2 max-lg:h-1/2 absolute h-full top-0 lg:inset-y-0 left-0 z-10 transition-opacity {isOceanActive ? 'opacity-100' : 'opacity-[0.15]'}">
-    <img src="/img/soutiens/the-ocean-cleanup.webp" alt="The Ocean Cleanup" class="w-full h-full object-cover">
+    <picture>
+      <source srcset="/img/soutiens/the-ocean-cleanup.webp" type="image/webp">
+      <source srcset="/img/soutiens/the-ocean-cleanup.jpg" type="image/jpeg"> 
+      <img src="/img/soutiens/the-ocean-cleanup.jpg" alt="The Ocean Cleanup" class="w-full h-full object-cover">
+    </picture>
   </div>
   <div class="w-full lg:w-1/2 max-lg:h-1/2 absolute h-full bottom-0 lg:inset-y-0 left-0 lg:left-auto lg:right-0 z-10 transition-opacity {isOceanActive ? 'opacity-[0.15]' : 'opacity-100'}">
-    <img src="/img/soutiens/tree-nation.webp" alt="Tree Nation" class="w-full h-full object-cover">
+    <picture>
+      <source srcset="/img/soutiens/tree-nation.webp" type="image/webp">
+      <source srcset="/img/soutiens/tree-nation.jpg" type="image/jpeg"> 
+      <img src="/img/soutiens/tree-nation.webp" alt="Tree Nation" class="w-full h-full object-cover">
+    </picture>
   </div>
 
   <div class="lg:hidden absolute top-0 inset-x-0 w-full z-20 h-1/2 transition-opacity flex flex-col justify-center gap-4 items-center px-4 {!isOceanActive ? 'opacity-100' : 'opacity-0'}">

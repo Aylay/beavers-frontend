@@ -19,7 +19,15 @@
   use:inview={options}
   on:inview_change={handleChange}
 >
-  <img src={person.img} alt="{person.name} - {person.job}" class="max-w-[21rem] w-full {isInView ? 'animate-fade' : 'opacity-0'}" />
+<picture>
+  <source srcset={person.webp} type="image/webp">
+  <source srcset={person.img} type="image/png"> 
+  <img
+    src={person.img}
+    alt="{person.name} - {person.job}"
+    class="max-w-[21rem] w-full {isInView ? 'animate-fade' : 'opacity-0'}"
+  />
+</picture>
   <h3 class="mt-12 text-4 text-seance font-semibold">
     {person.name}
   </h3>

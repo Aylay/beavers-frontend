@@ -38,20 +38,28 @@ on:inview_change={handleChange}>
 	<div class="flex flex-1 flex-col gap-8">
 		<div class="flex-3">
 			{#if isInViewImg}
-				<img
-					src="/img/hp/manifesto-2-1.jpg"
-					alt="Un pot de fausse fleur + un téléphone avec Instagram"
-					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-				/>
+				<picture>
+					<source srcset="/img/hp/manifesto-2-1.webp" type="image/webp">
+					<source srcset="/img/hp/manifesto-2-1.jpg" type="image/jpeg">
+					<img
+						src="/img/hp/manifesto-2-1.jpg"
+						alt="Un pot de fausse fleur + un téléphone avec Instagram"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					/>
+				</picture>
 			{/if}
 		</div>
 		<div class="flex-2">
 			{#if isInViewImg}
-				<img
-					src="/img/hp/manifesto-2-2.jpg"
-					alt="Tasse à café tenue par une personne"
-					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-				/>
+				<picture>
+					<source srcset="/img/hp/manifesto-2-2.webp" type="image/webp">
+					<source srcset="/img/hp/manifesto-2-2.jpg" type="image/jpeg">
+					<img
+						src="/img/hp/manifesto-2-2.jpg"
+						alt="Tasse à café tenue par une personne"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					/>
+				</picture>
 			{/if}
 		</div>
 	</div>
@@ -74,11 +82,15 @@ on:inview_change={handleChange}>
 		{/each}
 		<div class="w-full lg:h-1/2">
 			{#if isInViewImg}
-				<img
-					src="/img/hp/manifesto-2-3.jpg"
-					alt="4 personnes qui se tiennent le poignet"
-					class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-				/>
+				<picture>
+					<source srcset="/img/hp/manifesto-2-3.webp" type="image/webp">
+					<source srcset="/img/hp/manifesto-2-3.jpg" type="image/jpeg">
+					<img
+						src="/img/hp/manifesto-2-3.jpg"
+						alt="4 personnes qui se tiennent le poignet"
+						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+					/>
+				</picture>
 			{/if}
 		</div>
 	</div>
