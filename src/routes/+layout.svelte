@@ -21,7 +21,7 @@
 	<meta property="og:locale" content="fr" />
   <link rel="canonical" href={siteURL + $page.url.pathname} />
   <meta property="og:url" content={siteURL + $page.url.pathname} />
-  <script src="https://www.google.com/recaptcha/api.js?render={key}" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render={key}" defer></script>
 </svelte:head>
 
 <div class="overflow-hidden">
