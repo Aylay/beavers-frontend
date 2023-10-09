@@ -104,11 +104,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
+      <picture>
+        <source srcset="/img/lp/habitat-2.webp" type="image/webp">
+        <source srcset="/img/lp/habitat-2.png" type="image/png">
         <img
           src="/img/lp/habitat-2.png"
           alt="Meuble marron avec 3 tasses dessus"
           class="w-full {isInViewImg ? 'animate-fade' : ''}"
         />
+        </picture>
       {/if}
 
       {#each tops as top, i}

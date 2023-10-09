@@ -75,11 +75,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
-        <img
-          src="/img/prod/seo.png"
-          alt="Ordinateur portable avec un graphique Google Search Console"
-          class="w-full {isInViewImg ? 'animate-fade' : ''}"
-        />
+        <picture>
+          <source srcset="/img/prod/seo.webp" type="image/webp">
+          <source srcset="/img/prod/seo.png" type="image/png">
+          <img
+            src="/img/prod/seo.png"
+            alt="Ordinateur portable avec un graphique Google Search Console"
+            class="w-full {isInViewImg ? 'animate-fade' : ''}"
+          />
+        </picture>
       {/if}
 
       {#each tops as top, i}

@@ -82,11 +82,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
-        <img
-          src="/img/prod/newsletter.png"
-          alt="Ordinateur portable avec une image newsletter dessus"
-          class="w-full {isInViewImg ? 'animate-fade' : ''}"
-        />
+        <picture>
+          <source srcset="/img/prod/newsletter.webp" type="image/webp">
+          <source srcset="/img/prod/newsletter.png" type="image/png">
+          <img
+            src="/img/prod/newsletter.png"
+            alt="Ordinateur portable avec une image newsletter dessus"
+            class="w-full {isInViewImg ? 'animate-fade' : ''}"
+          />
+        </picture>
       {/if}
       <div
         class="absolute -top-16 left-1/2 h-auto rotate-[-45deg] w-[6.2rem] {isInView

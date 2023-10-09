@@ -103,11 +103,15 @@
 			on:inview_change={handleChangeImg}
 		>
 			{#if isInViewImg}
-				<img
-					src="/img/rse/tree-nation.png"
-					alt="Tree Nation"
-					class="w-full {isInViewImg ? 'animate-fade' : ''}"
-				/>
+				<picture>
+					<source srcset="/img/rse/tree-nation.webp" type="image/webp">
+					<source srcset="/img/rse/tree-nation.png" type="image/png">
+					<img
+						src="/img/rse/tree-nation.png"
+						alt="Tree Nation"
+						class="w-full {isInViewImg ? 'animate-fade' : ''}"
+					/>
+				</picture>
         <div class="absolute rounded-full bg-white w-64 h-64 top-2/3 lg:top-4 -left-8 lg:-left-24 flex justify-center items-center animate-delay-500 {isInView
           ? 'animate-fade'
           : 'opacity-0'}">

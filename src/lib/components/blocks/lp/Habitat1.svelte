@@ -108,11 +108,15 @@
 			on:inview_change={handleChangeImg}
 		>
 			{#if isInViewImg}
-				<img
-					src="/img/lp/habitat-1.png"
-					alt="2 personnes dans une brouette en train de faire des travaux"
-					class="w-full {isInViewImg ? 'animate-fade' : ''}"
-				/>
+				<picture>
+					<source srcset="/img/lp/habitat-1.webp" type="image/webp">
+					<source srcset="/img/lp/habitat-1.png" type="image/png">
+					<img
+						src="/img/lp/habitat-1.png"
+						alt="2 personnes dans une brouette en train de faire des travaux"
+						class="w-full {isInViewImg ? 'animate-fade' : ''}"
+					/>
+				</picture>
 			{/if}
 			{#each pluss as plus, i}
 				<div

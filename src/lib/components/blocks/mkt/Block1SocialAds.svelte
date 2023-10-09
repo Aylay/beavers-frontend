@@ -80,11 +80,15 @@
 			on:inview_change={handleChangeImg}
 		>
 			{#if isInViewImg}
-				<img
-					src="/img/mkt/social-ads.png"
-					alt="Plusieurs téléphones qui entourent une bulle avec un coeur et des chiffres"
-					class="w-full {isInViewImg ? 'animate-fade' : ''}"
-				/>
+				<picture>
+					<source srcset="/img/mkt/social-ads.webp" type="image/webp">
+					<source srcset="/img/mkt/social-ads.png" type="image/png">
+					<img
+						src="/img/mkt/social-ads.png"
+						alt="Plusieurs téléphones qui entourent une bulle avec un coeur et des chiffres"
+						class="w-full {isInViewImg ? 'animate-fade' : ''}"
+					/>
+				</picture>
 			{/if}
 			{#each pluss as plus, i}
 				<div

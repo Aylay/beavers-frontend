@@ -77,11 +77,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
-        <img
-          src="/img/prod/code.png"
-          alt="Code source"
-          class="w-full {isInViewImg ? 'animate-fade' : ''}"
-        />
+        <picture>
+          <source srcset="/img/prod/code.webp" type="image/webp">
+          <source srcset="/img/prod/code.png" type="image/png">
+          <img
+            src="/img/prod/code.png"
+            alt="Code source"
+            class="w-full {isInViewImg ? 'animate-fade' : ''}"
+          />
+        </picture>
       {/if}
       <MultipleArrows newClass="top-4 absolute right-24 fill-bright w-20 h-auto animate-delay-200 {isInViewImg
         ? 'animate-fade'

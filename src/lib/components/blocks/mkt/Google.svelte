@@ -106,11 +106,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
-        <img
-          src="/img/mkt/google.png"
-          alt="Google Ads"
-          class="w-full {isInViewImg ? 'animate-fade' : ''}"
-        />
+        <picture>
+          <source srcset="/img/mkt/google.webp" type="image/webp">
+          <source srcset="/img/mkt/google.png" type="image/png">
+          <img
+            src="/img/mkt/google.png"
+            alt="Google Ads"
+            class="w-full {isInViewImg ? 'animate-fade' : ''}"
+          />
+        </picture>
       {/if}
       <MultipleArrows newClass="top-4 absolute right-24 fill-bright w-20 h-auto animate-delay-200 {isInViewImg
         ? 'animate-fade'

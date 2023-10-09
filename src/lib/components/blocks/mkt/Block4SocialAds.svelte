@@ -71,11 +71,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
-        <img
-          src="/img/mkt/social-ads-7.png"
-          alt="Plusieurs images de portrait de personnes"
-          class="w-full {isInViewImg ? 'animate-fade' : ''}"
-        />
+        <picture>
+          <source srcset="/img/mkt/social-ads-7.webp" type="image/webp">
+          <source srcset="/img/mkt/social-ads-7.png" type="image/png">
+          <img
+            src="/img/mkt/social-ads-7.png"
+            alt="Plusieurs images de portrait de personnes"
+            class="w-full {isInViewImg ? 'animate-fade' : ''}"
+          />
+        </picture>
       {/if}
       <div
         class="absolute -top-16 left-1/2 h-auto rotate-[-45deg] w-[6.2rem] {isInView

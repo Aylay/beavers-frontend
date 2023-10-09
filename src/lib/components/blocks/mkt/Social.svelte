@@ -60,11 +60,15 @@ on:inview_change={handleChange}>
 			</div>
 			<div class="flex-2 relative">
 				{#if isInViewImg}
-					<img
-						src="/img/mkt/social-2.jpg"
-						alt="Personne tapant sur le clavier d'un ordinateur portable"
-						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-					/>
+					<picture>
+						<source srcset="/img/mkt/social-2.webp" type="image/webp">
+						<source srcset="/img/mkt/social-2.jpg" type="image/jpeg"> 
+						<img
+							src="/img/mkt/social-2.jpg"
+							alt="Personne tapant sur le clavier d'un ordinateur portable"
+							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						/>
+					</picture>
 				{/if}
 				<div class="absolute top-0 -translate-y-1/2 left-6 w-16 h-16 bg-seance rounded-full flex justify-center items-center animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Instagram newClass="w-9 h-auto fill-white" />
@@ -77,11 +81,15 @@ on:inview_change={handleChange}>
 		<div class="relative flex flex-1 items-center">
 			<div class="w-full lg:h-1/2 relative">
 				{#if isInViewImg}
-					<img
-						src="/img/mkt/social-3.jpg"
-						alt="Personne prenant une autre personne en photo avec un téléphone"
-						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-					/>
+					<picture>
+						<source srcset="/img/mkt/social-3.webp" type="image/webp">
+						<source srcset="/img/mkt/social-3.jpg" type="image/jpeg">
+						<img
+							src="/img/mkt/social-3.jpg"
+							alt="Personne prenant une autre personne en photo avec un téléphone"
+							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						/>
+					</picture>
 				{/if}
 				<div class="absolute -top-28 left-1/2 w-20 h-20 bg-seance rounded-full flex justify-center items-center animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}">
 					<Linkedin newClass="w-10 h-auto fill-white" />

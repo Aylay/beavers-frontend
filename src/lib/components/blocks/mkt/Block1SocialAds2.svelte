@@ -38,11 +38,15 @@
 		on:inview_change={handleChangeImg}
 	>
 		{#if isInViewImg}
-			<img
-				src="/img/mkt/social-ads-2.png"
-				alt="Picto Instagram sous fond rose"
-				class="w-full {isInViewImg ? 'animate-fade' : ''}"
-			/>
+			<picture>
+				<source srcset="/img/mkt/social-ads-2.webp" type="image/webp">
+				<source srcset="/img/mkt/social-ads-2.png" type="image/png">
+				<img
+					src="/img/mkt/social-ads-2.png"
+					alt="Picto Instagram sous fond rose"
+					class="w-full {isInViewImg ? 'animate-fade' : ''}"
+				/>
+			</picture>
 		{/if}
 		<div
 			class="absolute left-0 lg:-left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView

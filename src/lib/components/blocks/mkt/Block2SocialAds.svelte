@@ -86,20 +86,28 @@ on:inview_change={handleChange}>
 		<div class="flex flex-1 flex-col gap-8">
 			<div class="flex-3">
 				{#if isInViewImg}
-					<img
-						src="/img/mkt/social-ads-3.png"
-						alt="Une tablette et un téléphone avec une maquette de publicité"
-						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-					/>
+					<picture>
+						<source srcset="/img/mkt/social-ads-3.webp" type="image/webp">
+						<source srcset="/img/mkt/social-ads-3.png" type="image/png">
+						<img
+							src="/img/mkt/social-ads-3.png"
+							alt="Une tablette et un téléphone avec une maquette de publicité"
+							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						/>
+					</picture>
 				{/if}
 			</div>
 			<div class="flex-2">
 				{#if isInViewImg}
-					<img
-						src="/img/mkt/social-ads-4.png"
-						alt="Dashboard avec chiffres et graphique"
-						class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-					/>
+					<picture>
+						<source srcset="/img/mkt/social-ads-4.webp" type="image/webp">
+						<source srcset="/img/mkt/social-ads-4.png" type="image/png">
+						<img
+							src="/img/mkt/social-ads-4.png"
+							alt="Dashboard avec chiffres et graphique"
+							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						/>
+					</picture>
 				{/if}
 			</div>
 		</div>
@@ -122,11 +130,15 @@ on:inview_change={handleChange}>
 			{/each}
 			<div class="w-full lg:h-1/2">
 				{#if isInViewImg}
-					<img
-						src="/img/mkt/social-ads-5.png"
-						alt="Personne qui clique sur son téléphone avec une publication Instagram"
-						class="h-full w-full object-cover overflow-hidden rounded-lg object-right {isInViewImg ? 'animate-fade' : 'opacity-0'}"
-					/>
+					<picture>
+						<source srcset="/img/mkt/social-ads-5.webp" type="image/webp">
+						<source srcset="/img/mkt/social-ads-5.png" type="image/png">
+						<img
+							src="/img/mkt/social-ads-5.png"
+							alt="Personne qui clique sur son téléphone avec une publication Instagram"
+							class="h-full w-full object-cover overflow-hidden rounded-lg object-right {isInViewImg ? 'animate-fade' : 'opacity-0'}"
+						/>
+					</picture>
 				{/if}
 			</div>
 		</div>

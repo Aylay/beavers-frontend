@@ -96,11 +96,15 @@
       on:inview_change={handleChangeImg}
     >
       {#if isInViewImg}
-        <img
-          src="/img/mkt/influence.png"
-          alt="Influence Marketing"
-          class="w-full {isInViewImg ? 'animate-fade' : ''}"
-        />
+        <picture>
+          <source srcset="/img/mkt/influence.webp" type="image/webp">
+          <source srcset="/img/mkt/influence.png" type="image/png">
+          <img
+            src="/img/mkt/influence.png"
+            alt="Influence Marketing"
+            class="w-full {isInViewImg ? 'animate-fade' : ''}"
+          />
+        </picture>
       {/if}
       <div
         class="absolute -top-16 left-1/2 h-auto rotate-[-45deg] w-[6.2rem] {isInView
