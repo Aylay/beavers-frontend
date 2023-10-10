@@ -37,12 +37,12 @@
     },
     {
       label: "L'agence",
-      title: "L'agence",
+      title: "L'agence média Beavers",
       slug: '/l-agence-beavers'
     },
     {
       label: "RSE",
-      title: "Programme RSE",
+      title: "Le programme RSE de l'agence média Beavers",
       slug: '/programme-rse'
     },
     {
@@ -57,12 +57,12 @@
     },
     {
       label: 'Jobs',
-      title: 'Jobs',
+      title: 'Les jobs disponibles chez les castors',
       slug: '/jobs'
     },
     {
       label: 'Contactez-nous',
-      title: 'Contactez-nous',
+      title: "Contactez l'agence média Beavers",
       slug: '/contactez-nous'
     }
   ]
