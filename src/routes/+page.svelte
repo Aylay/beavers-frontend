@@ -24,14 +24,13 @@
 			{
 				"@type": "WebSite",
 				"name": "Beavers",
-				"url": 'https://beavers-agency.fr',
-				"@id": 'https://beavers-agency.fr'
+				"url": 'https://beavers-agency.fr/'
 			},
 			{
 				"@type": "Organization",
 				"@id": 'https://beavers-agency.fr',
 				"name": "Beavers",
-				"url": 'https://beavers-agency.fr',
+				"url": 'https://beavers-agency.fr/',
 				"legalName": "Beavers SAS",
 				"slogan": "Beavers, le digital à pleines dents !",
 				"description": "L'agence Beavers, spécialisée dans le marketing digital, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
