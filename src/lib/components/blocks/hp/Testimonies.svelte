@@ -63,7 +63,11 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
         "name": review.name,
         "worksFor": review.company
       },
-      
+      'name': 'Beavers',
+      'itemReviewed': {
+        "@type": "Organization",
+        "@id": 'https://beavers-agency.fr',
+      },
       'reviewBody': review.text.replace(/<(.|\n)*?>/g, '')
 		}
 		reviews.push(newReview)
