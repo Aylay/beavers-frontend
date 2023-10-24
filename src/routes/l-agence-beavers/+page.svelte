@@ -12,7 +12,7 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
   const text1 = 'En quoi<br />sommes-nous'
   const text2 = 'différents ?'
   const text3 = "À l'heure où l'intelligence artificielle se développe, passez par une équipe humaine, qui vous accompagnera personnellement que vous soyez débutant ou expert."
-  const text4 = "Pour nous, se nommer être l'expert en tout, c'est être l'expert en rien. C'est pourquoi nous sommes accompagnés de personnes qualifiées, prêtes à répondre à votre demande. Chaque problématique nécessite un savoir-faire précis auquel nous faisons appel."
+  const text4 = "En tant que spécialistes dans le secteur de l'habitat, de l'ameublement et de la rénovation, nous mettons à votre disposition une expertise pointue pour transformer vos prospects en futurs clients."
 
   const people = [
     {

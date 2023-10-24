@@ -109,9 +109,7 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Nous avons choisi d'orienter notre approche vers une stratégie data-centric, nous nous
-				appuyons sur la donnée pour vous proposer des plans de communication qui correspondent à vos
-				objectifs, mesurer efficacement vos performances et pour optimiser l'existant en temps réel.
+				Nous avons choisi d'orienter notre approche vers une stratégie data-centric, nous nous appuyons sur la donnée pour vous proposer des plans de communication qui correspondent à vos  objectifs, mesurer efficacement vos performances et pour optimiser l'existant en temps réel.
 			</p>
 			<p class="text-6">
 				Nous sommes à votre écoute pour répondre à vos besoins mais surtout vous aiguiller sur les

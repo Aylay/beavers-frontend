@@ -75,11 +75,11 @@
 		>
 			{#if isInViewImg}
 				<picture>
-					<source srcset="/img/hp/production-digitale.webp" type="image/webp">
-					<source srcset="/img/hp/production-digitale.png" type="image/png">
+					<source srcset="/img/lp/habitat-1.webp" type="image/webp">
+					<source srcset="/img/lp/habitat-1.png" type="image/png">
 					<img
-						src="/img/hp/production-digitale.png"
-						alt="Production Digitale"
+						src="/img/lp/habitat-1.png"
+						alt="2 personnes dans une brouette en train de faire des travaux"
 						class="w-full {isInViewImg ? 'animate-fade' : ''}"
 					/>
 				</picture>

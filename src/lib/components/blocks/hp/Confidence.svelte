@@ -5,6 +5,18 @@
 
 	const logos = [
 		{
+			src: '/img/clients/v-zug.svg',
+			newClass: 'h-full w-auto',
+			href: '/cas/creation-gestion-publications-reseaux-sociaux-v-zug',
+			title: 'V-ZUG'
+		},
+		{
+			src: '/img/clients/rudnik.svg',
+			newClass: 'w-full h-auto',
+			href: '/cas/developpement-site-marius-rudnik-renovation',
+			title: 'Marius Rudnik Renovation'
+		},
+		{
 			src: '/img/clients/cafes-richard.svg',
 			newClass: 'w-full h-auto',
 			href: '/cas/sea-social-media-landing-page-cafes-richard',
@@ -21,18 +33,6 @@
 			newClass: 'h-full w-auto',
 			href: '/cas/developpement-site-internet-imagine-2050',
 			title: 'Imagine 2050'
-		},
-		{
-			src: '/img/clients/v-zug.svg',
-			newClass: 'h-full w-auto',
-			href: '/cas/creation-gestion-publications-reseaux-sociaux-v-zug',
-			title: 'V-ZUG'
-		},
-		{
-			src: '/img/clients/we-van.png',
-			newClass: 'w-full h-auto',
-			href: '/cas/strategie-digitale-media-pilotage-campagnes-wevan',
-			title: 'We Van'
 		},
 		{
 			src: '/img/clients/extreme-design.svg',

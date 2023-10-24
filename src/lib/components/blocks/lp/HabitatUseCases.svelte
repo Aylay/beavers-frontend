@@ -9,6 +9,7 @@
 
   const vzug: any = $page.data.vzug
   const ki: any = $page.data.ki
+  const rudnik: any = $page.data.rudnik
 
 	let isInView: boolean;
 	const options: Options = {
@@ -35,7 +36,8 @@
 			? 'gap-14'
 			: 'gap-0'}"
 	>
-		<UseCase useCase={vzug} col="lg:col-span-4" />
+		<UseCase useCase={vzug} col="lg:col-span-2" />
+		<UseCase useCase={rudnik} col="lg:col-span-2" />
 		<UseCase useCase={ki} col="lg:col-span-2" />
 	</div>
 </div>

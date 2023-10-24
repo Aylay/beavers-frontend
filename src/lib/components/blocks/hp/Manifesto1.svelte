@@ -51,6 +51,9 @@
 				Cependant, on garde les pieds sur terre pour vous élaborer une stratégie qui corresponde à
 				vos enjeux tout en respectant vos moyens.
 			</p>
+			<p class="text-6">
+				Chaque détail compte pour mettre en avant les professionnels de l'habitat cherchant une visibilité et une acquisation digitales.
+			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">
 			<Cta label="Découvrir l'équipe" href="/l-agence-beavers" type="transparent" />

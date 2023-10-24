@@ -33,7 +33,7 @@
 				"url": 'https://beavers-agency.fr/',
 				"legalName": "Beavers SAS",
 				"slogan": "Beavers, le digital à pleines dents !",
-				"description": "L'agence Beavers, spécialisée dans le marketing digital, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+				"description": "L'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
 				"email" : "les-castors@beavers-agency.fr",
 				"address": {
 					"@type": "PostalAddress",
@@ -170,9 +170,9 @@
   <meta name="title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
   <meta property="og:title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
   <meta property="twitter:title" content="Beavers, l'agence digitale spécialiste en stratégie média." />
-  <meta name="description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
-  <meta property="og:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
-  <meta property="twitter:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital." />
+  <meta name="description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
+  <meta property="og:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
+  <meta property="twitter:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
 	<meta property="og:type" content="website" />
 	<meta
 		property="og:image"

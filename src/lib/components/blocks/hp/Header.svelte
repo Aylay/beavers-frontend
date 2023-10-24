@@ -57,7 +57,7 @@
         Le digital à pleines dents !
       </h1>
       <h2 class="text-6 font-bold text-bright mt-6 pr-12">
-        L'agence Beavers, spécialisée dans le marketing digital, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.
+        L'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.
       </h2>
       <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.1)] gap-2">
         <Mouse newClass="h-auto w-full" color="#FFF" />
