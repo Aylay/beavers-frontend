@@ -86,7 +86,7 @@
 					</div>
 					<div class="flex flex-col gap-2">
 						<h3 class="font-bold text-5 text-bright">
-							{treeNation.co2_compensated.toLocaleString()} tonnes
+							{treeNation.co2_compensated_tons.toLocaleString()} tonnes
 						</h3>
 						<p class="text-6">
 							Total de CO2 capturés
