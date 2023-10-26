@@ -9,7 +9,6 @@
 	import LinkedIn from '$lib/assets/svg/social/LinkedIn.svelte';
 	import Meta from '$lib/assets/svg/social/Meta.svelte';
 	import Tiktok from '$lib/assets/svg/social/Tiktok.svelte';
-	import Waze from '$lib/assets/svg/social/Waze.svelte';
 	import YouTube from '$lib/assets/svg/social/YouTube.svelte';
 	import Pinterest from '$lib/assets/svg/social/Pinterest.svelte';
 
@@ -102,7 +101,6 @@
 			<GAds newClass="h-16 w-auto animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#444A5A" fill2="#30343F" fill3="#393F4D" />
 			<LinkedIn newClass="h-16 w-auto animate-delay-[1000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#0B0211" />
 			<Tiktok newClass="h-16 w-auto animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#414757" fill3="#414757" />
-			<Waze newClass="h-16 w-auto animate-delay-[1500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#7E87A6" />
 			<Meta newClass="w-16 h-auto animate-delay-[1750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#2D313C" />
 			<YouTube newClass="w-16 h-auto animate-delay-[2000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#2E323D" fill2="#0B0211" />
 		</div>
@@ -131,7 +129,6 @@
 				<GAds newClass="h-16 w-auto animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#444A5A" fill2="#30343F" fill3="#393F4D" />
 				<LinkedIn newClass="h-16 w-auto animate-delay-[1000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#0B0211" />
 				<Tiktok newClass="h-16 w-auto animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#414757" fill3="#414757" />
-				<Waze newClass="h-16 w-auto animate-delay-[1500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#7E87A6" />
 				<Meta newClass="w-16 h-auto animate-delay-[1750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#2D313C" />
 				<YouTube newClass="w-16 h-auto animate-delay-[2000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#2E323D" fill2="#0B0211" />
 			</div>

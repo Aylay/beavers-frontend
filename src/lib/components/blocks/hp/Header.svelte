@@ -10,7 +10,6 @@
 	import LinkedIn from '$lib/assets/svg/social/LinkedIn.svelte';
 	import Meta from '$lib/assets/svg/social/Meta.svelte';
 	import Tiktok from '$lib/assets/svg/social/Tiktok.svelte';
-	import Waze from '$lib/assets/svg/social/Waze.svelte';
 	import YouTube from '$lib/assets/svg/social/YouTube.svelte';
 	import Pinterest from '$lib/assets/svg/social/Pinterest.svelte';
 	import Sun from '$lib/assets/svg/Sun.svelte';
@@ -104,9 +103,6 @@
         </div>
         <div class="absolute top-[8%] left-0 w-40 h-40 flex justify-center items-center bg-white rounded-3xl">
           <Bing newClass="h-24 w-auto animate-fade animate-infinite animate-duration-[4000ms] animate-ease-in-out animate-delay-500" />
-        </div>
-        <div class="absolute top-2/3 left-0 w-40 h-40 flex justify-center items-center bg-white rounded-3xl">
-          <Waze newClass="h-24 w-auto animate-fade animate-infinite animate-duration-[4000ms] animate-ease-in-out animate-delay-[1750ms]" />
         </div>
         <div class="absolute top-[18%] left-1/4 w-40 h-40 flex justify-center items-center bg-white rounded-3xl">
           <GAds newClass="w-24 h-auto animate-fade animate-infinite animate-duration-[4000ms] animate-delay-1000 animate-ease-in-out" />
