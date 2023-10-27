@@ -42,26 +42,26 @@ on:inview_change={handleChange}>
       <h1 class="text-3 text-seance">
         {@html title}
       </h1>
-      <p class="font-semibold text-5 mt-8">
-        Aménagement intérieur et extérieur de l’habitat
-      </p>
+      <h2 class="text-5 lg:text-4 lg:leading-tight mt-8">
+        Nous propulsons les pros de l'habitat<br /><span class="text-bright-turquoise">vers leur réussite digitale</span>
+      </h2>
       <div class="flex flex-col gap-12 justify-between mt-16">
         <div class="flex gap-4 items-center animate-delay-[750ms] {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
-          <Star newClass="w-12 h-auto fill-bright-turquoise" />
+          <Star newClass="w-12 h-auto fill-seance" />
           <h3 class="font-bold text-5">Notoriété</h3>
         </div>
         <div class="flex gap-4 items-center animate-delay-1000 {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
-          <Trafic newClass="w-12 h-auto" fill="#00EECB" />
+          <Trafic newClass="w-12 h-auto" fill="#8013BD" />
           <h3 class="font-bold text-5">Trafic</h3>
         </div>
         <div class="flex gap-4 items-center animate-delay-[1250ms] {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
-          <Conversion newClass="w-12 h-auto fill-bright-turquoise" />
+          <Conversion newClass="w-12 h-auto fill-seance" />
           <h3 class="font-bold text-5">Conversion</h3>
         </div>
       </div>

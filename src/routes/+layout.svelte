@@ -14,7 +14,9 @@
   const key = import.meta.env.VITE_RECAPTCHA;
 </script>
 
-<GTM gtmId="GTM-W6ZCCTM" />
+{#if $page.url.host.includes('beavers-agency.fr')}
+	<GTM gtmId="GTM-W6ZCCTM" />
+{/if}
 
 <svelte:head>
   <meta property="og:site_name" content="Beavers" />
