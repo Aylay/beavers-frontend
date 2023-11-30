@@ -30,7 +30,7 @@
     <div class="mt-8 flex flex-col gap-16 lg:w-3/4">
       {#each goals as goal, i}
       <div
-        class="flex max-lg:flex-col cursor-pointer lg:items-center max-lg:gap-6 gap-12 {isInView ? 'animate-fade-right' : 'opacity-0'}"
+        class="flex max-lg:flex-col lg:items-center max-lg:gap-6 gap-12 {isInView ? 'animate-fade-right' : 'opacity-0'}"
         style="animation-delay: {150 * i}ms;"
       >
         <p class="w-32 text-[5rem] font-semibold leading-none text-seance">
