@@ -7,9 +7,9 @@
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
 	import UseCase from '$lib/components/blocks/lp/UseCase.svelte';
 
-  const vzug: any = $page.data.vzug
-  const ki: any = $page.data.ki
-  const rudnik: any = $page.data.rudnik
+  const useCase1: any = $page.data.useCase1
+  const useCase2: any = $page.data.useCase2
+  const useCase3: any = $page.data.useCase3
 
 	let isInView: boolean;
 	const options: Options = {
@@ -36,8 +36,8 @@
 			? 'gap-14'
 			: 'gap-0'}"
 	>
-		<UseCase useCase={vzug} col="lg:col-span-2" />
-		<UseCase useCase={rudnik} col="lg:col-span-2" />
-		<UseCase useCase={ki} col="lg:col-span-2" />
+		<UseCase useCase={useCase1} col="lg:col-span-2" />
+		<UseCase useCase={useCase2} col="lg:col-span-2" />
+		<UseCase useCase={useCase3} col="lg:col-span-2" />
 	</div>
 </div>

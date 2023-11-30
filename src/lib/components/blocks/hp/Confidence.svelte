@@ -35,10 +35,10 @@
 			title: 'Imagine 2050'
 		},
 		{
-			src: '/img/clients/extreme-design.svg',
+			src: '/img/clients/moncarro.svg',
 			newClass: 'w-full h-auto',
-			href: '/cas/creation-site-extreme-design',
-			title: 'Extreme Design'
+			href: '/cas/audit-recommandations-strategie-sea-moncarro',
+			title: 'Moncarro'
 		}
 	];
 </script>
