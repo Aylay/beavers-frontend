@@ -51,13 +51,13 @@
           <div class="flex gap-5 items-center">
             <Tel fill="#8013BD" />
             <p class="text-6 text-white">
-              06 64 64 44 60
+              06 64 64 44 70
             </p>
           </div>
           <div class="flex gap-5 items-center">
             <WhatsApp newClass="fill-seance" />
             <p class="text-6 text-white">
-              06 64 64 44 60
+              06 64 64 44 70
             </p>
           </div>
         </div>
