@@ -115,7 +115,7 @@
         <div class="absolute rounded-full bg-white w-64 h-64 top-2/3 lg:top-4 -left-8 lg:-left-24 flex justify-center items-center animate-delay-500 {isInView
           ? 'animate-fade'
           : 'opacity-0'}">
-					<TreeNation newClass="max-w-[12.5rem] h-auto" />
+					<TreeNation newClass="max-w-[12.5rem] w-full h-auto" />
         </div>
         {/if}
 		</div>
