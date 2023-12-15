@@ -39,7 +39,7 @@
       </div>
     </div>
   
-    <div class="max-lg:hidden w-1/2 bg-seance max-h-full overflow-hidden absolute z-10 inset-y-0 left-0 flex items-center ">
+    <div class="max-lg:hidden w-1/2 bg-seance max-h-full overflow-hidden absolute z-0 inset-y-0 left-0 flex items-center ">
       <div class="w-full transform scale-105">
         {#each allWords as word, i}
         <span 

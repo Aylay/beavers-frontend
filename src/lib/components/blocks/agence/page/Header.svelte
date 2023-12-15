@@ -9,7 +9,7 @@
 
   let allWords: Array<string> = []
   for (const word of words) {
-    const newWords = word.split(' ');
+    const newWords = word.text.split(' ');
     allWords = allWords.concat(newWords)
   }
   allWords = allWords.concat(allWords)
@@ -31,8 +31,8 @@
                 |
               </li>
               <li>
-                <a href="/marketing-digital" title="Marketing digital des castors" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
-                  Marketing digital
+                <a href="/l-agence-beavers" title="Agence digitale Beavers" class="text-7 text-electric transition-colors font-semibold hover:text-bright">
+                  Beavers
                 </a>
               </li>
               <li class="text-7 text-bright font-bold">

@@ -188,7 +188,7 @@
       </div>
     </div>
   
-    <div class="max-lg:hidden w-1/3 bg-bright max-h-full overflow-hidden absolute z-10 inset-y-0 right-0 flex items-center ">
+    <div class="max-lg:hidden w-1/3 bg-bright max-h-full overflow-hidden absolute z-0 inset-y-0 right-0 flex items-center ">
       <div class="w-full transform scale-105">
         {#each allWords as word, i}
         <span 

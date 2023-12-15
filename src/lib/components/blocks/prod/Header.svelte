@@ -41,7 +41,7 @@
     const line11: string = '<script lang="'
     const line12: string = '">'
     const line21: string = '.log("'
-    const line22: string = ');'
+    const line22: string = '");'
     const line31 = '<';
     const line32 = 'script>';
 </script>
