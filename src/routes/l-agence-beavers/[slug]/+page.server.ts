@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 
 import type { PageData } from './$types';
 
-export const prerender = true;
+// export const prerender = true;
 
 export const load = (async ({ fetch, params }) => {
 	const contentResponse = await fetch(
