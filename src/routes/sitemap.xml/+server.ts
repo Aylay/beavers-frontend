@@ -23,6 +23,9 @@ export async function GET({ setHeaders }) {
 		<sitemap>
 			<loc>${siteURL}/sitemap-pages.xml</loc>
 		</sitemap>
+		<sitemap>
+			<loc>${siteURL}/sitemap-agences.xml</loc>
+		</sitemap>
 	</sitemapindex>`;
 	return new Response(sitemap);
 }
