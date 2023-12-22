@@ -1,10 +1,13 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import Certifs from "$lib/components/blocks/agence/Certifs.svelte";
-import Experts from "$lib/components/blocks/agence/Experts.svelte";
+  import Experts from "$lib/components/blocks/agence/Experts.svelte";
 	import People from "$lib/components/blocks/agence/People.svelte";
   import Header from "$lib/components/blocks/common/Header.svelte";
 	import SubHeader from "$lib/components/blocks/common/SubHeader.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
+  import LDTag from '$lib/components/utilities/LDTag.svelte'
 
   const title = "L'agence"
   const subtitle = 'Humaine. À l’écoute.'
@@ -63,7 +66,51 @@ import Experts from "$lib/components/blocks/agence/Experts.svelte";
     title: "Beavers vous montre ses compétences et ses valeurs.",
     description: "Pourquoi faire confiance à Beavers ? Votre agence digitale humaine, vous accompagne au plus près grâce à ses certifications et son amour pour le digital et ses clients."
   }
+
+  const siteURL = import.meta.env.VITE_SITE_URL
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": siteURL + $page.url.pathname,
+    "@id": siteURL + $page.url.pathname + '#aboutpage',
+    "name": "L'agence Beavers",
+    "description": "L'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+    "inLanguage": "fr-FR",
+    "creator": {
+      "@type": "Organization",
+      "@id": siteURL
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": siteURL
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "@id": siteURL + $page.url.pathname + '#breadcrumb',
+      "itemListElement": [
+        {
+          "@type":"ListItem",
+          "position": 1,
+          "name": "Beavers",
+          "item": "https://beavers-agency.fr"
+        },
+        {
+          "@type":"ListItem",
+          "position": 2,
+          "name": "L'agence",
+          "item": siteURL + $page.url.pathname
+        }
+      ]
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": siteURL + '#website',
+    }
+  }
 </script>
+
+<LDTag {schema} />
 
 <MetaFront {meta} />
 

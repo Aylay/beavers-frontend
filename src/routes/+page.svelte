@@ -22,9 +22,32 @@
     '@context': 'https://schema.org',
     "@graph": [
 			{
-				"@type": "WebSite",
+				"@type": "CollectionPage",
 				"name": "Beavers",
-				"url": 'https://beavers-agency.fr/'
+				"url": 'https://beavers-agency.fr/',
+				"@id": 'https://beavers-agency.fr#collectionpage',
+				"description": "L'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+				"inLanguage": "fr-FR",
+				"isPartOf": {
+					"@type": "WebSite",
+					"name": "Beavers",
+					"url": 'https://beavers-agency.fr/',
+					"description": "L'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+					"inLanguage": "fr-FR",
+					"@id": 'https://beavers-agency.fr#website',
+				},
+				"breadcrumb": {
+					"@type": "BreadcrumbList",
+					"@id": 'https://beavers-agency.fr#breadcrumb',
+					"itemListElement": [
+						{
+							"@type":"ListItem",
+							"position": 1,
+							"name": "Beavers",
+							"item": "https://beavers-agency.fr"
+						}
+					]
+				}
 			},
 			{
 				"@type": "Organization",
@@ -49,18 +72,8 @@
 					"telephone" : "+33-664644470",
 					"contactType" : "customer service",
 					"contactOption" : "TollFree",
-					"availableLanguage" : ["French", "English"]
-				}],
-				"sameAs": [
-					"https://www.linkedin.com/company/beavers-agency/",
-					"https://www.facebook.com/beavers.agency/",
-					"https://www.instagram.com/beavers.agency/",
-					"https://www.tiktok.com/@beavers.agency",
-					"https://www.pinterest.fr/beaversagency",
-					"https://societe.com/societe/beavers-853663334.html",
-					"https://www.infogreffe.fr/entreprise-societe/853663334-beavers-830322B017320000.html"
-				],
-				"openingHoursSpecification": [
+					"availableLanguage" : ["French", "English"],
+					"hoursAvailable": [
 					{
 						"@type": "OpeningHoursSpecification",
 						"dayOfWeek": [
@@ -84,6 +97,16 @@
 						"opens": "14:00",
 						"closes": "18:00"
 					}
+				],
+				}],
+				"sameAs": [
+					"https://www.linkedin.com/company/beavers-agency/",
+					"https://www.facebook.com/beavers.agency/",
+					"https://www.instagram.com/beavers.agency/",
+					"https://www.tiktok.com/@beavers.agency",
+					"https://www.pinterest.fr/beaversagency",
+					"https://societe.com/societe/beavers-853663334.html",
+					"https://www.infogreffe.fr/entreprise-societe/853663334-beavers-830322B017320000.html"
 				],
 				"foundingDate": "2019",
 				"founders": [

@@ -95,29 +95,65 @@
 
 		schema = {
 			"@context": "https://schema.org",
-			"@type": "BlogPosting",
-			"author": {
-				"@type": "Person",
-				"name": content.author.data.attributes.name,
-				"url": content.author.data.attributes.url
-			},
-			"datePublished": publishedDate,
-			"dateModified": updatedDate !== '' ? updatedDate : publishedDate,
-			"headline": content.title.replace(/&nbsp;/g, ' '),
-			"image": images,
-			"creator": {
-				"@type": "Organization",
-				"@id": siteURL
-			},
-			"publisher": {
-				"@type": "Organization",
-				"@id": siteURL
-			},
-      "inLanguage": "fr-FR",
-      "articleBody": contentGlobal,
-      "text": contentGlobal,
-      "articleSection": content.category.data.attributes.title,
-      "url": siteURL + $page.url.pathname
+    	"@graph": [
+				{
+					"@type": "BlogPosting",
+					"@id": siteURL + $page.url.pathname + '#blogposting',
+					"author": {
+						"@type": "Person",
+						"name": content.author.data.attributes.name,
+						"url": content.author.data.attributes.url
+					},
+					"datePublished": publishedDate,
+					"dateModified": updatedDate !== '' ? updatedDate : publishedDate,
+					"headline": content.title.replace(/&nbsp;/g, ' '),
+					"image": images,
+					"creator": {
+						"@type": "Organization",
+						"@id": siteURL
+					},
+					"publisher": {
+						"@type": "Organization",
+						"@id": siteURL
+					},
+					"inLanguage": "fr-FR",
+					"articleBody": contentGlobal,
+					"text": contentGlobal,
+					"articleSection": content.category.data.attributes.title,
+					"url": siteURL + $page.url.pathname
+				},
+				{
+					"@type": "CollectionPage",
+					"url": siteURL + $page.url.pathname,
+					"@id": siteURL + $page.url.pathname + '#collectionpage',
+					"datePublished": publishedDate,
+					"dateModified": updatedDate !== '' ? updatedDate : publishedDate,
+					"thumbnailUrl": strapiURL + content.mainImg.data.attributes.url,
+					"name": content.title.replace(/&nbsp;/g, ' '),
+					"description": content.intro.replace(/&nbsp;/g, ' '),
+					"inLanguage": "fr-FR",
+					"creator": {
+						"@type": "Organization",
+						"@id": siteURL
+					},
+					"publisher": {
+						"@type": "Organization",
+						"@id": siteURL
+					},
+					"breadcrumb": {
+						"@type": "BreadcrumbList",
+						"@id": siteURL + $page.url.pathname + '#breadcrumb'
+					},
+					"hasPart": {
+						"@type": "BlogPosting",
+						"@id": siteURL + $page.url.pathname + '#blogposting',
+					},
+					"isPartOf": {
+						"@type": "WebSite",
+						"@id": siteURL + '#website',
+					}
+				}
+			]
 		}
 	}
 

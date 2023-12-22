@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
 	import Mail from "$lib/assets/svg/Mail.svelte";
 	import Tel from "$lib/assets/svg/Tel.svelte";
 	import WhatsApp from "$lib/assets/svg/WhatsApp.svelte";
@@ -6,6 +8,7 @@
 	import Clock from '$lib/assets/svg/Clock.svelte';
 	import LeadForm from "$lib/components/blocks/contact/LeadForm.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
+  import LDTag from '$lib/components/utilities/LDTag.svelte'
 
   const words = [
     'Contact', 'Café', 'Rendez-vous', 'Demande de devis', 'Informations', 'Besoin'
@@ -25,7 +28,51 @@
     title: "Formulaire de contact Beavers",
     description: "Envoyez votre demande à Beavers via un formulaire précisant votre besoin et qui vous êtes. L'équipe vous prendra en charge rapidement et avec le sourire."
   }
+
+const siteURL = import.meta.env.VITE_SITE_URL
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": siteURL + $page.url.pathname,
+  "@id": siteURL + $page.url.pathname + '#contactpage',
+  "name": "Les points de contact de l'agence Beavers",
+  "description": "N'hésitez pas à contacter l'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, qui vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+  "inLanguage": "fr-FR",
+  "creator": {
+    "@type": "Organization",
+    "@id": siteURL
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": siteURL
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "@id": siteURL + $page.url.pathname + '#breadcrumb',
+    "itemListElement": [
+      {
+        "@type":"ListItem",
+        "position": 1,
+        "name": "Beavers",
+        "item": "https://beavers-agency.fr"
+      },
+      {
+        "@type":"ListItem",
+        "position": 2,
+        "name": "L'agence",
+        "item": siteURL + $page.url.pathname
+      }
+    ]
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": siteURL + '#website',
+  }
+}
 </script>
+
+<LDTag {schema} />
 
 <MetaFront {meta} />
 

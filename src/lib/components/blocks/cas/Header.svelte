@@ -31,6 +31,7 @@
   let schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": siteURL + $page.url.pathname + '#breadcrumb',
     "itemListElement": [
       {
         "@type":"ListItem",

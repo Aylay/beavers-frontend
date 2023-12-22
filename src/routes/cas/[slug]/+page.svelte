@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { DateTime } from "luxon";
 
 	import Header from "$lib/components/blocks/cas/Header.svelte";
 	import Intro from "$lib/components/blocks/cas/Intro.svelte";
@@ -12,15 +13,22 @@
 	import UseCases from "$lib/components/blocks/UseCases.svelte";
 	import Results from "$lib/components/blocks/cas/Results.svelte";
 	import Meta from '$lib/components/utilities/Meta.svelte';
+  import LDTag from '$lib/components/utilities/LDTag.svelte'
 
   let content: any = $page.data.content.attributes;
   
   let newCases: Array<any> = $page.data.otherUseCases;
   let cases: Array<any> = []
+  let schema: any;
+	let publishedDate: string;
+	let updatedDate: string;
 
   let allClientUseCases = content.client.data.attributes.useCases.data
   
   let otherUseCases = allClientUseCases.filter((elm : any) => elm.attributes.slug !== content.slug)
+
+  const siteURL = import.meta.env.VITE_SITE_URL
+  const strapiURL = import.meta.env.VITE_STRAPI_URL;
   
   $: {
     content = $page.data.content.attributes
@@ -29,6 +37,37 @@
     newCases = $page.data.otherUseCases;
     shuffle(newCases)
     cases = newCases.slice(0, 3)
+    publishedDate = DateTime.fromISO(content.publishedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
+    updatedDate = DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
+
+    schema = {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": siteURL + $page.url.pathname,
+      "@id": siteURL + $page.url.pathname + '#collectionpage',
+      "datePublished": publishedDate,
+      "dateModified": updatedDate !== '' ? updatedDate : publishedDate,
+      "thumbnailUrl": strapiURL + content.mainImg.data.attributes.url,
+      "name": content.title.replace(/&nbsp;/g, ' '),
+      "description": content.intro,
+      "inLanguage": "fr-FR",
+      "creator": {
+        "@type": "Organization",
+        "@id": siteURL
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": siteURL
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": siteURL + $page.url.pathname + '#breadcrumb'
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": siteURL + '#website',
+      }
+    }
   }
 
   function shuffle(array:Array<any>) {
@@ -46,6 +85,8 @@
     return array;
   }
 </script>
+
+<LDTag {schema} />
 
 <Meta meta={content.meta} />
 
