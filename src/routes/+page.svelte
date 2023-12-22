@@ -38,7 +38,6 @@
 				},
 				"breadcrumb": {
 					"@type": "BreadcrumbList",
-					"@id": 'https://beavers-agency.fr#breadcrumb',
 					"itemListElement": [
 						{
 							"@type":"ListItem",
@@ -63,7 +62,8 @@
 					"streetAddress": "28 rue de la font des anguilles",
 					"addressLocality": "Roquebrune-sur-Argens, France",
 					"postalCode": "83520",
-					"addressCountry": "FR"
+					"addressCountry": "FR",
+					"addressRegion": "Provence-Alpes-Côte d'Azur"
 				},
 				"contactPoint" : [{
 					"@type" : "ContactPoint",

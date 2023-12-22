@@ -87,7 +87,6 @@
     },
     "breadcrumb": {
       "@type": "BreadcrumbList",
-      "@id": siteURL + $page.url.pathname + '#breadcrumb',
       "itemListElement": [
         {
           "@type":"ListItem",

@@ -104,8 +104,8 @@
 						"name": content.author.data.attributes.name,
 						"url": content.author.data.attributes.url
 					},
-					"datePublished": publishedDate,
-					"dateModified": updatedDate !== '' ? updatedDate : publishedDate,
+					"datePublished": publishedOGDate,
+					"dateModified": updatedOGDate !== '' ? updatedOGDate : publishedDate,
 					"headline": content.title.replace(/&nbsp;/g, ' '),
 					"image": images,
 					"creator": {
