@@ -23,6 +23,8 @@
 	let updatedOGDate: string;
 	let publishedDate: string;
 	let updatedDate: string;
+	let publishedISODate: string;
+	let updatedISODate: string;
 	let schema: any;
 	let images: Array<string>;
 
@@ -62,11 +64,13 @@
 		if (content.date) {
 			publishedHeaderDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLL yyyy', { locale: "fr" })
 			publishedDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('yyyy-LL-dd', { locale: "fr" })
+			publishedISODate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).toISO()
 			publishedOGDate = DateTime.fromFormat(content.date, 'yyyy-LL-dd', { locale: "fr" }).valueOf()
 
 			if (DateTime.fromISO(content.updatedAt) > DateTime.fromFormat('31/07/2023', 'dd/LL/yyyy', { locale: "fr" })) {
 				updatedOGDate = DateTime.fromISO(content.updatedAt).valueOf()
 				updatedDate = DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
+				updatedISODate = DateTime.fromISO(content.updatedAt).toISO()
 				
 				if (DateTime.fromISO(content.updatedAt).toFormat('dd LLLL yyyy', { locale: "fr" }) === DateTime.fromISO(content.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })) {
 					updatedHeaderDate = ''
@@ -76,15 +80,18 @@
 			} else {
 				updatedHeaderDate = ''
 				updatedDate = ''
+				updatedISODate = ''
 				updatedOGDate = ''
 			}
 		} else {
 			publishedHeaderDate = DateTime.fromISO(content.publishedAt).toFormat('dd LLL yyyy', { locale: "fr" })
 			publishedDate = DateTime.fromISO(content.publishedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
 			publishedOGDate = DateTime.fromISO(content.publishedAt).valueOf()
+			publishedISODate = DateTime.fromISO(content.publishedAt).toISO()
 
 			updatedDate = DateTime.fromISO(content.updatedAt).toFormat('yyyy-LL-dd', { locale: "fr" })
 			updatedOGDate = DateTime.fromISO(content.updatedAt).valueOf()
+			updatedISODate = DateTime.fromISO(content.updatedAt).toISO()
 
 			if (DateTime.fromISO(content.updatedAt).toFormat('dd LLLL yyyy', { locale: "fr" }) === DateTime.fromISO(content.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })) {
 				updatedHeaderDate = ''
@@ -104,8 +111,8 @@
 						"name": content.author.data.attributes.name,
 						"url": content.author.data.attributes.url
 					},
-					"datePublished": publishedOGDate,
-					"dateModified": updatedOGDate !== '' ? updatedOGDate : publishedDate,
+					"datePublished": publishedISODate,
+					"dateModified": updatedISODate !== '' ? updatedISODate : publishedISODate,
 					"headline": content.title.replace(/&nbsp;/g, ' '),
 					"image": images,
 					"creator": {
