@@ -14,7 +14,7 @@ export const load = (async ({ fetch, params }) => {
 	if (articleData.data) {
 		content = articleData.data
 
-		const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/categories/' + content.attributes.category.data.attributes.slug + '?&populate[articles][fields][0]=slug&populate[articles][fields][1]=date&populate[articles][fields][2]=publishedAt&populate[articles][fields][3]=title&populate[articles][fields][4]=excerpt&populate[articles][populate][category][fields][0]=slug&populate[articles][populate][category][fields][1]=title&populate[articles][populate][mainImg][fields][0]=formats&populate[articles][populate][mainImg][fields][1]=url&populate[articles][populate][mainImg][2]=alternativeText', {
+		const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/categories/' + content.attributes.category.data.attributes.slug + '?filters[publishedAt][$notNull]=true&populate[articles][fields][0]=slug&populate[articles][fields][1]=date&populate[articles][fields][2]=publishedAt&populate[articles][fields][3]=title&populate[articles][fields][4]=excerpt&populate[articles][populate][category][fields][0]=slug&populate[articles][populate][category][fields][1]=title&populate[articles][populate][mainImg][fields][0]=formats&populate[articles][populate][mainImg][fields][1]=url&populate[articles][populate][mainImg][2]=alternativeText', {
 			method: 'GET'
 		})
 		const articlesData = await articlesResponse.json();
