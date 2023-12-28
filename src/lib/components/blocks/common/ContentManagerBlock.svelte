@@ -4,6 +4,8 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import SvelteMarkdown from 'svelte-markdown';
 
+  import Line from '$lib/components/blocks/utilities/Line.svelte';
+
   const mdOptions = {
     breaks: true,
     gfm: true,
@@ -165,4 +167,17 @@
       <SvelteMarkdown source={block.text1} options={mdOptions} />
     </div>
   </div>  
+{/if}
+
+{#if block.layout === 'citation'}
+<div
+	class="big-container"
+	use:inview={options}
+	on:inview_change={handleChange}
+>
+  <Line />
+  <h2 class="text-5 font-semibold lg:text-4 text-seance {isInView ? 'animate-fade-right' : 'opacity-0'}">
+    {@html block.citation}
+  </h2>
+</div>
 {/if}
