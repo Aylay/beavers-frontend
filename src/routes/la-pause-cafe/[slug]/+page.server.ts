@@ -21,7 +21,6 @@ export const load = (async ({ fetch, params }) => {
 	})
 	const articlesData = await articlesResponse.json();
 	let articlesList: any;
-	console.log(articlesData)
 	
 	if (articlesData.data) {
     articlesList = articlesData.data
