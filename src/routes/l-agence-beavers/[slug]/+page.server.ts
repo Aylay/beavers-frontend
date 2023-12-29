@@ -17,7 +17,6 @@ export const load = (async ({ fetch, params }) => {
 	
 	if (contentData.data && contentData.data.length > 0) {
     content = contentData.data[0]
-		console.log(content)
 	} else {
 		throw error(404, 'Not found');
 	}

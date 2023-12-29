@@ -14,15 +14,14 @@ export const load = (async ({ fetch, params }) => {
 	if (articleData.data) {
 		content = articleData.data
 
-		const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/categories/' + content.attributes.category.data.attributes.slug + '?filters[publishedAt][$notNull]=true&populate[articles][fields][0]=slug&populate[articles][fields][1]=date&populate[articles][fields][2]=publishedAt&populate[articles][fields][3]=title&populate[articles][fields][4]=excerpt&populate[articles][populate][category][fields][0]=slug&populate[articles][populate][category][fields][1]=title&populate[articles][populate][mainImg][fields][0]=formats&populate[articles][populate][mainImg][fields][1]=url&populate[articles][populate][mainImg][2]=alternativeText', {
+		const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?filters[category][slug][$eq]=' + content.attributes.category.data.attributes.slug + '&filters[id][$ne]=' + content.id + '&filters[publishedAt][$notNull]=true&pagination[pageSize]=100&fields[0]=slug&fields[1]=date&fields[2]=publishedAt&fields[3]=title&fields[4]=excerpt&populate[category][fields][0]=slug&populate[category][fields][1]=title&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText', {
 			method: 'GET'
 		})
 		const articlesData = await articlesResponse.json();
 		
 		if (articlesData.data) {
-			otherArticles = articlesData.data.attributes.articles.data
+			otherArticles = articlesData.data
 		}
-		otherArticles = otherArticles.filter((elm: any) => (elm.id !== content.id))
 		
 	} else {
 		throw error(404, 'Not found');
