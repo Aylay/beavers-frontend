@@ -5,13 +5,11 @@
 	import Meta from '$lib/components/utilities/Meta.svelte';
   
   let content: any = $page.data.content.attributes;
-	let articles : Array<any> = content.articles.data;
-	articles = articles.sort((a: any, b: any) => new Date(b.attributes.publishedAt) - new Date(a.attributes.publishedAt))
+	let articles : Array<any> = $page.data.articlesList;
   
   $: {
     content = $page.data.content.attributes
-		articles = content.articles.data;
-		articles = articles.sort((a: any, b: any) => new Date(b.attributes.publishedAt) - new Date(a.attributes.publishedAt))
+		articles = $page.data.articlesList;
 	}
 
 	let words: Array<string> = []
@@ -24,7 +22,7 @@
 
 <div class="flex flex-col">
   <Header title={content.title} subTitle={content.subTitle} {words} intro={content.intro} />
-	{#if content.articles && articles}
+	{#if articles && articles.length > 0}
   <div class="big-container py-32 lg:py-64 grid max-lg:grid-cols-1 grid-cols-3 gap-32 lg:gap-14">
 		{#each articles as article, i}
 			<Article {article} {i} />
