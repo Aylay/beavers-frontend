@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import SvelteMarkdown from 'svelte-markdown';
@@ -24,6 +25,20 @@
   export let actions: string;
   export let actionsImg: any
   export let title: string;
+
+  onMount (() => {
+    addTargetBlank()
+  })
+
+  function addTargetBlank () {
+    let links = document.querySelectorAll('.content-style a')
+
+    for (const element of links) {
+      if (element.hostname != window.location.hostname) {
+          element.target = '_blank';
+      }
+    }
+  }
 </script>
 
 
