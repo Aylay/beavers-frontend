@@ -27,7 +27,6 @@ export const load = (async ({ fetch, params }) => {
 	
 	if (articlesData.data) {
 		if (pageNumber > 0 && pageNumber <= articlesData.meta.pagination.pageCount) {
-			console.log(pageNumber)
 			if (pageNumber === 1) {
 				throw redirect(308, '/la-pause-cafe');
 			}
