@@ -9,14 +9,17 @@ export const load = (async ({ fetch }) => {
 	})
 	const articlesData = await articlesResponse.json();
 	let articlesList: any;
+	let pageCount: number;
 	
 	if (articlesData.data) {
     articlesList = articlesData.data
+		pageCount = articlesData.meta.pagination.pageCount
 	} else {
 		throw error(404, 'Not found');
 	}
 	
 	return {
-		articlesList
+		articlesList,
+		pageCount
 	};
 }) satisfies PageData;
