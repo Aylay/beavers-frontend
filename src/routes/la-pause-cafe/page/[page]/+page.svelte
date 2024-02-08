@@ -48,12 +48,12 @@
 <MetaFront {meta} />
 
 <svelte:head>
-	{#if pageNumber === pageCount}
-		<link rel="prev" href="{siteURL}/la-pause-cafe/page/{pageNumber - 1}" />
+	{#if pageNumber === 2}
+		<link rel="prev" href="{siteURL}/la-pause-cafe" />
 	{:else}
-		{#if pageNumber === 2}
-			<link rel="prev" href="{siteURL}/la-pause-cafe" />
-		{/if}
+		<link rel="prev" href="{siteURL}/la-pause-cafe/page/{pageNumber - 1}" />
+	{/if}
+	{#if pageNumber !== pageCount}
 		<link rel="next" href="{siteURL}/la-pause-cafe/page/{pageNumber + 1}" />
 	{/if}
 	<link rel="canonical" href="{siteURL}/la-pause-cafe" />
