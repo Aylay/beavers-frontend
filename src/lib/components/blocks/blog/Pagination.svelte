@@ -9,7 +9,7 @@
   export let pageNumber: number = 1;
 </script>
 
-<div class="big-container pb-32 lg:pb-64 flex justify-center gap-32 lg:gap-16">
+<div class="big-container pb-32 lg:pb-64 flex justify-center items-center gap-16">
   {#if pageNumber > 1}
   <Hoverable let:hovering={active}>
     <a
@@ -21,6 +21,7 @@
     </a>
   </Hoverable>
   {/if}
+  <p class="text-6">{pageNumber} / {pageCount}</p>
   {#if pageCount !== pageNumber}
   <Hoverable let:hovering={active}>
     <a

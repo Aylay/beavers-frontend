@@ -89,10 +89,6 @@
       "destination": "/la-pause-cafe/media/definition-rtb-real-time-bidding"
     },
     {
-      "source": "/la-pause-cafe/page/2",
-      "destination": "/la-pause-cafe"
-    },
-    {
       "source": "/la-pause-cafe/developpement-web/top-5-seo-problemes-on-page",
       "destination": "/la-pause-cafe/seo/top-5-seo-problemes-on-page"
     },

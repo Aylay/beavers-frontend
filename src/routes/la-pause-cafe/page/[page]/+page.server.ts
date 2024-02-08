@@ -1,4 +1,4 @@
-import { error, redirect } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
 
 import type { PageData } from './$types';
 export const prerender = true;
@@ -26,9 +26,6 @@ export const load = (async ({ fetch, params }) => {
 	let pageCount: number;
 	
 	if (articlesData.data) {
-		if (pageNumber === 1) {
-			throw redirect(308, '/la-pause-cafe');
-		}
 		pageCount = articlesData.meta.pagination.pageCount
 		if (pageNumber > 1 && pageNumber <= pageCount) {
 			articlesList = articlesData.data

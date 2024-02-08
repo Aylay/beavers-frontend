@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-
   import { DateTime } from "luxon";
 
 	import Hoverable from '$lib/components/utilities/Hoverable.svelte';
@@ -18,6 +17,12 @@
 	}
 
 	const strapiURL = import.meta.env.VITE_STRAPI_URL;
+
+	let publishedDate = article.attributes.date ? DateTime.fromFormat(article.attributes.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLLL yyyy', { locale: "fr" }) : DateTime.fromISO(article.attributes.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
+
+	$: {
+		publishedDate = article.attributes.date ? DateTime.fromFormat(article.attributes.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLLL yyyy', { locale: "fr" }) : DateTime.fromISO(article.attributes.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
+	}
 
 	let isInView: boolean;
 	const options: Options = {
@@ -38,8 +43,6 @@
 	const handleChangeImg = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInViewImg = detail.inView;
 	};
-
-	const publishedDate = article.attributes.date ? DateTime.fromFormat(article.attributes.date, 'yyyy-LL-dd', { locale: "fr" }).toFormat('dd LLLL yyyy', { locale: "fr" }) : DateTime.fromISO(article.attributes.publishedAt).toFormat('dd LLLL yyyy', { locale: "fr" })
 
 </script>
 
