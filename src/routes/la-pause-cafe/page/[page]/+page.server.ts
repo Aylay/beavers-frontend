@@ -26,15 +26,15 @@ export const load = (async ({ fetch, params }) => {
 	let pageCount: number;
 	
 	if (articlesData.data) {
-		if (pageNumber > 0 && pageNumber <= articlesData.meta.pagination.pageCount) {
-			if (pageNumber === 1) {
-				throw redirect(308, '/la-pause-cafe');
-			}
+		if (pageNumber === 1) {
+			throw redirect(308, '/la-pause-cafe');
+		}
+		pageCount = articlesData.meta.pagination.pageCount
+		if (pageNumber > 1 && pageNumber <= pageCount) {
+			articlesList = articlesData.data
 		} else {
 			throw error(404, 'Not found');
 		}
-    articlesList = articlesData.data
-		pageCount = articlesData.meta.pagination.pageCount
 	} else {
 		throw error(404, 'Not found');
 	}
