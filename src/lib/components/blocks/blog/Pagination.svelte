@@ -21,7 +21,7 @@
     </a>
   </Hoverable>
   {/if}
-  <p class="text-6">{pageNumber} / {pageCount}</p>
+  <p class="text-6">Page {pageNumber} / {pageCount}</p>
   {#if pageCount !== pageNumber}
   <Hoverable let:hovering={active}>
     <a
