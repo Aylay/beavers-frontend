@@ -49,6 +49,10 @@
       "destination": "/la-pause-cafe/media"
     },
     {
+      "source": "/la-pause-cafe/page/1",
+      "destination": "/la-pause-cafe"
+    },
+    {
       "source": "/la-pause-cafe/media/page/2",
       "destination": "/la-pause-cafe/media"
     },
