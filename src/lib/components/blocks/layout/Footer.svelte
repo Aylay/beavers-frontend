@@ -2,6 +2,8 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
+  import Carbonbadge from "svelte-carbonbadge";
+
 	import WhatsApp from "$lib/assets/svg/WhatsApp.svelte";
 	import Tel from "$lib/assets/svg/Tel.svelte";
 	import Mail from "$lib/assets/svg/Mail.svelte";
@@ -34,7 +36,7 @@
         Bâtissons <span class="font-highlight font-normal text-[5.7rem] leading-[3rem] text-bright">ensemble</span> votre stratégie digitale
       </p>
       <div class="flex max-lg:flex-col lg:justify-end items-center gap-8">
-        <div id="wcb" class="carbonbadge wcb-d"></div>
+        <Carbonbadge dark />
         <div class="flex lg:justify-end items-center gap-8">
           <a
             href="https://www.google.com/partners/agency?id=9719801224"
