@@ -189,10 +189,10 @@
 </script>
 
 <svelte:head>
-  <title>Beavers, l'agence digitale spécialiste en stratégie média.</title>
-  <meta name="title" content="Beavers, agence marketing digital du secteur de l'habitat" />
-  <meta property="og:title" content="Beavers, agence marketing digital du secteur de l'habitat" />
-  <meta property="twitter:title" content="Beavers, agence marketing digital du secteur de l'habitat" />
+  <title>Beavers, l'agence marketing digital du secteur de l'habitat</title>
+  <meta name="title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
+  <meta property="og:title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
+  <meta property="twitter:title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
   <meta name="description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
   <meta property="og:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
   <meta property="twitter:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
