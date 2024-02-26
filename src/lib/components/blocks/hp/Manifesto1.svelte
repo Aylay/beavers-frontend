@@ -43,16 +43,13 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Chez Beavers, on est passionné, on aime l'humain, se lever le matin pour du fun et pour vous
-				proposer nos idées, qui parfois partent loin, mais dans l'optique de toujours nous
-				challenger et d'apporter ce truc en plus qui vous démarquera de vos concurrents.
+				Chez Beavers, on est passionné par le domaine de l'habitat, on aime l'humain, se lever le matin pour veiller sur les dernières tendances et pour vous proposer nos idées, qui parfois partent loin, mais dans l'optique de toujours nous challenger et d'apporter ce truc en plus qui vous démarquera de vos concurrents.
 			</p>
 			<p class="text-6">
-				Cependant, on garde les pieds sur terre pour vous élaborer une stratégie qui corresponde à
-				vos enjeux tout en respectant vos moyens.
+				Cependant, on garde les pieds sur terre pour vous élaborer une stratégie qui corresponde à vos enjeux tout en respectant vos moyens.
 			</p>
 			<p class="text-6">
-				Chaque détail compte pour mettre en avant les professionnels de l'habitat cherchant une visibilité et une acquisation digitales.
+				Chaque détail compte pour mettre en avant les professionnels de l'habitat cherchant de la visibilité et de l'acquisation digitale.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

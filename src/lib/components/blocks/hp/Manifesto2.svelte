@@ -109,11 +109,10 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Nous avons choisi d'orienter notre approche vers une stratégie data-centric, nous nous appuyons sur la donnée pour vous proposer des plans de communication qui correspondent à vos  objectifs, mesurer efficacement vos performances et pour optimiser l'existant en temps réel.
+				Nous avons choisi d'orienter notre approche vers une stratégie data-centric en récoltant les données du secteur de l'habitat. Les données récoltées permettent de vous proposer des plans de communication qui correspondent à vos objectifs, mesurer efficacement vos performances et pour optimiser l'existant en temps réel.
 			</p>
 			<p class="text-6">
-				Nous sommes à votre écoute pour répondre à vos besoins mais surtout vous aiguiller sur les
-				bonnes pratiques.
+				Nous sommes à votre écoute pour répondre à vos besoins mais surtout vous aiguiller sur les bonnes pratiques.
 			</p>
 			<p class="text-6 font-bold text-seance">
 				Pour nous, l'écoute et la compréhension des enjeux de nos clients sont au coeur de notre métier.

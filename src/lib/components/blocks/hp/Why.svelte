@@ -33,25 +33,31 @@
 		{
 			question: 'Pour quelle.s raison.s nous contacter&nbsp;?',
 			answer:
-				'Prenez contact avec nous et décrivez votre besoin, que ce soit pour améliorer votre visibilité, vous faire connaître ou encore obtenir de nouveaux clients, Beavers vous proposera une stratégie adaptée.',
+				"Si vous êtes une entreprise dans le secteur de l'habitat et que vous cherchez à booster votre visibilité, obtenir de nouveaux clients, avoir de l'aide sur le digital, vous êtes au bon endroit.",
 			isOpened: true
+		},
+		{
+			question: 'Quelles entreprises Beavers accompagne-t-elle&nbsp;?',
+			answer:
+				"Beavers est une agence digitale spécialisée dans le secteur de l'habitat qui accompagne tous les professionnels en lien avec la rénovation de maison / appartement / extérieur.<br />- Ameublement<br />- Décorateur<br />- Architecte<br />- Rénovation intérieure / extérieure<br />- Aménagement extérieur<br />- Pisciniste<br />- Electriciens<br />- Rénovation énergétique<br />- etc.",
+			isOpened: false
 		},
 		{
 			question: 'Comment Beavers répond à votre demande&nbsp;?',
 			answer:
-				"Selon votre besoin, nous analysons l'existant, avec un benchmark de la concurrence, et vous proposons un plan média adapté. Nous choisissons les meilleurs leviers avec une stratégie adaptée à chacun d'entre eux.",
+				"Prenez contact avec nous en décrivant votre besoin. Nous analyserons l'existant, avec un benchmark de la concurrence sur votre secteur d'activité, et nous vous proposerons un plan média adapté. Nous choisissons les meilleurs leviers avec une stratégie adaptée à chacun d'entre eux.",
 			isOpened: false
 		},
 		{
 			question: 'Comment se passe la mise en place&nbsp;?',
 			answer:
-				'Une fois le plan validé ensemble, nous nous assurons que tout est clair pour vous. Puis nous mettons en place les campagnes média sur chacun des leviers.',
+				'Une fois le plan validé ensemble, nous nous assurons que tout est clair pour vous. Puis nous mettons en place les campagnes média sur chacun des leviers : SEA, SEO, Social Media ou encore display.',
 			isOpened: false
 		},
 		{
 			question: 'Comment se déroule votre suivi&nbsp;?',
 			answer:
-				"Des ajustements et des optimisations régulières sont effectués tout au long de votre campagne. Nous réalisons des reportings basés sur des KPI's en fonction de votre objectif. Puis nous vous proposons des pistes d'optimisation pour les prochaines campagnes.",
+				"Des ajustements et des optimisations régulières sont effectués tout au long de votre campagne, avec une proposition des dernières tendances sur le secteur de l'habitat. Nous réalisons des reportings basés sur des KPI's en fonction de votre objectif. Puis nous vous proposons des pistes d'optimisation pour les prochaines campagnes.",
 			isOpened: false
 		}
 	];
@@ -117,7 +123,7 @@
 					</button>
 					{#if faq.isOpened}
 						<p class="animate-fade-down text-6">
-							{faq.answer}
+							{@html faq.answer}
 						</p>
 					{/if}
 				</div>

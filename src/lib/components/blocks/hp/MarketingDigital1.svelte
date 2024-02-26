@@ -63,7 +63,7 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Beavers s'engage à vous accompagner au plus près dans toute votre stratégie digitale. Le marketing digital évolue chaque jour, nos castors mobilisent leurs connaissances pour vous proposer leurs meilleures idées afin de construire votre meilleur projet, avec les meilleurs matériaux (supports digitaux).
+				Beavers s'engage à vous accompagner au plus près dans toute votre stratégie digitale. Le marketing digital évolue chaque jour dans tous les secteurs (bâtiment, rénovation énergétique, rénovation intérieure / extérieure, etc.), c'est pourquoi nos castors mobilisent leurs connaissances pour vous proposer leurs meilleures idées afin de construire votre projet, avec les meilleurs matériaux (supports digitaux).
 			</p>
 		</div>
 	</div>
