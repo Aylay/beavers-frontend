@@ -56,12 +56,12 @@
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      De plus en plus de marques investissent dans l'influence marketing. Vos prospects sont à la recherche de recommandations sociales et c'est auprès des influenceurs qu'ils suivent, qu'ils jugent la crédibilité de votre marque.
+      De nos jours, de plus en plus de marques du secteur de l'habitat investissent dans l'influence marketing. Vos clients sont à la recherche d'inspiration, et c'est auprès des influenceurs les plus suivis qu'ils jugent la crédibilité de votre marque.
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Créer un sentiment d'appartenance en travaillant avec des influenceurs qui vous ressemblent et qui peuvent véhiculer les valeurs de votre marque. Votre marque, ce sont encore vos clients qui en parlent le mieux. Créez un réseau d'ambassadeurs sur les réseaux sociaux et augmentez votre notoriété et votre réputation.
+      Créez un sentiment d'appartenance en travaillant avec des influenceurs du secteur de l'habitat qui vous ressemblent et qui peuvent véhiculer les valeurs de votre marque. Après tout, ce sont encore vos clients qui parlent le mieux de votre marque. Développez un réseau d'ambassadeurs sur les réseaux sociaux et renforcez votre notoriété et votre réputation dans le secteur de l'habitat !
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 gap-20 mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView

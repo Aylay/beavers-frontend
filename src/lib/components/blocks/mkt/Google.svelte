@@ -51,27 +51,27 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Soyez visible sur les résultats de recherche Google de vos prospects et apparaissez avant vos concurrents.
+      Beavers, votre partenaire digital qui bâtit votre présence dans le secteur de l'habitat. Soyez visibles sur les résultats de recherche Google de vos prospects et assurez votre place en tête de liste.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Beavers vous propose de diffuser vos spots vidéos sur YouTube Ads pour toucher un maximum de clients suivant leurs centres d'intérêts.
+      Vos prospects recherchent exactement ce que vous offrez ? Nous choisissons selon votre objectif, une stratégie d'achat de mots clés pour être vu, adoré et adopté.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Vos prospects cherchent un produit ou un service que vous offrez. Grâce à une stratégie adaptée d'achat de mots clés, soyez visible et invitez les internautes à se rendre sur votre site. 
+      Ne laissez aucun prospect égaré ! Avec nos extensions, nous les guidons directement vers ce qui les intéresse sur votre site, boostant ainsi vos conversions avec facilité.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Grâce aux extensions, nous ajoutons des informations pour guider vos prospects vers la section de votre site qui les intéresse. Ainsi vous évitez que votre prospect se perde et vous maximisez vos taux de conversion.
+      Chez Beavers, on jongle avec les enchères, les audiences et les supports, que ce soit sur ordinateur, tablette ou mobile, pour maximiser vos performances dans le secteur de l'habitat. Votre succès n'a pas de limites avec nous !
     </p>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Nous travaillons avec des stratégies d'enchères sur différentes audiences et différents devices (desktop et mobile) pour optimiser vos performances.
+      Découvrez l'art de toucher vos clients : diffusez vos spots vidéos sur YouTube Ads et ciblez précisément leurs centres d'intérêts. Vous apparaîtrez même à la télé !
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView

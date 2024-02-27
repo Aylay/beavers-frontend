@@ -38,7 +38,7 @@
 		<p class="mt-8 text-6 animate-delay-500 {isInView
 			? 'animate-fade'
 			: 'opacity-0'}">
-			Beavers est un mélange d'expériences en agence de communication et chez l’annonceur. Ces expériences nous permettent de comprendre vos enjeux tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
+			Beavers est un mélange d'expériences en agence de communication et chez l’annonceur pour des clients dans le domaine de l'habitat. Ces expériences nous permettent de comprendre vos enjeux tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
 		</p>
 	</div>
 	<div class="relative flex flex-1 justify-center gap-8 max-lg:hidden" use:inview={optionsImg} on:inview_change={handleChangeImg}>
@@ -62,10 +62,10 @@
 			<div class="flex-3 relative">
 				{#if isInViewImg}
 					<picture>
-						<source srcset="/img/hp/manifesto-2-1.webp" type="image/webp">
-						<source srcset="/img/hp/manifesto-2-1.jpg" type="image/jpeg">
+						<source srcset="/img/agence/agence-1.webp" type="image/webp">
+						<source srcset="/img/agence/agence-1.jpg" type="image/jpeg">
 						<img
-							src="/img/hp/manifesto-2-1.jpg"
+							src="/img/agence/agence-1.jpg"
 							alt="Un pot de fausse fleur + un téléphone avec Instagram"
 							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>
@@ -76,10 +76,10 @@
 			<div class="flex-2">
 				{#if isInViewImg}
 					<picture>
-						<source srcset="/img/hp/manifesto-2-2.webp" type="image/webp">
-						<source srcset="/img/hp/manifesto-2-2.jpg" type="image/jpeg">
+						<source srcset="/img/agence/agence-2.webp" type="image/webp">
+						<source srcset="/img/agence/agence-2.jpg" type="image/jpeg">
 						<img
-							src="/img/hp/manifesto-2-2.jpg"
+							src="/img/agence/agence-2.jpg"
 							alt="Tasse à café tenue par une personne"
 							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>

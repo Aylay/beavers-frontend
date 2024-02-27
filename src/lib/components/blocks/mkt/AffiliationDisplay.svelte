@@ -44,7 +44,7 @@
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Déployez un réseau d'affiliés qui pourront promouvoir votre marque et rémunérez-les en fonction de leurs résultats à travers des supports emailing, bannières, coupon, cashback, bon plan...
+      Déployez un réseau d'affiliés ciblés spécifiquement dans le domaine de l'habitat qui pourront promouvoir votre marque avec brio. Rémunérez-les en fonction de leurs résultats à travers des supports emailing, bannières, coupon, cashback, bon plan... et devenez la référence incontournable dans le secteur de l'habitat avec Beavers !
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 gap-20 mt-16">
       <div class="flex gap-4 items-center animate-delay-1000 {isInView
@@ -79,12 +79,12 @@
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      Le display vous permet de communiquer sur votre marque ou vos services par des visuels attrayants insérés au sein d'un site internet.
+      Pour faire sensation dans le secteur de l'habitat, utilisez le display pour communiquer sur votre marque ou vos services grâce à des visuels attrayants insérés au sein d'un site internet.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-       Affichez votre offre auprès de votre audience cible, sur ordinateur ou sur mobile, en programmatique ou non, avec différents formats&nbsp;:
+       Affichez votre offre auprès de votre audience cible du secteur de l'habitat, sur ordinateur ou sur mobile, en programmatique ou non, avec différents formats&nbsp;:
     </p>
     <ul class="flex flex-col gap-4 mb-8 {isInView
       ? 'animate-fade-right'
@@ -102,7 +102,7 @@
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Diffusez vos publicités auprès de vos prospects pour augmenter votre notoriété et devenir "top of mind". Le display est davantage un levier de visibilité, mais couplé à d'autres leviers, il peut rapidement devenir une carte indispensable dans une stratégie d'acquisition.
+      Diffusez vos publicités auprès de vos prospects du secteur de l'habitat pour augmenter votre notoriété et devenir "top of mind". Le display est davantage un levier de visibilité, mais couplé à d'autres leviers, il peut rapidement devenir une carte indispensable dans une stratégie d'acquisition pour dominer le secteur de l'habitat !
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView

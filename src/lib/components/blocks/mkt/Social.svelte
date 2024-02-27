@@ -49,7 +49,7 @@ on:inview_change={handleChange}>
 						<source srcset="/img/hp/manifesto-2-1.jpg" type="image/jpeg">
 						<img
 							src="/img/hp/manifesto-2-1.jpg"
-							alt="Un pot de fausse fleur + un téléphone avec Instagram"
+							alt="Une main qui tient un téléphone sur un fauteuil"
 							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>
 					</picture>
@@ -86,7 +86,7 @@ on:inview_change={handleChange}>
 						<source srcset="/img/mkt/social-3.jpg" type="image/jpeg">
 						<img
 							src="/img/mkt/social-3.jpg"
-							alt="Personne prenant une autre personne en photo avec un téléphone"
+							alt="Personne regardant son téléphone avec Pinterest dessus"
 							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>
 					</picture>
@@ -113,14 +113,14 @@ on:inview_change={handleChange}>
     <p class="font-semibold text-bright animate-duration-200 text-6 mb-8 {isInView
       ? 'animate-fade-right'
       : 'opacity-0'}">
-      75% de la population mondiale utilisent les réseaux sociaux au moins une fois par jour.<br /><br />
-			1h28 / jour sur les réseaux sociaux en France<br /><br />
-			Temps passé sur les réseaux sociaux fin 2022 : +17% 
+      En 2023 : 2 français sur 3 utilisent les réseaux sociaux au moins 1 fois par jour.<br /><br />
+			2h26 / jour sur les réseaux sociaux en France<br /><br />
+			Les français consultent en moyenne 3,5 réseaux sociaux par jour.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Communiquez auprès de vos prospects en fonction de leur intérêt pour votre service ou vos produits.
+      Communiquez auprès de vos prospects en fonction de leur intérêt pour la rénovation de l'habitat.
     </p>
     <p class="text-6 mb-8 animate-delay-500 {isInView
       ? 'animate-fade'
@@ -130,7 +130,7 @@ on:inview_change={handleChange}>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Grâce aux social ads soyez présent sur TikTok, Instagram, LinkedIn, Facebook, Twitter ou encore Snapchat et touchez vos prospects. Améliorer "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
+      Grâce aux social media ads soyez présent sur TikTok, Instagram, Facebook, LinkedIn, Pinterest ou encore X et touchez vos prospects. Améliorer "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView

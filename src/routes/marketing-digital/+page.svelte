@@ -12,7 +12,7 @@
 
   const text1 = 'le digital<br />est en constante'
   const text2 = 'évolution.'
-  const text3 = 'Suivre les dernières tendances vous prend trop temps ? Vous ne savez plus comment vous y prendre ? Beavers est là pour vous accompagner. '
+  const text3 = "Vous suivez les dernières tendances pour améliorer votre offre dans le secteur de l'habitat, Beavers suit pour vous celles dans le secteur du digital."
   const text4 = 'Obtenez un plan média incluant une stratégie complète basée sur une analyse de votre entreprise selon vos besoins. Nous sélectionnons et activons les leviers digitaux les plus pertinents pour répondre à vos objectifs : de notoriété, de trafic, ou de conversion.'
 
   const meta = {
