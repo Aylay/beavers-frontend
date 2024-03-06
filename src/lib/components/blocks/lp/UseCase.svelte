@@ -84,7 +84,7 @@
 				<h4 class="mb-11 text-6">{useCase.attributes.title}</h4>
 				<div class="flex flex-wrap gap-3">
 					{#each useCase.attributes.categories.data as tag}
-						<p class="rounded-3xl bg-seance px-6 py-2 text-7 font-medium">{tag.attributes.title}</p>
+						<p class="rounded-3xl bg-seance px-6 py-2 text-7 font-semibold">{tag.attributes.title}</p>
 					{/each}
 				</div>
 			</div>
