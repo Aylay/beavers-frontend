@@ -95,7 +95,7 @@ on:inview_change={handleChange}>
       </p>
       <p class="text-6 font-bold text-seance">
         <a
-          href="/cas/{testimony.attributes.useCases.data[0].attributes.slug}"
+          href="/cas/{testimony.attributes.useCases.data[testimony.attributes.useCases.data.length - 1].attributes.slug}"
           title={testimony.attributes.name}
           class="underline hover:no-underline"
         >
