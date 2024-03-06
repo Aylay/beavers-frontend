@@ -23,6 +23,16 @@ export const load = (async ({ fetch }) => {
     useCasesList = useCasesData.data
 	}
 
+	const reviewsResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/clients?pagination[page]=1&pagination[pageSize]=100&filters[avis][note][$notNull]=true&populate[avis][fields][0]=prenom&populate[avis][fields][1]=nom&populate[avis][fields][2]=note&populate[avis][fields][3]=commentaire&populate[useCases][fields][0]=slug', {
+		method: 'GET'
+	})
+	const reviewsData = await reviewsResponse.json();
+	let reviewsList: any;
+	
+	if (reviewsData.data) {
+		reviewsList = reviewsData.data
+	}
+
 	const treeNationResponse = await fetch('https://tree-nation.com/api/forests/466954',
 		{
 			method: 'GET'
@@ -34,6 +44,7 @@ export const load = (async ({ fetch }) => {
 	return {
 		articlesList,
 		useCasesList,
+		reviewsList,
 		treeNation
 	};
 }) satisfies PageData;

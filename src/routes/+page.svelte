@@ -230,7 +230,7 @@
 	<UseCases cases={$page.data.useCasesList} />
 	<Manifesto />
 	<Manifesto2 />
-	<Testimonies />
+	<Testimonies reviewsList={$page.data.reviewsList} />
 	<Support />
 	<Articles articles={$page.data.articlesList} {titleFirst} {titleSecond} {newsUrl} />
 </div>

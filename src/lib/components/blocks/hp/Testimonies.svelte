@@ -1,80 +1,62 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
+  import SvelteMarkdown from 'svelte-markdown';
+
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
 	import Quote from '$lib/assets/svg/Quote.svelte';
 	import LDTag from '$lib/components/utilities/LDTag.svelte'
 
-  type Testimony = {
-    name: string;
-    company: string;
-    text: string;
-    link: string;
+	export let reviewsList: Array<any>;
+
+  let isInView: boolean;
+  const options: Options = {
+    unobserveOnEnter: true,
+    rootMargin: '-50px'
   };
 
-let isInView: boolean;
-const options: Options = {
-  unobserveOnEnter: true,
-  rootMargin: '-50px'
-};
+  const mdOptions = {
+    breaks: true,
+    gfm: true,
+    headerIds: false
+  };
 
-const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
-  isInView = detail.inView;
-};
-
-  let testimonies: Array<Testimony> = [
-    {
-      name: 'Fabrice Briot',
-      company: 'V-ZUG',
-      text: "Une équipe très agréable, les Beavers ont fait preuve d’une très bonne écoute et d’une grande réactivité tout en étant <strong>force de proposition</strong>. Je suis ravi de cette collaboration.",
-      link: '/cas/creation-gestion-publications-reseaux-sociaux-v-zug'
-    },
-    {
-      name: 'Augustin Bouyer',
-      company: 'WeVan',
-      text: "Notre collaboration avec Beavers nous a permis de progresser dans l'approche des réseaux sociaux, à la fois pour la partie <strong>sponsoring des posts naturels</strong>, mais aussi et de plus en plus à travers la création de véritables <strong>campagnes de publicité sponsorisées</strong> qui ont pris de plus en plus de place dans l'écosystème digital.<br /><br />Marie-Claire nous a emmené sur de nouveaux territoires, notamment <strong>Pinterest et Linkedin</strong>, ainsi que sur de nouveaux formats. Nous avons connu pas mal de succès et quelques échecs, mais l'excellent relationnel et professionnalisme de l'équipe Beavers donne toujours envie de tester de nouvelles idées, ce qui fait en définitive l'essence du marketing digital.",
-      link: '/cas/strategie-digitale-media-pilotage-campagnes-wevan'
-    },
-    {
-      name: 'Nicolas Meliand',
-      company: 'Frames Dealer',
-      text: "Notre collaboration au long cours avec Beavers a toujours été à la fois très agréable, fluide et efficace. Depuis l’accompagnement mené par Lucas sur des sujets d’<strong>UX</strong>, de <strong>webdesign</strong> ou encore relatifs à la <strong>conformité RGPD</strong> jusqu’au travail avec Marie-Claire sur des <strong>campagnes media très ciblées</strong>, nous avons apprécié le professionnalisme, la pédagogie et le sens de l’écoute de l’équipe.<br /><br />L’excellence qui nous porte au quotidien chez Frames Dealer a toujours trouvé un écho dans la collaboration avec l’équipe de Beavers qui a su <strong>nous challenger</strong> et mener à bien des projets ambitieux et innovants, aussi il nous tarde d’avoir de prochains projets de collaboration avec Lucas et Marie-Claire.",
-      link: ''
-    },
-    {
-      name: 'Laurent Esposito',
-      company: 'Imagine 2050',
-      text: "Nous avons fait appel à l'agence Beavers pour la <strong>création complète de notre site web</strong>. Nous ne pouvons que louer la créativité, la réactivité et le professionnalisme de l'équipe.<br /><br />Nous avons notamment apprécié ses <strong>recommandations marketing et techniques</strong> pour choisir les bons outils en back-office, <strong>optimiser notre visibilité</strong> sur la toile et minimiser notre <strong>impact environnemental</strong>.",
-      link: '/cas/developpement-site-internet-imagine-2050'
-    }
-  ]
+  const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+    isInView = detail.inView;
+  };
   
-  const testimoniesDisplayed = getMultipleRandom(testimonies, 3);
+  const testimoniesDisplayed = getMultipleRandom(reviewsList, 3);
 
-  function getMultipleRandom(arr: Array<Testimony>, num: number) {
+  function getMultipleRandom(arr: Array<any>, num: number) {
     const shuffled = [...arr].sort(() => 0.5 - Math.random());
 
     return shuffled.slice(0, num);
   }
 
   let reviews: Array<any> = []
-	for (let i = 0; i < testimonies.length; i++) {
-		const review: any = testimonies[i];
+  let ratingValue = 0
+	for (let i = 0; i < reviewsList.length; i++) {
+		const review: any = reviewsList[i];
 		const newReview: any = {
 			"@type": "Review",
 			"author": {
         "@type": "Person",
-        "name": review.name,
-        "worksFor": review.company
+        "name": review.attributes.avis.prenom + ' ' + review.attributes.avis.nom,
+        "worksFor": review.attributes.name
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": review.attributes.avis.note
       },
       'name': 'Beavers',
       'itemReviewed': {
         "@type": "Organization",
         "@id": 'https://beavers-agency.fr',
       },
-      'reviewBody': review.text.replace(/<(.|\n)*?>/g, '')
+      'reviewBody': review.attributes.avis.commentaire.replace(/<(.|\n)*?>/g, '')
 		}
+    ratingValue += review.attributes.avis.note
 		reviews.push(newReview)
 	}
 
@@ -85,8 +67,8 @@ const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
     "review": reviews,
     "aggregateRating": {
       "@type": "AggregateRating",
-      "reviewCount": testimonies.length,
-      'ratingValue': '5'
+      "reviewCount": reviewsList.length,
+      'ratingValue': ratingValue / reviewsList.length
     }
   }
 </script>
@@ -105,24 +87,20 @@ on:inview_change={handleChange}>
 				<Quote newClass="h-auto w-24" />
 				<Quote newClass="h-auto w-24" />
 			</div>
-      <p class="mb-8 text-6">
-        { @html testimony.text}
-      </p>
+      <div class="mb-8 text-6">
+        <SvelteMarkdown source={testimony.attributes.avis.commentaire} options={mdOptions} />
+      </div>
       <p class="font-highlight text-4 mb-1 text-bright">
-        { testimony.name }
+        {testimony.attributes.avis.prenom} {testimony.attributes.avis.nom}
       </p>
       <p class="text-6 font-bold text-seance">
-        {#if testimony.link !== ''}
-          <a
-            href={testimony.link}
-            title={testimony.company}
-            class="underline hover:no-underline"
-          >
-            { testimony.company }
-          </a>
-        {:else}
-        { testimony.company }
-        {/if}
+        <a
+          href="/cas/{testimony.attributes.useCases.data[0].attributes.slug}"
+          title={testimony.attributes.name}
+          class="underline hover:no-underline"
+        >
+          { testimony.attributes.name }
+        </a>
       </p>
     </div>
     {/each}
