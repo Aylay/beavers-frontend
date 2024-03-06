@@ -55,15 +55,15 @@
       <h1 class="text-3">
         Construisons <br class="max-lg:hidden" />votre marketing digital <br class="max-lg:hidden" />du sol au plafond.
       </h1>
-      <h2 class="text-4 font-normal text-bright mt-12">
+      <h2 class="text-4 font-normal text-electric mt-12">
         Le digital à pleines dents&nbsp;!
       </h2>
       <h3 class="text-6 font-bold text-bright mt-6 pr-12">
         L'agence Beavers, spécialiste du secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs&nbsp;: de notoriété, de trafic et d'acquisition.
       </h3>
       <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.1)] gap-2">
-        <Mouse newClass="h-auto w-full" color="#FFF" />
-        <ArrowBottom newClass="animate-bounce"  color="#FFF" />
+        <Mouse newClass="h-auto w-full max-lg:hidden" color="#FFF" />
+        <ArrowBottom newClass="animate-bounce max-lg:h-16"  color="#FFF" />
       </div>
     </div>
     <div class="lg:w-1/2 flex justify-center max-lg:hidden">
