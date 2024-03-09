@@ -36,7 +36,6 @@
 		content = $page.data.content.attributes;
 		articles = $page.data.otherArticles;
 		useCases = $page.data.useCasesList;
-		console.log(useCases)
 
 		contentGlobal = ''
 		images = []

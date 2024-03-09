@@ -14,10 +14,11 @@
 	import Results from "$lib/components/blocks/cas/Results.svelte";
 	import Meta from '$lib/components/utilities/Meta.svelte';
   import LDTag from '$lib/components/utilities/LDTag.svelte'
+	import Articles from '$lib/components/blocks/Articles.svelte';
 
   let content: any = $page.data.content.attributes;
-  
   let newCases: Array<any> = $page.data.otherUseCases;
+  let articles: Array<any> = $page.data.articlesList;
   let cases: Array<any> = []
   let schema: any;
 	let publishedDate: string;
@@ -32,6 +33,7 @@
   
   $: {
     content = $page.data.content.attributes
+    articles = $page.data.articlesList;
     allClientUseCases = content.client.data.attributes.useCases.data
     otherUseCases = allClientUseCases.filter((elm : any) => elm.attributes.slug !== content.slug)
     newCases = $page.data.otherUseCases;
@@ -103,4 +105,7 @@
   {/if}
   <Results resultText={content.resultText} results={content.results} website={content.website} brand={content.client.data.attributes} />
   <UseCases {cases} firstText="Découvrez d’autres<br />" />
+	{#if articles.length > 0}
+		<Articles titleFirst="Les derniers articles de la catégorie" {articles} titleSecond={content.categories.data[0].attributes.title} newsUrl="/la-pause-cafe/{content.categories.data[0].attributes.slug}" />
+	{/if}
 </div>
