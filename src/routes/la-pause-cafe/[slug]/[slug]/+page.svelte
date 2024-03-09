@@ -9,11 +9,12 @@
 	import Meta from '$lib/components/utilities/Meta.svelte';
 	import LDTag from '$lib/components/utilities/LDTag.svelte'
 	import ContentManager from '$lib/components/blocks/common/ContentManager.svelte';
+	import UseCases from '$lib/components/blocks/UseCases.svelte';
 
   let content: any = $page.data.content.attributes;
 	let contentGlobal: string = '';
-	let articles: Array<any> = [];
-	let newArticles = $page.data.otherArticles;
+	let articles = $page.data.otherArticles;
+	let useCases = $page.data.useCasesList;
 	let contentGlobalWords: number;
 	let readingTime: number;
 	let words: Array<string> = []
@@ -33,10 +34,9 @@
 
 	$: {
 		content = $page.data.content.attributes;
-
-		newArticles = $page.data.otherArticles;
-		shuffle(newArticles)
-    articles = newArticles.slice(0, 3)
+		articles = $page.data.otherArticles;
+		useCases = $page.data.useCasesList;
+		console.log(useCases)
 
 		contentGlobal = ''
 		images = []
@@ -163,22 +163,6 @@
 			]
 		}
 	}
-
-	function shuffle(array:Array<any>) {
-		let currentIndex = array.length,  randomIndex;
-
-		while (currentIndex != 0) {
-
-			randomIndex = Math.floor(Math.random() * currentIndex);
-			currentIndex--;
-
-			[array[currentIndex], array[randomIndex]] = [
-				array[randomIndex], array[currentIndex]];
-		}
-
-		return array;
-	}
-
 </script>
 
 <LDTag {schema} />
@@ -209,6 +193,9 @@
 	<Share author={content.author.data.attributes} />
 	{#if articles.length > 0}
 		<Newsletter isArticle={true} />
-		<Articles titleFirst="D'autres articles de la catégorie" {articles} titleSecond={content.category.data.attributes.title} newsUrl="/la-pause-cafe/{content.category.data.attributes.slug}" />
+		<Articles titleFirst="Les derniers articles de la catégorie" {articles} titleSecond={content.category.data.attributes.title} newsUrl="/la-pause-cafe/{content.category.data.attributes.slug}" />
+	{/if}
+	{#if useCases.length > 0}
+	<UseCases cases={useCases} firstText="Le {content.category.data.attributes.title} et <br /> les" isArticle={true} />
 	{/if}
 </div>

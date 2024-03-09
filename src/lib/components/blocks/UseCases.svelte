@@ -19,6 +19,7 @@
 
 	export let cases: Array<any>;
 	export let firstText: string = 'Nos dernières<br />'
+	export let isArticle: boolean = false;
 </script>
 
 <div class="big-container">
@@ -39,7 +40,7 @@
 			: 'gap-0'}"
 	>
 		{#each cases as useCase, i}
-			<UseCase {useCase} {i} />
+			<UseCase {useCase} {i} {isArticle} />
 		{/each}
 	</div>
 </div>

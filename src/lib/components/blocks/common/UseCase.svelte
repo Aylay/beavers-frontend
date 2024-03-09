@@ -6,13 +6,22 @@
 
 	export let useCase: any = {};
 	export let i: number;
+	export let isArticle: boolean = false;
 	let col: string;
-	if (i % 7 === 0 || i % 7 === 1 || i % 7 === 2 || i % 7 === 3) {
-		col = 'lg:col-span-2'
-	} else if (i % 7 === 4) {
-		col = 'lg:col-span-4'
-	} else if (i % 7 === 5 || i % 7 === 6) {
-		col = 'lg:col-span-3'
+	if (isArticle) {
+		if (i % 7 === 0) {
+			col = 'lg:col-span-4'
+		} else {
+			col = 'lg:col-span-2'
+		}
+	} else {
+		if (i % 7 === 0 || i % 7 === 1 || i % 7 === 2 || i % 7 === 3) {
+			col = 'lg:col-span-2'
+		} else if (i % 7 === 4) {
+			col = 'lg:col-span-4'
+		} else if (i % 7 === 5 || i % 7 === 6) {
+			col = 'lg:col-span-3'
+		}
 	}
 
 	const strapiURL = import.meta.env.VITE_STRAPI_URL;

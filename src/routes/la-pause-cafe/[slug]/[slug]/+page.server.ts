@@ -10,17 +10,27 @@ export const load = (async ({ fetch, params }) => {
 	const articleData = await articleResponse.json();
 	let content: any;
 	let otherArticles: any;
+	let useCasesList: any;
 	
 	if (articleData.data) {
 		content = articleData.data
 
-		const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?filters[category][slug][$eq]=' + content.attributes.category.data.attributes.slug + '&filters[id][$ne]=' + content.id + '&filters[publishedAt][$notNull]=true&pagination[pageSize]=100&fields[0]=slug&fields[1]=date&fields[2]=publishedAt&fields[3]=title&fields[4]=excerpt&populate[category][fields][0]=slug&populate[category][fields][1]=title&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText', {
+		const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?filters[category][slug][$eq]=' + content.attributes.category.data.attributes.slug + '&filters[id][$ne]=' + content.id + '&sort=publishedAt%3Adesc&filters[publishedAt][$notNull]=true&pagination[pageSize]=3&fields[0]=slug&fields[1]=date&fields[2]=publishedAt&fields[3]=title&fields[4]=excerpt&populate[category][fields][0]=slug&populate[category][fields][1]=title&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText', {
 			method: 'GET'
 		})
 		const articlesData = await articlesResponse.json();
 		
 		if (articlesData.data) {
 			otherArticles = articlesData.data
+		}
+
+		const useCasesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/use-cases?filters[publishedAt][$notNull]=true&sort=publishedAt%3Adesc&pagination[page]=1&pagination[pageSize]=2&filters[categories][slug][$in]=' + content.attributes.category.data.attributes.slug + '&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText&populate[thumbnail][fields][0]=formats&populate[thumbnail][fields][1]=url&populate[thumbnail][fields][2]=alternativeText&populate[resultDisplayed][fields][0]=text1&populate[resultDisplayed][fields][1]=text2&populate[client][fields][0]=name&populate[categories][fields][0]=title', {
+			method: 'GET'
+		})
+		const useCasesData = await useCasesResponse.json();
+		
+		if (useCasesData.data) {
+			useCasesList = useCasesData.data
 		}
 		
 	} else {
@@ -33,7 +43,8 @@ export const load = (async ({ fetch, params }) => {
 		isArticle,
 		menuDark,
 		content,
-		otherArticles
+		otherArticles,
+		useCasesList
 	};
 }) satisfies PageData;
 
