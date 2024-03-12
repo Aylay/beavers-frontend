@@ -3,7 +3,7 @@
   import { DateTime } from "luxon";
 
 	import Header from "$lib/components/blocks/articles/Header.svelte";
-	import Newsletter from '$lib/components/blocks/layout/Newsletter.svelte';
+	// import Newsletter from '$lib/components/blocks/layout/Newsletter.svelte';
 	import Articles from '$lib/components/blocks/Articles.svelte';
 	import Share from "$lib/components/blocks/articles/Share.svelte";
 	import Meta from '$lib/components/utilities/Meta.svelte';
@@ -189,9 +189,11 @@
 	{#if content.contentManager}
 	<ContentManager content={content.contentManager} title={content.title} />
 	{/if}
+
 	<Share author={content.author.data.attributes} />
+
 	{#if articles.length > 0}
-		<Newsletter isArticle={true} />
+		<!-- <Newsletter isArticle={true} /> -->
 		<Articles titleFirst="Les derniers articles de la catégorie" {articles} titleSecond={content.category.data.attributes.title} newsUrl="/la-pause-cafe/{content.category.data.attributes.slug}" />
 	{/if}
 	{#if useCases.length > 0}

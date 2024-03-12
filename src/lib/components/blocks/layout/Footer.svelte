@@ -24,10 +24,11 @@
 
 </script>
 <footer
-  class="py-16 lg:py-32 big-container"
+  class="py-16 lg:py-32 bg-rock"
   use:inview={options}
   on:inview_change={handleChange}
 >
+<div class="big-container">
   <div class="flex gap-16 flex-col">
     <div class="w-full flex justify-between max-lg:flex-col items-center max-lg:gap-8">
       <p class="lg:w-1/2 text-3 text-seance">
@@ -186,5 +187,6 @@
         <div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
       </div>
     </div>
+  </div>
   </div>
 </footer>
