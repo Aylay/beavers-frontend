@@ -7,7 +7,7 @@
 
 <div class="big-container flex flex-col items-center">
   <Line />
-  <p class="text-3 text-seance">
+  <p class="text-3 text-seance text-center">
     Nos autres <span class="font-highlight text-[5.7rem] leading-[3rem] text-bright  font-normal">prestations</span> pour ce client
   </p>
   <div class="mt-12 flex flex-col items-center gap-8">

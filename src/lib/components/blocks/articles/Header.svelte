@@ -3,6 +3,7 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
   import { DateTime } from "luxon";
+	import SvelteMarkdown from 'svelte-markdown';
   
 	import ArrowBottom from "$lib/assets/svg/ArrowBottom.svelte";
 	import Mouse from "$lib/assets/svg/Mouse.svelte";
@@ -11,7 +12,6 @@
 	import Tag from '$lib/assets/svg/Tag.svelte';
 	import Clock from '$lib/assets/svg/Clock.svelte';
 	import LDTag from '$lib/components/utilities/LDTag.svelte'
-	import SvelteMarkdown from 'svelte-markdown';
 
   const mdOptions = {
     breaks: true,

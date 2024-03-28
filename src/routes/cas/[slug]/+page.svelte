@@ -12,6 +12,7 @@
 	import OtherUseCases from "$lib/components/blocks/cas/OtherUseCases.svelte";
 	import UseCases from "$lib/components/blocks/UseCases.svelte";
 	import Results from "$lib/components/blocks/cas/Results.svelte";
+	import Testimony from "$lib/components/blocks/cas/Testimony.svelte";
 	import Meta from '$lib/components/utilities/Meta.svelte';
   import LDTag from '$lib/components/utilities/LDTag.svelte'
 	import Articles from '$lib/components/blocks/Articles.svelte';
@@ -30,7 +31,7 @@
 
   const siteURL = import.meta.env.VITE_SITE_URL
   const strapiURL = import.meta.env.VITE_STRAPI_URL;
-  
+
   $: {
     content = $page.data.content.attributes
     articles = $page.data.articlesList;
@@ -102,6 +103,9 @@
   <Actions actions={content.actions} actionsImg={content.img2.data.attributes} title={content.title} />
   {#if otherUseCases.length > 0}
   <OtherUseCases useCases={otherUseCases} />
+  {/if}
+  {#if content.client.data.attributes.avis}
+  <Testimony testimony={content.client.data.attributes.avis} />
   {/if}
   <Results resultText={content.resultText} results={content.results} website={content.website} brand={content.client.data.attributes} />
   <UseCases {cases} firstText="Découvrez d’autres<br />" />
