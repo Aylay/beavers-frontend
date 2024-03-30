@@ -48,10 +48,6 @@
 		{
 			href: '/marketing-digital',
 			label: 'Display'
-		},
-		{
-			href: '/marketing-digital',
-			label: 'Influence'
 		}
 	];
 </script>

@@ -5,7 +5,7 @@
 	import AffiliationDisplay from "$lib/components/blocks/mkt/AffiliationDisplay.svelte";
 	import Google from "$lib/components/blocks/mkt/Google.svelte";
   import Header from "$lib/components/blocks/mkt/Header.svelte";
-	import Influence from "$lib/components/blocks/mkt/Influence.svelte";
+	// import Influence from "$lib/components/blocks/mkt/Influence.svelte";
 	import Social from "$lib/components/blocks/mkt/Social.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 	import UseCases from "$lib/components/blocks/UseCases.svelte";
@@ -53,7 +53,7 @@
     <Google />
     <Social />
     <AffiliationDisplay />
-    <Influence />
+    <!-- <Influence /> -->
     <UseCases {cases} firstText="Découvrez nos<br />" />
   </div>
 </div>
