@@ -29,7 +29,7 @@
     <div class="w-full flex gap-40 mt-20 max-lg:hidden">
       <div class="flex flex-col items-end flex-1 {isOceanActive ? 'opacity-0 invisible' : 'animate-fade'}">
         <p class="text-6 font-semibold text-bright text-right">
-          Beavers reverse 2% de son chiffre d'affaires auprès de l'association engagée écologiquement : Tree-Nation.
+          Beavers reverse 1% de son chiffre d'affaires auprès de l'association engagée écologiquement : Tree-Nation.
         </p>
         <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.08)] gap-2">
           <Mouse newClass="h-auto w-full" color="#FFF" />
@@ -38,7 +38,7 @@
       </div>
       <div class="flex flex-col flex-1 {isOceanActive ? 'animate-fade' : 'opacity-0 invisible'}">
         <p class="text-6 font-semibold text-bright">
-          Beavers reverse 2% de son chiffre d'affaires auprès de l'association engagée écologiquement : The Ocean Cleanup.
+          Beavers reverse 1% de son chiffre d'affaires auprès de l'association engagée écologiquement : The Ocean Cleanup.
         </p>
         <div class="flex flex-col items-center w-8 mt-[calc(100vh*0.08)] gap-2">
           <Mouse newClass="h-auto w-full" color="#FFF" />
@@ -67,7 +67,7 @@
       Beavers x Tree-Nation
     </h2>
     <p class="text-6 font-semibold text-bright text-center">
-      Beavers reverse 2% de son chiffre d'affaires auprès de l'association engagée écologiquement : Tree-Nation.
+      Beavers reverse 1% de son chiffre d'affaires auprès de l'association engagée écologiquement : Tree-Nation.
     </p>
   </div>
 
@@ -76,7 +76,7 @@
       Beavers x The Ocean Cleanup
     </h2>
     <p class="text-6 font-semibold text-bright text-center">
-      Beavers reverse 2% de son chiffre d'affaires auprès de l'association engagée écologiquement : The Ocean Cleanup.
+      Beavers reverse 1% de son chiffre d'affaires auprès de l'association engagée écologiquement : The Ocean Cleanup.
     </p>
   </div>
 </div>
