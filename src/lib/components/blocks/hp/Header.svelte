@@ -7,6 +7,7 @@
 	import HeaderWave from '$lib/assets/svg/HeaderWave.svelte';
 	import Bing from '$lib/assets/svg/social/Bing.svelte';
 	import GAds from '$lib/assets/svg/social/GAds.svelte';
+	import Apple from '$lib/assets/svg/social/Apple.svelte';
 	import LinkedIn from '$lib/assets/svg/social/LinkedIn.svelte';
 	import Meta from '$lib/assets/svg/social/Meta.svelte';
 	import Tiktok from '$lib/assets/svg/social/Tiktok.svelte';
@@ -105,7 +106,10 @@
           <Tiktok newClass="h-24 w-auto animate-fade animate-infinite animate-duration-[4000ms] animate-ease-in-out animate-delay-[1250ms]" />
         </div>
         <div class="absolute top-[8%] left-0 w-40 h-40 flex justify-center items-center bg-white rounded-3xl">
-          <Bing newClass="h-24 w-auto animate-fade animate-infinite animate-duration-[4000ms] animate-ease-in-out animate-delay-500" />
+          <Apple newClass="h-24 w-auto animate-fade animate-infinite animate-duration-[4000ms] animate-ease-in-out animate-delay-500" />
+        </div>
+        <div class="absolute top-2/3 left-0 w-40 h-40 flex justify-center items-center bg-white rounded-3xl">
+          <Bing newClass="h-24 w-auto animate-fade animate-infinite animate-duration-[4000ms] animate-ease-in-out animate-delay-[1750ms]" />
         </div>
         <div class="absolute top-[18%] left-1/4 w-40 h-40 flex justify-center items-center bg-white rounded-3xl">
           <GAds newClass="w-24 h-auto animate-fade animate-infinite animate-duration-[4000ms] animate-delay-1000 animate-ease-in-out" />
