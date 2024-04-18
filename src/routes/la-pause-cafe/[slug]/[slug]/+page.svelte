@@ -122,7 +122,11 @@
 						"@type": "Organization",
 						"@id": siteURL
 					},
-					"inLanguage": "fr-FR",
+					"inLanguage": {
+						"@type": "Language",
+						"name": "French",
+						"alternateName": "fr"
+					},
 					"articleBody": contentGlobal,
 					"text": contentGlobal,
 					"articleSection": content.category.data.attributes.title,
@@ -137,7 +141,11 @@
 					"thumbnailUrl": strapiURL + content.mainImg.data.attributes.url,
 					"name": content.title.replace(/&nbsp;/g, ' '),
 					"description": content.intro.replace(/&nbsp;/g, ' '),
-					"inLanguage": "fr-FR",
+					"inLanguage": {
+						"@type": "Language",
+						"name": "French",
+						"alternateName": "fr"
+					},
 					"creator": {
 						"@type": "Organization",
 						"@id": siteURL
