@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { page } from '$app/stores';
 
 	import Facebook from "$lib/assets/svg/Facebook.svelte";
 	import Linkedin from "$lib/assets/svg/Linkedin.svelte";
@@ -16,9 +16,9 @@
   };
 
   export let author: any;
-  let url = ``;
+  let url: string = $page.url.href;
 
-  onMount(() => url = window.location.href);
+  $: url = $page.url.href;
 </script>
 
 <div class="flex big-container max-lg:flex-col max-lg:gap-16">
