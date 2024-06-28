@@ -4,16 +4,19 @@
   import Arrow from '$lib/assets/svg/Arrow.svelte';
   import Hoverable from '$lib/components/utilities/Hoverable.svelte';
 
-  const pageCount: number = $page.data.pageCount;
-
   export let pageNumber: number = 1;
+  export let slug: string = ''
+  let pageCount: number = $page.data.pageCount;
+  
+  $: pageCount = $page.data.pageCount;
+
 </script>
 
 <div class="big-container pb-32 lg:pb-64 flex justify-center items-center gap-16">
   {#if pageNumber > 1}
   <Hoverable let:hovering={active}>
     <a
-      href="/la-pause-cafe{pageNumber === 2 ? '' : '/page/' + (pageNumber - 1)}"
+      href="/la-pause-cafe{slug !== '' ? '/' + slug : ''}{pageNumber === 2 ? '' : '/page/' + (pageNumber - 1)}"
       class="flex items-center gap-2"
       title="Page précédente"
     >
@@ -25,7 +28,7 @@
   {#if pageCount !== pageNumber}
   <Hoverable let:hovering={active}>
     <a
-      href="/la-pause-cafe/page/{pageNumber + 1}"
+      href="/la-pause-cafe{slug !== '' ? '/' + slug : ''}/page/{pageNumber + 1}"
       class="flex items-center gap-2"
       title="Page suivante"
     >
