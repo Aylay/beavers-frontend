@@ -79,7 +79,6 @@
 						"dayOfWeek": [
 							"Monday",
 							"Tuesday",
-							"Wednesday",
 							"Thursday",
 							"Friday"
 						],
