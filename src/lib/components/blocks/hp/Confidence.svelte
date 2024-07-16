@@ -11,10 +11,10 @@
 			title: 'V-ZUG'
 		},
 		{
-			src: '/img/clients/rudnik.svg',
+			src: '/img/clients/adn-clim.svg',
 			newClass: 'w-full h-auto',
-			href: '/cas/developpement-site-marius-rudnik-renovation',
-			title: 'Marius Rudnik Renovation'
+			href: '/cas/adn-clim-ameliore-visibilite-creation-site-web',
+			title: 'ADN Clim'
 		},
 		{
 			src: '/img/clients/cafes-richard.svg',
