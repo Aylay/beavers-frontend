@@ -50,7 +50,7 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Les social ads sont très puissantes dans une stratégie media online de part leur <strong>ciblage précis</strong>. En effet, les plateformes sociales en savent beaucoup sur chaque internaute et sur leurs habitudes de navigation et d'achat.
+				Les social ads sont très puissantes dans une stratégie media online de part leur <strong><a href="/la-pause-cafe/media/ciblage-comment-agence-publicite-digitale-affiner-audience" title="L’art du ciblage : comment une agence de publicité digitale peut affiner votre audience" class="font-bold underline text-electric hover:text-bright transition-colors">ciblage précis</a></strong>. En effet, les plateformes sociales en savent beaucoup sur chaque internaute et sur leurs habitudes de navigation et d'achat.
 			</p>
 			<p class="text-6">
 				Les outils publicitaires social ads permettent donc de <strong>cibler des audiences</strong> sur différents critères, plus ou moins précis en fonction de la plateforme. Il est, par exemple, possible de cibler les propriétaires ou les personnes qui ont récemment déménagé. Il est également possible de cibler les personnes qui aiment le surf. Une infinité de ciblage est donc mis à disposition de l'annonceur ou de l'agence de pub.

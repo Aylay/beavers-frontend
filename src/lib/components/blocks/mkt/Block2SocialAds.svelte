@@ -68,7 +68,7 @@ on:inview_change={handleChange}>
 				? 'animate-fade'
 				: 'opacity-0'}">
 				<li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
-          Réfléchir à un <strong>ciblage</strong> cohérent ;
+          <a href="/la-pause-cafe/media/ciblage-comment-agence-publicite-digitale-affiner-audience" title="L’art du ciblage : comment une agence de publicité digitale peut affiner votre audience" class="font-bold underline text-electric hover:text-bright transition-colors">Réfléchir à un <strong>ciblage</strong> cohérent</a> ;
         </li>
 				<li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
           Effectuer des <strong>tests</strong> ;
@@ -77,7 +77,7 @@ on:inview_change={handleChange}>
           Mettre en place un <strong>tracking</strong> (pixel et API de conversion)
         </li>
 				<li class="relative text-6 before:content-[''] before:absolute before:w-3 before:h-3 before:bg-electric before:left-0 before:top-3 before:rounded-full pl-8">
-          <strong>Analyser des <a href="/la-pause-cafe/media/lexique-media-online" title="Qu’est-ce qu'un KPI" class="font-bold underline text-electric hover:text-bright transition-colors">KPI</a></strong> (Key Performances Indicators)
+          <strong>Analyser des <a href="/la-pause-cafe/media/mesurer-impact-votre-marketing-digital-kpi-a-suivre" title="Mesurer l'impact de votre marketing digital : les KPI à suivre" class="font-bold underline text-electric hover:text-bright transition-colors">KPI</a></strong> (Key Performances Indicators)
         </li>
 			</ul>
 		</div>

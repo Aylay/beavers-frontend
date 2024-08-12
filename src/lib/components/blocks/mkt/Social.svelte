@@ -130,7 +130,7 @@ on:inview_change={handleChange}>
     <p class="text-6 animate-delay-500 {isInView
       ? 'animate-fade'
       : 'opacity-0'}">
-      Grâce aux social media ads soyez présent sur TikTok, Instagram, Facebook, LinkedIn, Pinterest ou encore X et touchez vos prospects. Améliorer "l'awarness" et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
+      Grâce aux <a class="underline font-semibold text-electric hover:text-bright transition-colors" href="/https://beavers-agency.fr/la-pause-cafe/media/agence-social-ads-propulsez-visibilite-ligne" title="Agence social ads : propulsez votre visibilité en ligne">social media ads</a>, soyez présent sur TikTok, Instagram, <a title="Agence Facebook Ads : Propulsez votre visibilité et boostez vos ventes sur Facebook" href="/la-pause-cafe/media/agence-facebook-ads-propulsez-visibilite-boostez-ventes" class="underline font-semibold text-electric hover:text-bright transition-colors">Facebook</a>, LinkedIn, Pinterest ou encore X et touchez vos prospects. <a href="/la-pause-cafe/media/comment-agence-social-ads-booste-votre-marque" class="underline font-semibold text-electric hover:text-bright transition-colors" title="Comment une agence social ads booste votre marque">Améliorer "l'awarness"</a> et la considération de votre marque pour générer plus de profits ou améliorer votre image de marque.
     </p>
     <div class="flex max-lg:flex-col max-lg:gap-4 justify-between mt-16">
       <div class="flex gap-4 items-center animate-delay-[750ms] {isInView

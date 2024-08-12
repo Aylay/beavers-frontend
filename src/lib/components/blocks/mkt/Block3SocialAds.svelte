@@ -72,7 +72,7 @@
         La création est devenue très importante pour se démarquer dans un univers compétitifs très fort et sur des réseaux à forte pression publicitaire.
       </p>
       <p class="text-6">
-        Alors qu'il y a quelques années de ça, l'attractivité du visuel et/ou de la vidéo n'était pas forcément le point essentiel d'une bonne stratégie social ads, aujourd'hui c'est un élément à ne pas négliger. C'est parfois l'un des éléments qui est un peu pris à la légère par les annonceurs, qui par souci d'économies, investissent peu dans leur création publicitaire.
+        Alors qu'il y a quelques années de ça, <a href="https://beavers-agency.fr/la-pause-cafe/media/importance-contenu-visuel-secteur-habitat-statregies-communication-digitale-optimale" title="L'importance du contenu visuel dans le secteur de l’habitat : Stratégies pour une communication digitale optimale" class="font-bold underline text-electric hover:text-bright transition-colors">l'attractivité du visuel</a> et/ou de la vidéo n'était pas forcément le point essentiel d'une bonne stratégie social ads, aujourd'hui c'est un élément à ne pas négliger. C'est parfois l'un des éléments qui est un peu pris à la légère par les annonceurs, qui par souci d'économies, investissent peu dans leur création publicitaire.
       </p>
       <p class="text-6">
         Dans toute bonne stratégie publicitaire sur les social ads, l'<strong>AB testing</strong> est nécessaire. On entend par AB test, le test de plusieurs visuels ou de plusieurs vidéos, avec différents axes ou différentes accroches. Le média qui nous plait le plus n'est pas forcément celui qui va avoir les meilleures performances.
