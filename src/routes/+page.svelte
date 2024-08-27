@@ -216,6 +216,12 @@
 		property="og:image:height"
 		content="630"
 	/>
+	<link
+		rel="alternate"
+		type="application/rss+xml"
+		title="Le blog des actualités digitales de l'agence Beavers"
+		href="{siteURL}/flux-articles.xml"
+	/>
 </svelte:head>
 
 <LDTag {schema} />
