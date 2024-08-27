@@ -10,13 +10,20 @@
 
 	const meta = {
 		title: "Le blog des actualités digitales de l'agence Beavers",
-		description: "Retrouvez dans notre blog des réflexions sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers."
+		description: "Retrouvez dans notre blog des réflexions sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers.",
+		image: '/img/og-beavers-pause-cafe.png'
 	}
 </script>
 
 <MetaFront {meta} />
 
 <svelte:head>
+	<link
+		rel="alternate"
+		type="application/rss+xml"
+		title="Le blog des actualités digitales de l'agence Beavers"
+		href="{siteURL}/flux-articles.xml"
+	/>
 	<link rel="next" href="{siteURL}/la-pause-cafe/page/2" />
 </svelte:head>
 

@@ -6,7 +6,7 @@ export async function GET({ fetch, setHeaders }) {
 		'Content-Type': 'application/xml'
 	});
 
-	const useCasesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/use-cases?pagination[pageSize]=100', {
+	const useCasesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/use-cases?pagination[pageSize]=100&filters[publishedAt][$notNull]=true', {
 		method: 'GET'
 	})
 	const useCasesData = await useCasesResponse.json();

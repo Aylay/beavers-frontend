@@ -25,9 +25,16 @@
 <Meta meta={content.meta} />
 
 <svelte:head>
+	<link
+		rel="alternate"
+		type="application/rss+xml"
+		title={content.title}
+		href="{siteURL}/flux-articles-{content.slug}.xml"
+	/>
 	{#if pageCount > 1}
 	<link rel="next" href="{siteURL}/la-pause-cafe/{content.slug}/page/2" />
 	{/if}
+	
 </svelte:head>
 
 <div class="flex flex-col">
