@@ -10,9 +10,23 @@ export async function GET({ fetch, setHeaders }) {
 		method: 'GET'
 	})
 	const articlesData = await articlesResponse.json();
+	let articlesList: any[] = []
+	
+
+	if (articlesData.meta.pagination.pageCount > 1) {
+		for (let i = 2; i <= articlesData.meta.pagination.pageCount; i++) {
+			const articlesPageResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?sort=updatedAt%3Adesc&filters[publishedAt][$notNull]=true&pagination[pageSize]=100&pagination[page]=' + i + '&fields[0]=slug&fields[1]=updatedAt&populate[category][fields][0]=slug', {
+				method: 'GET'
+			})
+			const articlesPageData = await articlesPageResponse.json();
+			articlesList = articlesData.data.concat(articlesPageData.data)
+		}
+	} else {
+		articlesList = articlesData.data.slice()
+	}
 
 	const articlesSlug: any[] = [];
-	for (const article of articlesData.data) {
+	for (const article of articlesList) {
 		const elm = {
 			slug: article.attributes.category.data.attributes.slug + '/' + article.attributes.slug,
 			date: article.attributes.updatedAt
