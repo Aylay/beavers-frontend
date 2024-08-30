@@ -1,10 +1,19 @@
 import { error } from '@sveltejs/kit';
 
 import type { PageData } from './$types';
-export const prerender = true;
+let isProd: boolean;
+let filters: string;
+if (import.meta.env.VITE_MODE === 'prod') {
+	isProd = true;
+	filters = 'filters[publishedAt][$notNull]=true&sort=publishedAt%3Adesc&'
+} else {
+	isProd = false;
+	filters = 'sort=id%3Adesc&publicationState=preview&'
+}
+export const prerender = isProd;
 
 export const load = (async ({ fetch }) => {
-	const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?filters[publishedAt][$notNull]=true&sort=publishedAt:desc&pagination[pageSize]=12&fields[0]=slug&fields[1]=date&fields[2]=publishedAt&fields[3]=title&fields[4]=excerpt&populate[category][fields][0]=slug&populate[category][fields][1]=title&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText', {
+	const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?' + filters + 'pagination[pageSize]=12&fields[0]=slug&fields[1]=date&fields[2]=publishedAt&fields[3]=title&fields[4]=excerpt&populate[category][fields][0]=slug&populate[category][fields][1]=title&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText', {
 		method: 'GET'
 	})
 	const articlesData = await articlesResponse.json();

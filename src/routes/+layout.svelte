@@ -23,6 +23,10 @@
   <link rel="canonical" href={siteURL + $page.url.pathname} />
   <meta property="og:url" content={siteURL + $page.url.pathname} />
   <script src="https://www.google.com/recaptcha/api.js?render={key}" defer></script>
+
+	{#if $page.url.host.includes('preprod.beavers-agency.fr')}
+		<meta name="robots" content="noindex, nofollow">
+	{/if}
 </svelte:head>
 
 <div class="overflow-hidden">
