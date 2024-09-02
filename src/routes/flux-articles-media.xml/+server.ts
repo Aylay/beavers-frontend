@@ -17,7 +17,7 @@ export async function GET({ fetch, setHeaders }) {
 	const catData = await catResponse.json();
 	const content = catData.data.attributes;
 
-	const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?filters[category][slug][$eq]=' + actualPage + '&filters[publishedAt][$notNull]=true&sort=updatedAt%3Adesc&pagination[pageSize]=15&fields[0]=slug&fields[1]=updatedAt&populate[category][fields][0]=slug&populate[category][fields][1]=title&fields[2]=title&fields[3]=excerpt&populate[author][fields][0]=name&populate[meta][populate][ogImage][fields][0]=url&populate[meta][populate][ogImage][fields][1]=mime&populate[meta][populate][ogImage][fields][2]=size', {
+	const articlesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/articles?filters[category][slug][$eq]=' + actualPage + '&filters[publishedAt][$notNull]=true&sort=publishedAt%3Adesc&pagination[pageSize]=15&fields[0]=slug&fields[1]=publishedAt&populate[category][fields][0]=slug&populate[category][fields][1]=title&fields[2]=title&fields[3]=excerpt&populate[author][fields][0]=name&populate[meta][populate][ogImage][fields][0]=url&populate[meta][populate][ogImage][fields][1]=mime&populate[meta][populate][ogImage][fields][2]=size', {
 		method: 'GET'
 	})
 	const articlesData = await articlesResponse.json();
@@ -26,7 +26,7 @@ export async function GET({ fetch, setHeaders }) {
 	for (const article of articlesData.data) {
 		const elm = {
 			slug: article.attributes.category.data.attributes.slug + '/' + article.attributes.slug,
-			pubDate: DateTime.fromISO(article.attributes.updatedAt).toRFC2822(),
+			pubDate: DateTime.fromISO(article.attributes.publishedAt).toRFC2822(),
 			title: article.attributes.title,
 			description: article.attributes.excerpt,
 			author: article.attributes.author.data.attributes.name,
