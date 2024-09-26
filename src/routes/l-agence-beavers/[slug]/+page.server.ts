@@ -1,11 +1,17 @@
 import { error } from '@sveltejs/kit';
 
 import type { PageData } from './$types';
+let filters: string;
+if (import.meta.env.VITE_MODE === 'prod') {
+	filters = ''
+} else {
+	filters = '&publicationState=preview'
+}
 
 export const load = (async ({ fetch, params }) => {
 	const contentResponse = await fetch(
 		import.meta.env.VITE_STRAPI_URL +
-			'/api/agences?filters[slug][$eq]=' + params.slug + '&populate[meta][fields][0]=title&populate[meta][fields][1]=description&populate[meta][populate][ogImage][fields][0]=url&populate[meta][populate][ogImage][fields][1]=width&populate[meta][populate][ogImage][fields][2]=height&populate[words][fields][0]=text&populate[contentManager][fields][0]=layout&populate[contentManager][fields][1]=text1&populate[contentManager][fields][2]=text2&populate[contentManager][fields][3]=iframe&populate[contentManager][fields][4]=legend&populate[contentManager][populate][img][fields][0]=formats&populate[contentManager][populate][img][fields][1]=url&populate[contentManager][populate][img][fields][2]=alternativeText',
+			'/api/agences?filters[slug][$eq]=' + params.slug + '&populate[meta][fields][0]=title&populate[meta][fields][1]=description&populate[meta][populate][ogImage][fields][0]=url&populate[meta][populate][ogImage][fields][1]=width&populate[meta][populate][ogImage][fields][2]=height&populate[words][fields][0]=text&populate[contentManager][fields][0]=layout&populate[contentManager][fields][1]=text1&populate[contentManager][fields][2]=text2&populate[contentManager][fields][3]=iframe&populate[contentManager][fields][4]=legend&populate[contentManager][populate][img][fields][0]=formats&populate[contentManager][populate][img][fields][1]=url&populate[contentManager][populate][img][fields][2]=alternativeText' + filters,
     {
 			method: 'GET'
 		}
