@@ -5,6 +5,12 @@
 
 	const logos = [
 		{
+			src: '/img/clients/ffrandonnee.svg',
+			newClass: 'h-full w-auto',
+			href: '/cas/campagnes-social-media-sea-site-e-commerce-application-mobile-ffrandonnee',
+			title: 'Fédération Française de la Randonnée Pédestre'
+		},
+		{
 			src: '/img/clients/v-zug.svg',
 			newClass: 'h-full w-auto',
 			href: '/cas/creation-gestion-publications-reseaux-sociaux-v-zug',
@@ -27,12 +33,6 @@
 			newClass: 'w-full h-auto',
 			href: '/cas/gestion-strategie-sea-keune-haircosmetics',
 			title: 'Keune Haircosmetics'
-		},
-		{
-			src: '/img/clients/imagine-2050.svg',
-			newClass: 'h-full w-auto',
-			href: '/cas/developpement-site-internet-imagine-2050',
-			title: 'Imagine 2050'
 		},
 		{
 			src: '/img/clients/moncarro.svg',
