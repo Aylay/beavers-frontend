@@ -56,7 +56,7 @@
     {
       img : '/img/agence/theo.png',
       webp : '/img/agence/theo.webp',
-      name: 'Théo Salomoni',
+      name: 'Théo SALOMONI',
       job: 'Chef de projets digitaux',
       text: "Karine vous propose son expertise en community management. Elle vous aidera à exploiter la puissance des réseaux pour développer votre présence digitale  🚀.<br /><br />Ultra-connectée, ses missions sont une vraie passion et les réseaux son <span class='text-electric font-semibold'>terrain de jeu</span> !"
     }
