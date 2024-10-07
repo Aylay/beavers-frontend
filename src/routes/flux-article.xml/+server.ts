@@ -34,8 +34,8 @@ export async function GET({ fetch, setHeaders }) {
 	const rssFlux = `<?xml version="1.0" encoding="UTF-8" ?>
 		<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" >
 			<channel>
-				<title>Le blog des actualités digitales de l'agence Beavers</title>
-				<description>Retrouvez dans notre blog des réflexions sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers.</description>
+				<title>La dernière actualité digitale de l'agence Beavers</title>
+				<description>Retrouvez la dernière réflexion sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers.</description>
 				<link>${siteURL}/la-pause-cafe</link>
 				<language>fr</language>
 				<copyright>© 2019 - ${currentDate.getFullYear()} Tous droits réservés par Beavers</copyright>
@@ -43,7 +43,7 @@ export async function GET({ fetch, setHeaders }) {
 				<atom:link href="${siteURL}/flux-article.xml" rel="self" type="application/rss+xml"/>
 				<image>
 					<url>${siteURL}/img/og-beavers-pause-cafe.png</url>
-					<title>Le blog des actualités digitales de l'agence Beavers</title>
+					<title>La dernière actualité digitale de l'agence Beavers</title>
 					<link>${siteURL}/la-pause-cafe</link>
 				</image>
 				${articlesSlug
@@ -58,7 +58,7 @@ export async function GET({ fetch, setHeaders }) {
 					<enclosure url="${strapiURL}${article.image}" type="${article.imageMime}" length="${Math.ceil(article.imageLength)}"></enclosure>
 					<guid isPermaLink="true">${siteURL}/la-pause-cafe/${article.slug}</guid>
 					<pubDate>${article.pubDate}</pubDate>
-					<source url="${siteURL}/flux-articles.xml">Le blog des actualités digitales de l'agence Beavers</source>
+					<source url="${siteURL}/flux-article.xml">La dernière actualité digitale de l'agence Beavers</source>
 					<media:content medium="image" url="${strapiURL}${article.image}"/>
 				</item>
 				`
