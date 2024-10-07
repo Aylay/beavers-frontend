@@ -40,7 +40,7 @@ export async function GET({ fetch, setHeaders }) {
 				<language>fr</language>
 				<copyright>© 2019 - ${currentDate.getFullYear()} Tous droits réservés par Beavers</copyright>
 				<lastBuildDate>${articlesSlug[0].pubDate}</lastBuildDate>
-				<atom:link href="${siteURL}/flux-articles.xml" rel="self" type="application/rss+xml"/>
+				<atom:link href="${siteURL}/flux-article.xml" rel="self" type="application/rss+xml"/>
 				<image>
 					<url>${siteURL}/img/og-beavers-pause-cafe.png</url>
 					<title>Le blog des actualités digitales de l'agence Beavers</title>
