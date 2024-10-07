@@ -22,14 +22,14 @@
       img : '/signature/beavers-marie-claire.png',
       webp : '/signature/beavers-marie-claire.webp',
       name: 'Marie-Claire Blaizot',
-      job: 'Directrice Générale & Directrice Média',
+      job: 'Co-fondatrice & Directrice Média',
       text: "Marie-Claire vous propose son expertise en stratégie et activation média online, après 10 ans en agence média et chez l’annonceur.<br /><br /><span class='text-electric font-semibold'>Au menu, le matin :</span> un grand bol de plans média,<br /><span class='text-electric font-semibold'>Le midi :</span> salade de pixels d’activation (à consommer sans modération)<br /><span class='text-electric font-semibold'>Le soir :</span> farandole de bilans média (Excel est son ami)"
     },
     {
       img : '/signature/beavers-lucas.png',
       webp : '/signature/beavers-lucas.webp',
       name: 'Lucas Attali',
-      job: 'Président & Directeur de Production',
+      job: 'Co-fondateur & Directeur de Production',
       text: "Ses expériences en tant que Développeur Front-End, Product Owner, Chef de Projets et Responsable de Production, lui ont appris à penser un projet dans sa globalité sans en segmenter chaque phase. Aujourd'hui, Lucas aime travailler dans un univers fun mais toujours très bien cadré ; avec lui pas de bannière de cookies, pas de site <span class='text-electric font-semibold'>#RGPDMaster</span> !!!"
     },
     {
