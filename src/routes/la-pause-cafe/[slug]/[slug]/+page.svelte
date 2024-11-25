@@ -193,7 +193,7 @@
 </svelte:head>
 
 <div class="flex flex-col gap-32 lg:gap-40 pb-32 lg:pb-40">
-	<Header {words} title={content.title} category={content.category.data.attributes} {readingTime} author={content.author.data.attributes.name} intro={content.intro} img={content.mainImg.data.attributes} publishedDate={publishedHeaderDate} updatedDate={updatedHeaderDate} />
+	<Header {words} title={content.title} category={content.category.data.attributes} {readingTime} author={content.author.data.attributes.name} intro={content.intro} img={content.mainImg.data.attributes} publishedDate={publishedHeaderDate} updatedDate={updatedHeaderDate} IA={content.IA} />
 	{#if content.contentManager}
 	<ContentManager content={content.contentManager} title={content.title} />
 	{/if}

@@ -76,6 +76,9 @@
         class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
       />
     {/if}
+    {#if block.IA}
+    <p class="absolute bottom-4 right-4 rounded-3xl bg-seance px-6 py-2 text-7">Image générée par une IA</p>
+    {/if}
     {#if block.legend}
       <div class="content-style absolute -bottom-12 w-full text-right">
         <SvelteMarkdown source={block.legend} options={mdOptions} />
@@ -130,6 +133,9 @@
           class="h-full w-full object-cover overflow-hidden rounded-lg animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
       {/if}
+      {#if block.IA}
+      <p class="absolute bottom-4 right-4 rounded-3xl bg-seance px-6 py-2 text-7">Image générée par une IA</p>
+      {/if}
       {#if block.legend}
         <div class="content-style absolute -bottom-12 w-full text-right">
           <SvelteMarkdown source={block.legend} options={mdOptions} />
@@ -152,6 +158,9 @@
           alt={block.img.data.attributes.alternativeText ? block.img.data.attributes.alternativeText : title.replace(/&nbsp;/g, ' ')}
           class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
         />
+      {/if}
+      {#if block.IA}
+      <p class="absolute bottom-4 right-4 rounded-3xl bg-seance px-6 py-2 text-7">Image générée par une IA</p>
       {/if}
       {#if block.legend}
         <div class="content-style absolute -bottom-12 w-full max-lg:text-right">
