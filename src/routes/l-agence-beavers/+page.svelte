@@ -52,13 +52,6 @@
       name: 'Virginia Blanco',
       job: 'Rédactrice web SEO',
       text: "Amoureuse des mots, Virginia crée du contenu unique et pertinent pour propulser votre site internet. En tant que rédactrice web SEO bilingue français-espagnol et correctrice, elle s'adapte à tout projet digital dans les deux langues. Elle vous accompagne dans la mise en place d'une stratégie éditoriale afin d'obtenir le meilleur référencement possible.<br /><br /><span class='text-electric font-semibold'>Sa potion magique :</span> une écriture fluide adaptée au web associée aux techniques SEO !"
-    },
-    {
-      img : '/img/agence/theo.png',
-      webp : '/img/agence/theo.webp',
-      name: 'Théo Salomoni',
-      job: 'Chef de projets digitaux',
-      text: "Karine vous propose son expertise en community management. Elle vous aidera à exploiter la puissance des réseaux pour développer votre présence digitale  🚀.<br /><br />Ultra-connectée, ses missions sont une vraie passion et les réseaux son <span class='text-electric font-semibold'>terrain de jeu</span> !"
     }
   ]
 
