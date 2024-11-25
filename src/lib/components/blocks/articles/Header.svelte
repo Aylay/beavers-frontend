@@ -40,6 +40,7 @@
   export let updatedDate: string;
   export let author: string;
   export let readingTime: number;
+  export let IA: boolean = false;
   let allWords: Array<string> = []
 
   $: {
@@ -207,12 +208,15 @@
     use:inview={options}
     on:inview_change={handleChange}
   >
-    <div class="lg:flex-1 h-[36rem] w-full lg:order-2">
+    <div class="lg:flex-1 h-[36rem] w-full lg:order-2 relative">
       {#if isInView}
         <img
           src={img.formats && img.formats.medium ? strapiURL + img.formats.medium.url : strapiURL + img.url}
           alt={img.alternativeText ? img.alternativeText : title.replace(/&nbsp;/g, ' ')} class="w-full h-full object-cover rounded-lg overflow-hidden {isInView ? 'animate-fade' : 'opacity-0'}"
         />
+      {/if}
+      {#if IA}
+      <p class="absolute bottom-4 right-4 rounded-3xl bg-seance px-6 py-2 text-7">Image générée par une IA</p>
       {/if}
     </div>
     <div class="flex-1 lg:order-1">
