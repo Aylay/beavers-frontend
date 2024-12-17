@@ -48,15 +48,22 @@
                 ? 'animate-fade'
                 : 'opacity-0'}" />
             </a>
+            <a
+              href="https://www.francenum.gouv.fr/activateurs/beavers"
+              target="_blank"
+              title="Beavers est un activateur France Numérique"
+              class="inline-block lg:hover:animate-shake"
+            >
             {#if isInView}
               <picture>
-                <source srcset="/img/certification-linkedin.webp" type="image/webp">
-                <source srcset="/img/certification-linkedin.png" type="image/png"> 
-                <img src="/img/certification-linkedin.png" alt="Certification Marketing insider Linkedin" class="max-w-[16rem] h-auto {isInView
+                <source srcset="/img/marques_filles_activateur.webp" type="image/webp">
+                <source srcset="/img/marques_filles_activateur.jpg" type="image/jpg"> 
+                <img src="/img/marques_filles_activateur.png" alt="Activitateur France Numérique" class="max-w-[10rem] h-auto {isInView
                   ? 'animate-fade'
                   : 'opacity-0'}">
               </picture>
             {/if}
+            </a>
           </div>
         </div>
       </div>
