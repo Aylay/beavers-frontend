@@ -42,10 +42,10 @@
 		images.push(strapiURL + content.mainImg.data.attributes.url)
 		for (const elm of content.contentManager) {
 			if (elm.text1) {
-				contentGlobal += elm.text1
+				contentGlobal += elm.text1 + ' '
 			}
 			if (elm.text2) {
-				contentGlobal += elm.text2
+				contentGlobal += elm.text2 + ' '
 			}
 			if (elm.img && elm.img.data) {
 				images.push(strapiURL + elm.img.data.attributes.url)
