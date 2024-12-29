@@ -1,18 +1,18 @@
 <script lang="ts">
   import { page } from '$app/stores';
 
-	import Block1SocialAds from "$lib/components/blocks/mkt/Block1SocialAds.svelte";
-	import Block1SocialAds2 from '$lib/components/blocks/mkt/Block1SocialAds2.svelte';
-	import Block2SocialAds from "$lib/components/blocks/mkt/Block2SocialAds.svelte";
-	import Block2SocialAds2 from '$lib/components/blocks/mkt/Block2SocialAds2.svelte';
-	import Block3SocialAds from "$lib/components/blocks/mkt/Block3SocialAds.svelte";
-	import Block4SocialAds from "$lib/components/blocks/mkt/Block4SocialAds.svelte";
-	import Block4SocialAds2 from '$lib/components/blocks/mkt/Block4SocialAds2.svelte';
+	import Block01 from "$lib/components/blocks/mkt/social/Block01.svelte";
+	import Block02 from '$lib/components/blocks/mkt/social/Block02.svelte';
+	import Block11 from "$lib/components/blocks/mkt/social/Block11.svelte";
+	import Block12 from '$lib/components/blocks/mkt/social/Block12.svelte';
+	import Block21 from "$lib/components/blocks/mkt/social/Block21.svelte";
+	import Block31 from "$lib/components/blocks/mkt/social/Block31.svelte";
+	import Block32 from '$lib/components/blocks/mkt/social/Block32.svelte';
   import Header2 from "$lib/components/blocks/mkt/Header2.svelte";
-	import PictosSocialAds from "$lib/components/blocks/mkt/PictosSocialAds.svelte";
+	import Pictos from "$lib/components/blocks/mkt/social/Pictos.svelte";
 	import MetaFront from "$lib/components/utilities/MetaFront.svelte";
 	import UseCases from "$lib/components/blocks/UseCases.svelte";
-	import End from '$lib/components/blocks/mkt/End.svelte';
+	import End from '$lib/components/blocks/mkt/social/End.svelte';
 
   const title = 'Social Ads'
   const subtitle = 'Visibilité. Trafic. Conversions.'
@@ -56,14 +56,14 @@
 
 <div class="flex flex-col gap-48 lg:gap-96 max-lg:px-4 pb-48 lg:pb-96">
 	<Header2 {title} {subtitle} {intro} {words} />
-  <PictosSocialAds title={title2} />
-  <Block1SocialAds />
-  <Block1SocialAds2 />
-  <Block2SocialAds />
-  <Block2SocialAds2 />
-  <Block3SocialAds />
-  <Block4SocialAds />
-  <Block4SocialAds2 />
+  <Pictos title={title2} />
+  <Block01 />
+  <Block02 />
+  <Block11 />
+  <Block12 />
+  <Block21 />
+  <Block31 />
+  <Block32 />
   <End text="Pour chaque annonceur nous mettons en place des stratégies personnalisées en fonction des objectifs d'acquisition de trafic, de notoriété ou de vente.<br />Nous activons les social ads et les leviers les plus pertinents pour votre stratégie marketing sur les réseaux sociaux." />
   <UseCases {cases} firstText="Découvrez nos<br />" />
   </div>

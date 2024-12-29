@@ -35,7 +35,7 @@
 
 	const links: Array<{ href: string; label: string }> = [
 		{
-			href: '/marketing-digital',
+			href: '/marketing-digital/google-ads',
 			label: 'Search ads'
 		},
 		{

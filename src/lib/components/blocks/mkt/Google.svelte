@@ -93,10 +93,17 @@
         <h3 class="font-bold text-5">Conversion</h3>
       </div>
     </div>
-    <div class="mt-20 animate-delay-[1500ms] {isInView
-      ? 'animate-fade'
-      : 'opacity-0'}">
-      <Cta label="Être 1er sur Google" href="/contactez-nous" type="transparent" />
+    <div class="flex gap-12 mt-20 max-lg:flex-col">
+      <div class="animate-delay-[1500ms] {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+        <Cta label="Être 1er sur Google" href="/contactez-nous" type="transparent" />
+      </div>
+      <div class="animate-delay-[1700ms] {isInView
+        ? 'animate-fade'
+        : 'opacity-0'}">
+        <Cta label="En savoir plus" href="/marketing-digital/google-ads" type="seance" />
+      </div>
     </div>
   </div>
   <div class="lg:flex-1 max-lg:hidden">

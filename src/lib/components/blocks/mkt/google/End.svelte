@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
-	import Line from '../utilities/Line.svelte';
+	import Line from '$lib/components/blocks/utilities/Line.svelte';
 
   export let text: string;
 

@@ -3,7 +3,7 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	import Wave from '$lib/assets/svg/Wave.svelte';
-	import Cta from '../utilities/CTA.svelte';
+	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
 	let isInView: boolean;
 	const options: Options = {

@@ -6,9 +6,8 @@
 	import Pencil from "$lib/assets/svg/Pencil.svelte";
 	import Trafic from '$lib/assets/svg/Trafic.svelte';
   import Thumb from '$lib/assets/svg/Thumb.svelte';
-	import Cursor from "$lib/assets/svg/Cursor.svelte";
   import Shape from "$lib/assets/svg/Shape.svelte";
-  import Line from "../utilities/Line.svelte";
+  import Line from "$lib/components/blocks/utilities/Line.svelte";
 
 	let isInView: boolean;
 	const options: Options = {

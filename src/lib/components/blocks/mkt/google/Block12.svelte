@@ -3,7 +3,7 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	import Wave from '$lib/assets/svg/Wave.svelte';
-	import Cta from '../utilities/CTA.svelte';
+	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -71,13 +71,13 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Ces <strong>chiffres clés</strong>, parfois différents entre chaque plateforme, doivent être connus et maîtrisés pour comprendre comment se comporte la campagne, savoir en tirer des conclusions et <strong>optimiser le budget</strong>.
+				Ces indicateurs clés, parfois spécifiques selon les types de campagnes Google Ads, sont essentiels pour analyser les performances et ajuster les stratégies en conséquence. Ils permettent de comprendre comment se comportent vos annonces, d'en tirer des conclusions et d'optimiser votre budget.
 			</p>
 			<p class="text-6">
-				Vous l'aurez compris, si les premiers paramétrages sont "faciles", la diffusion d'une campagne optimisée selon toutes les fonctionnalités possibles, est elle, bien plus complexe.
+				Vous l’aurez compris, si la mise en place initiale peut sembler accessible, tirer pleinement parti des fonctionnalités avancées de Google Ads, comme le ciblage d'audience ou l'ajustement des enchères, demande une véritable expertise.
 			</p>
 			<p class="text-6">
-				Niveau prix dans la plateforme, vous êtes généralement facturé au CPM, c'est-à-dire au coût pour 1&nbsp;000 impressions. Le prix va dépendre de l'attractivité de votre campagne, de la concurrence sur vos audiences, des différents placements sélectionnées, etc. 
+				Niveau tarification, vous serez généralement facturé au CPC (coût par clic), c’est-à-dire à chaque fois qu’un utilisateur clique sur votre annonce. Ce coût dépend de nombreux facteurs, notamment la qualité de votre annonce, la concurrence sur vos mots clés, et le niveau de pertinence de vos campagnes.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

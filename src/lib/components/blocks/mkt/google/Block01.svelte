@@ -2,8 +2,8 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
-	import Title from '../utilities/Title.svelte';
-	import Line from '../utilities/Line.svelte';
+	import Title from '$lib/components/blocks/utilities/Title.svelte';
+	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Plus from '$lib/assets/svg/Plus.svelte';
 
 	let isInView: boolean;
@@ -49,7 +49,7 @@
 >
 	<div class="flex-1">
 		<Line />
-		<Title first="Les social ads, qu'est-ce que c'est&nbsp;?" />
+		<Title first="Qu'est-ce que Google&nbsp;Ads&nbsp;?" />
 		<h3
 			class="mt-2 font-highlight text-4 text-bright lg:animate-delay-200 {isInView
 				? 'lg:animate-fade-right'
@@ -63,13 +63,14 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				On entend par <strong><a href="/la-pause-cafe/media/social-ads-signification-astuces-campagne-reussie" title="Qu’est-ce que le social Ads ? Signification et astuces pour une campagne réussie" class="font-bold underline text-electric hover:text-bright transition-colors">social ads</a></strong> ou <strong>social media ads</strong> les publicités que vous pouvez voir sur tous les réseaux sociaux (ex : Instagram, Facebook, Pinterest, Linkedin, Twitter pour citer les plus gros). C'est une <strong>stratégie marketing</strong> intéressante pour développer votre notoriété, <a href="/la-pause-cafe/media/comment-agence-social-ads-booste-votre-marque" class="underline font-semibold text-electric hover:text-bright transition-colors" title="Comment une agence social ads booste votre marque">améliorer votre image de marque</a>, générer des clics, du trafic sur votre site et/ou des conversions.
+				Google Ads désigne les publicités diffusées sur le réseau de Google, incluant les résultats de recherche, les sites partenaires, YouTube, et plus encore.
+				C'est une stratégie marketing efficace pour accroître votre visibilité, attirer du trafic qualifié vers votre site, et augmenter vos conversions.
 			</p>
 			<p class="text-6">
-				Le <a href="/la-pause-cafe/media/devenez-gestionnaire-publicite-hors-pair-guide-complet-maitriser-campagnes-publicitaires" class="underline font-semibold text-electric hover:text-bright transition-colors" title="Devenez un gestionnaire de publicité hors pair : Guide complet pour maîtriser les campagnes publicitaires">gestionnaire de publicité</a> le plus utilisé est Meta Ads avec <a title="Agence Facebook Ads : Propulsez votre visibilité et boostez vos ventes sur Facebook" href="/l-agence-beavers/agence-facebook-ads" class="underline font-semibold text-electric hover:text-bright transition-colors">Facebook Ads</a> et Instagram Ads, de par son accès facile et peu onéreux. D'autres comme <a title="Agence Pinterest Ads : Boostez vos ventes en ligne grâce à notre expertise Pinterest Ads" href="/l-agence-beavers/agence-pinterest-ads" class="underline font-semibold text-electric hover:text-bright transition-colors">Pinterest</a>, TikTok ou Linkedin peuvent également entrer dans des stratégies marketing digitales.
+				Google Ads est l'une des plateformes publicitaires les plus utilisées, offrant une variété d'options pour atteindre vos objectifs marketing, que ce soit via le réseau de recherche, le display, ou YouTube.
 			</p>
 			<p class="text-6">
-				Globalement, les plateformes sociales mettent à disposition des inventaires publicitaires qu'il est possible d'acheter. Comme on pourrait voir un spot télévisé ou un affichage dans la rue. Ici le message est diffusé sur les <strong>réseaux sociaux</strong>.
+				Google Ads fonctionne sur un système d'enchères où les annonceurs enchérissent sur des mots-clés pertinents pour diffuser leurs annonces auprès d'utilisateurs recherchant des produits ou services similaires.
 			</p>
 		</div>
 	</div>

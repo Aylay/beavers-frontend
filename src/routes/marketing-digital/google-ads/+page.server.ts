@@ -16,7 +16,7 @@ export const load = (async ({ fetch }) => {
   let useCases = useCasesData.data ? useCasesData.data : []
 
   useCases = useCases.filter((elm: any) => {
-    if (elm.attributes.title.includes('Social Média') || elm.attributes.title.includes('Social Media') || elm.attributes.title.includes('social ads')) {
+    if (elm.attributes.title.includes('Google Ads') || elm.attributes.title.includes('SEA')) {
       return elm
     }
   })

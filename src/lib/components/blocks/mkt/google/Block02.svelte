@@ -3,7 +3,7 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	import Wave from '$lib/assets/svg/Wave.svelte';
-	import Cta from '../utilities/CTA.svelte';
+	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -71,13 +71,10 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Ce sont des <strong>publications sponsorisées</strong>. Une marque va donc acheter le fait de pouvoir vous montrer son message. Il ne s'agit pas forcément de marque que vous suivez déjà.
+				Selon vos objectifs, différents types de campagnes Google Ads peuvent être mis en place, qu'il s'agisse de campagnes sur le réseau de recherche pour <strong>capter des intentions d'achat</strong>, de campagnes display pour <strong>accroître la notoriété</strong>, ou de campagnes vidéo sur YouTube pour <strong>engager votre audience</strong>.
 			</p>
 			<p class="text-6">
-				En fonction de l'annonceur et de son objectif, différents leviers et social ads seront activés. Par exemple, pour un annonceur BtoB, on favorisera Linkedin Ads et pour un annonceur du secteur de la décoration ou de l'ameublement, on lancera des stratégies Instagram Ads ou Pinterest Ads.
-			</p>
-			<p class="text-6">
-				Chaque cas est différent et notre agence social ads étudie l'annonceur et son besoin afin de déterminer <strong>quelle stratégie mettre en place</strong>.
+				Chaque cas est différent et notre <a href="/l-agence-beavers/agence-google-ads" title="Agence Google Ads Beavers" class="font-bold underline text-electric hover:text-bright transition-colors">agence google ads</a> étudie l'annonceur et son besoin afin de déterminer <strong>quelle stratégie mettre en place</strong>.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

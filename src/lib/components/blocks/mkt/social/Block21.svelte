@@ -4,7 +4,7 @@
 
   import Title from '$lib/components/blocks/utilities/Title.svelte';
   import Line from '$lib/components/blocks/utilities/Line.svelte';
-	import Cta from '../utilities/CTA.svelte';
+	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
