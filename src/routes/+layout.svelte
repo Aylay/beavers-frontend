@@ -41,9 +41,3 @@
 		<Subfooter />
 	{/if}
 </div>
-
-{#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
-<p>lol</p>
-{:else}
-<p>mort</p>
-{/if}
