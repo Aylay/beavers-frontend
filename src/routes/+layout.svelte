@@ -14,7 +14,7 @@
 </script>
 
 {#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
-	<meta name="test" content="test" />
+	test
 	<GTM gtmId="GTM-W6ZCCTM" />
 {/if}
 
