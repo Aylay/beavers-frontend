@@ -14,7 +14,6 @@
 </script>
 
 {#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
-	test
 	<GTM gtmId="GTM-W6ZCCTM" />
 {/if}
 
@@ -27,6 +26,10 @@
 
 	{#if $page.url.host.includes('preprod.beavers-agency.fr')}
 		<meta name="robots" content="noindex, nofollow">
+	{/if}
+
+	{#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
+		<meta name="test" content="test">
 	{/if}
 </svelte:head>
 
