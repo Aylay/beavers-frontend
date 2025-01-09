@@ -11,6 +11,8 @@
 	const noLayout: Array<string> = ['/tout-savoir-sur-beavers'];
   const siteURL = import.meta.env.VITE_SITE_URL
   const key = import.meta.env.VITE_RECAPTCHA;
+
+	console.log($page.url);
 </script>
 
 {#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
