@@ -12,13 +12,6 @@
   const siteURL = import.meta.env.VITE_SITE_URL
   const key = import.meta.env.VITE_RECAPTCHA;
 
-	console.log($page.url);
-	
-	if ($page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')) {
-		console.log('lol');
-	} else {
-		console.log('mort');
-	}
 </script>
 
 {#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
@@ -48,3 +41,9 @@
 		<Subfooter />
 	{/if}
 </div>
+
+{#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
+<p>lol</p>
+{:else}
+<p>mort</p>
+{/if}
