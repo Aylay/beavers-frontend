@@ -13,6 +13,12 @@
   const key = import.meta.env.VITE_RECAPTCHA;
 
 	console.log($page.url);
+	
+	if ($page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')) {
+		console.log('lol');
+	} else {
+		console.log('mort');
+	}
 </script>
 
 {#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
@@ -28,10 +34,6 @@
 
 	{#if $page.url.host.includes('preprod.beavers-agency.fr')}
 		<meta name="robots" content="noindex, nofollow">
-	{/if}
-
-	{#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
-		<meta name="test" content="test">
 	{/if}
 </svelte:head>
 
