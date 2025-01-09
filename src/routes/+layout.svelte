@@ -13,7 +13,7 @@
   const key = import.meta.env.VITE_RECAPTCHA;
 </script>
 
-{#if $page.url.host.includes('beavers-agency.fr')}
+{#if $page.url.host.includes('beavers-agency.fr') && !$page.url.host.includes('preprod.beavers-agency.fr')}
 	<GTM gtmId="GTM-W6ZCCTM" />
 {/if}
 
@@ -37,6 +37,6 @@
 	{#if !noLayout.includes($page.route.id)}
 		<Newsletter />
 		<Footer />
-	<Subfooter />
+		<Subfooter />
 	{/if}
 </div>
