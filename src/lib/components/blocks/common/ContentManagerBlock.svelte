@@ -5,6 +5,7 @@
 	import SvelteMarkdown from 'svelte-markdown';
 
   import Line from '$lib/components/blocks/utilities/Line.svelte';
+	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
   const mdOptions = {
     breaks: true,
@@ -185,8 +186,17 @@
 	on:inview_change={handleChange}
 >
   <Line />
-  <h2 class="text-5 font-semibold lg:text-4 text-seance {isInView ? 'animate-fade-right' : 'opacity-0'}">
-    {@html block.citation}
-  </h2>
+  <div class="flex max-lg:flex-col gap-8 lg:gap-16 lg:items-center lg:justify-between">
+    <div class="flex-1">
+      <h2 class="text-5 font-semibold lg:text-4 text-seance {isInView ? 'animate-fade-right' : 'opacity-0'}">
+        {@html block.citation}
+      </h2>
+    </div>
+    {#if block.link && block.ctaLabel}
+    <div class="flex">
+			<Cta label={block.ctaLabel} href={block.link} type="transparent" blank />
+		</div>
+    {/if}
+  </div>
 </div>
 {/if}

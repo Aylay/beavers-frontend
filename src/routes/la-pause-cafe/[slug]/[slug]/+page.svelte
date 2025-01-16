@@ -47,6 +47,9 @@
 			if (elm.text2) {
 				contentGlobal += elm.text2 + ' '
 			}
+			if (elm.citation) {
+				contentGlobal += elm.citation + ' '
+			}
 			if (elm.img && elm.img.data) {
 				images.push(strapiURL + elm.img.data.attributes.url)
 			}
