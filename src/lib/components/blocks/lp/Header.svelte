@@ -66,11 +66,11 @@ on:inview_change={handleChange}>
         </div>
       </div>
     </div>
-    <div class="py-20 lg:px-20 lg:max-w-[70rem] w-full" id="lp-habitat">
+    <div class="py-20 lg:px-20 lg:max-w-[73rem] w-full" id="lp-habitat">
       <LeadForm />
     </div>
   </div>
-  <div class="max-lg:hidden w-1/3 bg-bright max-h-full overflow-hidden absolute z-0 inset-y-0 right-0 flex items-center ">
+  <div class="max-lg:hidden w-1/3 bg-bright max-h-full overflow-hidden absolute z-0 inset-y-0 right-0 flex items-center">
     <div class="w-full transform scale-105">
       {#each allWords as word, i}
       <span 
