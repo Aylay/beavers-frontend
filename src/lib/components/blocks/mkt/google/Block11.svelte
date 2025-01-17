@@ -87,11 +87,11 @@ on:inview_change={handleChange}>
 			<div class="flex-3">
 				{#if isInViewImg}
 					<picture>
-						<source srcset="/img/mkt/social-ads-3.webp" type="image/webp">
-						<source srcset="/img/mkt/social-ads-3.png" type="image/png">
+						<source srcset="/img/mkt/google-ads-3.webp" type="image/webp">
+						<source srcset="/img/mkt/google-ads-3.png" type="image/png">
 						<img
-							src="/img/mkt/social-ads-3.png"
-							alt="Une tablette et un téléphone avec une maquette de publicité"
+							src="/img/mkt/google-ads-3.png"
+							alt="Annonce Cafés Richard sur Google Ads Display"
 							class="h-full w-full object-cover overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>
 					</picture>
@@ -131,11 +131,11 @@ on:inview_change={handleChange}>
 			<div class="w-full lg:h-1/2">
 				{#if isInViewImg}
 					<picture>
-						<source srcset="/img/mkt/social-ads-5.webp" type="image/webp">
-						<source srcset="/img/mkt/social-ads-5.png" type="image/png">
+						<source srcset="/img/mkt/google-ads-5.webp" type="image/webp">
+						<source srcset="/img/mkt/google-ads-5.png" type="image/png">
 						<img
-							src="/img/mkt/social-ads-5.png"
-							alt="Personne qui clique sur son téléphone avec une publication Instagram"
+							src="/img/mkt/google-ads-5.png"
+							alt="Annonce Keune Haircosmetics sur Google Ads Search sur téléphone"
 							class="h-full w-full object-cover overflow-hidden rounded-lg object-right {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>
 					</picture>

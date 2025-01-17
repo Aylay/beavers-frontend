@@ -39,11 +39,11 @@
 	>
 		{#if isInViewImg}
 			<picture>
-				<source srcset="/img/mkt/social-ads-2.webp" type="image/webp">
-				<source srcset="/img/mkt/social-ads-2.png" type="image/png">
+				<source srcset="/img/mkt/google-ads-2.webp" type="image/webp">
+				<source srcset="/img/mkt/google-ads-2.png" type="image/png">
 				<img
-					src="/img/mkt/social-ads-2.png"
-					alt="Picto Instagram sous fond rose"
+					src="/img/mkt/google-ads-2.png"
+					alt="Ecran d'une nouvelle campagne Google Ads"
 					class="w-full {isInViewImg ? 'animate-fade' : ''}"
 				/>
 			</picture>
