@@ -58,52 +58,39 @@
 	use:inview={options}
 	on:inview_change={handleChange}
 >
-<div class="relative flex lg:flex-1 flex-col gap-28">
-	<div
-		class="relative mx-auto w-full lg:max-w-[45rem]"
-		use:inview={optionsImg}
-		on:inview_change={handleChangeImg}
-	>
-		{#if isInViewImg}
-			<picture>
-				<source srcset="/img/lp/habitat-2.webp" type="image/webp">
-				<source srcset="/img/lp/habitat-2.png" type="image/png">
-				<img
-					src="/img/lp/habitat-2.png"
-					alt="Meuble marron avec 3 tasses dessus"
-					class="w-full {isInViewImg ? 'animate-fade' : ''}"
-				/>
-			</picture>
-		{/if}
+	<div class="relative flex lg:flex-1 flex-col gap-28">
 		<div
-			class="absolute left-0 lg:-left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
-				? 'animate-shake'
-				: 'opacity-0'}"
+			class="relative mx-auto w-full lg:max-w-[45rem]"
+			use:inview={optionsImg}
+			on:inview_change={handleChangeImg}
 		>
-			<Wave color="#00FFDA" />
-		</div>
-		<div
-			class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
-				? 'animate-shake'
-				: 'opacity-0'}"
-		>
-			<Wave />
+			{#if isInViewImg}
+				<picture>
+					<source srcset="/img/lp/habitat-2.webp" type="image/webp">
+					<source srcset="/img/lp/habitat-2.png" type="image/png">
+					<img
+						src="/img/lp/habitat-2.png"
+						alt="Meuble marron avec 3 tasses dessus"
+						class="w-full {isInViewImg ? 'animate-fade' : ''}"
+					/>
+				</picture>
+			{/if}
+			<div
+				class="absolute left-0 lg:-left-20 top-20 h-auto w-[7.5rem] animate-delay-500 {isInView
+					? 'animate-shake'
+					: 'opacity-0'}"
+			>
+				<Wave color="#00FFDA" />
+			</div>
+			<div
+				class="absolute bottom-0 right-10 h-auto w-[6.2rem] {isInView
+					? 'animate-shake'
+					: 'opacity-0'}"
+			>
+				<Wave />
+			</div>
 		</div>
 	</div>
-	<div class="max-lg:hidden">
-		<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
-		<div class="flex justify-between">
-			<Pinterest newClass="h-16 w-auto animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#333743" />
-			<Bing newClass="h-16 w-auto animate-delay-[500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#545B6E" />
-			<GAds newClass="h-16 w-auto animate-delay-[750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#444A5A" fill2="#30343F" fill3="#393F4D" />
-			<LinkedIn newClass="h-16 w-auto animate-delay-[1000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#0B0211" />
-			<Tiktok newClass="h-16 w-auto animate-delay-[1250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#292B37" fill2="#414757" fill3="#414757" />
-			<Apple newClass="h-16 w-auto animate-delay-[1500ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#2D313C" />
-			<Meta newClass="w-16 h-auto animate-delay-[1750ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#2D313C" />
-			<YouTube newClass="w-16 h-auto animate-delay-[2000ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill1="#2E323D" fill2="#0B0211" />
-		</div>
-	</div>
-</div>
 	<div class="lg:flex-1">
 		<div
 			class="mb-16 mt-8 flex flex-col gap-8 animate-delay-500 {isInView
@@ -114,12 +101,12 @@
 				Selon votre problématique, nous connectons les leviers pour un mix média performant. Chez Beavers, la pertinence d'un levier n'est pas liée uniquement à sa performance mais à son impact dans un plan média global et son influence dans le processus de décision. Nous pilotons l'intégralité de vos leviers média pour maitriser les synergies et le parcours client.
 			</p>
 		</div>
-		<div class="mt-12 lg:mt-48 grid grid-cols-1 lg:grid-cols-2 gap-8">
+		<div class="mt-12 lg:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-8">
 			{#each links as link, i}
 				<Cta2 href={link.href} label={link.label} {i} {isInView} />
 			{/each}
 		</div>
-		<div class="lg:hidden my-24">
+		<div class="mt-24">
 			<h3 class="mb-8 text-5 text-seance">Nos solutions</h3>
 			<div class="flex max-lg:justify-start justify-between gap-8 max-lg:flex-wrap">
 				<Pinterest newClass="h-16 w-auto animate-delay-[250ms] {isInViewImg ? 'animate-fade' : 'opacity-0'}" fill="#333743" />
