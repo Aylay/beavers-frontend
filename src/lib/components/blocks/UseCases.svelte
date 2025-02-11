@@ -20,8 +20,6 @@
 	export let cases: Array<any>;
 	export let firstText: string = 'Nos dernières<br />'
 	export let isArticle: boolean = false;
-
-	console.log(cases)
 </script>
 
 <div class="big-container">
