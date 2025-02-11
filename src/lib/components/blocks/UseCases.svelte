@@ -20,6 +20,8 @@
 	export let cases: Array<any>;
 	export let firstText: string = 'Nos dernières<br />'
 	export let isArticle: boolean = false;
+
+	console.log(cases)
 </script>
 
 <div class="big-container">
@@ -40,7 +42,7 @@
 			: 'gap-0'}"
 	>
 		{#each cases as useCase, i}
-			<UseCase {useCase} {i} {isArticle} />
+			<UseCase {useCase} i={cases.length > 2 ? i : i + 5} {isArticle} />
 		{/each}
 	</div>
 </div>
