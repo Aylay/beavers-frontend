@@ -131,6 +131,10 @@
     {
       "source": "/cas/site-multilingue-reservation-my-paris-cruise",
       "destination": "/cas-agence"
+    },
+    {
+      "source": "/la-pause-cafe/media/publicite-linkedin-5-conseils-maximiser-impact-annonces-b2b",
+      "destination": "/la-pause-cafe/media/linkedin-5-conseils-maximiser-impact-annonces-b2b"
     }
   ]
 }
