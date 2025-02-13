@@ -2,7 +2,7 @@
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
-	import Clock from '$lib/assets/svg/Clock.svelte';
+	import Calendar from '$lib/assets/svg/Calendar.svelte';
 	import Gear from '$lib/assets/svg/Gear.svelte';
 	import Website from '$lib/assets/svg/Website.svelte';
 
@@ -41,7 +41,7 @@
       </p>
       {#if duration}
       <div class="flex gap-8 items-center fill-seance">
-        <Clock newClass="w-12 h-auto" />
+        <Calendar newClass="w-12 h-auto" />
         <p class="flex-1 text-6 font-semibold">
           {duration}
         </p>
