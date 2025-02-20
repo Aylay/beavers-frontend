@@ -33,7 +33,7 @@ export const load = (async ({ fetch, params }) => {
 			otherArticles = articlesData.data
 		}
 
-		const useCasesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/use-cases?filters[publishedAt][$notNull]=true&sort=publishedAt%3Adesc&pagination[page]=1&pagination[pageSize]=2&filters[categories][slug][$in]=' + content.attributes.category.data.attributes.slug + '&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText&populate[thumbnail][fields][0]=formats&populate[thumbnail][fields][1]=url&populate[thumbnail][fields][2]=alternativeText&populate[resultDisplayed][fields][0]=text1&populate[resultDisplayed][fields][1]=text2&populate[client][fields][0]=name&populate[categories][fields][0]=title', {
+		const useCasesResponse = await fetch(import.meta.env.VITE_STRAPI_URL + '/api/use-cases?' + filters + 'pagination[pageSize]=2&filters[categories][slug][$in]=' + content.attributes.category.data.attributes.slug + '&populate[mainImg][fields][0]=formats&populate[mainImg][fields][1]=url&populate[mainImg][fields][2]=alternativeText&populate[thumbnail][fields][0]=formats&populate[thumbnail][fields][1]=url&populate[thumbnail][fields][2]=alternativeText&populate[resultDisplayed][fields][0]=text1&populate[resultDisplayed][fields][1]=text2&populate[client][fields][0]=name&populate[categories][fields][0]=title', {
 			method: 'GET'
 		})
 		const useCasesData = await useCasesResponse.json();

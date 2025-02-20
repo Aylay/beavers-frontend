@@ -208,6 +208,6 @@
 		<Articles titleFirst="Les derniers articles de la catégorie" {articles} titleSecond={content.category.data.attributes.title} newsUrl="/la-pause-cafe/{content.category.data.attributes.slug}" />
 	{/if}
 	{#if useCases.length > 0}
-	<UseCases cases={useCases} firstText="Le {content.category.data.attributes.title} et <br /> les" isArticle={true} />
+	<UseCases cases={useCases} firstText="Le {content.category.data.attributes.title} et <br /> les" />
 	{/if}
 </div>
