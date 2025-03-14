@@ -75,7 +75,7 @@
 				<p class="text-6">{publishedDate}</p>
 			</div>
 			<h4 class="mt-5 text-5 transition-colors duration-300 {active ? 'text-bright' : 'text-seance'}">
-				{@html article.attributes.title}
+				{@html article.attributes.title.replace(' ?', '&nbsp;?')}
 			</h4>
 			<p class="my-8 text-6">
 				{article.attributes.excerpt}

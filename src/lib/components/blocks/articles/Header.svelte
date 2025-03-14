@@ -124,13 +124,13 @@
             </li>
             <li>
               <a href="/la-pause-cafe/{category.slug}/{$page.params.slug}" aria-current="page" class="text-7 text-white font-semibold pointer-events-none" title={title.replace(/&nbsp;/g, ' ')}>
-                {@html title}
+                {@html title.replace(' ?', '&nbsp;?')}
               </a>
             </li>
           </ol>
         </nav>
         <h1 class="text-3 lg:text-right mb-20">
-          {@html title}
+          {@html title.replace(' ?', '&nbsp;?')}
         </h1>
         {#if updatedDate !== ''}
         <p class="mb-12 text-6 lg:text-right font-bold text-bright">
