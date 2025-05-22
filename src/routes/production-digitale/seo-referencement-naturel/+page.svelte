@@ -20,7 +20,7 @@
   const title2 = 'Le SEO à la base de tout site internet'
 
   const meta = {
-    title: "Beavers met en place toutes les optimisations pour votre SEO.",
+    title: "Référencement naturel : visibilité assurée",
     description: "Votre agence digitale spécialisée en référencement naturel vous propose un audit de votre SEO, des optimisations techniques, de contenu, de maillage, jusqu'au suivi à long terme."
   }
 

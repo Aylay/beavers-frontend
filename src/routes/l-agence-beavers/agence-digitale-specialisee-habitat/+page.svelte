@@ -7,7 +7,7 @@
 	import HabitatUseCases from "$lib/components/blocks/lp/HabitatUseCases.svelte";
 
   const meta = {
-    title: "Beavers, l'agence digitale média spécialisée des pro de l'habitat",
+    title: "Agence digitale experte du secteur habitat",
     description: "Découvrez les experts média des professionnels de l'aménagement intérieur et extérieur de l’habitat. Nous vous aidons à améliorer votre notoriété, accroître votre visibilité et augmenter vos ventes.",
     image: '/img/og-beavers-habitat.png'
   }

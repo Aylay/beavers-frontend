@@ -20,7 +20,7 @@
 	};
 
 	const meta = {
-		title: "Tous les cas agence, les clients, de l'agence digitale Beavers",
+		title: "Études de cas Beavers : Nos succès clients",
 		description: "Présentation de tous les cas agence des clients de l'agence digitale Beavers, spécialisée en stratégie marketing digital, SEA, création de sites internet et SEO."
 	}
 </script>

@@ -20,7 +20,7 @@
   const title2 = 'UX, Web Design et Développement Web'
 
   const meta = {
-    title: "Beavers crée votre site internet, vitrine, e-commerce ou blog.",
+    title: "Création et refonte de sites web sur-mesure",
     description: "L'agence digitale Beavers crée votre site internet, blog, ou encore un site e-commerce. Beavers s'occupe de la refonte de votre site en gardant votre SEO."
   }
 
