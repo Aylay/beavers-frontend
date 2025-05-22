@@ -15,7 +15,7 @@
   const text4 = 'Que ce soit une création de site internet, une amélioration SEO de votre site actuel, envoyer une newsletter mensuelle, ou tout autre demande, décrivez-nous votre besoin digital.'
 
 const meta = {
-  title: "Beavers améliore votre visiblité grâce à la production digitale.",
+  title: "Production digitale : site, SEO, newsletter",
   description: "L'agence Beavers vous propose différentes offres entre la création et le développement de site internet en passant par les audit SEO et la création, développement et envoi de newsletters."
 }
 
