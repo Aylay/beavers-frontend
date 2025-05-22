@@ -25,7 +25,7 @@
   allWords = allWords.concat(allWords)
 
   const meta = {
-    title: "Formulaire de contact Beavers",
+    title: "Prendre contact avec Beavers, agence digitale experte",
     description: "Envoyez votre demande à Beavers via un formulaire précisant votre besoin et qui vous êtes. L'équipe vous prendra en charge rapidement et avec le sourire."
   }
 
