@@ -21,7 +21,7 @@
 
 	const meta = {
 		title: "Études de cas Beavers : Nos succès clients",
-		description: "Présentation de tous les cas agence des clients de l'agence digitale Beavers, spécialisée en stratégie marketing digital, SEA, création de sites internet et SEO."
+		description: "Découvrez comment nos clients ont atteint leurs objectifs grâce à nos campagnes SEA, Social Ads, SEO et refontes de sites performantes."
 	}
 </script>
 

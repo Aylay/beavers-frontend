@@ -192,9 +192,9 @@
   <meta name="title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
   <meta property="og:title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
   <meta property="twitter:title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
-  <meta name="description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
-  <meta property="og:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
-  <meta property="twitter:description" content="Beavers est une agence digitale média qui accompagne ses clients vers le sommet. Les castors travaillent en mobilisant ensemble leurs compétences sur le digital pour les clients du secteur de l'habitat." />
+  <meta name="description" content="Beavers accompagne les marques du secteur habitat avec des stratégies digitales : SEA, social media, contenu optimisé et sites performants." />
+  <meta property="og:description" content="Beavers accompagne les marques du secteur habitat avec des stratégies digitales : SEA, social media, contenu optimisé et sites performants." />
+  <meta property="twitter:description" content="Beavers accompagne les marques du secteur habitat avec des stratégies digitales : SEA, social media, contenu optimisé et sites performants." />
 	<meta property="og:type" content="website" />
 	<meta
 		property="og:image"

@@ -25,7 +25,7 @@
 
   const meta = {
     title: "Boostez votre stratégie digitale avec Google Ads",
-    description: "Découvrez comment Google Ads permet de créer des campagnes publicitaires pour générer du trafic qualifié, atteindre ses objectifs et maximiser son retour sur investissement."
+    description: "Augmentez votre visibilité et vos conversions avec nos campagnes Google Ads optimisées : stratégie, gestion, reporting et résultats."
   }
 
   let useCases: Array<any> = $page.data.useCases;

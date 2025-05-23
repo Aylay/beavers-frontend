@@ -11,7 +11,7 @@
 
   const meta = {
 		title: "Offres d'emploi dans votre agence digitale Beavers.",
-		description: "Toutes les offres d'emploi de l'agence digitale Beavers. Si vous pensez faire la différence, envoyez votre candidature pour faire partie de notre famille de castors."
+		description: "Rejoignez une agence digitale humaine et ambitieuse : Beavers recrute des talents passionnés par la publicité, le web et la performance."
 	}
 </script>
 

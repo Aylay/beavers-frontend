@@ -25,7 +25,7 @@
 
   const meta = {
     title: "Beavers met en place votre stratégie social ads",
-    description: "L'agence média Beavers utilise les social ads dans votre stratégie marketing digitale, avec d'autres leviers, afin d'améliorer votre notoriété, générer du trafic sur votre site et améliorer vos ventes."
+    description: "Boostez votre visibilité sur les réseaux sociaux avec des campagnes publicitaires stratégiques : Meta, Pinterest, TikTok et LinkedIn."
   }
 
   let useCases: Array<any> = $page.data.useCases;
