@@ -1,0 +1,200 @@
+@import 'tailwindcss';
+@import 'tailwindcss-animated';
+
+@theme {
+	--color-*: initial;
+	--color-black: #000;
+	--color-white: #fff;
+	--color-jagger: #380a51;
+	--color-rock: #180325;
+	--color-jaguar: #0b0211;
+	--color-bright: #00ffda;
+	--color-bright-turquoise: #00eecb;
+	--color-seance: #8013bd;
+	--color-transparent: transparent;
+	--color-purple: #760eb0;
+	--color-electric: #a118f0;
+	--color-caribbean: #00c1a3;
+
+	--font-*: initial;
+	--font-base: 'Montserrat', Arial, sans-serif;
+	--font-highlight: 'Cookie', Arial, sans-serif;
+
+	--text-*: initial;
+	--text-1: 10rem;
+	--text-1--line-height: 12rem;
+	--text-1--font-weight: 700;
+	--text-1-m: 5.6rem;
+	--text-1-m--line-height: 6rem;
+	--text-1-m--font-weight: 700;
+	--text-2: 7.5rem;
+	--text-2--line-height: 9rem;
+	--text-2--font-weight: 600;
+	--text-3: 4rem;
+	--text-3--line-height: 4.8rem;
+	--text-3--font-weight: 600;
+	--text-4: 3rem;
+	--text-4--line-height: 3rem;
+	--text-5: 2.3rem;
+	--text-5--line-height: 2.76rem;
+	--text-5--font-weight: 600;
+	--text-6: 1.6rem;
+	--text-6--line-height: 2.4rem;
+	--text-7: 1.3rem;
+	--text-7--line-height: 1.6rem;
+
+	--animate-line: line 1s ease-in-out;
+	--animate-title: title 2s linear 1s 1 forwards;
+	--animate-bounceRight: bounceRight 1s infinite;
+
+	@keyframes line {
+		0% {
+			transform: scale(0);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	@keyframes title {
+		0% {
+			opacity: 0;
+		}
+		85% {
+			opacity: 0.2;
+		}
+		100% {
+			opacity: 0;
+			left: -20%;
+		}
+	}
+	@keyframes bounceRight {
+		0%,
+		100% {
+			transform: translateX(-25%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: none;
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+}
+
+@layer base {
+	@font-face {
+		font-family: 'Cookie';
+		src:
+			url('/fonts/cookie-regular-webfont.woff2') format('woff2'),
+			url('/fonts/cookie-regular-webfont.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Montserrat';
+		src:
+			url('/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+			url('/fonts/montserrat-regular-webfont.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Montserrat';
+		src:
+			url('/fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+			url('/fonts/montserrat-semibold-webfont.woff') format('woff');
+		font-weight: 600;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Montserrat';
+		src:
+			url('/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+			url('/fonts/montserrat-bold-webfont.woff') format('woff');
+		font-weight: 700;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Montserrat';
+		src:
+			url('/fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+			url('/fonts/montserrat-extrabold-webfont.woff') format('woff');
+		font-weight: 800;
+		font-style: normal;
+	}
+	html {
+		@apply bg-jaguar font-base text-[10px] text-white;
+	}
+
+	strong {
+		@apply font-semibold;
+	}
+}
+
+@layer components {
+	.content-style h2 {
+		@apply relative pt-8 text-3 text-seance before:absolute before:top-0 before:h-[2px] before:w-40 before:bg-bright before:content-[''];
+	}
+	.content-style * + h2 {
+		@apply mt-20;
+	}
+	.content-style h3 {
+		@apply text-5 text-bright;
+	}
+	.content-style h4 {
+		@apply text-5 text-seance;
+	}
+	.content-style p {
+		@apply text-6;
+	}
+	.content-style p a,
+	.content-style ul li a,
+	.content-style ol li a {
+		@apply font-semibold text-electric underline transition-colors hover:text-bright;
+	}
+	.content-style ul,
+	.content-style ol {
+		@apply flex flex-col gap-4;
+	}
+	.content-style ul li,
+	.content-style ol li {
+		@apply relative pl-12 text-6 before:absolute before:left-0;
+	}
+	.content-style ul li {
+		@apply before:top-3 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-[''];
+	}
+	.content-style ol {
+		counter-reset: item;
+	}
+	.content-style ol li:before {
+		content: counter(item) '.';
+		counter-increment: item;
+		@apply font-semibold text-electric;
+	}
+	.content-style img {
+		@apply overflow-hidden rounded-lg;
+	}
+	.content-style ul li ul {
+		@apply mt-4;
+	}
+}
+
+@layer utilities {
+	.small-container {
+		@apply mx-auto w-full max-lg:px-[5%] lg:max-w-[90rem];
+	}
+	.big-container {
+		@apply mx-auto w-full max-xl:px-[5%] xl:max-w-[120rem];
+	}
+	.text-outline {
+		-webkit-text-stroke-color: #fff;
+		-webkit-text-stroke-width: 1px;
+		@apply text-transparent;
+	}
+	.iframe-div {
+		@apply relative w-full overflow-hidden pt-[56.25%];
+	}
+	.iframe-div iframe,
+	.iframe-div blockquote {
+		@apply absolute inset-0 h-full w-full;
+	}
+}
