@@ -62,7 +62,6 @@
 	});
 </script>
 
-// @ts-nocheck
 <svelte:head>
 	{#if scriptSrc}
 		<script src={scriptSrc} defer></script>
