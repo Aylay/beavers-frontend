@@ -66,12 +66,12 @@
 		>
 			{#if isInViewImg}
 				<picture>
-					<source srcset="/img/lp/habitat-2.webp" type="image/webp" />
-					<source srcset="/img/lp/habitat-2.png" type="image/png" />
+					<source srcset="/img/hp/md-2.webp" type="image/webp" />
+					<source srcset="/img/hp/md-2.png" type="image/png" />
 					<img
-						src="/img/lp/habitat-2.png"
-						alt="Meuble marron avec 3 tasses dessus"
-						class="w-full {isInViewImg ? 'animate-fade' : ''}"
+						src="/img/hp/md-2.png"
+						alt="Smartphone posé dans une tasse orange sur un bureau, objet du quotidien détourné"
+						class="w-full overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				</picture>
 			{/if}
@@ -83,7 +83,7 @@
 				<Wave color="#00FFDA" />
 			</div>
 			<div
-				class="absolute right-10 bottom-0 h-auto w-[6.2rem] {isInView
+				class="absolute right-10 -bottom-8 h-auto w-[6.2rem] {isInView
 					? 'animate-shake'
 					: 'opacity-0'}"
 			>
@@ -98,11 +98,8 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Selon votre problématique, nous connectons les leviers pour un mix média performant. Chez
-				Beavers, la pertinence d'un levier n'est pas liée uniquement à sa performance mais à son
-				impact dans un plan média global et son influence dans le processus de décision. Nous
-				pilotons l'intégralité de vos leviers média pour maitriser les synergies et le parcours
-				client.
+				Chaque problématique est unique et mérite une approche personnalisée. Chez Beavers, nous connectons les bons leviers – Search Ads, Social Ads, Display, Affiliation – pour bâtir un mix média cohérent et puissant. Notre rôle ne se limite pas à l’activation : nous pilotons l’ensemble de vos canaux avec une vision globale, afin de maximiser les synergies et fluidifier le parcours client. <br /><br />
+				Grâce à une méthodologie rigoureuse et des reportings transparents, nous vous aidons à prendre les bonnes décisions au bon moment, pour que chaque euro investi contribue réellement à votre performance et à votre croissance.
 			</p>
 		</div>
 		<div class="mt-12 grid grid-cols-1 gap-8 lg:mt-24 lg:grid-cols-2">

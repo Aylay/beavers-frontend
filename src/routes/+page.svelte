@@ -27,14 +27,14 @@
 				url: 'https://beavers-agency.fr/',
 				'@id': 'https://beavers-agency.fr#collectionpage',
 				description:
-					"L'agence Beavers, spécialiste en marketing digital du secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+					"Beavers est une agence marketing digital spécialisée en stratégie média et performance. Nous accompagnons les entreprises ambitieuses à atteindre leurs objectifs de notoriété, de trafic et de croissance.",
 				inLanguage: 'fr-FR',
 				isPartOf: {
 					'@type': 'WebSite',
 					name: 'Beavers',
 					url: 'https://beavers-agency.fr/',
 					description:
-						"L'agence Beavers, spécialiste en marketing digital du secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+						"Beavers est une agence marketing digital spécialisée en stratégie média et performance. Nous accompagnons les entreprises ambitieuses à atteindre leurs objectifs de notoriété, de trafic et de croissance.",
 					inLanguage: 'fr-FR',
 					'@id': 'https://beavers-agency.fr#website'
 				},
@@ -58,7 +58,7 @@
 				legalName: 'Beavers SAS',
 				slogan: 'Beavers, le digital à pleines dents !',
 				description:
-					"L'agence Beavers, spécialiste en marketing digital du secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+					"Beavers est une agence marketing digital spécialisée en stratégie média et performance. Nous accompagnons les entreprises ambitieuses à atteindre leurs objectifs de notoriété, de trafic et de croissance.",
 				email: 'les-castors@beavers-agency.fr',
 				address: {
 					'@type': 'PostalAddress',
@@ -181,24 +181,24 @@
 </script>
 
 <svelte:head>
-	<title>Beavers, l'agence marketing digital du secteur de l'habitat</title>
-	<meta name="title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
-	<meta property="og:title" content="Beavers, l'agence marketing digital du secteur de l'habitat" />
+	<title>Beavers, l’agence marketing digital experte en performance et acquisition</title>
+	<meta name="title" content="Beavers, l’agence marketing digital experte en performance et acquisition" />
+	<meta property="og:title" content="Beavers, l’agence marketing digital experte en performance et acquisition" />
 	<meta
 		property="twitter:title"
-		content="Beavers, l'agence marketing digital du secteur de l'habitat"
+		content="Beavers, l’agence marketing digital experte en performance et acquisition"
 	/>
 	<meta
 		name="description"
-		content="Beavers accompagne les marques du secteur habitat avec des stratégies digitales : SEA, social media, contenu optimisé et sites performants."
+		content="Beavers accompagne les entreprises ambitieuses avec des stratégies digitales performantes : SEA, Social Ads, création de landing pages et optimisation de la conversion."
 	/>
 	<meta
 		property="og:description"
-		content="Beavers accompagne les marques du secteur habitat avec des stratégies digitales : SEA, social media, contenu optimisé et sites performants."
+		content="Beavers accompagne les entreprises ambitieuses avec des stratégies digitales performantes : SEA, Social Ads, création de landing pages et optimisation de la conversion."
 	/>
 	<meta
 		property="twitter:description"
-		content="Beavers accompagne les marques du secteur habitat avec des stratégies digitales : SEA, social media, contenu optimisé et sites performants."
+		content="Beavers accompagne les entreprises ambitieuses avec des stratégies digitales performantes : SEA, Social Ads, création de landing pages et optimisation de la conversion."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="{siteURL}/img/og-beavers.png" />

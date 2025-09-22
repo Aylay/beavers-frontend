@@ -47,18 +47,10 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Chez Beavers, on est passionné par le domaine de l'habitat, on aime l'humain, se lever le
-				matin pour veiller sur les dernières tendances et pour vous proposer nos idées, qui parfois
-				partent loin, mais dans l'optique de toujours nous challenger et d'apporter ce truc en plus
-				qui vous démarquera de vos concurrents.
+				Chez Beavers, on est passionnés par le digital et par les gens. On aime se lever le matin pour capter les dernières tendances et imaginer des idées qui, parfois, sortent du cadre. Toujours avec une ambition : vous challenger et apporter ce petit truc en plus qui fera la différence.
 			</p>
 			<p class="text-6">
-				Cependant, on garde les pieds sur terre pour vous élaborer une stratégie qui corresponde à
-				vos enjeux tout en respectant vos moyens.
-			</p>
-			<p class="text-6">
-				Chaque détail compte pour mettre en avant les professionnels de l'habitat cherchant de la
-				visibilité et de l'acquisation digitale.
+				Mais on garde toujours les pieds sur terre : une stratégie efficace doit rester réaliste, adaptée à vos enjeux et respectueuse de vos moyens.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">
@@ -75,16 +67,16 @@
 				{#if isInViewImg}
 					<picture>
 						<source srcset="/img/hp/manifesto-1.webp" type="image/webp" />
-						<source srcset="/img/hp/manifesto-1.png" type="image/png" />
+						<source srcset="/img/hp/manifesto-1.jpg" type="image/jpeg" />
 						<img
-							src="/img/hp/manifesto-1.png"
-							alt="Homme faisant de l'ordinateur et Femme travaillant à un tableau"
-							class="w-full {isInViewImg ? 'animate-fade' : ''}"
+							src="/img/hp/manifesto-1.jpg"
+							alt="Deux collègues souriants travaillant ensemble sur un ordinateur portable, échange complice et collaboratif"
+							class="w-full overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 						/>
 					</picture>
 				{/if}
 				<div
-					class="absolute top-16 left-24 flex h-[11rem] w-[11.75rem] items-center justify-center"
+					class="absolute -top-10 -right-10 flex h-[11rem] w-[11.75rem] items-center justify-center"
 				>
 					<Palette1 newClass="transform rotate-180" />
 					<Baguette

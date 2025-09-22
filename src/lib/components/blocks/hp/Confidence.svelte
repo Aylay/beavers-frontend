@@ -17,10 +17,10 @@
 			title: 'V-ZUG'
 		},
 		{
-			src: '/img/clients/adn-clim.svg',
-			newClass: 'w-full h-auto',
-			href: '/cas/adn-clim-ameliore-visibilite-creation-site-web',
-			title: 'ADN Clim'
+			src: '/img/clients/imagine_2050.svg',
+			newClass: 'h-full w-auto',
+			href: '/cas/developpement-site-internet-imagine-2050',
+			title: 'Imagine 2050'
 		},
 		{
 			src: '/img/clients/cafes-richard.svg',

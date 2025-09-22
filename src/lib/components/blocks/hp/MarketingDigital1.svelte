@@ -63,11 +63,8 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Beavers s'engage à vous accompagner au plus près dans toute votre stratégie digitale. Le
-				marketing digital évolue chaque jour dans tous les secteurs (bâtiment, rénovation
-				énergétique, rénovation intérieure / extérieure, etc.), c'est pourquoi nos castors
-				mobilisent leurs connaissances pour vous proposer leurs meilleures idées afin de construire
-				votre projet, avec les meilleurs matériaux (supports digitaux).
+				Beavers s’engage à vous accompagner dans toute votre stratégie digitale. Dans un univers où les plateformes, les comportements et les technologies évoluent chaque jour, nos castors mobilisent leur créativité et leur expérience pour concevoir des campagnes performantes et durables. <br /><br />
+				Nous travaillons à la croisée du média et de la data, afin de transformer vos investissements en résultats mesurables. Qu’il s’agisse de gagner en visibilité, d’acquérir de nouveaux clients ou de booster votre croissance, nous élaborons des dispositifs sur mesure, toujours alignés avec vos objectifs business.
 			</p>
 		</div>
 	</div>
@@ -79,12 +76,12 @@
 		>
 			{#if isInViewImg}
 				<picture>
-					<source srcset="/img/lp/habitat-1.webp" type="image/webp" />
-					<source srcset="/img/lp/habitat-1.png" type="image/png" />
+					<source srcset="/img/hp/md-1.webp" type="image/webp" />
+					<source srcset="/img/hp/md-1.jpg" type="image/png" />
 					<img
-						src="/img/lp/habitat-1.png"
-						alt="2 personnes dans une brouette en train de faire des travaux"
-						class="w-full {isInViewImg ? 'animate-fade' : ''}"
+						src="/img/hp/md-1.jpg"
+						alt="Homme en costume poussant un caddie vide en pleine rue urbaine, scène de vie absurde et humoristique"
+						class="w-full overflow-hidden rounded-lg {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 					/>
 				</picture>
 			{/if}

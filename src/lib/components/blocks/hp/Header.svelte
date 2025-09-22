@@ -30,19 +30,19 @@
 
 	const infos = [
 		{
-			number: '68',
+			number: '1 254',
 			text: 'Commandes',
-			percent: '25%'
+			percent: '26%'
 		},
 		{
-			number: '4,5%',
+			number: '6%',
 			text: 'Taux de conversion',
-			percent: '60%'
+			percent: '58%'
 		},
 		{
-			number: '51 000€',
+			number: '258 350€',
 			text: "Chiffre d'affaires",
-			percent: '37%'
+			percent: '27%'
 		}
 	];
 </script>
@@ -51,13 +51,12 @@
 	<div class="big-container relative z-10 flex h-full items-center justify-center">
 		<div class="lg:w-1/2">
 			<h1 class="text-3">
-				Construisons <br class="max-lg:hidden" />votre marketing digital
-				<br class="max-lg:hidden" />du sol au plafond.
+				Construisons <br class="max-lg:hidden" />des stratégies digitales
+				<br class="max-lg:hidden" />qui transforment.
 			</h1>
 			<h2 class="mt-12 text-4 font-normal text-electric">Le digital à pleines dents&nbsp;!</h2>
 			<h3 class="mt-6 pr-12 text-6 font-bold text-bright">
-				L'agence Beavers, spécialiste du secteur de l'habitat, vous propose des solutions adaptées
-				pour répondre à vos objectifs&nbsp;: de notoriété, de trafic et d'acquisition.
+				Beavers, agence digitale experte en média et performance, accompagne les marques ambitieuses à atteindre leurs objectifs : visibilité, acquisition et croissance.
 			</h3>
 			<div class="mt-[calc(100vh*0.1)] flex w-8 flex-col items-center gap-2">
 				<Mouse newClass="h-auto w-full max-lg:hidden" color="#FFF" />
@@ -99,11 +98,11 @@
 				<Wave2 newClass="absolute top-2/3 left-2/3 fill-seance animate-shake animate-delay-500" />
 
 				<div
-					class="absolute top-1/2 left-1/2 flex w-full max-w-[50rem] -translate-x-1/2 -translate-y-1/2 transform animate-fade rounded-2xl bg-white py-6 animate-delay-1000"
+					class="absolute top-1/2 left-1/2 flex w-full max-w-[55rem] -translate-x-1/2 -translate-y-1/2 transform animate-fade rounded-2xl bg-white py-6 animate-delay-1000"
 				>
 					{#each infos as info}
 						<div
-							class="border-opacity-20 flex flex-col items-center gap-2 border-l border-jaguar px-10 first:border-0"
+							class="border-opacity-20 flex flex-col items-center gap-2 border-l border-jaguar px-10 first:border-0 flex-1"
 						>
 							<p class="text-5 leading-none font-bold text-seance">
 								{info.number}

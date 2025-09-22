@@ -40,27 +40,22 @@
 >
 	<div class="flex-1">
 		<Line />
-		<Title first="Notre programme" second="RSE" />
+		<Title first="Notre engagement" second="RSE" />
 		<div
 			class="mt-8 mb-16 flex flex-col gap-8 animate-delay-500 {isInView
 				? 'animate-fade'
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Nous soutenons deux associations pour la protection de notre environnement, en reversant 2%
-				de notre chiffre d'affaires à The Ocean CleanUp et Tree-Nation.
+				Chez Beavers, nous croyons que le digital ne doit pas se construire au détriment de la planète. C’est pourquoi nous soutenons deux associations engagées pour l’environnement, en reversant 2% de notre chiffre d’affaires à The Ocean CleanUp et Tree-Nation.
 			</p>
 			<p class="text-6">Grâce à vous :</p>
 			<ul class="mb-8 flex flex-col gap-4 {isInView ? 'animate-fade-right' : 'opacity-0'}">
-				<li
-					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-seance before:content-['']"
-				>
-					Des fonds marins sont nettoyés chaque jour ;
+				<li class="text-6 pl-8">
+					🌊 Des fonds marins nettoyés chaque jour
 				</li>
-				<li
-					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-seance before:content-['']"
-				>
-					+ de {(Math.floor(trees / 100) * 100).toLocaleString()} arbres ont été plantés.
+				<li class="text-6 pl-8">
+					🌱 Plus de <strong>{(Math.floor(trees / 100) * 100).toLocaleString()} arbres déjà plantés</strong>
 				</li>
 			</ul>
 		</div>
