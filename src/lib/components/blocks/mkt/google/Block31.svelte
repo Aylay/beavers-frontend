@@ -49,34 +49,32 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Google Ads s'impose comme un levier incontournable grâce à ses options de ciblage précises
-				et sa capacité à capter une audience qualifiée :
+				Google Ads est un levier incontournable pour <strong>atteindre les bonnes personnes au bon moment</strong>, grâce à des capacités de ciblage d’une précision inégalée.<br />
+				Chaque campagne peut être calibrée selon vos objectifs — acquisition, conversion ou notoriété — afin d’obtenir des résultats mesurables et durables.
+			</p>
+			<p class="text-6">
+				Voici quelques-unes des approches les plus performantes&nbsp;:
 			</p>
 			<ul class="flex flex-col gap-4">
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					Contrairement aux campagnes sur les réseaux sociaux, Google Ads exploite l’intention
-					d’achat grâce aux recherches effectuées en temps réel.
+					<strong>Ciblage par intention d’achat</strong> : contrairement aux réseaux sociaux, Google Ads capte les utilisateurs au moment précis où ils expriment un besoin. Vous touchez ainsi des prospects déjà engagés dans une démarche active de recherche.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					Les annonceurs peuvent, par exemple, cibler des utilisateurs cherchant "acheter un canapé"
-					ou "maison à vendre".
+					<strong>Ciblage par mots-clés</strong> : en sélectionnant des expressions comme “acheter canapé”, “assurance auto” ou “logiciel de gestion”, vos annonces s’affichent auprès d’utilisateurs hautement qualifiés.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					Grâce à des fonctionnalités avancées comme les audiences similaires et les listes de
-					remarketing, Google Ads permet de cibler des segments hautement qualifiés et pertinents
-					pour chaque campagne.
+					<strong>Ciblage par audiences avancées</strong> : grâce aux <strong>audiences similaires</strong>, <strong>listes de remarketing</strong> et <strong>segments personnalisés</strong>, vous pouvez étendre votre portée tout en maintenant un haut niveau de pertinence.
 				</li>
 			</ul>
 			<p class="text-6">
-				Avec ces outils, les possibilités de personnalisation et d’ajustement sont presque infinies,
-				permettant de répondre à des objectifs variés, qu’ils soient liés à l’acquisition, la
-				conversion ou la notoriété.
+				Avec la data et l’intelligence artificielle de Google, les possibilités de segmentation sont presque infinies.<br />
+				Vous pouvez ajuster vos campagnes selon le comportement, les intérêts ou la localisation de vos audiences, afin d’atteindre vos clients potentiels avec une précision chirurgicale.
 			</p>
 		</div>
 		<div class="mt-20 flex gap-12">

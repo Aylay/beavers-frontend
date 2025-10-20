@@ -54,26 +54,19 @@
 				? 'animate-fade-right'
 				: 'opacity-0'}"
 		>
-			Beavers, votre partenaire digital qui bâtit votre présence dans le secteur de l'habitat. Soyez
-			visibles sur les résultats de recherche Google de vos prospects et assurez votre place en tête
-			de liste.
+			Beavers, votre partenaire digital pour développer votre visibilité et maximiser vos résultats. Soyez présents sur les premières positions Google quand vos clients recherchent vos produits ou services, et gardez une longueur d’avance sur vos concurrents.
 		</p>
 		<p class="mb-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Vos prospects recherchent exactement ce que vous offrez ? Nous choisissons selon votre
-			objectif, une stratégie d'achat de mots clés pour être vu, adoré et adopté.
+			Vos prospects recherchent exactement ce que vous proposez ? Nous concevons une stratégie d’achat de mots-clés sur mesure, pensée pour vos objectifs de notoriété, de trafic ou de conversion. Notre approche combine pertinence sémantique, analyse concurrentielle et data pour générer un maximum de performance.
 		</p>
 		<p class="mb-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Ne laissez aucun prospect égaré ! Avec nos extensions, nous les guidons directement vers ce
-			qui les intéresse sur votre site, boostant ainsi vos conversions avec facilité.
+			Ne laissez aucun clic au hasard ! Grâce à des extensions d’annonces adaptées, nous guidons vos visiteurs directement vers les pages les plus pertinentes de votre site. Résultat : un parcours plus fluide, un meilleur taux de clic et une hausse mesurable des conversions.
 		</p>
 		<p class="mb-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Chez Beavers, on jongle avec les enchères, les audiences et les supports, que ce soit sur
-			ordinateur, tablette ou mobile, pour maximiser vos performances dans le secteur de l'habitat.
-			Votre succès n'a pas de limites avec nous !
+			Chez Beavers, on pilote vos campagnes Google Ads comme un véritable levier de croissance. En jonglant avec les enchères, les audiences et les supports (ordinateur, mobile, tablette), nous optimisons vos budgets et maximisons votre retour sur investissement. Avec nous, votre visibilité n’a pas de limite.
 		</p>
 		<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Découvrez l'art de toucher vos clients : diffusez vos spots vidéos sur YouTube Ads et ciblez
-			précisément leurs centres d'intérêts. Vous apparaîtrez même à la télé !
+			Et pour aller plus loin, découvrez la puissance de YouTube Ads : des vidéos qui captent l’attention, ciblent les bons centres d’intérêt et diffusent votre message au moment parfait. Touchez vos futurs clients sur les écrans qu’ils regardent le plus.
 		</p>
 		<div class="mt-16 flex justify-between max-lg:flex-col max-lg:gap-4">
 			<div

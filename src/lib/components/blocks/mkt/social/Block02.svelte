@@ -71,25 +71,31 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Ce sont des <strong>publications sponsorisées</strong>. Une marque va donc acheter le fait
-				de pouvoir vous montrer son message. Il ne s'agit pas forcément de marque que vous suivez
-				déjà.
+				Les <strong>publications sponsorisées</strong> permettent à une marque de toucher des personnes qui ne la connaissent pas encore, mais dont les centres d’intérêt ou le comportement en ligne correspondent à son offre.
 			</p>
 			<p class="text-6">
-				En fonction de l'annonceur et de son objectif, différents leviers et social ads seront
-				activés. Par exemple, pour un annonceur BtoB, on favorisera Linkedin Ads et pour un
-				annonceur du secteur de la décoration ou de l'ameublement, on lancera des stratégies
-				Instagram Ads ou Pinterest Ads.
+				Selon le <strong>secteur et la typologie de client</strong>, les leviers à activer diffèrent :
 			</p>
-			<p class="text-6">
-				Chaque cas est différent et notre <a
-					href="/l-agence-beavers/agence-social-ads"
-					title="Agence Social Ads Beavers"
-					class="font-bold text-electric underline transition-colors hover:text-bright"
-					>agence social ads</a
+			<ul class="flex flex-col gap-4">
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-				étudie l'annonceur et son besoin afin de déterminer
-				<strong>quelle stratégie mettre en place</strong>.
+					en <strong>BtoB</strong>, <strong>LinkedIn Ads</strong> est souvent le plus pertinent ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					en <strong>e-commerce</strong> ou <strong>lifestyle</strong>, <strong>Instagram Ads</strong> et <strong>Pinterest Ads</strong> offrent un fort potentiel de conversion ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					pour des <strong>campagnes d’impact rapide</strong>, <strong>TikTok Ads</strong> s’impose comme un format à forte viralité.
+				</li>
+			</ul>
+			<p class="text-6">
+				Chez Beavers, notre <a href="/l-agence-beavers/agence-social-ads" title="Agence Social Ads Beavers" class="font-bold underline text-electric hover:text-bright transition-colors"><strong>agence Social Ads</strong></a> analyse votre activité, vos audiences et vos objectifs pour concevoir une <strong>stratégie sur mesure</strong>.<br />
+				Chaque campagne est pensée pour <strong>maximiser la performance</strong>, tout en valorisant votre image et en construisant une présence digitale cohérente.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

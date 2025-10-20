@@ -1,0 +1,144 @@
+{
+  "redirects": [
+    {
+      "source": "/jobs/chef-projet-media",
+      "destination": "/jobs"
+    },
+    {
+      "source": "/production-digitale/amp",
+      "destination": "/production-digitale"
+    },
+    {
+      "source": "/cas/refonte-du-site-internet-du-restaurant-caffe-roma/amp",
+      "destination": "/cas/refonte-du-site-internet-du-restaurant-caffe-roma"
+    },
+    {
+      "source": "/la-pause-cafe/media/tiktok-for-business-la-nouvelle-plateforme-publicitaire/amp",
+      "destination": "/la-pause-cafe/media/tiktok-for-business-la-nouvelle-plateforme-publicitaire"
+    },
+    {
+      "source": "/la-pause-cafe/seo/definition-seo-search-engine-optimization/amp",
+      "destination": "/la-pause-cafe/seo/definition-seo-search-engine-optimization"
+    },
+    {
+      "source": "/la-pause-cafe/media/est-ce-utile-de-faire-du-retargeting/amp",
+      "destination": "/la-pause-cafe/media/est-ce-utile-de-faire-du-retargeting"
+    },
+    {
+      "source": "/media",
+      "destination": "/la-pause-cafe/media"
+    },
+    {
+      "source": "/la-pause-cafe/parametrer-modele-attribution-campagnes-digitales",
+      "destination": "/la-pause-cafe/media/parametrer-modele-attribution-campagnes-digitales"
+    },
+    {
+      "source": "/la-pause-cafe/definition-seo-search-engine-optimization",
+      "destination": "/la-pause-cafe/seo/definition-seo-search-engine-optimization"
+    },
+    {
+      "source": "/la-pause-cafe/media/7-grandes-tendances-du-marketing-digital-pour-2020/amp",
+      "destination": "/la-pause-cafe/media/7-grandes-tendances-du-marketing-digital-pour-2020"
+    },
+    {
+      "source": "/la-pause-cafe/media/covid-19-que-faire-comunication-digitale/amp",
+      "destination": "/la-pause-cafe/media/covid-19-que-faire-comunication-digitale"
+    },
+    {
+      "source": "/la-pause-cafe/media/page/1",
+      "destination": "/la-pause-cafe/media"
+    },
+    {
+      "source": "/la-pause-cafe/page/1",
+      "destination": "/la-pause-cafe"
+    },
+    {
+      "source": "/la-pause-cafe/media/page/2",
+      "destination": "/la-pause-cafe/media"
+    },
+    {
+      "source": "/seo",
+      "destination": "/la-pause-cafe/seo"
+    },
+    {
+      "source": "/la-pause-cafe/seo/marketing-digital",
+      "destination": "/la-pause-cafe/seo/comment-faire-seo-levier-marketing-digital"
+    },
+    {
+      "source": "/la-pause-cafe/seo/l-agence-beavers",
+      "destination": "/l-agence-beavers"
+    },
+    {
+      "source": "/la-pause-cafe/media/lexique-media-online/amp",
+      "destination": "/la-pause-cafe/media/lexique-media-online"
+    },
+    {
+      "source": "/la-pause-cafe/media/facebook-revoit-les-lois-du-marche-en-lancant-facebook-shop/amp",
+      "destination": "/la-pause-cafe/media/facebook-revoit-les-lois-du-marche-en-lancant-facebook-shop"
+    },
+    {
+      "source": "/pause-cafe",
+      "destination": "/la-pause-cafe"
+    },
+    {
+      "source": "/cas/refonte-du-site-humansourcing-accompagnement-seo",
+      "destination": "/cas/refonte-du-site-human-sourcing-accompagnement-seo"
+    },
+    {
+      "source": "/newsletter-inscription",
+      "destination": "/"
+    },
+    {
+      "source": "/la-pause-cafe/definition-rtb-real-time-bidding",
+      "destination": "/la-pause-cafe/media/definition-rtb-real-time-bidding"
+    },
+    {
+      "source": "/la-pause-cafe/developpement-web/top-5-seo-problemes-on-page",
+      "destination": "/la-pause-cafe/seo/top-5-seo-problemes-on-page"
+    },
+    {
+      "source": "/pause-cafe/parametrer-modele-attribution-campagnes-digitales",
+      "destination": "/la-pause-cafe/media/parametrer-modele-attribution-campagnes-digitales"
+    },
+    {
+      "source": "/la-pause-cafe/media/parametrer-modele-attribution-campagnes-digitales/amp",
+      "destination": "/la-pause-cafe/media/parametrer-modele-attribution-campagnes-digitales"
+    },
+    {
+      "source": "/cas/site-multilingue-reservation-my-paris-cruise/amp",
+      "destination": "/cas-agence"
+    },
+    {
+      "source": "/la-pause-cafe/seo/l-agence-beavers",
+      "destination": "/l-agence-beavers"
+    },
+    {
+      "source": "/beavers-the-ocean-cleanup",
+      "destination": "/programme-rse"
+    },
+    {
+      "source": "/beavers-tree-nation",
+      "destination": "/programme-rse"
+    },
+    {
+      "source": "/la-pause-cafe/developpement-web/:path*",
+      "destination": "/la-pause-cafe/site-internet/:path*"
+    },
+    {
+      "source": "/cas",
+      "destination": "/cas-agence"
+    },
+    {
+      "source": "/cas/site-multilingue-reservation-my-paris-cruise",
+      "destination": "/cas-agence"
+    },
+    {
+      "source": "/la-pause-cafe/media/publicite-linkedin-5-conseils-maximiser-impact-annonces-b2b",
+      "destination": "/la-pause-cafe/media/linkedin-5-conseils-maximiser-impact-annonces-b2b"
+    },
+    {
+      "source": "/l-agence-beavers/agence-digitale-specialisee-habitat",
+      "destination": "/l-agence-beavers"
+    }
+  ]
+}

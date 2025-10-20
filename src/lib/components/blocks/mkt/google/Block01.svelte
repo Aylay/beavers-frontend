@@ -63,20 +63,15 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Google Ads désigne les publicités diffusées sur le réseau de Google, incluant les résultats
-				de recherche, les sites partenaires, YouTube, et plus encore. C'est une stratégie marketing
-				efficace pour accroître votre visibilité, attirer du trafic qualifié vers votre site, et
-				augmenter vos conversions.
+				Google Ads regroupe l’ensemble des <strong>publicités diffusées sur les plateformes de Google</strong> : moteur de recherche, YouTube, sites partenaires et réseau Display.<br />
+				C’est un levier incontournable du marketing digital pour <strong>accroître la visibilité</strong>, <strong>attirer du trafic qualifié</strong> et <strong>générer des conversions mesurables</strong>.
 			</p>
 			<p class="text-6">
-				Google Ads est l'une des plateformes publicitaires les plus utilisées, offrant une variété
-				d'options pour atteindre vos objectifs marketing, que ce soit via le réseau de recherche, le
-				display, ou YouTube.
+				Grâce à sa puissance de ciblage, Google Ads permet de diffuser vos campagnes auprès d’audiences à forte intention d’achat, au moment précis où elles recherchent vos produits ou services.
 			</p>
 			<p class="text-6">
-				Google Ads fonctionne sur un système d'enchères où les annonceurs enchérissent sur des
-				mots-clés pertinents pour diffuser leurs annonces auprès d'utilisateurs recherchant des
-				produits ou services similaires.
+				La plateforme repose sur un <strong>système d’enchères intelligent</strong>, où les annonceurs misent sur des mots-clés stratégiques.<br />
+				Mais au-delà du simple enchérissement, la performance se joue dans la <strong>pertinence des annonces</strong>, la <strong>qualité des pages de destination</strong> et la <strong>stratégie de pilotage</strong>.
 			</p>
 		</div>
 	</div>

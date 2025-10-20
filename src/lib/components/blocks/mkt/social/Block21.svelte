@@ -38,21 +38,35 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Vous aurez la possibilité de sélectionner des placements différents en fonction de vos <strong
-					>objectifs</strong
-				> et des plateformes.
+				Les plateformes sociales offrent une grande variété de <strong>placements publicitaires</strong>, à choisir selon vos <strong>objectifs</strong> et le <strong>comportement de vos audiences</strong>.
 			</p>
 			<p class="text-6">
-				En général, les plateformes vous incitent à tester tous les placements et à laisser
-				l'algorithme faire son travail en favorisant la diffusion sur le placement qui génère les
-				meilleurs résultats en fonction de vos objectifs.
+				La plupart des outils — Meta Ads, TikTok Ads, LinkedIn Campaign Manager ou Pinterest Ads — proposent un mode de diffusion automatique.<br />
+				L’algorithme teste alors différents emplacements et privilégie ceux qui <strong>génèrent les meilleurs résultats</strong> selon votre objectif : visibilité, engagement ou conversion.
 			</p>
 			<p class="text-6">
-				En fonction de votre objectif, nos experts social ads peuvent recommander de plus ou moins
-				pousser la diffusion sur le placement en newsfeed qui est le plus commun mais également de
-				plus en plus dans les stories ou les reels (principalement sur Facebook ads et Instagram
-				ads, très interessant pour du branding) en colonne de droite, ou dans les sections discover
-				ou marketplace.
+				Chez Beavers, nous combinons l’analyse des données et l’expérience terrain pour recommander les placements les plus pertinents&nbsp;:
+			</p>
+			<ul class="flex flex-col gap-4">
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					le <strong>fil d’actualité (newsfeed)</strong>, idéal pour la performance et la conversion ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					les <strong>stories et reels</strong>, formats immersifs parfaits pour le <strong>branding</strong> et la mémorisation ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					les <strong>colonnes latérales</strong> ou <strong>placements contextuels</strong> (Discover, Marketplace, etc.), utiles pour la répétition et la visibilité complémentaire.
+				</li>
+			</ul>
+			<p class="text-6">
+				Chaque plateforme possède ses spécificités : <strong>Instagram favorise le visuel</strong>, <strong>TikTok l’instantanéité</strong>, <strong>LinkedIn la précision B2B</strong>.<br />
+				Notre rôle est d’<strong>ajuster la diffusion</strong> pour tirer le meilleur parti de chaque environnement tout en optimisant votre budget média.
 			</p>
 		</div>
 		<div class="mt-20 animate-delay-[1500ms] {isInView ? 'animate-fade' : 'opacity-0'}">
@@ -67,7 +81,7 @@
 				? 'lg:animate-fade-right'
 				: 'lg:opacity-0'}"
 		>
-			Facteur du succès pour une bonne stratégie social ads
+			Facteur du succès pour une bonne stratégie social ads performante
 		</h3>
 		<div
 			class="mt-8 mb-16 flex flex-col gap-8 animate-delay-500 {isInView
@@ -75,35 +89,19 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				La création est devenue très importante pour se démarquer dans un univers compétitifs très
-				fort et sur des réseaux à forte pression publicitaire.
+				Dans un environnement saturé de contenus, la <strong>création publicitaire</strong> est devenue un levier central de performance. Les réseaux sociaux sont des espaces ultra-compétitifs où seules les campagnes les plus percutantes parviennent à capter l’attention.
 			</p>
 			<p class="text-6">
-				Alors qu'il y a quelques années de ça, <a
-					href="/la-pause-cafe/media/importance-contenu-visuel-secteur-habitat-statregies-communication-digitale-optimale"
-					title="L'importance du contenu visuel dans le secteur de l’habitat : Stratégies pour une communication digitale optimale"
-					class="font-bold text-electric underline transition-colors hover:text-bright"
-					>l'attractivité du visuel</a
-				> et/ou de la vidéo n'était pas forcément le point essentiel d'une bonne stratégie social ads,
-				aujourd'hui c'est un élément à ne pas négliger. C'est parfois l'un des éléments qui est un peu
-				pris à la légère par les annonceurs, qui par souci d'économies, investissent peu dans leur création
-				publicitaire.
+				Autrefois perçue comme secondaire, la <strong>qualité visuelle</strong> est aujourd’hui décisive. Trop d’annonceurs négligent encore cette étape et investissent peu dans leurs assets créatifs, alors qu’ils influencent directement le taux de clics, le <strong>coût par conversion</strong> et la <strong>mémorisation de marque</strong>.
 			</p>
 			<p class="text-6">
-				Dans toute bonne stratégie publicitaire sur les social ads, l'<strong>AB testing</strong> est
-				nécessaire. On entend par AB test, le test de plusieurs visuels ou de plusieurs vidéos, avec
-				différents axes ou différentes accroches. Le média qui nous plait le plus n'est pas forcément
-				celui qui va avoir les meilleures performances.
+				Une bonne stratégie Social Ads repose sur la <strong>variété</strong> et l’<strong>expérimentation</strong>. L’<strong>A/B testing</strong> permet de comparer plusieurs visuels, vidéos ou accroches afin d’identifier les combinaisons les plus performantes. Le contenu qui plaît le plus n’est pas toujours celui qui convertit le mieux.
 			</p>
 			<p class="text-6">
-				La vidéo émerge de plus en plus. Alors qu'elle n'était considérée que comme un levier de
-				notoriété, elle peut permettre aujourd'hui de générer directement des conversions en ligne
-				(veillez à une bonne expérience utilisateur avec des visuels attractifs, par exemple des <a
-					href="/la-pause-cafe/media/bonnes-pratiques-ugc-decoller-entreprise"
-					title="Les bonnes pratiques de l’UGC pour faire décoller votre entreprise"
-					class="font-bold text-electric underline transition-colors hover:text-bright"
-					>publicités type UGC</a
-				> ou des mises en scène de l'utilisation du produit).
+				La <strong>vidéo</strong>, longtemps considérée comme un simple levier de notoriété, s’impose désormais comme un outil de conversion directe. Les formats <strong>UGC</strong>, les <strong>mises en scène produits</strong> ou les <strong>reels dynamiques</strong> créent une expérience plus authentique et impactante, capable d’engager et de déclencher l’action.
+			</p>
+			<p class="text-6">
+				Chez Beavers, nous plaçons la création au cœur de chaque stratégie Social Ads : chaque visuel, chaque message et chaque test a pour objectif d’optimiser les performances tout en valorisant la marque.
 			</p>
 		</div>
 		<div class="mt-20 animate-delay-[1500ms] {isInView ? 'animate-fade' : 'opacity-0'}">

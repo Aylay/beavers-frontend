@@ -42,7 +42,7 @@
 	on:inview_change={handleChange}
 >
 	<div
-		class="relative flex flex-1 justify-center gap-8"
+		class="relative flex flex-1 justify-center gap-8 h-full"
 		use:inview={optionsImg}
 		on:inview_change={handleChangeImg}
 	>
@@ -148,43 +148,40 @@
 				? 'animate-fade-right'
 				: 'opacity-0'}"
 		>
-			En 2023 : 2 français sur 3 utilisent les réseaux sociaux au moins 1 fois par jour.<br /><br />
-			2h26 / jour sur les réseaux sociaux en France<br /><br />
-			Les français consultent en moyenne 3,5 réseaux sociaux par jour.
+			Les réseaux sociaux font désormais partie du quotidien : <strong>2 français sur 3</strong> les utilisent chaque jour, pendant plus de <strong>2h30 en moyenne</strong>.<br />
+			TikTok, Instagram, Facebook, LinkedIn ou encore Pinterest rythment la journée de vos clients — c’est là qu’ils s’inspirent, découvrent et interagissent avec les marques.
 		</p>
 		<p class="mb-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Communiquez auprès de vos prospects en fonction de leur intérêt pour la rénovation de
-			l'habitat.
+			Chez Beavers, nous vous aidons à tirer parti de ce temps d’attention précieux en créant des campagnes Social Ads performantes, pensées pour vos objectifs : notoriété, trafic ou conversion.<br />
+			Nos stratégies s’appuient sur une approche <strong>“right place, right time, right people”</strong> : diffuser le bon message, au bon moment, à la bonne audience.
 		</p>
 		<p class="mb-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Nous travaillons sur une approche "right place, right time, right people" pour maximiser votre
-			visibilité et vos taux de conversion.
+			Que votre priorité soit de renforcer l’image de votre marque, d’attirer de nouveaux prospects ou de stimuler les ventes, nous concevons des campagnes créatives et mesurables.<br />
+			De la phase d’analyse des audiences à l’optimisation continue, chaque campagne est pilotée avec rigueur et transparence pour maximiser vos résultats.
 		</p>
-		<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
+		<p class="mb-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 			Grâce aux <a
 				class="font-semibold text-electric underline transition-colors hover:text-bright"
 				href="/la-pause-cafe/media/agence-social-ads-propulsez-visibilite-ligne"
-				title="Agence social ads : propulsez votre visibilité en ligne">social media ads</a
-			>, soyez présent sur TikTok, Instagram,
-			<a
+				title="Agence social ads : propulsez votre visibilité en ligne"><strong>social media ads</strong></a
+			>, soyez visibles là où vos clients passent le plus de temps.<br />
+			Nous gérons vos campagnes sur <a
 				title="Agence Facebook Ads : Propulsez votre visibilité et boostez vos ventes sur Facebook"
 				href="/l-agence-beavers/agence-facebook-ads"
 				class="font-semibold text-electric underline transition-colors hover:text-bright"
-				>Facebook</a
-			>, LinkedIn,
-			<a
+				>Meta Ads (Facebook & Instagram)</a>, TikTok Ads, <a
+				title="Agence Linkedin Ads"
+				href="/l-agence-beavers/agence-linkedin-ads"
+				class="font-semibold text-electric underline transition-colors hover:text-bright"
+				>LinkedIn Ads</a>, <a
 				title="Agence Pinterest Ads : Boostez vos ventes en ligne grâce à notre expertise Pinterest Ads"
 				href="/l-agence-beavers/agence-pinterest-ads"
 				class="font-semibold text-electric underline transition-colors hover:text-bright"
-				>Pinterest</a
-			>
-			ou encore X et touchez vos prospects.
-			<a
-				href="/la-pause-cafe/media/comment-agence-social-ads-booste-votre-marque"
-				class="font-semibold text-electric underline transition-colors hover:text-bright"
-				title="Comment une agence social ads booste votre marque">Améliorer "l'awarness"</a
-			> et la considération de votre marque pour générer plus de profits ou améliorer votre image de
-			marque.
+				>Pinterest Ads</a> et X, en adaptant les formats, les visuels et les messages à chaque plateforme.
+		</p>
+		<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
+			Notre mission : améliorer la <strong>notoriété</strong>, la <strong>considération</strong> et la <strong>conversion</strong> de votre marque.<br />
+			Qu’il s’agisse d’une stratégie d’acquisition, de fidélisation ou d’image, nous activons les leviers sociaux les plus performants pour transformer les vues en résultats concrets.
 		</p>
 		<div class="mt-16 flex justify-between max-lg:flex-col max-lg:gap-4">
 			<div

@@ -49,22 +49,31 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Les social ads sont très puissantes dans une stratégie media online de part leur <strong
-					><a
-						href="/la-pause-cafe/media/ciblage-comment-agence-publicite-digitale-affiner-audience"
-						title="L’art du ciblage : comment une agence de publicité digitale peut affiner votre audience"
-						class="font-bold text-electric underline transition-colors hover:text-bright"
-						>ciblage précis</a
-					></strong
-				>. En effet, les plateformes sociales en savent beaucoup sur chaque internaute et sur leurs
-				habitudes de navigation et d'achat.
+				Les <strong>Social Ads</strong> sont redoutablement efficaces dans une stratégie d’acquisition grâce à la <strong>précision du ciblage</strong> qu’elles permettent.<br />
+				Les plateformes sociales disposent d’une quantité impressionnante de données sur les utilisateurs : comportements, centres d’intérêt, achats, interactions ou changements de vie.
 			</p>
 			<p class="text-6">
-				Les outils publicitaires social ads permettent donc de <strong>cibler des audiences</strong>
-				sur différents critères, plus ou moins précis en fonction de la plateforme. Il est, par exemple,
-				possible de cibler les propriétaires ou les personnes qui ont récemment déménagé. Il est également
-				possible de cibler les personnes qui aiment le surf. Une infinité de ciblage est donc mis à disposition
-				de l'annonceur ou de l'agence de pub.
+				Ces outils publicitaires offrent la possibilité de <strong>segmenter vos audiences</strong> selon une multitude de critères, parfois extrêmement fins&nbsp;:
+			</p>
+			<ul class="flex flex-col gap-4">
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					propriétaires, jeunes parents, personnes ayant récemment déménagé ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					amateurs de décoration, de sport ou de voyage ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					utilisateurs ayant interagi avec vos publications ou visité votre site.
+				</li>
+			<p class="text-6">
+				Autrement dit, les Social Ads permettent de <strong>parler au bon utilisateu, <strong>au bon momen, avec un message personnalisé selon son profil ou son intention.<br />
+				C’est cette granularité du ciblage qui fait toute la force de l’écosystème publicitaire social.
 			</p>
 		</div>
 		<div class="mt-20 flex gap-12">

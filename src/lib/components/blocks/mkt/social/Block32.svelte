@@ -71,25 +71,31 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Différemment de Google ads (ou search ads) où des mots-clés sont achetés aux enchères, vous
-				pouvez cibler votre audience en fonction de critères socio-démographiques, de critères
-				géographiques, de centres d'interêts. Vous pouvez encore activer des segments de retargeting
-				qui vous permettent de retoucher vos visiteurs qui n'auraient pas converti ou encore les
-				internautes déjà engagés avec vos réseaux.
+				Contrairement à <strong>Google Ads</strong>, qui repose sur l’achat de mots-clés, les <strong>Social Ads</strong> s’appuient sur des <strong>critères socio-démographiques, géographiques, comportementaux et contextuels</strong>.<br />
+				Vous pouvez également activer des <strong>segments de retargeting</strong> pour recibler vos visiteurs, ou des <strong>audiences similaires (lookalike)</strong> pour élargir votre portée à des profils proches de vos clients existants.
 			</p>
 			<p class="text-6">
-				Sur Twitter par exemple, vous pouvez aussi cibler les personnes qui suivent certains comptes
-				/ profils. Avec Linkedin Ads, il est possible de cibler des postes ou des tailles
-				d'entreprise spécifiques.
+				Chaque plateforme possède ses spécificités&nbsp;:
 			</p>
+			<ul class="flex flex-col gap-4">
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					<strong>LinkedIn Ads</strong> permet de cibler selon le <strong>poste, la fonction ou la taille d’entreprise</strong> ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					<strong>Twitter/X Ads</strong> autorise le ciblage par <strong>abonnements à des comptes spécifiques</strong> ;
+				</li>
+				<li
+					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
+				>
+					<strong>Meta Ads</strong> (Facebook & Instagram) combine des données comportementales, d’intérêts et de démographie pour une approche complète.
+				</li>
+			</ul>
 			<p class="text-6">
-				En fonction des plateformes, il est possible de cumuler deux ciblages. Par exemple cibler
-				des internautes qui sont propriétaires ET qui sont parents.
-			</p>
-			<p class="text-6">
-				Les plus grandes parteformes social ads mettent aussi à disposition des ciblages d'"audience
-				network" qui permettent de toucher des internautes même au delà des plateformes en
-				exploitant leurs datas sur des sites partenaires.
+				Il est également possible de <strong>croiser plusieurs critères</strong> — par exemple, cibler les propriétaires qui sont aussi parents — ou d’étendre la diffusion via les <strong>audience networks</strong>, qui s’appuient sur les données collectées au-delà des plateformes sociales elles-mêmes.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

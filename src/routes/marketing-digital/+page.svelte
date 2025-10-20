@@ -12,12 +12,12 @@
 
   const text1 = 'le digital<br />est en constante'
   const text2 = 'évolution.'
-  const text3 = "Vous suivez les dernières tendances pour améliorer votre offre dans le secteur de l'habitat, Beavers suit pour vous celles dans le secteur du digital."
-  const text4 = 'Obtenez un plan média incluant une stratégie complète basée sur une analyse de votre entreprise selon vos besoins. Nous sélectionnons et activons les leviers digitaux les plus pertinents pour répondre à vos objectifs : de notoriété, de trafic, ou de conversion.'
+  const text3 = "Le marketing digital change chaque jour. Chez Beavers, on veille en continu sur les nouvelles tendances, outils et opportunités pour concevoir des stratégies médias performantes, pensées pour vos enjeux business."
+  const text4 = 'Nous analysons votre marché, vos audiences et vos objectifs pour définir un plan d’action complet.<br />Chaque levier digital est choisi et activé selon sa pertinence : notoriété, trafic ou conversion, pour des campagnes qui transforment vraiment.'
 
   const meta = {
-    title: "Touchez vos prospects, générez des visites ou des ventes.",
-    description: "L'agence média digitale Beavers vous propose le meilleur mix média pour activer les bons leviers auprès de la bonne audience au bon moment."
+    title: "Agence Marketing Digital experte en SEA, Social Ads & Stratégie Média",
+    description: "Beavers conçoit des stratégies marketing digital sur mesure : SEA, Social Ads, Display, Affiliation et YouTube Ads. Des campagnes pilotées par la data pour booster visibilité, trafic et conversions."
   }
 
   let useCases: Array<any> = $page.data.useCases;

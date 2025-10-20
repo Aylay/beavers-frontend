@@ -63,51 +63,20 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				On entend par <strong
-					><a
+				Les <a
 						href="/la-pause-cafe/media/social-ads-signification-astuces-campagne-reussie"
 						title="Qu’est-ce que le social Ads ? Signification et astuces pour une campagne réussie"
 						class="font-bold text-electric underline transition-colors hover:text-bright"
-						>social ads</a
-					></strong
-				>
-				ou <strong>social media ads</strong> les publicités que vous pouvez voir sur tous les
-				réseaux sociaux (ex : Instagram, Facebook, Pinterest, Linkedin, Twitter pour citer les plus
-				gros). C'est une <strong>stratégie marketing</strong> intéressante pour développer votre
-				notoriété,
-				<a
-					href="/la-pause-cafe/media/comment-agence-social-ads-booste-votre-marque"
-					class="font-semibold text-electric underline transition-colors hover:text-bright"
-					title="Comment une agence social ads booste votre marque"
-					>améliorer votre image de marque</a
-				>, générer des clics, du trafic sur votre site et/ou des conversions.
+						><strong>social ads</strong></a
+					> (ou publicités sur les réseaux sociaux) désignent l’ensemble des campagnes sponsorisées diffusées sur des plateformes comme <strong>Meta (Facebook & Instagram), TikTok, Pinterest, LinkedIn ou X</strong>.<br />
+					Elles permettent aux marques de <strong>développer leur notoriété</strong>, <strong>renforcer leur image</strong>, <strong>générer du trafic qualifié</strong> et <strong>stimuler la conversion</strong>.
 			</p>
 			<p class="text-6">
-				Le <a
-					href="/la-pause-cafe/media/devenez-gestionnaire-publicite-hors-pair-guide-complet-maitriser-campagnes-publicitaires"
-					class="font-semibold text-electric underline transition-colors hover:text-bright"
-					title="Devenez un gestionnaire de publicité hors pair : Guide complet pour maîtriser les campagnes publicitaires"
-					>gestionnaire de publicité</a
-				>
-				le plus utilisé est Meta Ads avec
-				<a
-					title="Agence Facebook Ads : Propulsez votre visibilité et boostez vos ventes sur Facebook"
-					href="/l-agence-beavers/agence-facebook-ads"
-					class="font-semibold text-electric underline transition-colors hover:text-bright"
-					>Facebook Ads</a
-				>
-				et Instagram Ads, de par son accès facile et peu onéreux. D'autres comme
-				<a
-					title="Agence Pinterest Ads : Boostez vos ventes en ligne grâce à notre expertise Pinterest Ads"
-					href="/l-agence-beavers/agence-pinterest-ads"
-					class="font-semibold text-electric underline transition-colors hover:text-bright"
-					>Pinterest</a
-				>, TikTok ou Linkedin peuvent également entrer dans des stratégies marketing digitales.
+				Chaque plateforme propose ses propres formats et logiques de diffusion : stories, carrousels, vidéos, posts interactifs… Les annonceurs peuvent ainsi adapter leurs messages selon les usages, les audiences et les objectifs.
 			</p>
 			<p class="text-6">
-				Globalement, les plateformes sociales mettent à disposition des inventaires publicitaires
-				qu'il est possible d'acheter. Comme on pourrait voir un spot télévisé ou un affichage dans
-				la rue. Ici le message est diffusé sur les <strong>réseaux sociaux</strong>.
+				Les Social Ads reposent sur un principe simple : <strong>acheter un espace publicitaire</strong> au sein du flux d’utilisateurs.<br />
+				Comme pour un spot télévisé ou une affiche dans la rue, la marque paie pour placer son message devant une audience choisie — mais ici, la diffusion est <strong>personnalisée et mesurable en temps réel</strong>.
 			</p>
 		</div>
 	</div>

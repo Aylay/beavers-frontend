@@ -4,7 +4,6 @@
 
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
-	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -51,16 +50,14 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-				Google Ads offre une plateforme intuitive permettant à quiconque de créer une campagne en
-				définissant un budget, en sélectionnant des mots-clés pertinents, et en rédigeant des
-				annonces attractives.
+				Google Ads est une plateforme puissante et accessible qui permet de <strong>créer des campagnes ciblées</strong> en quelques étapes seulement.<br />
+				Il suffit de définir vos objectifs, de choisir un budget adapté, de sélectionner les mots-clés les plus pertinents et de rédiger des annonces attractives pour votre audience.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-				Afin d'atteindre vos objectifs, vous devrez sélectionner l'action qui vous intéresse le plus
-				et les algorithmes feront en sorte d'optimiser la campagne sur cet objectif.
+				Selon la nature de votre activité, vous pouvez viser une <strong>vente</strong>, une <strong>prise de contact</strong>, une <strong>visite en magasin</strong> ou une <strong>inscription</strong> — les algorithmes de Google optimiseront ensuite automatiquement vos campagnes pour atteindre cet objectif.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-				Pour optimiser vos campagnes Google Ads, il est essentiel de&nbsp;:
+				Pour obtenir des résultats durables, il est essentiel d’appliquer une approche méthodique&nbsp;:
 			</p>
 			<ul class="flex flex-col gap-4 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 				<li
@@ -70,18 +67,18 @@
 						href="/la-pause-cafe/media/ciblage-comment-agence-publicite-digitale-affiner-audience"
 						title="L’art du ciblage : comment une agence de publicité digitale peut affiner votre audience"
 						class="font-bold text-electric underline transition-colors hover:text-bright"
-						>Définir un <strong>ciblage</strong> précis</a
-					>
+						><strong>Définir un ciblage précis</strong></a
+					> pour diffuser vos annonces auprès des bonnes audiences.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Réaliser des tests A/B</strong> ;
+					<strong>Réaliser des tests A/B</strong> afin d’évaluer la performance de vos annonces et de vos pages de destination.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Mettre en place un suivi des conversions</strong> ;
+					<strong>Mettre en place un suivi des conversions</strong> pour relier vos actions publicitaires à des résultats concrets.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
@@ -93,13 +90,13 @@
 							class="font-bold text-electric underline transition-colors hover:text-bright"
 							>indicateurs de performance clés (KPI)</a
 						></strong
-					>.
+					> (taux de clics, coût par acquisition, taux de conversion, retour sur investissement) pour ajuster vos campagnes et améliorer la performance globale.
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div
-		class="relative flex flex-1 justify-center gap-8 max-lg:hidden"
+		class="relative flex flex-1 justify-center gap-8 max-lg:hidden h-full"
 		use:inview={optionsImg}
 		on:inview_change={handleChangeImg}
 	>

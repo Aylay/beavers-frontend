@@ -38,40 +38,37 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Google Ads vous permet de choisir où vos annonces seront diffusées selon vos objectifs
-				marketing. En fonction des données collectées, l’algorithme Google ajuste la diffusion pour
-				maximiser vos performances.
+				Google Ads vous offre la possibilité de choisir <strong>où et comment vos annonces apparaissent</strong>, selon vos objectifs marketing et la maturité de votre audience.<br />
+				Grâce à la data et à l’intelligence artificielle, la plateforme ajuste la diffusion en temps réel pour maximiser la performance et garantir la meilleure visibilité possible.
 			</p>
 			<p class="text-6">
-				Nos experts Google Ads peuvent vous conseiller sur les emplacements les plus efficaces pour
-				atteindre vos objectifs :
+				Chez Beavers, nos experts Google Ads vous accompagnent dans la sélection et l’optimisation des formats les plus efficaces pour atteindre vos objectifs :
 			</p>
 			<ul class="flex flex-col gap-4 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Réseau de recherche</strong> : Utile pour capter des prospects avec une intention d’achat
-					forte.
+					<strong>Réseau de recherche (Search)</strong> : idéal pour <strong>capter les intentions d’achat</strong>. Vos annonces s’affichent directement sur les résultats de recherche Google lorsque vos prospects recherchent vos produits ou services.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Display et YouTube</strong> : Idéal pour du branding ou pour toucher des audiences
-					en phase de découverte.
+					<strong>Display et YouTube Ads</strong> : parfaits pour <strong>développer la notoriété de votre marque</strong> et <strong>toucher des audiences en phase de découverte</strong> à travers des visuels ou vidéos percutants.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Shopping</strong> : Essentiel pour les e-commerçants cherchant à booster leurs ventes
-					en ligne.
+					<strong>Shopping Ads</strong> : incontournables pour les <strong>e-commerçants</strong>, ces annonces mettent en avant vos produits avec image, prix et nom du vendeur, directement dans Google.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					Laissez l’<strong>intelligence artificielle de Google</strong> optimiser vos campagnes tout
-					en bénéficiant de notre expertise pour ajuster manuellement les stratégies selon les besoins.
+					<strong>Campagnes Performance Max</strong> : l’IA de Google unifie Search, Display, YouTube, Discover et Gmail pour une <strong>diffusion intelligente et automatisée</strong>, pilotée par vos objectifs de conversion.
 				</li>
 			</ul>
+			<p class="text-6">
+				Combinée à notre expertise humaine, cette intelligence artificielle devient un levier stratégique : nous ajustons vos paramètres, affinons vos audiences et optimisons vos budgets pour tirer le meilleur parti de chaque format.
+			</p>
 		</div>
 		<div class="mt-20 animate-delay-[1500ms] {isInView ? 'animate-fade' : 'opacity-0'}">
 			<Cta label="Contactez-nous" href="/contactez-nous" type="transparent" />
@@ -92,54 +89,45 @@
 				? 'animate-fade'
 				: 'opacity-0'}"
 		>
-			<p class="text-6">Pour réussir sur Google Ads, plusieurs éléments doivent être maîtrisés :</p>
+			<p class="text-6">Pour performer sur Google Ads, chaque détail compte. Une stratégie efficace repose sur l’équilibre entre <strong>analyse, créativité et optimisation continue</strong>.</p>
+			<p class="text-6">Voici les leviers essentiels à maîtriser :</p>
 			<ul class="flex flex-col gap-4 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Le ciblage d’audience précis</strong> : Identifier les segments qui offrent le meilleur
-					potentiel de conversion.
+					<strong>Un ciblage d’audience précis</strong> : identifier les segments à forte valeur ajoutée pour maximiser la conversion.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Des mots clés bien choisis</strong> : Combiner des mots clés génériques et de longue
-					traîne pour équilibrer trafic et coût.
+					<strong>Des mots-clés intelligemment sélectionnés</strong> : associer mots-clés génériques et longue traîne pour trouver le bon équilibre entre volume et rentabilité.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Un budget optimisé</strong> : Allouer vos ressources selon les campagnes les plus performantes.
+					<strong>Une allocation budgétaire maîtrisée</strong> : investir là où le potentiel de performance est le plus fort, tout en optimisant le retour sur investissement.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Des landing pages adaptées</strong> : Pages conçues pour convertir vos visiteurs en
-					clients.
+					<strong>Des landing pages orientées conversion</strong> : claires, rapides et alignées avec la promesse de l’annonce.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Un suivi rigoureux des performances</strong> : Analyse des KPI comme le CPC, le taux
-					de clics et les conversions pour ajuster vos campagnes.
+					<strong>Un suivi rigoureux des KPI</strong> : analyse du CPC, CTR, taux de conversion et Quality Score pour ajuster vos campagnes en continu.
 				</li>
 			</ul>
 			<p class="text-6">
-				Avec un univers digital toujours plus compétitif, la qualité de vos créations publicitaires
-				est devenue essentielle pour vous démarquer.
+				Dans un environnement digital ultra-concurrentiel, la <strong>qualité créative</strong> devient un facteur différenciant.<br />
+				Les annonces textuelles ne suffisent plus : les visuels, formats interactifs et vidéos jouent désormais un rôle clé, notamment sur <strong>Display</strong> et <strong>YouTube</strong>.
 			</p>
 			<p class="text-6">
-				Alors qu’il suffisait autrefois de rédiger des annonces textuelles basiques, aujourd’hui,
-				l’attractivité visuelle joue un rôle clé, notamment sur le réseau Display ou YouTube.
+				La vidéo, autrefois dédiée à la notoriété, s’impose aujourd’hui comme un <strong>levier d’acquisition à part entière</strong>, capable de générer des conversions directes.
 			</p>
 			<p class="text-6">
-				La vidéo, longtemps perçue comme un levier de notoriété, est désormais un outil performant
-				pour générer des conversions en ligne.
-			</p>
-			<p class="text-6">
-				Chez Beavers, nous intégrons systématiquement des campagnes <strong>A/B testing</strong> pour
-				évaluer les performances de différents visuels, textes ou vidéos. Ce processus garantit que vos
-				campagnes Google Ads exploitent pleinement leur potentiel pour convertir et engager votre audience.
+				Chez Beavers, nous intégrons systématiquement l’<strong>A/B testing</strong> dans nos campagnes afin d’identifier les combinaisons les plus performantes : visuels, messages, CTA ou formats.<br />
+				Ce travail de précision garantit que chaque campagne Google Ads exprime tout son potentiel, en captant l’attention et en convertissant efficacement votre audience.
 			</p>
 		</div>
 		<div class="mt-20 animate-delay-[1500ms] {isInView ? 'animate-fade' : 'opacity-0'}">

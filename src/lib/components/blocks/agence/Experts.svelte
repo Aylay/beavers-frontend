@@ -36,9 +36,7 @@
 		<Line />
 		<Title first="Agence digitale uniquement composée" second="d'experts" />
 		<p class="mt-8 text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-			Beavers est un mélange d'expériences en agence de communication et chez l’annonceur pour des
-			clients dans le domaine de l'habitat. Ces expériences nous permettent de comprendre vos enjeux
-			tout en vous proposant les stratégies les plus adaptées et les plus innovantes du marché.
+			Beavers, c’est un savant mélange d’expériences en agence de communication et chez l’annonceur. Cette double vision nous permet de comprendre vos enjeux business, tout en vous proposant des stratégies digitales à la fois performantes, innovantes et adaptées à vos objectifs.
 		</p>
 	</div>
 	<div

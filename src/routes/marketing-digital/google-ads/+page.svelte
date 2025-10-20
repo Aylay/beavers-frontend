@@ -16,16 +16,25 @@
 
   const title = 'Google Ads'
   const subtitle = 'Visibilité. Trafic. Conversions.'
-  const intro = "La publicité Google Ads est un pilier incontournable dans toute stratégie de marketing digital.<br />Que ce soit via le réseau de recherche, le display ou YouTube, elle offre des solutions puissantes pour atteindre vos objectifs.<br />Ce levier webmarketing vous permet de toucher une audience ciblée, d'accroître votre visibilité en ligne et de générer un trafic qualifié vers votre site internet.<br />Grâce à des campagnes bien pensées, Google Ads renforce votre notoriété et vous positionne efficacement face à vos concurrents, tout en optimisant votre retour sur investissement."
+  const intro = "La publicité Google Ads est un pilier central de toute stratégie de marketing digital performante.<br />Grâce à son écosystème complet — Search, Display, YouTube, Discovery et Performance Max — elle permet de capter l’attention de vos audiences au bon moment et sur les bons supports.<br /><br />Chez Beavers, nous concevons des campagnes SEA pensées pour la performance : générer un trafic qualifié, booster votre visibilité en ligne et transformer vos visiteurs en clients.<br />Pilotées par la data, nos stratégies maximisent votre retour sur investissement tout en renforçant la notoriété et la compétitivité de votre marque."
   const words: Array<string> = [
-    'Social Ads', 'Instagram', 'LinkedIn', 'Pinterest', 'Social media', 'Webmarketing', 'Meta Ads', 'Publicités sponsorisées', 'Twitter', 'Facebook'
-  ]
+    'Google Ads',
+    'SEA',
+    'Réseau de recherche',
+    'Display',
+    'YouTube Ads',
+    'Performance Max',
+    'Remarketing',
+    'Annonces Shopping',
+    'Stratégie d’enchères',
+    'Trafic qualifié'
+  ];
 
   const title2 = 'Les fondamentaux de Google Ads'
 
   const meta = {
-    title: "Boostez votre stratégie digitale avec Google Ads",
-    description: "Augmentez votre visibilité et vos conversions avec nos campagnes Google Ads optimisées : stratégie, gestion, reporting et résultats."
+    title: "Campagnes Google Ads sur mesure – Stratégie SEA et performance digitale",
+    description: "Créez des campagnes Google Ads performantes avec Beavers. De la stratégie d’enchères à la création publicitaire, nous optimisons chaque levier SEA pour générer trafic, conversions et rentabilité."
   }
 
   let useCases: Array<any> = $page.data.useCases;
@@ -64,6 +73,6 @@
   <Block21 />
   <Block31 />
   <Block32 />
-  <End text="Pour chaque annonceur, nous créons des stratégies sur mesure alignées sur leurs objectifs d’acquisition, de notoriété ou de ventes. Avec Google Ads, nous activons les leviers les plus adaptés pour atteindre vos cibles et maximiser vos performances en ligne." />
+  <End text="Chez Beavers, chaque stratégie Google Ads est conçue sur mesure pour répondre à vos objectifs : générer de nouveaux clients, renforcer votre notoriété ou développer vos ventes.<br />En combinant analyse, créativité et pilotage data-driven, nous activons les leviers les plus performants pour atteindre vos audiences et maximiser durablement vos résultats." />
   <UseCases {cases} firstText="Découvrez nos<br />" />
   </div>

@@ -71,21 +71,16 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Ces indicateurs clés, parfois spécifiques selon les types de campagnes Google Ads, sont
-				essentiels pour analyser les performances et ajuster les stratégies en conséquence. Ils
-				permettent de comprendre comment se comportent vos annonces, d'en tirer des conclusions et
-				d'optimiser votre budget.
+				Les <strong>indicateurs clés de performance</strong> varient selon le type de campagne (Search, Display, YouTube ou Performance Max), mais ils ont tous le même objectif : <strong>mesurer l’efficacité réelle de vos investissements publicitaires</strong>.<br />
+				Ils permettent de comprendre comment vos annonces interagissent avec vos audiences et de prioriser les actions à fort impact.
 			</p>
 			<p class="text-6">
-				Vous l’aurez compris, si la mise en place initiale peut sembler accessible, tirer pleinement
-				parti des fonctionnalités avancées de Google Ads, comme le ciblage d'audience ou
-				l'ajustement des enchères, demande une véritable expertise.
+				Si la création d’une campagne peut sembler simple, <strong>exploiter tout le potentiel de Google Ads</strong> nécessite une expertise pointue : paramétrage du ciblage, ajustement des enchères, structuration du compte, utilisation de la data et des signaux d’audience.
 			</p>
 			<p class="text-6">
-				Niveau tarification, vous serez généralement facturé au CPC (coût par clic), c’est-à-dire à
-				chaque fois qu’un utilisateur clique sur votre annonce. Ce coût dépend de nombreux facteurs,
-				notamment la qualité de votre annonce, la concurrence sur vos mots clés, et le niveau de
-				pertinence de vos campagnes.
+				Côté tarification, le modèle repose principalement sur le <strong>CPC (coût par clic)</strong> : vous ne payez que lorsqu’un utilisateur interagit avec votre annonce.<br />
+				Le coût dépend de la <strong>concurrence sur les mots-clés</strong>, de la <strong>qualité des annonces</strong> et du <strong>niveau de pertinence global</strong> de votre campagne.<br />
+				Une stratégie bien optimisée permet d’obtenir un meilleur <strong>Quality Score</strong>, de <strong>réduire les coûts</strong> et d’<strong>améliorer le ROI</strong> à long terme.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

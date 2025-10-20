@@ -71,18 +71,15 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Ces <strong>chiffres clés</strong>, parfois différents entre chaque plateforme, doivent être
-				connus et maîtrisés pour comprendre comment se comporte la campagne, savoir en tirer des
-				conclusions et <strong>optimiser le budget</strong>.
+				Les <strong>indicateurs de performance</strong> varient selon les plateformes, mais leur suivi est indispensable pour comprendre comment vos annonces performent et <strong>optimiser vos budgets en conséquence</strong>.
 			</p>
 			<p class="text-6">
-				Vous l'aurez compris, si les premiers paramétrages sont "faciles", la diffusion d'une
-				campagne optimisée selon toutes les fonctionnalités possibles, est elle, bien plus complexe.
+				Si la mise en ligne d’une campagne semble simple, exploiter tout le potentiel des outils publicitaires demande une <strong>expertise approfondie</strong> : paramétrage des audiences, choix des placements, lecture des données et ajustement des enchères.
 			</p>
 			<p class="text-6">
-				Niveau prix dans la plateforme, vous êtes généralement facturé au CPM, c'est-à-dire au coût
-				pour 1&nbsp;000 impressions. Le prix va dépendre de l'attractivité de votre campagne, de la
-				concurrence sur vos audiences, des différents placements sélectionnées, etc.
+				Côté tarification, la majorité des plateformes fonctionnent au <strong>CPM (coût pour mille impressions)</strong>.<br />
+				Le prix dépend de la qualité des créations, du taux d’engagement, de la concurrence sur vos audiences et du niveau de pertinence de votre message.<br />
+				Une stratégie bien calibrée permet de <strong>réduire les coûts</strong> tout en <strong>améliorant la portée</strong> et la <strong>rentabilité des campagnes</strong>.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">

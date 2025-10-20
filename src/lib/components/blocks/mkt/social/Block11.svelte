@@ -4,7 +4,6 @@
 
 	import Title from '$lib/components/blocks/utilities/Title.svelte';
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
-	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -51,49 +50,35 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-				Les différentes plateformes sociales mettent à disposition des outils d'achat d'espace.
-				L'avantage avec les social ads c'est, qu'en général, les <strong>outils de publicité</strong
-				> sont accessibles à tous. Globalement, avec la rédaction d'un texte, quelques visuels et une
-				carte bancaire, n'importe qui peut lancer sa campagne.
+				Les plateformes sociales (Meta, TikTok, LinkedIn, Pinterest, etc.) mettent à disposition des <strong>outils publicitaires accessibles</strong> à tous.<br />
+				En théorie, un texte, quelques visuels et une carte bancaire suffisent pour lancer une campagne. En pratique, atteindre de vrais résultats demande une approche stratégique et des paramétrages précis.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-				Afin d'atteindre vos objectifs, vous devrez sélectionner l'action qui vous intéresse le plus
-				et les algorithmes feront en sorte d'optimiser la campagne sur cet objectif.
+				Pour réussir, il est essentiel de <strong>définir clairement vos objectifs</strong> — trafic, conversions, notoriété — car les algorithmes optimiseront la diffusion selon la priorité choisie.
 			</p>
 			<p class="text-6 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
-				Cependant, le lancement d'une bonne stratégie social ads demandera également de&nbsp;:
+				Une stratégie Social Ads performante repose aussi sur&nbsp;:
 			</p>
 			<ul class="flex flex-col gap-4 animate-delay-500 {isInView ? 'animate-fade' : 'opacity-0'}">
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<a
-						href="/la-pause-cafe/media/ciblage-comment-agence-publicite-digitale-affiner-audience"
-						title="L’art du ciblage : comment une agence de publicité digitale peut affiner votre audience"
-						class="font-bold text-electric underline transition-colors hover:text-bright"
-						>Réfléchir à un <strong>ciblage</strong> cohérent</a
-					> ;
+					un <strong>ciblage d’audience cohérent</strong> et affiné selon le comportement et les intérêts ;
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					Effectuer des <strong>tests</strong> ;
+					des <strong>tests réguliers (A/B testing)</strong> pour comparer messages, visuels et formats ;
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					Mettre en place un <strong>tracking</strong> (pixel et API de conversion)
+					un <strong>tracking complet</strong> via le <strong>pixel Meta</strong> ou l’<strong>API de conversion</strong> pour mesurer les résultats réels ;
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong
-						>Analyser des <a
-							href="/la-pause-cafe/media/mesurer-impact-votre-marketing-digital-kpi-a-suivre"
-							title="Mesurer l'impact de votre marketing digital : les KPI à suivre"
-							class="font-bold text-electric underline transition-colors hover:text-bright">KPI</a
-						></strong
-					> (Key Performances Indicators)
+					une <strong>analyse continue des KPI</strong> (coût par clic, taux d’engagement, conversions) pour ajuster vos campagnes.
 				</li>
 			</ul>
 		</div>

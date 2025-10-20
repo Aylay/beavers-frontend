@@ -10,12 +10,12 @@
   import LDTag from '$lib/components/utilities/LDTag.svelte'
 
   const title = "L'agence"
-  const subtitle = 'Humaine. À l’écoute.'
+  const subtitle = "Humaine. À l'écoute."
 
   const text1 = 'En quoi<br />sommes-nous'
   const text2 = 'différents ?'
-  const text3 = "À l'heure où l'intelligence artificielle se développe, passez par une équipe humaine, qui vous accompagnera personnellement que vous soyez débutant ou expert."
-  const text4 = "En tant que spécialistes dans le secteur de l'habitat, de l'ameublement et de la rénovation, nous mettons à votre disposition une expertise pointue pour transformer vos prospects en futurs clients."
+  const text3 = "À l'heure où l'intelligence artificielle automatise tout, faites le choix d'une équipe humaine qui comprend vos enjeux. Chez Beavers, chaque projet est suivi avec attention — que vous débutiez dans le digital ou que vous soyez déjà un expert."
+  const text4 = 'Experts en marketing digital, nous aidons les marques à transformer leur visibilité en résultats concrets. Notre approche repose sur des stratégies sur mesure, pensées pour générer du trafic qualifié, accroître la notoriété et convertir efficacement.'
 
   const people = [
     {
@@ -56,8 +56,8 @@
   ]
 
   const meta = {
-    title: "Beavers vous montre ses compétences et ses valeurs.",
-    description: "Spécialiste du secteur habitat, Beavers pilote vos campagnes digitales, optimise votre SEO et crée des sites performants et bien référencés."
+    title: "Beavers – Agence digitale média & performance (SEA, Social Ads)",
+    description: "Agence digitale à taille humaine. Stratégies sur mesure pilotées par la data : SEA, Social Ads, Display, Affiliation et landing pages. Visibilité, acquisition et croissance."
   }
 
   const siteURL = import.meta.env.VITE_SITE_URL
@@ -68,7 +68,7 @@
     "url": siteURL + $page.url.pathname,
     "@id": siteURL + $page.url.pathname + '#aboutpage',
     "name": "L'agence Beavers",
-    "description": "L'agence Beavers, spécialiste du marketing digital dans le secteur de l'habitat, vous propose des solutions adaptées pour répondre à vos objectifs : de notoriété, de trafic et d'acquisition.",
+    "description": "Beavers est une agence digitale média et performance qui conçoit et pilote des stratégies sur mesure (SEA, Social Ads, Display, Affiliation, landing pages) pour des entreprises ambitieuses, avec un accompagnement humain, transparent et orienté résultats.",
     "inLanguage": "fr-FR",
     "creator": {
       "@type": "Organization",

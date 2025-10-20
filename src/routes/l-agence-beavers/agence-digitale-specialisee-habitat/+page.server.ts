@@ -1,4 +1,4 @@
-;import type { PageServerLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
 let isProd: boolean;
 if (import.meta.env.VITE_MODE === 'prod') {

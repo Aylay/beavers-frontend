@@ -16,16 +16,25 @@
 
   const title = 'Social Ads'
   const subtitle = 'Visibilité. Trafic. Conversions.'
-  const intro = "L'activation des social ads est devenue incontournable dans une stratégie marketing digitale. Facebook, Instagram, Pinterest, TikTok, etc. sont des leviers d'acquisiton web qui permettent de toucher différentes audiences avec différentes stratégies digitales.<br />C'est un levier webmarketing important qui permet de toucher des millions d'utilisateurs.<br />Créer une campagne sur un ou différents réseaux vous permet d'être présent à l'esprit de vos prospects, de travailler votre e-notoriété et de générer du trafic qualifié vers votre site."
+  const intro = "Les Social Ads sont devenues un pilier incontournable du marketing digital. Facebook, Instagram, TikTok, LinkedIn, Pinterest ou X offrent chacun des opportunités uniques pour renforcer votre visibilité et générer des résultats concrets.<br />Ce levier permet de toucher des millions d’utilisateurs grâce à des campagnes ciblées, adaptées à chaque audience et à chaque objectif.<br />Activer les bons canaux, au bon moment, c’est construire une stratégie qui renforce votre notoriété, stimule le trafic qualifié et optimise la conversion."
   const words: Array<string> = [
-    'Social Ads', 'Instagram', 'LinkedIn', 'Pinterest', 'Social media', 'Webmarketing', 'Meta Ads', 'Publicités sponsorisées', 'Twitter', 'Facebook'
-  ]
+    'Social Ads',
+    'Meta Ads',
+    'Instagram',
+    'Facebook',
+    'TikTok',
+    'LinkedIn',
+    'Pinterest',
+    'Publicités sponsorisées',
+    'Campagnes digitales',
+    'Audience ciblée'
+  ];
 
   const title2 = 'Le B.A.-BA des social ads'
 
   const meta = {
-    title: "Beavers met en place votre stratégie social ads",
-    description: "Boostez votre visibilité sur les réseaux sociaux avec des campagnes publicitaires stratégiques : Meta, Pinterest, TikTok et LinkedIn."
+    title: "Social Ads : activez les bons leviers sur les réseaux sociaux",
+    description: "Les Social Ads permettent d’atteindre vos audiences cibles sur Facebook, Instagram, Pinterest, TikTok ou LinkedIn. Créez des campagnes efficaces pour développer notoriété, trafic et conversions."
   }
 
   let useCases: Array<any> = $page.data.useCases;
@@ -64,6 +73,6 @@
   <Block21 />
   <Block31 />
   <Block32 />
-  <End text="Pour chaque annonceur nous mettons en place des stratégies personnalisées en fonction des objectifs d'acquisition de trafic, de notoriété ou de vente.<br />Nous activons les social ads et les leviers les plus pertinents pour votre stratégie marketing sur les réseaux sociaux." />
+  <End text="Chaque annonceur bénéficie d’une stratégie Social Ads sur mesure, pensée selon ses objectifs : notoriété, trafic ou conversion.<br />Nous activons les leviers les plus performants et les plateformes les plus pertinentes pour renforcer votre présence sur les réseaux sociaux et maximiser vos performances digitales." />
   <UseCases {cases} firstText="Découvrez nos<br />" />
   </div>

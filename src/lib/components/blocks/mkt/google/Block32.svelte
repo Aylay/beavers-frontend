@@ -71,41 +71,38 @@
 				: 'opacity-0'}"
 		>
 			<p class="text-6">
-				Contrairement aux social ads, où le ciblage repose principalement sur des critères
-				socio-démographiques et d’intérêts, Google Ads exploite des mots-clés pour capter une
-				intention d’achat explicite.
+				Contrairement aux <a
+				class="font-semibold text-electric underline transition-colors hover:text-bright"
+				href="/marketing-digital/social-ads"
+				title="Les social ads"><strong>Social Ads</strong></a>, où le ciblage repose surtout sur des critères d’intérêt et de profil, <strong>Google Ads</strong> s’appuie sur la <strong>data comportementale et les mots-clés</strong> pour capter une <strong>intention d’achat explicite</strong>.<br />
+				C’est cette différence qui en fait un levier de performance unique : vous touchez vos prospects au moment où ils cherchent réellement une solution.
 			</p>
-			<p class="text-6">Les options de ciblage incluent :</p>
+			<p class="text-6">Les options de ciblage disponibles permettent une personnalisation fine de chaque campagne&nbsp;:</p>
 			<ul class="flex flex-col gap-4">
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Critères socio-démographiques</strong> : toucher des internautes selon leur profil
-					(âge, sexe, revenus).
+					<strong>Critères socio-démographiques</strong> : cibler les internautes selon leur âge, leur sexe ou leur niveau de revenus.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Critères comportementaux</strong> : cibler selon les actions réalisées (ajout au panier,
-					abandon de panier).
+					<strong>Critères comportementaux</strong> : atteindre les utilisateurs selon leurs actions (consultation de produit, ajout ou abandon de panier, visite répétée).
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Audiences personnalisées</strong> : segments définis à partir de mots-clés, sites visités
-					ou applications téléchargées.
+					<strong>Audiences personnalisées</strong> : construire des segments sur mesure à partir de mots-clés, d’historiques de navigation ou d’applications utilisées.
 				</li>
 				<li
 					class="relative pl-8 text-6 before:absolute before:top-3 before:left-0 before:h-3 before:w-3 before:rounded-full before:bg-electric before:content-['']"
 				>
-					<strong>Retargeting dynamique</strong> : relancer vos visiteurs en affichant des produits ou
-					services qu’ils ont consultés.
+					<strong>Retargeting dynamique</strong> : réengager vos visiteurs en leur affichant automatiquement les produits ou services qu’ils ont consultés.
 				</li>
 			</ul>
 			<p class="text-6">
-				Grâce à son réseau Display et ses partenaires, Google Ads vous permet également de diffuser
-				vos annonces sur des millions de sites et applications, élargissant ainsi votre portée bien
-				au-delà des résultats de recherche.
+				Grâce au <strong>réseau Display</strong> et aux <strong>partenaires premium de Google</strong>, vos annonces peuvent également apparaître sur des <strong>millions de sites et d’applications</strong>, étendant votre visibilité bien au-delà du moteur de recherche.<br />
+				Combinée à une stratégie data-driven, cette granularité de ciblage transforme Google Ads en un <strong>outil d’acquisition ultra-précis</strong>, capable de générer à la fois notoriété, trafic et conversions à grande échelle.
 			</p>
 		</div>
 		<div class="animate-delay-700 {isInView ? 'animate-fade' : 'opacity-0'}">
