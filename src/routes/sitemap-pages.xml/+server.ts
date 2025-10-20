@@ -6,7 +6,7 @@ export async function GET({ setHeaders }) {
 		'Content-Type': 'application/xml'
 	});
 	
-	const pages = ['cas-agence', 'contactez-nous', 'jobs', 'l-agence-beavers', 'la-pause-cafe', 'mentions-legales', 'politique-rgpd', 'production-digitale', 'marketing-digital', 'marketing-digital/google-ads', 'marketing-digital/social-ads', 'tout-savoir-sur-beavers', 'production-digitale/seo-referencement-naturel', 'production-digitale/creation-refonte-site-internet', 'programme-rse', 'l-agence-beavers/agence-digitale-specialisee-habitat'];
+	const pages = ['cas-agence', 'contactez-nous', 'jobs', 'l-agence-beavers', 'la-pause-cafe', 'mentions-legales', 'politique-rgpd', 'production-digitale', 'marketing-digital', 'marketing-digital/google-ads', 'marketing-digital/social-ads', 'tout-savoir-sur-beavers', 'production-digitale/seo-referencement-naturel', 'production-digitale/creation-refonte-site-internet', 'programme-rse'];
 	
 	const sitemap = `<?xml version="1.0" encoding="UTF-8" ?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
