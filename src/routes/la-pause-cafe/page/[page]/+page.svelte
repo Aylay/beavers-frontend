@@ -12,8 +12,8 @@
 	const siteURL = import.meta.env.VITE_SITE_URL
 
 	const meta = {
-		title: "Le blog des actualités digitales de l'agence Beavers",
-		description: "Retrouvez dans notre blog des réflexions sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers."
+		title: "Le blog des actualités digitales de l'agence Beavers - Page " + pageNumber,
+		description: "Retrouvez dans notre blog des réflexions sur des catégories du digital comme le SEA, le Social Média, le SEO ou encore l'UX Design et plein d'autres. Tous les articles sont écrits par des érudits du digital de l'agence Beavers. - Page " + pageNumber
 	}
 
 	function scrollToArticles() {
@@ -44,6 +44,7 @@
 <MetaFront {meta} />
 
 <svelte:head>
+	<link rel="canonical" href="{siteURL}/la-pause-cafe/page/{pageNumber}" />
 	{#if pageNumber === 2}
 		<link rel="prev" href="{siteURL}/la-pause-cafe" />
 	{:else}
