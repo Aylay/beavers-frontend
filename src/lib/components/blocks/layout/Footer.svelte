@@ -97,7 +97,7 @@
 								<a
 									target="_blank"
 									rel="external noreferrer"
-									href="https://wa.me/+33664644470"
+									href="https://api.whatsapp.com/send/?phone=33664644470"
 									title="Parler avec les castors de Beavers sur WhatsApp"
 									class="text-6 font-semibold text-electric underline transition-colors hover:text-bright"
 								>
