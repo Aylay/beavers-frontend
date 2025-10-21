@@ -11,6 +11,7 @@
 	<meta name="description" content={meta.description} />
 	<meta property="og:description" content={meta.description} />
 	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="Beavers"/>
 	{#if meta.image}
 		<meta property="og:image" content="{siteURL}{meta.image}" />
 		<meta property="twitter:image" content="{siteURL}{meta.image}" />
