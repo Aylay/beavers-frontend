@@ -34,7 +34,7 @@
 	{#if pageCount > 1}
 	<link rel="next" href="{siteURL}/la-pause-cafe/{content.slug}/page/2" />
 	{/if}
-	
+	<link rel="canonical" href="{siteURL}/la-pause-cafe/{content.slug}" />
 </svelte:head>
 
 <div class="flex flex-col">

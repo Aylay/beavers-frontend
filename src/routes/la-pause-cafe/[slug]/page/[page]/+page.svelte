@@ -51,6 +51,7 @@
 <Meta meta={content.meta} />
 
 <svelte:head>
+	<link rel="canonical" href="{siteURL}/la-pause-cafe/{content.slug}/page/{pageNumber}" />
 	{#if pageNumber === 2}
 		<link rel="prev" href="{siteURL}/la-pause-cafe/{content.slug}" />
 	{:else}
