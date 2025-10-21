@@ -25,7 +25,6 @@
 		href="{siteURL}/flux-articles.xml"
 	/>
 	<link rel="next" href="{siteURL}/la-pause-cafe/page/2" />
-	<link rel="canonical" href="{siteURL}/la-pause-cafe" />
 </svelte:head>
 
 <div class="flex flex-col">
