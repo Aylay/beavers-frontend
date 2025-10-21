@@ -60,6 +60,10 @@
   }
 </script>
 
+<svelte:head>
+  <meta name="robots" content="noindex" />
+</svelte:head>
+
 <MetaFront {meta} />
 
 <div class="lg:min-h-screen flex justify-center overflow-hidden bg-rock pt-20 lg:pt-40">
