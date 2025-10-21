@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	import Articles from '$lib/components/blocks/Articles.svelte';
 	import Confidence from '$lib/components/blocks/hp/Confidence.svelte';
@@ -17,6 +17,45 @@
 	const titleFirst = 'Les 3 derniers articles<br />de la';
 	const titleSecond = 'pause café';
 	const newsUrl = '/la-pause-cafe';
+
+	const logos = [
+		{
+			src: '/img/clients/ffrandonnee.svg',
+			newClass: 'h-full w-auto',
+			href: '/cas/campagnes-social-media-sea-site-e-commerce-application-mobile-ffrandonnee',
+			title: 'Fédération Française de la Randonnée Pédestre'
+		},
+		{
+			src: '/img/clients/v-zug.svg',
+			newClass: 'h-full w-auto',
+			href: '/cas/creation-gestion-publications-reseaux-sociaux-v-zug',
+			title: 'V-ZUG'
+		},
+		{
+			src: '/img/clients/imagine_2050.svg',
+			newClass: 'h-full w-auto',
+			href: '/cas/developpement-site-internet-imagine-2050',
+			title: 'Imagine 2050'
+		},
+		{
+			src: '/img/clients/cafes-richard.svg',
+			newClass: 'w-full h-auto',
+			href: '/cas/sea-social-media-landing-page-cafes-richard',
+			title: 'Cafés Richard'
+		},
+		{
+			src: '/img/clients/keune.svg',
+			newClass: 'w-full h-auto',
+			href: '/cas/gestion-strategie-sea-keune-haircosmetics',
+			title: 'Keune Haircosmetics'
+		},
+		{
+			src: '/img/clients/moncarro.svg',
+			newClass: 'w-full h-auto',
+			href: '/cas/audit-recommandations-strategie-sea-moncarro',
+			title: 'Moncarro'
+		}
+	];
 
 	const schema = {
 		'@context': 'https://schema.org',
@@ -216,16 +255,16 @@
 
 <LDTag {schema} />
 
-<div class="flex flex-col gap-48 pb-48 max-lg:px-4 lg:gap-96 lg:pb-96">
-	<Header />
+<div class="flex flex-col gap-48 pb-48 lg:gap-96 lg:pb-96">
+	<Header {logos} />
 	<MarketingDigital1 />
 	<MarketingDigital2 />
 	<Why />
-	<Confidence />
-	<UseCases cases={$page.data.useCasesList} />
+	<Confidence {logos} />
+	<UseCases cases={page.data.useCasesList} />
 	<Manifesto />
 	<Manifesto2 />
-	<Testimonies reviewsList={$page.data.reviewsList} />
+	<Testimonies reviewsList={page.data.reviewsList} />
 	<Support />
-	<Articles articles={$page.data.articlesList} {titleFirst} {titleSecond} {newsUrl} />
+	<Articles articles={page.data.articlesList} {titleFirst} {titleSecond} {newsUrl} />
 </div>
