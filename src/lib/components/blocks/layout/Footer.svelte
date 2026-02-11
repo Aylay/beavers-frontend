@@ -178,7 +178,7 @@
 							</picture>
 						{/if}
 					</a>
-					<div data-widget-type="offset-website" data-tree-nation-code="62e3d15754415" data-lang="fr" data-theme="light" class="lg:hover:animate-shake"></div>
+					<div data-widget-type="offset-website" data-tree-nation-code="62e3d15754415" data-lang="fr" data-theme="dark" class="lg:hover:animate-shake"></div><div data-widget-type="tree-counter" data-tree-nation-code="cc298e8e29ade393" data-lang="en" data-theme="dark" class="lg:hover:animate-shake"></div>
 				</div>
 			</div>
 		</div>
