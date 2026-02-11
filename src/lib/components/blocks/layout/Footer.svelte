@@ -178,7 +178,7 @@
 							</picture>
 						{/if}
 					</a>
-					<div id="tree-nation-offset-website" class="lg:hover:animate-shake"></div>
+					<div data-widget-type="offset-website" data-tree-nation-code="62e3d15754415" data-lang="fr" data-theme="light" class="lg:hover:animate-shake"></div>
 				</div>
 			</div>
 		</div>
