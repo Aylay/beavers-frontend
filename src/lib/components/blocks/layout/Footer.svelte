@@ -85,11 +85,11 @@
 								<Tel />
 								<a
 									target="_blank"
-									href="tel:+33664644470"
+									href="tel:+33695031310"
 									title="Parler avec les castors de Beavers au téléphone"
 									class="text-6 font-semibold text-electric underline transition-colors hover:text-bright"
 								>
-									06 64 64 44 70
+									06 95 03 13 10
 								</a>
 							</div>
 							<div class="flex items-center gap-5">
@@ -97,11 +97,11 @@
 								<a
 									target="_blank"
 									rel="external noreferrer"
-									href="https://api.whatsapp.com/send/?phone=33664644470"
+									href="https://api.whatsapp.com/send/?phone=33695031310"
 									title="Parler avec les castors de Beavers sur WhatsApp"
 									class="text-6 font-semibold text-electric underline transition-colors hover:text-bright"
 								>
-									06 64 64 44 70
+									06 95 03 13 10
 								</a>
 							</div>
 						</div>
