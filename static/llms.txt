@@ -1,0 +1,45 @@
+# Beavers
+
+> Agence digitale média indépendante basée à Roquebrune-sur-Argens (Var, PACA), avec un rayonnement national. Beavers pilote l'acquisition payante et la conversion pour des marques B2C : Google Ads, Social Ads, Display, affiliation, tracking server-side, landing pages et création de sites performants.
+
+Beavers est une SARL créée en 2019, Google Partner et activateur France Num. L'agence intervient sur deux modèles de compte distincts : e-commerce (pilotage ROAS, créa, flux catalogue, tracking server-side) et lead-gen (CPL, landing page, taux de conversion formulaire, qualité de lead, tracking offline). Secteurs privilégiés : habitat et rénovation, santé, immobilier, auto, divertissement. L'agence reverse 2 % de son chiffre d'affaires à The Ocean Cleanup et Tree-Nation.
+
+## Agence et offres
+
+- [Accueil](https://beavers-agency.fr/) : positionnement, méthode de travail et déroulé d'une collaboration avec Beavers.
+- [Marketing digital](https://beavers-agency.fr/marketing-digital) : offre média complète, du plan média à l'activation multi-leviers.
+- [Google Ads / Search Ads](https://beavers-agency.fr/marketing-digital/google-ads) : stratégie d'achat de mots clés, structure de compte et pilotage des enchères.
+- [Social Ads](https://beavers-agency.fr/marketing-digital/social-ads) : campagnes Meta, TikTok, LinkedIn, Pinterest et X.
+- [L'agence et l'équipe](https://beavers-agency.fr/l-agence-beavers) : profils, expertises et manifesto.
+- [Programme RSE](https://beavers-agency.fr/programme-rse) : engagements environnementaux et numérique responsable.
+- [Contact](https://beavers-agency.fr/contactez-nous) : formulaire de prise de contact, téléphone et WhatsApp.
+- [Jobs](https://beavers-agency.fr/jobs) : postes ouverts chez Beavers.
+
+## Études de cas avec résultats mesurés
+
+- [ENRJ Groupe](https://beavers-agency.fr/cas/enrj-groupe-booste-prospects-landing-page-promue-google-ads) : lead-gen solaire, landing page dédiée promue sur Google Ads, +6 % de CTR.
+- [Cafés Richard](https://beavers-agency.fr/cas/sea-social-media-landing-page-cafes-richard) : SEA, social media et landing page abonnement, -58 % de CPL.
+- [Tous Inscrits](https://beavers-agency.fr/cas/beavers-accompagne-tous-inscrits-strategie-sea-lutter-contre-mal-inscription) : stratégie SEA orientée qualité de lead, CPL sous 15 €.
+- [Grand Bien](https://beavers-agency.fr/cas/creation-site-internet-strategie-media-digitale-grand-bien) : création de site et stratégie média, CPL sous 80 €.
+- [Homely Architecture](https://beavers-agency.fr/cas/homely-architecture-accroit-prospects-google-ads) : génération de prospects via Google Ads, 5,85 % de taux de conversion.
+- [WeVan](https://beavers-agency.fr/cas/strategie-digitale-media-pilotage-campagnes-wevan) : pilotage des campagnes d'acquisition, ROAS de 14.
+- [bestrong](https://beavers-agency.fr/cas/campagnes-digitales-bestrong) : media planning et pilotage multi-leviers, ROAS de 9.
+- [FFRandonnée](https://beavers-agency.fr/cas/campagnes-social-media-sea-site-e-commerce-application-mobile-ffrandonnee) : social media et SEA pour un e-commerce et une application mobile, ROAS de 2,43.
+- [Cosmos Energy](https://beavers-agency.fr/cas/campagne-media-de-lancement-de-produit-pour-cosmos-energy) : campagne média de lancement produit, +70 % de ventes.
+- [Keune Haircosmetics (SEA)](https://beavers-agency.fr/cas/gestion-strategie-sea-keune-haircosmetics) : gestion de compte Google Ads, 95 % de taux d'impression.
+- [Keune Haircosmetics (SEO)](https://beavers-agency.fr/cas/optimisation-seo-keune-haircosmetics-france) : optimisation SEO, x8 mots clés positionnés dans le top 100 France.
+- [Arizona Hotdogs](https://beavers-agency.fr/cas/audit-accompagnement-seo-arizona-hotdogs) : audit et accompagnement SEO, x30 impressions.
+- [ADN Clim](https://beavers-agency.fr/cas/adn-clim-ameliore-visibilite-creation-site-web) : création de site vitrine, score Lighthouse de 99 %.
+- [Toutes les études de cas](https://beavers-agency.fr/cas-agence) : index complet des réalisations média, SEO et site internet.
+
+## Ressources et publications
+
+- [La pause café](https://beavers-agency.fr/la-pause-cafe) : blog de l'agence, articles média, SEO et site internet.
+- [Articles média et publicité](https://beavers-agency.fr/la-pause-cafe/media) : Google Ads, social ads, tracking, mesure de la performance.
+- [Articles site internet et UX](https://beavers-agency.fr/la-pause-cafe/site-internet) : conception, performance, conversion.
+- [La mensuelle de Beavers](https://www.linkedin.com/newsletters/la-mensuelle-de-beavers-7176573139529670657/) : newsletter LinkedIn mensuelle sur l'acquisition et la performance digitale.
+
+## Optional
+
+- [Mentions légales](https://beavers-agency.fr/mentions-legales)
+- [Politique RGPD](https://beavers-agency.fr/politique-rgpd)
