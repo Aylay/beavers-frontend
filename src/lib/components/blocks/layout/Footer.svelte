@@ -85,11 +85,11 @@
 								<Tel />
 								<a
 									target="_blank"
-									href="tel:+33664644470"
+									href="tel:+33695031310"
 									title="Parler avec les castors de Beavers au téléphone"
 									class="text-6 font-semibold text-electric underline transition-colors hover:text-bright"
 								>
-									06 64 64 44 70
+									06 95 03 13 10
 								</a>
 							</div>
 							<div class="flex items-center gap-5">
@@ -97,11 +97,11 @@
 								<a
 									target="_blank"
 									rel="external noreferrer"
-									href="https://api.whatsapp.com/send/?phone=33664644470"
+									href="https://api.whatsapp.com/send/?phone=33695031310"
 									title="Parler avec les castors de Beavers sur WhatsApp"
 									class="text-6 font-semibold text-electric underline transition-colors hover:text-bright"
 								>
-									06 64 64 44 70
+									06 95 03 13 10
 								</a>
 							</div>
 						</div>
@@ -159,26 +159,7 @@
 					</div>
 				</div>
 				<div class="flex items-center gap-8 max-lg:justify-center lg:flex-col lg:justify-around">
-					<a
-						href="https://theoceancleanup.com/"
-						target="_blank"
-						title="The Ocean Cleanup"
-						rel="external noreferrer"
-						class="lg:hover:animate-shake"
-					>
-						{#if isInView}
-							<picture>
-								<source srcset="/img/the_ocean_cleanup-beavers.webp" type="image/webp" />
-								<source srcset="/img/the_ocean_cleanup-beavers.png" type="image/png" />
-								<img
-									src="/img/the_ocean_cleanup-beavers.png"
-									alt="badge The Ocean Cleanup"
-									class="h-auto max-w-[10rem] {isInView ? 'animate-fade' : 'opacity-0'}"
-								/>
-							</picture>
-						{/if}
-					</a>
-					<div data-widget-type="offset-website" data-tree-nation-code="62e3d15754415" data-lang="fr" data-theme="light" class="lg:hover:animate-shake"></div>
+					<div data-widget-type="offset-website" data-tree-nation-code="62e3d15754415" data-lang="fr" data-theme="dark" class="lg:hover:animate-shake"></div><div data-widget-type="tree-counter" data-tree-nation-code="cc298e8e29ade393" data-lang="fr" data-theme="dark" class="lg:hover:animate-shake"></div>
 				</div>
 			</div>
 		</div>

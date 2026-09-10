@@ -97,13 +97,13 @@ const schema = {
           <div class="flex gap-5 items-center">
             <Tel fill="#8013BD" />
             <p class="text-6 text-white">
-              06 64 64 44 70
+              06 95 03 13 10
             </p>
           </div>
           <div class="flex gap-5 items-center">
             <WhatsApp newClass="fill-seance" />
             <p class="text-6 text-white">
-              06 64 64 44 70
+              06 95 03 13 10
             </p>
           </div>
         </div>

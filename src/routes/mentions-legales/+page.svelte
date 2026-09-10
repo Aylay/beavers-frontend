@@ -21,7 +21,7 @@ const meta = {
     <p>
       Beavers<br />
       28 rue de la font des anguilles, 83520 Roquebrune-sur-Argens<br />
-      Tél : 06 64 64 44 70<br />
+      Tél : 06 95 03 13 10<br />
       SARL au capital de 150 euros<br />
       SIREN : 853 663 334<br />
       R.C.S de Fréjus<br />
