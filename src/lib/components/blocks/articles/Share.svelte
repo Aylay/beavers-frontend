@@ -6,6 +6,7 @@
 	import Pinterest from '$lib/assets/svg/Pinterest.svelte';
 	import WhatsApp from '$lib/assets/svg/WhatsApp.svelte';
 	import SvelteMarkdown from 'svelte-markdown';
+	import MarkdownLink from '$lib/components/utilities/MarkdownLink.svelte';
 
 	const strapiURL = import.meta.env.VITE_STRAPI_URL;
 
@@ -14,6 +15,8 @@
 		gfm: true,
 		headerIds: false
 	};
+
+	const mdRenderers = { link: MarkdownLink };
 
 	export let author: any;
 	let url: string = $page.url.href;
@@ -40,7 +43,7 @@
 				{author.job}
 			</p>
 			<p class="content-style">
-				<SvelteMarkdown source={author.text} options={mdOptions} />
+				<SvelteMarkdown source={author.text} options={mdOptions} renderers={mdRenderers} />
 			</p>
 		</div>
 	</div>

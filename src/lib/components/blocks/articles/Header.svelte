@@ -4,6 +4,7 @@
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import { DateTime } from 'luxon';
 	import SvelteMarkdown from 'svelte-markdown';
+	import MarkdownLink from '$lib/components/utilities/MarkdownLink.svelte';
 
 	import ArrowBottom from '$lib/assets/svg/ArrowBottom.svelte';
 	import Mouse from '$lib/assets/svg/Mouse.svelte';
@@ -18,6 +19,8 @@
 		gfm: true,
 		headerIds: false
 	};
+
+	const mdRenderers = { link: MarkdownLink };
 
 	let isInView: boolean;
 	const options: Options = {
@@ -248,7 +251,7 @@
 		</div>
 		<div class="flex-1 lg:order-1">
 			<h2 class="content-style">
-				<SvelteMarkdown source={intro} options={mdOptions} />
+				<SvelteMarkdown source={intro} options={mdOptions} renderers={mdRenderers} />
 			</h2>
 		</div>
 	</div>

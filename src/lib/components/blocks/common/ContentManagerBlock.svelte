@@ -1,17 +1,20 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import SvelteMarkdown from 'svelte-markdown';
 
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
+	import MarkdownLink from '$lib/components/utilities/MarkdownLink.svelte';
+	import { withExternalLinks } from '$lib/utils/links';
 
 	const mdOptions = {
 		breaks: true,
 		gfm: true,
 		headerIds: false
 	};
+
+	const mdRenderers = { link: MarkdownLink };
 
 	let isInView: boolean;
 	const options: Options = {
@@ -37,18 +40,6 @@
 
 	export let block: any;
 	export let title: string;
-
-	onMount(() => {
-		addTargetBlank();
-	});
-
-	function addTargetBlank() {
-		let links = document.querySelectorAll('.content-style a');
-
-		for (const el of Array.from(links) as HTMLAnchorElement[]) {
-			if (el.hostname !== window.location.hostname) el.target = '_blank';
-		}
-	}
 </script>
 
 {#if block.layout === 'texte'}
@@ -59,7 +50,7 @@
 		use:inview={options}
 		on:inview_change={handleChange}
 	>
-		<SvelteMarkdown source={block.text1} options={mdOptions} />
+		<SvelteMarkdown source={block.text1} options={mdOptions} renderers={mdRenderers} />
 	</div>
 {/if}
 
@@ -89,7 +80,7 @@
 		{/if}
 		{#if block.legend}
 			<div class="content-style absolute -bottom-12 w-full text-right">
-				<SvelteMarkdown source={block.legend} options={mdOptions} />
+				<SvelteMarkdown source={block.legend} options={mdOptions} renderers={mdRenderers} />
 			</div>
 		{/if}
 	</div>
@@ -114,14 +105,14 @@
 		on:inview_change={handleChange}
 	>
 		<div class="content-style flex flex-1 flex-col gap-8 {isInView ? 'animate-fade' : 'opacity-0'}">
-			<SvelteMarkdown source={block.text1} options={mdOptions} />
+			<SvelteMarkdown source={block.text1} options={mdOptions} renderers={mdRenderers} />
 		</div>
 		<div
 			class="content-style flex flex-1 flex-col gap-8 animate-delay-[250ms] {isInView
 				? 'animate-fade'
 				: 'opacity-0'}"
 		>
-			<SvelteMarkdown source={block.text2} options={mdOptions} />
+			<SvelteMarkdown source={block.text2} options={mdOptions} renderers={mdRenderers} />
 		</div>
 	</div>
 {/if}
@@ -135,7 +126,7 @@
 		<div
 			class="content-style flex flex-1 flex-col gap-8 {isInViewImg ? 'animate-fade' : 'opacity-0'}"
 		>
-			<SvelteMarkdown source={block.text1} options={mdOptions} />
+			<SvelteMarkdown source={block.text1} options={mdOptions} renderers={mdRenderers} />
 		</div>
 		<div class="relative flex-1">
 			{#if isInViewImg}
@@ -158,7 +149,7 @@
 			{/if}
 			{#if block.legend}
 				<div class="content-style absolute -bottom-12 w-full text-right">
-					<SvelteMarkdown source={block.legend} options={mdOptions} />
+					<SvelteMarkdown source={block.legend} options={mdOptions} renderers={mdRenderers} />
 				</div>
 			{/if}
 		</div>
@@ -192,7 +183,7 @@
 			{/if}
 			{#if block.legend}
 				<div class="content-style absolute -bottom-12 w-full max-lg:text-right">
-					<SvelteMarkdown source={block.legend} options={mdOptions} />
+					<SvelteMarkdown source={block.legend} options={mdOptions} renderers={mdRenderers} />
 				</div>
 			{/if}
 		</div>
@@ -203,7 +194,7 @@
 			use:inview={options}
 			on:inview_change={handleChange}
 		>
-			<SvelteMarkdown source={block.text1} options={mdOptions} />
+			<SvelteMarkdown source={block.text1} options={mdOptions} renderers={mdRenderers} />
 		</div>
 	</div>
 {/if}
@@ -218,7 +209,7 @@
 						? 'animate-fade-right'
 						: 'opacity-0'}"
 				>
-					{@html block.citation}
+					{@html withExternalLinks(block.citation)}
 				</h2>
 			</div>
 			{#if block.link && block.ctaLabel}

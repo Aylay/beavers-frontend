@@ -1,14 +1,16 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { inview } from 'svelte-inview';
 	import type { ObserverEventDetails, Options } from 'svelte-inview';
 	import SvelteMarkdown from 'svelte-markdown';
+	import MarkdownLink from '$lib/components/utilities/MarkdownLink.svelte';
 
 	const mdOptions = {
 		breaks: true,
 		gfm: true,
 		headerIds: false
 	};
+
+	const mdRenderers = { link: MarkdownLink };
 
 	const strapiURL = import.meta.env.VITE_STRAPI_URL;
 
@@ -25,18 +27,6 @@
 	export let actions: string;
 	export let actionsImg: any;
 	export let title: string;
-
-	onMount(() => {
-		addTargetBlank();
-	});
-
-	function addTargetBlank() {
-		let links = document.querySelectorAll('.content-style a');
-
-		for (const el of Array.from(links) as HTMLAnchorElement[]) {
-			if (el.hostname !== window.location.hostname) el.target = '_blank';
-		}
-	}
 </script>
 
 <div
@@ -47,7 +37,7 @@
 	<div class="flex flex-1 flex-col gap-8 lg:order-2 {isInView ? 'animate-fade' : 'opacity-0'}">
 		<p class="text-5 text-bright">Nos actions</p>
 		<div class="content-style flex flex-col gap-8">
-			<SvelteMarkdown source={actions} options={mdOptions} />
+			<SvelteMarkdown source={actions} options={mdOptions} renderers={mdRenderers} />
 		</div>
 	</div>
 	<div class="flex h-[36rem] flex-col gap-8 max-lg:w-full lg:order-1 lg:h-[55rem] lg:flex-1">

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from '$app/stores';
-	import { onMount } from 'svelte';
 
   import SvelteMarkdown from 'svelte-markdown';
+  import MarkdownLink from '$lib/components/utilities/MarkdownLink.svelte';
   import { DateTime } from "luxon";
 
 	import Header from "$lib/components/blocks/jobs/Header.svelte";
@@ -15,6 +15,8 @@
     gfm: true,
     headerIds: false
   };
+
+  const mdRenderers = { link: MarkdownLink };
 
   let content: any = $page.data.content.attributes;
   
@@ -101,20 +103,6 @@
       }
     }
   }
-
-  onMount (() => {
-    addTargetBlank()
-  })
-
-  function addTargetBlank () {
-    let links = document.querySelectorAll('.content-style a')
-
-    for (const element of links) {
-      if (element.hostname != window.location.hostname) {
-          element.target = '_blank';
-      }
-    }
-  }
   
   function localisation () {
     let localisation = ''
@@ -135,7 +123,7 @@
 <div class="flex flex-col gap-32 lg:gap-40">
   <Header title={content.title} {words} contract={content.contract} localisation={localisation()} {when} />
   <div class="big-container content-style flex flex-col gap-8">
-    <SvelteMarkdown source={content.description} options={mdOptions} />
+    <SvelteMarkdown source={content.description} options={mdOptions} renderers={mdRenderers} />
   </div>
   <LeadForm id={$page.data.content.id} jobTitle={content.title} />
 </div>
