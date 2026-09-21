@@ -63,7 +63,7 @@
 			</div>
 			<div class="animate-delay-[1200ms] {isInView ? 'animate-fade' : 'opacity-0'}">
 				<Cta
-					label="En savoir plus"
+					label="Découvrir notre offre SEO"
 					href="/production-digitale/seo-referencement-naturel"
 					type="seance"
 				/>
@@ -88,22 +88,22 @@
 				</picture>
 			{/if}
 
-			{#each tops as top, i}
+			{#each tops as top, i (top)}
 				<div
 					class="absolute top-24 h-[1.5px] w-28 -rotate-45 transform bg-bright {top} {isInView
 						? 'animate-fade'
 						: 'opacity-0'}"
 					style="animation-delay: {200 * i}ms;"
-				/>
+				></div>
 			{/each}
 
-			{#each bottoms as bottom, i}
+			{#each bottoms as bottom, i (bottom)}
 				<div
 					class="absolute -bottom-4 h-[3px] w-44 -rotate-45 transform bg-bright {bottom} {isInView
 						? 'animate-fade'
 						: 'opacity-0'}"
 					style="animation-delay: {800 + 200 * i}ms;"
-				/>
+				></div>
 			{/each}
 		</div>
 	</div>

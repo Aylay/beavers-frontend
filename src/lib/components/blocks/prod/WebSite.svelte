@@ -63,7 +63,7 @@
 			</div>
 			<div class="animate-delay-[1200ms] {isInView ? 'animate-fade' : 'opacity-0'}">
 				<Cta
-					label="En savoir plus"
+					label="Découvrir notre offre site internet"
 					href="/production-digitale/creation-refonte-site-internet"
 					type="seance"
 				/>
