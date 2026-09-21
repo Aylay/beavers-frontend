@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
 
 	import Certifs from "$lib/components/blocks/agence/Certifs.svelte";
+	import Us from "$lib/components/blocks/agence/Us.svelte";
   import Experts from "$lib/components/blocks/agence/Experts.svelte";
 	import People from "$lib/components/blocks/agence/People.svelte";
   import Header from "$lib/components/blocks/common/Header.svelte";
@@ -109,9 +110,10 @@
 <div class="flex flex-col gap-48 lg:gap-96 pb-48 lg:pb-96">
   <Header {title} {subtitle} />
   <SubHeader {text1} {text2} {text3} {text4} />
+  <Us />
   <Experts />
   <div class="big-container grid grid-cols-1 lg:grid-cols-2 gap-32">
-    {#each people as person}
+    {#each people as person (person.name)}
     <People {person} />
     {/each}
   </div>
