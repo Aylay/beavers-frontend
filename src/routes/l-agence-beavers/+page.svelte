@@ -15,7 +15,7 @@
 
   const text1 = 'En quoi<br />sommes-nous'
   const text2 = 'différents ?'
-  const text3 = "À l'heure où l'intelligence artificielle automatise tout, faites le choix d'une équipe humaine qui comprend vos enjeux. Chez Beavers, chaque projet est suivi avec attention — que vous débutiez dans le digital ou que vous soyez déjà un expert."
+  const text3 = "À l'heure où l'intelligence artificielle automatise tout, faites le choix d'une équipe humaine qui comprend vos enjeux. Chez Beavers, chaque projet est suivi avec attention - que vous débutiez dans le digital ou que vous soyez déjà un expert."
   const text4 = 'Experts en marketing digital, nous aidons les marques à transformer leur visibilité en résultats concrets. Notre approche repose sur des stratégies sur mesure, pensées pour générer du trafic qualifié, accroître la notoriété et convertir efficacement.'
 
   const people = [
