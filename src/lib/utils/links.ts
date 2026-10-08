@@ -35,7 +35,7 @@ export function withExternalLinks(html: string | undefined | null): string {
 
 		let updated = attributes.trimEnd();
 		if (!/\btarget\s*=/i.test(updated)) updated += ' target="_blank"';
-		if (!/\brel\s*=/i.test(updated)) updated += ' rel="noopener"';
+		if (!/\brel\s*=/i.test(updated)) updated += ' rel="nofollow noopener"';
 		return `<a ${updated}>`;
 	});
 }
