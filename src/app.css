@@ -176,6 +176,27 @@
 	.content-style ul li ul {
 		@apply mt-4;
 	}
+	.content-style .table-wrapper {
+		@apply w-full overflow-x-auto rounded-lg border border-jagger;
+	}
+	.content-style table {
+		@apply w-full border-collapse text-6;
+	}
+	.content-style th {
+		@apply bg-seance px-6 py-4 font-semibold whitespace-nowrap text-white;
+	}
+	.content-style td {
+		@apply border-t border-jagger px-6 py-4;
+	}
+	.content-style tbody tr:nth-child(even) {
+		@apply bg-rock;
+	}
+	.content-style tbody tr {
+		@apply transition-colors hover:bg-jagger;
+	}
+	.content-style td a {
+		@apply font-semibold text-electric underline transition-colors hover:text-bright;
+	}
 }
 
 @layer utilities {

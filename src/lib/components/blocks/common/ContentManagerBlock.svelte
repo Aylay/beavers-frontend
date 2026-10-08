@@ -6,6 +6,7 @@
 	import Line from '$lib/components/blocks/utilities/Line.svelte';
 	import Cta from '$lib/components/blocks/utilities/CTA.svelte';
 	import MarkdownLink from '$lib/components/utilities/MarkdownLink.svelte';
+	import MarkdownTable from '$lib/components/utilities/MarkdownTable.svelte';
 	import { withExternalLinks } from '$lib/utils/links';
 
 	const mdOptions = {
@@ -14,7 +15,7 @@
 		headerIds: false
 	};
 
-	const mdRenderers = { link: MarkdownLink };
+	const mdRenderers = { link: MarkdownLink, table: MarkdownTable };
 
 	let isInView: boolean;
 	const options: Options = {
